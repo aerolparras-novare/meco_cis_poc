@@ -503,7 +503,7 @@
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="o_acc6" expression="row1.ACC6_1+&quot; &quot;+ row1.ACC6_2 " type="id_String"/>
         <mapperTableEntries name="v_yeartoday" expression="TalendDate.formatDate(&quot;yyyy&quot;, TalendDate.getCurrentDate()) " type="id_String"/>
-        <mapperTableEntries name="v_yyyymmtoday" expression="TalendDate.formatDate(&quot;MM/yyyy&quot;, TalendDate.getCurrentDate()) " type="id_String"/>
+        <mapperTableEntries name="v_yyyymmtoday" expression="TalendDate.formatDate(&quot;MM/yyyy&quot;, TalendDate.getCurrentDate()) " type="id_Date"/>
         <mapperTableEntries name="v_acc11" expression="TalendDate.formatDate(&quot;dd-MM&quot;, row1.ACC10)+&quot;/&quot;+&#xD;&#xA;var.v_yeartoday " type="id_String"/>
         <mapperTableEntries name="o_acc11" expression="Var.v_acc11 " type="id_String"/>
         <mapperTableEntries name="o_acc23" expression="TalendDate.addDate(TalendDate.TO_DATE(Var.v_acc11,&quot;dd/MM/yyyy&quot;),2,&quot;MM&quot;) " type="id_String"/>
