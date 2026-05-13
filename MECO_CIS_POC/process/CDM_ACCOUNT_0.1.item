@@ -513,6 +513,7 @@
         <mapperTableEntries name="o_ledg5" expression="&quot;20/&quot;+var.v_yyyymmtoday " type="id_String"/>
         <mapperTableEntries name="o_ledg9" expression="&quot;20/&quot;+TalendDate.addDate(TalendDate.TO_DATE(var.v_yyyymmtoday,&quot;MM/yyyy&quot;),-1,&quot;MM&quot;) " type="id_String"/>
         <mapperTableEntries name="o_ledg10" expression="row2.LEDG10+&quot;/&quot;+var.v_yyyymmtoday " type="id_String"/>
+        <mapperTableEntries name="o_ledg24" expression="&quot;11/&quot;+&#x9;&#x9;&#x9;&#x9;TalendDate.formatDate(&quot;MM/yyyy HH:mm:ss&quot;, TalendDate.getCurrentDate()) " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="ACC0" expression="row1.ACC0 " type="id_Integer" nullable="true"/>
@@ -582,7 +583,7 @@
         <mapperTableEntries name="LEDG21" expression="row2.LEDG21 " type="id_String" nullable="true"/>
         <mapperTableEntries name="LEDG22" expression="row2.LEDG22 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LEDG23" expression="row2.LEDG23 " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LEDG24" expression="row2.LEDG24 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LEDG24" expression="Var.o_ledg24 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LEDG25" expression="row2.LEDG25 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LEDG26" expression="row2.LEDG26 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LEDG27" expression="row2.LEDG27 " type="id_Integer" nullable="true"/>
