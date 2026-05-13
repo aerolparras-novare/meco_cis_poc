@@ -111,7 +111,7 @@
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
@@ -141,194 +141,190 @@
       <elementValue elementRef="TRIM" value="false" id="13"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CUS7" id="14"/>
       <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS8" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS9" id="16"/>
       <elementValue elementRef="TRIM" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS9" id="18"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS10" id="18"/>
       <elementValue elementRef="TRIM" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS10" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS11" id="20"/>
       <elementValue elementRef="TRIM" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS11" id="22"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS12" id="22"/>
       <elementValue elementRef="TRIM" value="false" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS12" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS13" id="24"/>
       <elementValue elementRef="TRIM" value="false" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS13" id="26"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS14" id="26"/>
       <elementValue elementRef="TRIM" value="false" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS14" id="28"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS15" id="28"/>
       <elementValue elementRef="TRIM" value="false" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS15" id="30"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS16" id="30"/>
       <elementValue elementRef="TRIM" value="false" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS16" id="32"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS17" id="32"/>
       <elementValue elementRef="TRIM" value="false" id="33"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS17" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS18" id="34"/>
       <elementValue elementRef="TRIM" value="false" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS18" id="36"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS19" id="36"/>
       <elementValue elementRef="TRIM" value="false" id="37"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS19" id="38"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS20" id="38"/>
       <elementValue elementRef="TRIM" value="false" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS20" id="40"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS21" id="40"/>
       <elementValue elementRef="TRIM" value="false" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS21" id="42"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS22" id="42"/>
       <elementValue elementRef="TRIM" value="false" id="43"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS22" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS23" id="44"/>
       <elementValue elementRef="TRIM" value="false" id="45"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS23" id="46"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS24" id="46"/>
       <elementValue elementRef="TRIM" value="false" id="47"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS24" id="48"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS25" id="48"/>
       <elementValue elementRef="TRIM" value="false" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS25" id="50"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS26" id="50"/>
       <elementValue elementRef="TRIM" value="false" id="51"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS26" id="52"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS27" id="52"/>
       <elementValue elementRef="TRIM" value="false" id="53"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS27" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS28" id="54"/>
       <elementValue elementRef="TRIM" value="false" id="55"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS28" id="56"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS29" id="56"/>
       <elementValue elementRef="TRIM" value="false" id="57"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS29" id="58"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS30" id="58"/>
       <elementValue elementRef="TRIM" value="false" id="59"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS30" id="60"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS31" id="60"/>
       <elementValue elementRef="TRIM" value="false" id="61"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS31" id="62"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS32" id="62"/>
       <elementValue elementRef="TRIM" value="false" id="63"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS32" id="64"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS33" id="64"/>
       <elementValue elementRef="TRIM" value="false" id="65"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS33" id="66"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS34" id="66"/>
       <elementValue elementRef="TRIM" value="false" id="67"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS34" id="68"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS35" id="68"/>
       <elementValue elementRef="TRIM" value="false" id="69"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS35" id="70"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS36" id="70"/>
       <elementValue elementRef="TRIM" value="false" id="71"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS36" id="72"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS37" id="72"/>
       <elementValue elementRef="TRIM" value="false" id="73"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS37" id="74"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS38" id="74"/>
       <elementValue elementRef="TRIM" value="false" id="75"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS38" id="76"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS39" id="76"/>
       <elementValue elementRef="TRIM" value="false" id="77"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS39" id="78"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS40" id="78"/>
       <elementValue elementRef="TRIM" value="false" id="79"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS40" id="80"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS41" id="80"/>
       <elementValue elementRef="TRIM" value="false" id="81"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS41" id="82"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS42" id="82"/>
       <elementValue elementRef="TRIM" value="false" id="83"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS42" id="84"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_1" id="84"/>
       <elementValue elementRef="TRIM" value="false" id="85"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_1" id="86"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_2" id="86"/>
       <elementValue elementRef="TRIM" value="false" id="87"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_2" id="88"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_3" id="88"/>
       <elementValue elementRef="TRIM" value="false" id="89"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_3" id="90"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS44" id="90"/>
       <elementValue elementRef="TRIM" value="false" id="91"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS44" id="92"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_1" id="92"/>
       <elementValue elementRef="TRIM" value="false" id="93"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_1" id="94"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_2" id="94"/>
       <elementValue elementRef="TRIM" value="false" id="95"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_2" id="96"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_3" id="96"/>
       <elementValue elementRef="TRIM" value="false" id="97"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_3" id="98"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS46" id="98"/>
       <elementValue elementRef="TRIM" value="false" id="99"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS46" id="100"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS47" id="100"/>
       <elementValue elementRef="TRIM" value="false" id="101"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS47" id="102"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS48" id="102"/>
       <elementValue elementRef="TRIM" value="false" id="103"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS48" id="104"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS49" id="104"/>
       <elementValue elementRef="TRIM" value="false" id="105"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS49" id="106"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS50" id="106"/>
       <elementValue elementRef="TRIM" value="false" id="107"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS50" id="108"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA1" id="108"/>
       <elementValue elementRef="TRIM" value="false" id="109"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA1" id="110"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA2" id="110"/>
       <elementValue elementRef="TRIM" value="false" id="111"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA2" id="112"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA3" id="112"/>
       <elementValue elementRef="TRIM" value="false" id="113"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA3" id="114"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA5" id="114"/>
       <elementValue elementRef="TRIM" value="false" id="115"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA4" id="116"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA6" id="116"/>
       <elementValue elementRef="TRIM" value="false" id="117"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA5" id="118"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA7" id="118"/>
       <elementValue elementRef="TRIM" value="false" id="119"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA6" id="120"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA8" id="120"/>
       <elementValue elementRef="TRIM" value="false" id="121"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA7" id="122"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA9" id="122"/>
       <elementValue elementRef="TRIM" value="false" id="123"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA8" id="124"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA10" id="124"/>
       <elementValue elementRef="TRIM" value="false" id="125"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA9" id="126"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA11" id="126"/>
       <elementValue elementRef="TRIM" value="false" id="127"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA10" id="128"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA12" id="128"/>
       <elementValue elementRef="TRIM" value="false" id="129"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA11" id="130"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA13" id="130"/>
       <elementValue elementRef="TRIM" value="false" id="131"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA12" id="132"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA14" id="132"/>
       <elementValue elementRef="TRIM" value="false" id="133"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA13" id="134"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA15" id="134"/>
       <elementValue elementRef="TRIM" value="false" id="135"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA14" id="136"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA16" id="136"/>
       <elementValue elementRef="TRIM" value="false" id="137"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA15" id="138"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA17" id="138"/>
       <elementValue elementRef="TRIM" value="false" id="139"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA16" id="140"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA18" id="140"/>
       <elementValue elementRef="TRIM" value="false" id="141"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA17" id="142"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA19" id="142"/>
       <elementValue elementRef="TRIM" value="false" id="143"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA18" id="144"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA20" id="144"/>
       <elementValue elementRef="TRIM" value="false" id="145"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA19" id="146"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA21" id="146"/>
       <elementValue elementRef="TRIM" value="false" id="147"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA20" id="148"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA22" id="148"/>
       <elementValue elementRef="TRIM" value="false" id="149"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA21" id="150"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA23" id="150"/>
       <elementValue elementRef="TRIM" value="false" id="151"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA22" id="152"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA24" id="152"/>
       <elementValue elementRef="TRIM" value="false" id="153"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA23" id="154"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA25" id="154"/>
       <elementValue elementRef="TRIM" value="false" id="155"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA24" id="156"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA26" id="156"/>
       <elementValue elementRef="TRIM" value="false" id="157"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA25" id="158"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA27" id="158"/>
       <elementValue elementRef="TRIM" value="false" id="159"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA26" id="160"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA28" id="160"/>
       <elementValue elementRef="TRIM" value="false" id="161"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA27" id="162"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA29" id="162"/>
       <elementValue elementRef="TRIM" value="false" id="163"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA28" id="164"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA30" id="164"/>
       <elementValue elementRef="TRIM" value="false" id="165"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA29" id="166"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA31" id="166"/>
       <elementValue elementRef="TRIM" value="false" id="167"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA30" id="168"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA32" id="168"/>
       <elementValue elementRef="TRIM" value="false" id="169"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA31" id="170"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA33" id="170"/>
       <elementValue elementRef="TRIM" value="false" id="171"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA32" id="172"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA34" id="172"/>
       <elementValue elementRef="TRIM" value="false" id="173"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA33" id="174"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA35" id="174"/>
       <elementValue elementRef="TRIM" value="false" id="175"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA34" id="176"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA36" id="176"/>
       <elementValue elementRef="TRIM" value="false" id="177"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA35" id="178"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA37" id="178"/>
       <elementValue elementRef="TRIM" value="false" id="179"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA36" id="180"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSBRAND1" id="180"/>
       <elementValue elementRef="TRIM" value="false" id="181"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA37" id="182"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_1" id="182"/>
       <elementValue elementRef="TRIM" value="false" id="183"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSBRAND1" id="184"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_2" id="184"/>
       <elementValue elementRef="TRIM" value="false" id="185"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_1" id="186"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_3" id="186"/>
       <elementValue elementRef="TRIM" value="false" id="187"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_2" id="188"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_4" id="188"/>
       <elementValue elementRef="TRIM" value="false" id="189"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_3" id="190"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_5" id="190"/>
       <elementValue elementRef="TRIM" value="false" id="191"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_4" id="192"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_6" id="192"/>
       <elementValue elementRef="TRIM" value="false" id="193"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_5" id="194"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_7" id="194"/>
       <elementValue elementRef="TRIM" value="false" id="195"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_6" id="196"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_8" id="196"/>
       <elementValue elementRef="TRIM" value="false" id="197"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_7" id="198"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_9" id="198"/>
       <elementValue elementRef="TRIM" value="false" id="199"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_8" id="200"/>
-      <elementValue elementRef="TRIM" value="false" id="201"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_9" id="202"/>
-      <elementValue elementRef="TRIM" value="false" id="203"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
@@ -353,198 +349,195 @@
       <elementValue elementRef="DECODE" value="false" id="13"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CUS7" id="14"/>
       <elementValue elementRef="DECODE" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS8" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS9" id="16"/>
       <elementValue elementRef="DECODE" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS9" id="18"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS10" id="18"/>
       <elementValue elementRef="DECODE" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS10" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS11" id="20"/>
       <elementValue elementRef="DECODE" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS11" id="22"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS12" id="22"/>
       <elementValue elementRef="DECODE" value="false" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS12" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS13" id="24"/>
       <elementValue elementRef="DECODE" value="false" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS13" id="26"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS14" id="26"/>
       <elementValue elementRef="DECODE" value="false" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS14" id="28"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS15" id="28"/>
       <elementValue elementRef="DECODE" value="false" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS15" id="30"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS16" id="30"/>
       <elementValue elementRef="DECODE" value="false" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS16" id="32"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS17" id="32"/>
       <elementValue elementRef="DECODE" value="false" id="33"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS17" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS18" id="34"/>
       <elementValue elementRef="DECODE" value="false" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS18" id="36"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS19" id="36"/>
       <elementValue elementRef="DECODE" value="false" id="37"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS19" id="38"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS20" id="38"/>
       <elementValue elementRef="DECODE" value="false" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS20" id="40"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS21" id="40"/>
       <elementValue elementRef="DECODE" value="false" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS21" id="42"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS22" id="42"/>
       <elementValue elementRef="DECODE" value="false" id="43"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS22" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS23" id="44"/>
       <elementValue elementRef="DECODE" value="false" id="45"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS23" id="46"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS24" id="46"/>
       <elementValue elementRef="DECODE" value="false" id="47"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS24" id="48"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS25" id="48"/>
       <elementValue elementRef="DECODE" value="false" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS25" id="50"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS26" id="50"/>
       <elementValue elementRef="DECODE" value="false" id="51"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS26" id="52"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS27" id="52"/>
       <elementValue elementRef="DECODE" value="false" id="53"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS27" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS28" id="54"/>
       <elementValue elementRef="DECODE" value="false" id="55"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS28" id="56"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS29" id="56"/>
       <elementValue elementRef="DECODE" value="false" id="57"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS29" id="58"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS30" id="58"/>
       <elementValue elementRef="DECODE" value="false" id="59"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS30" id="60"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS31" id="60"/>
       <elementValue elementRef="DECODE" value="false" id="61"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS31" id="62"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS32" id="62"/>
       <elementValue elementRef="DECODE" value="false" id="63"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS32" id="64"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS33" id="64"/>
       <elementValue elementRef="DECODE" value="false" id="65"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS33" id="66"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS34" id="66"/>
       <elementValue elementRef="DECODE" value="false" id="67"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS34" id="68"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS35" id="68"/>
       <elementValue elementRef="DECODE" value="false" id="69"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS35" id="70"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS36" id="70"/>
       <elementValue elementRef="DECODE" value="false" id="71"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS36" id="72"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS37" id="72"/>
       <elementValue elementRef="DECODE" value="false" id="73"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS37" id="74"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS38" id="74"/>
       <elementValue elementRef="DECODE" value="false" id="75"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS38" id="76"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS39" id="76"/>
       <elementValue elementRef="DECODE" value="false" id="77"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS39" id="78"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS40" id="78"/>
       <elementValue elementRef="DECODE" value="false" id="79"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS40" id="80"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS41" id="80"/>
       <elementValue elementRef="DECODE" value="false" id="81"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS41" id="82"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS42" id="82"/>
       <elementValue elementRef="DECODE" value="false" id="83"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS42" id="84"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_1" id="84"/>
       <elementValue elementRef="DECODE" value="false" id="85"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_1" id="86"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_2" id="86"/>
       <elementValue elementRef="DECODE" value="false" id="87"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_2" id="88"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_3" id="88"/>
       <elementValue elementRef="DECODE" value="false" id="89"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS43_3" id="90"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS44" id="90"/>
       <elementValue elementRef="DECODE" value="false" id="91"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS44" id="92"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_1" id="92"/>
       <elementValue elementRef="DECODE" value="false" id="93"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_1" id="94"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_2" id="94"/>
       <elementValue elementRef="DECODE" value="false" id="95"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_2" id="96"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_3" id="96"/>
       <elementValue elementRef="DECODE" value="false" id="97"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS45_3" id="98"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS46" id="98"/>
       <elementValue elementRef="DECODE" value="false" id="99"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS46" id="100"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS47" id="100"/>
       <elementValue elementRef="DECODE" value="false" id="101"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS47" id="102"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS48" id="102"/>
       <elementValue elementRef="DECODE" value="false" id="103"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS48" id="104"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS49" id="104"/>
       <elementValue elementRef="DECODE" value="false" id="105"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS49" id="106"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUS50" id="106"/>
       <elementValue elementRef="DECODE" value="false" id="107"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUS50" id="108"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA1" id="108"/>
       <elementValue elementRef="DECODE" value="false" id="109"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA1" id="110"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA2" id="110"/>
       <elementValue elementRef="DECODE" value="false" id="111"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA2" id="112"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA3" id="112"/>
       <elementValue elementRef="DECODE" value="false" id="113"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA3" id="114"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA5" id="114"/>
       <elementValue elementRef="DECODE" value="false" id="115"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA4" id="116"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA6" id="116"/>
       <elementValue elementRef="DECODE" value="false" id="117"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA5" id="118"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA7" id="118"/>
       <elementValue elementRef="DECODE" value="false" id="119"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA6" id="120"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA8" id="120"/>
       <elementValue elementRef="DECODE" value="false" id="121"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA7" id="122"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA9" id="122"/>
       <elementValue elementRef="DECODE" value="false" id="123"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA8" id="124"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA10" id="124"/>
       <elementValue elementRef="DECODE" value="false" id="125"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA9" id="126"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA11" id="126"/>
       <elementValue elementRef="DECODE" value="false" id="127"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA10" id="128"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA12" id="128"/>
       <elementValue elementRef="DECODE" value="false" id="129"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA11" id="130"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA13" id="130"/>
       <elementValue elementRef="DECODE" value="false" id="131"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA12" id="132"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA14" id="132"/>
       <elementValue elementRef="DECODE" value="false" id="133"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA13" id="134"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA15" id="134"/>
       <elementValue elementRef="DECODE" value="false" id="135"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA14" id="136"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA16" id="136"/>
       <elementValue elementRef="DECODE" value="false" id="137"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA15" id="138"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA17" id="138"/>
       <elementValue elementRef="DECODE" value="false" id="139"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA16" id="140"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA18" id="140"/>
       <elementValue elementRef="DECODE" value="false" id="141"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA17" id="142"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA19" id="142"/>
       <elementValue elementRef="DECODE" value="false" id="143"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA18" id="144"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA20" id="144"/>
       <elementValue elementRef="DECODE" value="false" id="145"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA19" id="146"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA21" id="146"/>
       <elementValue elementRef="DECODE" value="false" id="147"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA20" id="148"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA22" id="148"/>
       <elementValue elementRef="DECODE" value="false" id="149"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA21" id="150"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA23" id="150"/>
       <elementValue elementRef="DECODE" value="false" id="151"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA22" id="152"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA24" id="152"/>
       <elementValue elementRef="DECODE" value="false" id="153"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA23" id="154"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA25" id="154"/>
       <elementValue elementRef="DECODE" value="false" id="155"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA24" id="156"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA26" id="156"/>
       <elementValue elementRef="DECODE" value="false" id="157"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA25" id="158"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA27" id="158"/>
       <elementValue elementRef="DECODE" value="false" id="159"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA26" id="160"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA28" id="160"/>
       <elementValue elementRef="DECODE" value="false" id="161"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA27" id="162"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA29" id="162"/>
       <elementValue elementRef="DECODE" value="false" id="163"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA28" id="164"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA30" id="164"/>
       <elementValue elementRef="DECODE" value="false" id="165"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA29" id="166"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA31" id="166"/>
       <elementValue elementRef="DECODE" value="false" id="167"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA30" id="168"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA32" id="168"/>
       <elementValue elementRef="DECODE" value="false" id="169"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA31" id="170"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA33" id="170"/>
       <elementValue elementRef="DECODE" value="false" id="171"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA32" id="172"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA34" id="172"/>
       <elementValue elementRef="DECODE" value="false" id="173"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA33" id="174"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA35" id="174"/>
       <elementValue elementRef="DECODE" value="false" id="175"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA34" id="176"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA36" id="176"/>
       <elementValue elementRef="DECODE" value="false" id="177"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA35" id="178"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA37" id="178"/>
       <elementValue elementRef="DECODE" value="false" id="179"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA36" id="180"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSBRAND1" id="180"/>
       <elementValue elementRef="DECODE" value="false" id="181"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA37" id="182"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_1" id="182"/>
       <elementValue elementRef="DECODE" value="false" id="183"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSBRAND1" id="184"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_2" id="184"/>
       <elementValue elementRef="DECODE" value="false" id="185"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_1" id="186"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_3" id="186"/>
       <elementValue elementRef="DECODE" value="false" id="187"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_2" id="188"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_4" id="188"/>
       <elementValue elementRef="DECODE" value="false" id="189"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_3" id="190"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_5" id="190"/>
       <elementValue elementRef="DECODE" value="false" id="191"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_4" id="192"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_6" id="192"/>
       <elementValue elementRef="DECODE" value="false" id="193"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_5" id="194"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_7" id="194"/>
       <elementValue elementRef="DECODE" value="false" id="195"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_6" id="196"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_8" id="196"/>
       <elementValue elementRef="DECODE" value="false" id="197"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_7" id="198"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_9" id="198"/>
       <elementValue elementRef="DECODE" value="false" id="199"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_8" id="200"/>
-      <elementValue elementRef="DECODE" value="false" id="201"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUSLOCA38_9" id="202"/>
-      <elementValue elementRef="DECODE" value="false" id="203"/>
     </elementParameter>
     <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="meco_customer"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputDelimited_1">
       <column comment="" defaultValue="" key="false" length="19" name="CUS0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
@@ -555,7 +548,6 @@
       <column comment="" key="false" length="100" name="CUS5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUS6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUS7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="CUS8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1000" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CUS9" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUS10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CUS11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -605,7 +597,6 @@
       <column comment="" key="false" length="50" name="CUSLOCA1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="CUSLOCA2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="CUSLOCA3" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="CUSLOCA4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="CUSLOCA5" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUSLOCA6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUSLOCA7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
@@ -659,7 +650,6 @@
       <column comment="" key="false" length="100" name="CUS5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUS6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUS7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
-      <column comment="" key="false" length="1000" name="CUS8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1000" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CUS9" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUS10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="CUS11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -709,7 +699,6 @@
       <column comment="" key="false" length="50" name="CUSLOCA1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="CUSLOCA2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="CUSLOCA3" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="CUSLOCA4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="CUSLOCA5" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUSLOCA6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="CUSLOCA7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
@@ -877,7 +866,10 @@
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
-      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="o_cus8" expression="row1.CUS3+&quot; &quot;+row1.CUS4+&quot; &quot;+row1.CUS5 " type="id_String"/>
+        <mapperTableEntries name="o_cusloca4" expression="TalendDate.addDate(row1.CUSLOCA3 ,10,&quot;yyyy&quot;) " type="id_Date"/>
+      </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="CUS0" expression="row1.CUS0 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CUS1" expression="row1.CUS1 " type="id_String" nullable="true"/>
@@ -887,7 +879,7 @@
         <mapperTableEntries name="CUS5" expression="row1.CUS5 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS6" expression="row1.CUS6 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS7" expression="row1.CUS7 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CUS8" expression="row1.CUS8 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUS8" expression="row1.CUS8  Var.o_cus8 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS9" expression="row1.CUS9 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CUS10" expression="row1.CUS10 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS11" expression="row1.CUS11 " type="id_String" nullable="true"/>
@@ -937,7 +929,7 @@
         <mapperTableEntries name="CUSLOCA1" expression="row1.CUSLOCA1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUSLOCA2" expression="row1.CUSLOCA2 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CUSLOCA3" expression="row1.CUSLOCA3 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CUSLOCA4" expression="row1.CUSLOCA4 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CUSLOCA4" expression="row1.CUSLOCA4  Var.o_cusloca4 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CUSLOCA5" expression="row1.CUSLOCA5 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CUSLOCA6" expression="row1.CUSLOCA6 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUSLOCA7" expression="row1.CUSLOCA7 " type="id_String" nullable="true"/>
@@ -991,7 +983,6 @@
         <mapperTableEntries name="CUS5" type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS6" type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS7" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CUS8" type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS9" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CUS10" type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS11" type="id_String" nullable="true"/>
@@ -1041,7 +1032,6 @@
         <mapperTableEntries name="CUSLOCA1" type="id_String" nullable="true"/>
         <mapperTableEntries name="CUSLOCA2" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CUSLOCA3" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CUSLOCA4" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CUSLOCA5" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CUSLOCA6" type="id_String" nullable="true"/>
         <mapperTableEntries name="CUSLOCA7" type="id_String" nullable="true"/>
@@ -1096,9 +1086,9 @@
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
     <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="COMPRESS" value="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
@@ -1117,6 +1107,7 @@
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
     <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="cdm_customer"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="tFileOutputDelimited_1">
       <column comment="" defaultValue="" key="false" length="19" name="CUS0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
