@@ -44,7 +44,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:l7Tb09q6Z8TKEY0xdZFU/6/SVI9366oVp4k01VAc" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:f7KIQT7i9hyvzHZrYfL4pdUYaqstDtlf3nCmPwoH" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -79,7 +79,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:28JvM5zfcletupTaax++7gJPUUQRZ3rH0mMnKKGf" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:diMssB5YQ64YFs2L4BlPOpyO0E2vrwmD4TmCmnLS" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -137,17 +137,17 @@
       <elementValue elementRef="TRIM" value="false" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ACC5" id="10"/>
       <elementValue elementRef="TRIM" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC6" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC6_1" id="12"/>
       <elementValue elementRef="TRIM" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC7" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC6_2" id="14"/>
       <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC8" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC7" id="16"/>
       <elementValue elementRef="TRIM" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC9" id="18"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC8" id="18"/>
       <elementValue elementRef="TRIM" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC10" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC9" id="20"/>
       <elementValue elementRef="TRIM" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC11" id="22"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC10" id="22"/>
       <elementValue elementRef="TRIM" value="false" id="23"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ACC12" id="24"/>
       <elementValue elementRef="TRIM" value="false" id="25"/>
@@ -233,17 +233,17 @@
       <elementValue elementRef="DECODE" value="false" id="9"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ACC5" id="10"/>
       <elementValue elementRef="DECODE" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC6" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC6_1" id="12"/>
       <elementValue elementRef="DECODE" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC7" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC6_2" id="14"/>
       <elementValue elementRef="DECODE" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC8" id="16"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC7" id="16"/>
       <elementValue elementRef="DECODE" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC9" id="18"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC8" id="18"/>
       <elementValue elementRef="DECODE" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC10" id="20"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC9" id="20"/>
       <elementValue elementRef="DECODE" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ACC11" id="22"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACC10" id="22"/>
       <elementValue elementRef="DECODE" value="false" id="23"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ACC12" id="24"/>
       <elementValue elementRef="DECODE" value="false" id="25"/>
@@ -313,6 +313,7 @@
     <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="meco_accounttable1_ACC"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputDelimited_1">
       <column comment="" defaultValue="" key="false" length="19" name="ACC0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
@@ -321,12 +322,12 @@
       <column comment="" key="false" length="500" name="ACC3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="500" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="ACC4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="ACC5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="ACC6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ACC6_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ACC6_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="ACC7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="ACC8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="ACC9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ACC10" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="ACC11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="ACC12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="ACC13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="ACC14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
@@ -367,12 +368,12 @@
       <column comment="" key="false" length="500" name="ACC3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="500" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="ACC4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
       <column comment="" key="false" length="25" name="ACC5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="25" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="ACC6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ACC6_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="ACC6_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="20" name="ACC7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="ACC8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="ACC9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="ACC10" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="ACC11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="ACC12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="ACC13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="15" name="ACC14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
@@ -500,9 +501,18 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="var1" type="id_String"/>
-        <mapperTableEntries name="var2" type="id_String"/>
-        <mapperTableEntries name="var3" type="id_String"/>
+        <mapperTableEntries name="o_acc6" expression="row1.ACC6_1+&quot; &quot;+ row1.ACC6_2 " type="id_String"/>
+        <mapperTableEntries name="v_yeartoday" expression="TalendDate.formatDate(&quot;yyyy&quot;, TalendDate.getCurrentDate()) " type="id_String"/>
+        <mapperTableEntries name="v_yyyymmtoday" expression="TalendDate.formatDate(&quot;MM/yyyy&quot;, TalendDate.getCurrentDate()) " type="id_String"/>
+        <mapperTableEntries name="v_acc11" expression="TalendDate.formatDate(&quot;dd-MM&quot;, row1.ACC10)+&quot;/&quot;+&#xD;&#xA;var.v_yeartoday " type="id_String"/>
+        <mapperTableEntries name="o_acc11" expression="Var.v_acc11 " type="id_String"/>
+        <mapperTableEntries name="o_acc23" expression="TalendDate.addDate(TalendDate.TO_DATE(Var.v_acc11,&quot;dd/MM/yyyy&quot;),2,&quot;MM&quot;) " type="id_String"/>
+        <mapperTableEntries name="o_acc24" expression="TalendDate.addDate(TalendDate.TO_DATE(Var.v_acc11,&quot;dd/MM/yyyy&quot;),6,&quot;MM&quot;) " type="id_String"/>
+        <mapperTableEntries name="o_acc29" expression="TalendDate.getDate(&quot;dd/MM/yyyy&quot;) " type="id_String"/>
+        <mapperTableEntries name="o_ledg4" expression="&quot;10/&quot;+var.v_yyyymmtoday " type="id_String"/>
+        <mapperTableEntries name="o_ledg5" expression="&quot;20/&quot;+var.v_yyyymmtoday " type="id_String"/>
+        <mapperTableEntries name="o_ledg9" expression="&quot;20/&quot;+TalendDate.addDate(TalendDate.TO_DATE(var.v_yyyymmtoday,&quot;MM/yyyy&quot;),-1,&quot;MM&quot;) " type="id_String"/>
+        <mapperTableEntries name="o_ledg10" expression="row2.LEDG10+&quot;/&quot;+var.v_yyyymmtoday " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="ACC0" expression="row1.ACC0 " type="id_Integer" nullable="true"/>
@@ -511,12 +521,12 @@
         <mapperTableEntries name="ACC3" expression="row1.ACC3 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC4" expression="row1.ACC4 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC5" expression="row1.ACC5 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACC6" expression="row1.ACC6 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACC6" expression="Var.o_acc6 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC7" expression="row1.ACC7 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC8" expression="row1.ACC8 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC9" expression="row1.ACC9 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC10" expression="row1.ACC10 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ACC11" expression="row1.ACC11 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACC11" expression="Var.o_acc11 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC12" expression="row1.ACC12 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC13" expression="row1.ACC13 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC14" expression="row1.ACC14 " type="id_String" nullable="true"/>
@@ -531,15 +541,15 @@
         <mapperTableEntries name="ACC20_2" expression="row1.ACC20_2 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC21" expression="row1.ACC21 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC22" expression="row1.ACC22 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACC23" expression="row1.ACC23 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ACC24" expression="row1.ACC24 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ACC23" expression="Var.o_acc23 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ACC24" expression="Var.o_acc24 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="ACC25" expression="row1.ACC25 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC26" expression="row1.ACC26 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC27_1" expression="row1.ACC27_1 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="ACC27_2" expression="row1.ACC27_2 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="ACC27_3" expression="row1.ACC27_3 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="ACC28" expression="row1.ACC28 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACC29" expression="row1.ACC29 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="ACC29" expression="Var.o_acc29 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="ACC30" expression="row1.ACC30 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC31" expression="row1.ACC31 " type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC32" expression="row1.ACC32 " type="id_String" nullable="true"/>
@@ -552,13 +562,13 @@
         <mapperTableEntries name="LEDG1" expression="row2.LEDG1 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LEDG2" expression="row2.LEDG2 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LEDG3" expression="row2.LEDG3 " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LEDG4" expression="row2.LEDG4 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LEDG5" expression="row2.LEDG5 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LEDG4" expression="Var.o_ledg4 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LEDG5" expression="Var.o_ledg5 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LEDG6" expression="row2.LEDG6 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LEDG7" expression="row2.LEDG7 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LEDG8" expression="row2.LEDG8 " type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="LEDG9" expression="row2.LEDG9 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="LEDG10" expression="row2.LEDG10 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LEDG9" expression="Var.o_ledg9 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="LEDG10" expression="Var.o_ledg10 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LEDG11" expression="row2.LEDG11 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LEDG12" expression="row2.LEDG12 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LEDG13" expression="row2.LEDG13 " type="id_String" nullable="true"/>
@@ -585,12 +595,12 @@
         <mapperTableEntries name="ACC3" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC4" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="ACC6" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACC6_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="ACC6_2" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC7" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC8" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC9" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC10" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="ACC11" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC12" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC13" type="id_String" nullable="true"/>
         <mapperTableEntries name="ACC14" type="id_String" nullable="true"/>
@@ -810,6 +820,7 @@
     <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="meco_accounttable2_LEDG"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputDelimited_2">
       <column comment="" defaultValue="" key="false" length="19" name="ACC2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
@@ -920,6 +931,7 @@
     <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
     <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="meco_accounttable3_SUN"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileInputDelimited_3">
       <column comment="" defaultValue="" key="false" length="19" name="ACC2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
@@ -940,10 +952,10 @@
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="false"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
@@ -959,8 +971,9 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="cdm_account"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="tFileOutputDelimited_1">
       <column comment="" defaultValue="" key="false" length="19" name="ACC0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="19" usefulColumn="true"/>
@@ -1038,6 +1051,11 @@
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="ACC6_2" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>

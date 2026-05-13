@@ -879,7 +879,7 @@
         <mapperTableEntries name="CUS5" expression="row1.CUS5 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS6" expression="row1.CUS6 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS7" expression="row1.CUS7 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CUS8" expression="row1.CUS8  Var.o_cus8 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CUS8" expression="Var.o_cus8 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS9" expression="row1.CUS9 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CUS10" expression="row1.CUS10 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUS11" expression="row1.CUS11 " type="id_String" nullable="true"/>
@@ -929,7 +929,7 @@
         <mapperTableEntries name="CUSLOCA1" expression="row1.CUSLOCA1 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUSLOCA2" expression="row1.CUSLOCA2 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CUSLOCA3" expression="row1.CUSLOCA3 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CUSLOCA4" expression="row1.CUSLOCA4  Var.o_cusloca4 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CUSLOCA4" expression="Var.o_cusloca4 " type="id_Date" nullable="true"/>
         <mapperTableEntries name="CUSLOCA5" expression="row1.CUSLOCA5 " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CUSLOCA6" expression="row1.CUSLOCA6 " type="id_String" nullable="true"/>
         <mapperTableEntries name="CUSLOCA7" expression="row1.CUSLOCA7 " type="id_String" nullable="true"/>
