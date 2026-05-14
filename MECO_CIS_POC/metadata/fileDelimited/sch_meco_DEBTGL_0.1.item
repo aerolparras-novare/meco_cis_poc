@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_iLaIYE9eEfGMzefWQJEDZA" name="sch_meco_DEBTGL" dataPackage="_iLaIYU9eEfGMzefWQJEDZA" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_debtgl.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_iLaIYU9eEfGMzefWQJEDZA" name="default" dataManager="_iLaIYE9eEfGMzefWQJEDZA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_iLaIYk9eEfGMzefWQJEDZA" id="_WilEEE9eEfGMzefWQJEDZA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIY09eEfGMzefWQJEDZA" name="Client_ID" label="Client_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIZE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIZU9eEfGMzefWQJEDZA" name="GL1_Unused_0" label="GL1_Unused_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIZk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIZ09eEfGMzefWQJEDZA" name="GL1_Unused_1" label="GL1_Unused_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIaE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIaU9eEfGMzefWQJEDZA" name="GL1_Account" label="GL1_Account" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIak9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIa09eEfGMzefWQJEDZA" name="GL1_Amount" label="GL1_Amount" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIbE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIbU9eEfGMzefWQJEDZA" name="GL1_Statistic_Code" label="GL1_Statistic_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIbk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIb09eEfGMzefWQJEDZA" name="GL1_Statistic_Value" label="GL1_Statistic_Value" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIcE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIcU9eEfGMzefWQJEDZA" name="GL1_Unused_6" label="GL1_Unused_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIck9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIc09eEfGMzefWQJEDZA" name="GL1_Control_Account" label="GL1_Control_Account" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIdE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIdU9eEfGMzefWQJEDZA" name="GL1_Bank_Account" label="GL1_Bank_Account" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIdk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaId09eEfGMzefWQJEDZA" name="GL1_Unit_Of_Measure" label="GL1_Unit_Of_Measure" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIeE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIeU9eEfGMzefWQJEDZA" name="GL1_Quantity" label="GL1_Quantity" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIek9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIe09eEfGMzefWQJEDZA" name="GL1_Unused_11" label="GL1_Unused_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_iLaIfE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIfU9eEfGMzefWQJEDZA" name="GL1_Tax_Code" label="GL1_Tax_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIfk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIf09eEfGMzefWQJEDZA" name="GL1_Tax_Amount" label="GL1_Tax_Amount" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIgE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIgU9eEfGMzefWQJEDZA" name="GL1_Discount_Amount" label="GL1_Discount_Amount" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIgk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIg09eEfGMzefWQJEDZA" name="GL2_Unused_0" label="GL2_Unused_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIhE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIhU9eEfGMzefWQJEDZA" name="GL2_Unused_1" label="GL2_Unused_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIhk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIh09eEfGMzefWQJEDZA" name="GL2_Account" label="GL2_Account" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIiE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIiU9eEfGMzefWQJEDZA" name="GL2_Amount" label="GL2_Amount" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIik9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIi09eEfGMzefWQJEDZA" name="GL2_Statistic_Code" label="GL2_Statistic_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIjE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIjU9eEfGMzefWQJEDZA" name="GL2_Statistic_Value" label="GL2_Statistic_Value" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIjk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIj09eEfGMzefWQJEDZA" name="GL2_Unused_6" label="GL2_Unused_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIkE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIkU9eEfGMzefWQJEDZA" name="GL2_Control_Account" label="GL2_Control_Account" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIkk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIk09eEfGMzefWQJEDZA" name="GL2_Bank_Account" label="GL2_Bank_Account" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIlE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIlU9eEfGMzefWQJEDZA" name="GL2_Unit_Of_Measure" label="GL2_Unit_Of_Measure" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIlk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIl09eEfGMzefWQJEDZA" name="GL2_Quantity" label="GL2_Quantity" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaImE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaImU9eEfGMzefWQJEDZA" name="GL2_Unused_11" label="GL2_Unused_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_iLaImk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIm09eEfGMzefWQJEDZA" name="GL2_Tax_Code" label="GL2_Tax_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaInE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaInU9eEfGMzefWQJEDZA" name="GL2_Tax_Amount" label="GL2_Tax_Amount" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaInk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIn09eEfGMzefWQJEDZA" name="GL2_Discount_Amount" label="GL2_Discount_Amount" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIoE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIoU9eEfGMzefWQJEDZA" name="GL3_Unused_0" label="GL3_Unused_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIok9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIo09eEfGMzefWQJEDZA" name="GL3_Unused_1" label="GL3_Unused_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIpE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIpU9eEfGMzefWQJEDZA" name="GL3_Unused_2" label="GL3_Unused_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIpk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIp09eEfGMzefWQJEDZA" name="GL3_Unused_3" label="GL3_Unused_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIqE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIqU9eEfGMzefWQJEDZA" name="GL3_Unused_4" label="GL3_Unused_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIqk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIq09eEfGMzefWQJEDZA" name="GL3_Unused_5" label="GL3_Unused_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIrE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIrU9eEfGMzefWQJEDZA" name="GL3_Unused_6" label="GL3_Unused_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIrk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIr09eEfGMzefWQJEDZA" name="GL3_Unused_7" label="GL3_Unused_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIsE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIsU9eEfGMzefWQJEDZA" name="GL3_Unused_8" label="GL3_Unused_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIsk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIs09eEfGMzefWQJEDZA" name="GL3_Unused_9" label="GL3_Unused_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaItE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaItU9eEfGMzefWQJEDZA" name="GL3_Unused_10" label="GL3_Unused_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaItk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIt09eEfGMzefWQJEDZA" name="GL3_Unused_11" label="GL3_Unused_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_iLaIuE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIuU9eEfGMzefWQJEDZA" name="GL3_Unused_12" label="GL3_Unused_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIuk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIu09eEfGMzefWQJEDZA" name="GL3_Unused_13" label="GL3_Unused_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIvE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIvU9eEfGMzefWQJEDZA" name="GL3_Unused_14" label="GL3_Unused_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIvk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIv09eEfGMzefWQJEDZA" name="GL4_Unused_0" label="GL4_Unused_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIwE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIwU9eEfGMzefWQJEDZA" name="GL4_Unused_1" label="GL4_Unused_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIwk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIw09eEfGMzefWQJEDZA" name="GL4_Unused_2" label="GL4_Unused_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIxE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIxU9eEfGMzefWQJEDZA" name="GL4_Unused_3" label="GL4_Unused_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIxk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIx09eEfGMzefWQJEDZA" name="GL4_Unused_4" label="GL4_Unused_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIyE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIyU9eEfGMzefWQJEDZA" name="GL4_Unused_5" label="GL4_Unused_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaIyk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIy09eEfGMzefWQJEDZA" name="GL4_Unused_6" label="GL4_Unused_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIzE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIzU9eEfGMzefWQJEDZA" name="GL4_Unused_7" label="GL4_Unused_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaIzk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaIz09eEfGMzefWQJEDZA" name="GL4_Unused_8" label="GL4_Unused_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI0E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI0U9eEfGMzefWQJEDZA" name="GL4_Unused_9" label="GL4_Unused_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI0k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI009eEfGMzefWQJEDZA" name="GL4_Unused_10" label="GL4_Unused_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI1E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI1U9eEfGMzefWQJEDZA" name="GL4_Unused_11" label="GL4_Unused_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_iLaI1k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI109eEfGMzefWQJEDZA" name="GL4_Unused_12" label="GL4_Unused_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI2E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI2U9eEfGMzefWQJEDZA" name="GL4_Unused_13" label="GL4_Unused_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI2k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI209eEfGMzefWQJEDZA" name="GL4_Unused_14" label="GL4_Unused_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI3E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI3U9eEfGMzefWQJEDZA" name="GL5_Unused_0" label="GL5_Unused_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI3k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI309eEfGMzefWQJEDZA" name="GL5_Unused_1" label="GL5_Unused_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI4E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI4U9eEfGMzefWQJEDZA" name="GL5_Unused_2" label="GL5_Unused_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI4k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI409eEfGMzefWQJEDZA" name="GL5_Unused_3" label="GL5_Unused_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI5E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI5U9eEfGMzefWQJEDZA" name="GL5_Unused_4" label="GL5_Unused_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI5k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI509eEfGMzefWQJEDZA" name="GL5_Unused_5" label="GL5_Unused_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI6E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI6U9eEfGMzefWQJEDZA" name="GL5_Unused_6" label="GL5_Unused_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI6k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI609eEfGMzefWQJEDZA" name="GL5_Unused_7" label="GL5_Unused_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI7E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI7U9eEfGMzefWQJEDZA" name="GL5_Unused_8" label="GL5_Unused_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI7k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI709eEfGMzefWQJEDZA" name="GL5_Unused_9" label="GL5_Unused_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI8E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI8U9eEfGMzefWQJEDZA" name="GL5_Unused_10" label="GL5_Unused_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI8k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI809eEfGMzefWQJEDZA" name="GL5_Unused_11" label="GL5_Unused_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_iLaI9E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI9U9eEfGMzefWQJEDZA" name="GL5_Unused_12" label="GL5_Unused_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaI9k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI909eEfGMzefWQJEDZA" name="GL5_Unused_13" label="GL5_Unused_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI-E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI-U9eEfGMzefWQJEDZA" name="GL5_Unused_14" label="GL5_Unused_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI-k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI-09eEfGMzefWQJEDZA" name="GL6_Unused_0" label="GL6_Unused_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI_E9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI_U9eEfGMzefWQJEDZA" name="GL6_Unused_1" label="GL6_Unused_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaI_k9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaI_09eEfGMzefWQJEDZA" name="GL6_Unused_2" label="GL6_Unused_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJAE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJAU9eEfGMzefWQJEDZA" name="GL6_Unused_3" label="GL6_Unused_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJAk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJA09eEfGMzefWQJEDZA" name="GL6_Unused_4" label="GL6_Unused_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJBE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJBU9eEfGMzefWQJEDZA" name="GL6_Unused_5" label="GL6_Unused_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJBk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJB09eEfGMzefWQJEDZA" name="GL6_Unused_6" label="GL6_Unused_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJCE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJCU9eEfGMzefWQJEDZA" name="GL6_Unused_7" label="GL6_Unused_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJCk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJC09eEfGMzefWQJEDZA" name="GL6_Unused_8" label="GL6_Unused_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJDE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJDU9eEfGMzefWQJEDZA" name="GL6_Unused_9" label="GL6_Unused_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJDk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJD09eEfGMzefWQJEDZA" name="GL6_Unused_10" label="GL6_Unused_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJEE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJEU9eEfGMzefWQJEDZA" name="GL6_Unused_11" label="GL6_Unused_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_iLaJEk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJE09eEfGMzefWQJEDZA" name="GL6_Unused_12" label="GL6_Unused_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJFE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJFU9eEfGMzefWQJEDZA" name="GL6_Unused_13" label="GL6_Unused_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJFk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJF09eEfGMzefWQJEDZA" name="GL6_Unused_14" label="GL6_Unused_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJGE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJGU9eEfGMzefWQJEDZA" name="GL7_Unused_0" label="GL7_Unused_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJGk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJG09eEfGMzefWQJEDZA" name="GL7_Unused_1" label="GL7_Unused_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJHE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJHU9eEfGMzefWQJEDZA" name="GL7_Unused_2" label="GL7_Unused_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJHk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJH09eEfGMzefWQJEDZA" name="GL7_Unused_3" label="GL7_Unused_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJIE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJIU9eEfGMzefWQJEDZA" name="GL7_Unused_4" label="GL7_Unused_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJIk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJI09eEfGMzefWQJEDZA" name="GL7_Unused_5" label="GL7_Unused_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJJE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJJU9eEfGMzefWQJEDZA" name="GL7_Unused_6" label="GL7_Unused_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJJk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJJ09eEfGMzefWQJEDZA" name="GL7_Unused_7" label="GL7_Unused_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJKE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJKU9eEfGMzefWQJEDZA" name="GL7_Unused_8" label="GL7_Unused_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJKk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJK09eEfGMzefWQJEDZA" name="GL7_Unused_9" label="GL7_Unused_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJLE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJLU9eEfGMzefWQJEDZA" name="GL7_Unused_10" label="GL7_Unused_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJLk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJL09eEfGMzefWQJEDZA" name="GL7_Unused_11" label="GL7_Unused_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_iLaJME9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJMU9eEfGMzefWQJEDZA" name="GL7_Unused_12" label="GL7_Unused_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_iLaJMk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJM09eEfGMzefWQJEDZA" name="GL7_Unused_13" label="GL7_Unused_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJNE9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_iLaJNU9eEfGMzefWQJEDZA" name="GL7_Unused_14" label="GL7_Unused_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_iLaJNk9eEfGMzefWQJEDZA" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
