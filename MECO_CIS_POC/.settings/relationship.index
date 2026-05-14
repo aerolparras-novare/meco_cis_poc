@@ -46,5 +46,13 @@
     "version" : "0.1",
     "type" : "job"
   },
-  "relatedItems" : [ ]
+  "relatedItems" : [ {
+    "id" : "_e2NxwE-sEfGMzefWQJEDZA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_e2NxwE-sEfGMzefWQJEDZA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
