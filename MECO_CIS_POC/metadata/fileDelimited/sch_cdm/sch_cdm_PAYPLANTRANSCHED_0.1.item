@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_dFXX0FIgEfGdn9L_G-9eWg" name="sch_cdm_PAYPLANTRANSCHED" dataPackage="_dFXX0VIgEfGdn9L_G-9eWg" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_payplantransched.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_dFXX0VIgEfGdn9L_G-9eWg" name="default" dataManager="_dFXX0FIgEfGdn9L_G-9eWg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_dFXX0lIgEfGdn9L_G-9eWg" id="_XtyPIFIgEfGdn9L_G-9eWg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dFXX01IgEfGdn9L_G-9eWg" name="PAYPLANTRANSCHED0" label="PAYPLANTRANSCHED0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dFXX1FIgEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dFXX1VIgEfGdn9L_G-9eWg" name="PAYPLANTRANSCHED1" label="PAYPLANTRANSCHED1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dFXX1lIgEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dFXX11IgEfGdn9L_G-9eWg" name="PAYPLANTRANSCHED7" label="PAYPLANTRANSCHED7" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_dFXX2FIgEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dFXX2VIgEfGdn9L_G-9eWg" name="PAYPLANTRANSCHED8" label="PAYPLANTRANSCHED8" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dFXX2lIgEfGdn9L_G-9eWg" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

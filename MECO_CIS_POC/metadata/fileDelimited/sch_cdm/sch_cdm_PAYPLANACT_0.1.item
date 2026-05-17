@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_ytZJ0FIYEfGdn9L_G-9eWg" name="sch_cdm_PAYPLANACT" dataPackage="_ytZJ0VIYEfGdn9L_G-9eWg" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_payplanact.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_ytZJ0VIYEfGdn9L_G-9eWg" name="default" dataManager="_ytZJ0FIYEfGdn9L_G-9eWg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ytZJ0lIYEfGdn9L_G-9eWg" id="_svDjIFIYEfGdn9L_G-9eWg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ytZJ01IYEfGdn9L_G-9eWg" name="PAYPLANACT0" label="PAYPLANACT0" length="12" precision="-1" sourceType="" talendType="id_Double" originalLength="12">
+        <initialValue xmi:id="_ytZJ1FIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ytZJ1VIYEfGdn9L_G-9eWg" name="PAYPLANACT1" label="PAYPLANACT1" length="12" precision="-1" sourceType="" talendType="id_Double" originalLength="12">
+        <initialValue xmi:id="_ytZJ1lIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ytZJ11IYEfGdn9L_G-9eWg" name="PAYPLANACT15" label="PAYPLANACT15" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_ytZJ2FIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ytZJ2VIYEfGdn9L_G-9eWg" name="PAYPLANACT16" label="PAYPLANACT16" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_ytZJ2lIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ytZJ21IYEfGdn9L_G-9eWg" name="PAYPLANACT17" label="PAYPLANACT17" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_ytZJ3FIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ytZJ3VIYEfGdn9L_G-9eWg" name="PAYPLANACT18" label="PAYPLANACT18" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_ytZJ3lIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ytZJ31IYEfGdn9L_G-9eWg" name="PAYPLANACT19" label="PAYPLANACT19" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_ytZJ4FIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ytZJ4VIYEfGdn9L_G-9eWg" name="PAYPLANACT20" label="PAYPLANACT20" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_ytZJ4lIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

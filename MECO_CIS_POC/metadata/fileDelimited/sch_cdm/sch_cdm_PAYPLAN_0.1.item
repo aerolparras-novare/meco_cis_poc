@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_m2KIAVIWEfGdn9L_G-9eWg" name="sch_cdm_PAYPLAN" dataPackage="_m2KvEFIWEfGdn9L_G-9eWg" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_payplan.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_m2KvEFIWEfGdn9L_G-9eWg" name="default" dataManager="_m2KIAVIWEfGdn9L_G-9eWg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_m2KvEVIWEfGdn9L_G-9eWg" id="_gdsxIFIWEfGdn9L_G-9eWg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvElIWEfGdn9L_G-9eWg" name="PAYPLAN0" label="PAYPLAN0" length="12" precision="-1" sourceType="" talendType="id_Double" originalLength="12">
+        <initialValue xmi:id="_m2KvE1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvFFIWEfGdn9L_G-9eWg" name="PAYPLAN1" label="PAYPLAN1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvFVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvFlIWEfGdn9L_G-9eWg" name="PAYPLAN2" label="PAYPLAN2" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_m2KvF1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvGFIWEfGdn9L_G-9eWg" name="PAYPLAN3" label="PAYPLAN3" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_m2KvGVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvGlIWEfGdn9L_G-9eWg" name="PAYPLAN4" label="PAYPLAN4" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvG1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvHFIWEfGdn9L_G-9eWg" name="PAYPLAN5" label="PAYPLAN5" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvHVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvHlIWEfGdn9L_G-9eWg" name="PAYPLAN6" label="PAYPLAN6" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_m2KvH1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvIFIWEfGdn9L_G-9eWg" name="PAYPLAN7" label="PAYPLAN7" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvIVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvIlIWEfGdn9L_G-9eWg" name="PAYPLAN8" label="PAYPLAN8" length="3" precision="-1" sourceType="" talendType="id_Double" originalLength="3">
+        <initialValue xmi:id="_m2KvI1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvJFIWEfGdn9L_G-9eWg" name="PAYPLAN9" label="PAYPLAN9" length="2" precision="-1" sourceType="" talendType="id_String" originalLength="2">
+        <initialValue xmi:id="_m2KvJVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvJlIWEfGdn9L_G-9eWg" name="PAYPLAN10" label="PAYPLAN10" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvJ1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvKFIWEfGdn9L_G-9eWg" name="PAYPLAN11" label="PAYPLAN11" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvKVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvKlIWEfGdn9L_G-9eWg" name="PAYPLAN12" label="PAYPLAN12" length="8" precision="-1" sourceType="" talendType="id_String" originalLength="8">
+        <initialValue xmi:id="_m2KvK1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvLFIWEfGdn9L_G-9eWg" name="PAYPLAN13" label="PAYPLAN13" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvLVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvLlIWEfGdn9L_G-9eWg" name="PAYPLAN14" label="PAYPLAN14" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvL1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvMFIWEfGdn9L_G-9eWg" name="PAYPLAN15" label="PAYPLAN15" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvMVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvMlIWEfGdn9L_G-9eWg" name="PAYPLAN16" label="PAYPLAN16" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_m2KvM1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvNFIWEfGdn9L_G-9eWg" name="PAYPLAN17" label="PAYPLAN17" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_m2KvNVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvNlIWEfGdn9L_G-9eWg" name="PAYPLAN18" label="PAYPLAN18" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_m2KvN1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvOFIWEfGdn9L_G-9eWg" name="PAYPLAN19" label="PAYPLAN19" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_m2KvOVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvOlIWEfGdn9L_G-9eWg" name="PAYPLAN20" label="PAYPLAN20" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_m2KvO1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvPFIWEfGdn9L_G-9eWg" name="PAYPLAN21" label="PAYPLAN21" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_m2KvPVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvPlIWEfGdn9L_G-9eWg" name="PAYPLAN22" label="PAYPLAN22" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvP1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvQFIWEfGdn9L_G-9eWg" name="PAYPLAN23" label="PAYPLAN23" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvQVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvQlIWEfGdn9L_G-9eWg" name="PAYPLAN24" label="PAYPLAN24" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvQ1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvRFIWEfGdn9L_G-9eWg" name="PAYPLAN25" label="PAYPLAN25" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvRVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvRlIWEfGdn9L_G-9eWg" name="PAYPLAN26" label="PAYPLAN26" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_m2KvR1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvSFIWEfGdn9L_G-9eWg" name="PAYPLAN27" label="PAYPLAN27" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvSVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvSlIWEfGdn9L_G-9eWg" name="PAYPLAN28" label="PAYPLAN28" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvS1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvTFIWEfGdn9L_G-9eWg" name="PAYPLAN29" label="PAYPLAN29" length="30" precision="-1" sourceType="" talendType="id_String" originalLength="30">
+        <initialValue xmi:id="_m2KvTVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvTlIWEfGdn9L_G-9eWg" name="PAYPLAN30" label="PAYPLAN30" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvT1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvUFIWEfGdn9L_G-9eWg" name="PAYPLAN31" label="PAYPLAN31" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvUVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvUlIWEfGdn9L_G-9eWg" name="PAYPLAN32" label="PAYPLAN32" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvU1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvVFIWEfGdn9L_G-9eWg" name="PAYPLAN33" label="PAYPLAN33" length="1" precision="-1" sourceType="" talendType="id_String" originalLength="1">
+        <initialValue xmi:id="_m2KvVVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvVlIWEfGdn9L_G-9eWg" name="PAYPLAN34" label="PAYPLAN34" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvV1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvWFIWEfGdn9L_G-9eWg" name="PAYPLAN35" label="PAYPLAN35" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvWVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvWlIWEfGdn9L_G-9eWg" name="PAYPLAN36" label="PAYPLAN36" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_m2KvW1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvXFIWEfGdn9L_G-9eWg" name="PAYPLAN37" label="PAYPLAN37" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_m2KvXVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvXlIWEfGdn9L_G-9eWg" name="PAYPLAN38" label="PAYPLAN38" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_m2KvX1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvYFIWEfGdn9L_G-9eWg" name="PAYPLAN39" label="PAYPLAN39" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_m2KvYVIWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_m2KvYlIWEfGdn9L_G-9eWg" name="PAYPLAN40" label="PAYPLAN40" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_m2KvY1IWEfGdn9L_G-9eWg" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
