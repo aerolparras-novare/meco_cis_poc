@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_LiBrMFKUEfGAPIORTaYCDw" name="tgt_cdm_INVOICE" dataPackage="_LiBrMVKUEfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_invoice.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_LiBrMVKUEfGAPIORTaYCDw" name="default" dataManager="_LiBrMFKUEfGAPIORTaYCDw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_LiBrMlKUEfGAPIORTaYCDw" id="_FaazwFKUEfGAPIORTaYCDw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrM1KUEfGAPIORTaYCDw" name="INV0" label="INV0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrNFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrNVKUEfGAPIORTaYCDw" name="INV1" label="INV1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrNlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrN1KUEfGAPIORTaYCDw" name="INV2" label="INV2" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrOFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrOVKUEfGAPIORTaYCDw" name="INV3" label="INV3" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrOlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrO1KUEfGAPIORTaYCDw" name="INV4" label="INV4" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrPFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrPVKUEfGAPIORTaYCDw" name="INV5" label="INV5" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrPlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrP1KUEfGAPIORTaYCDw" name="INV6" label="INV6" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_LiBrQFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrQVKUEfGAPIORTaYCDw" name="INV7" label="INV7" length="3" precision="-1" sourceType="" talendType="id_Double" originalLength="3">
+        <initialValue xmi:id="_LiBrQlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrQ1KUEfGAPIORTaYCDw" name="INV8" label="INV8" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrRFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrRVKUEfGAPIORTaYCDw" name="INV9" label="INV9" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrRlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrR1KUEfGAPIORTaYCDw" name="INV10" label="INV10" length="150" precision="-1" sourceType="" talendType="id_String" originalLength="150">
+        <initialValue xmi:id="_LiBrSFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrSVKUEfGAPIORTaYCDw" name="INV11" label="INV11" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrSlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrS1KUEfGAPIORTaYCDw" name="INV12" label="INV12" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrTFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrTVKUEfGAPIORTaYCDw" name="INV13" label="INV13" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_LiBrTlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrT1KUEfGAPIORTaYCDw" name="INV14" label="INV14" length="6" precision="-1" sourceType="" talendType="id_Double" originalLength="6">
+        <initialValue xmi:id="_LiBrUFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrUVKUEfGAPIORTaYCDw" name="INV15" label="INV15" length="256" precision="-1" sourceType="" talendType="id_String" originalLength="256">
+        <initialValue xmi:id="_LiBrUlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrU1KUEfGAPIORTaYCDw" name="INV16" label="INV16" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_LiBrVFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrVVKUEfGAPIORTaYCDw" name="INV17" label="INV17" length="1" precision="-1" sourceType="" talendType="id_String" originalLength="1">
+        <initialValue xmi:id="_LiBrVlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrV1KUEfGAPIORTaYCDw" name="INV18_1" label="INV18_1" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrWFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrWVKUEfGAPIORTaYCDw" name="INV18_2" label="INV18_2" length="150" precision="-1" sourceType="" talendType="id_String" originalLength="150">
+        <initialValue xmi:id="_LiBrWlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrW1KUEfGAPIORTaYCDw" name="INV18_3" label="INV18_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrXFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrXVKUEfGAPIORTaYCDw" name="INV19" label="INV19" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_LiBrXlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrX1KUEfGAPIORTaYCDw" name="INV20" label="INV20" length="30" precision="-1" sourceType="" talendType="id_String" originalLength="30">
+        <initialValue xmi:id="_LiBrYFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrYVKUEfGAPIORTaYCDw" name="INV21" label="INV21" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_LiBrYlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrY1KUEfGAPIORTaYCDw" name="INV22" label="INV22" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_LiBrZFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrZVKUEfGAPIORTaYCDw" name="INV23" label="INV23" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_LiBrZlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrZ1KUEfGAPIORTaYCDw" name="INV24" label="INV24" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_LiBraFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBraVKUEfGAPIORTaYCDw" name="INV25" label="INV25" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_LiBralKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBra1KUEfGAPIORTaYCDw" name="INV26" label="INV26" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_LiBrbFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrbVKUEfGAPIORTaYCDw" name="INV27" label="INV27" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrblKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrb1KUEfGAPIORTaYCDw" name="INV28" label="INV28" length="12" precision="1" sourceType="" talendType="id_Double" originalLength="12">
+        <initialValue xmi:id="_LiBrcFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrcVKUEfGAPIORTaYCDw" name="INV29" label="INV29" length="10" precision="1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_LiBrclKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrc1KUEfGAPIORTaYCDw" name="INV30" label="INV30" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrdFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrdVKUEfGAPIORTaYCDw" name="INV31" label="INV31" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_LiBrdlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrd1KUEfGAPIORTaYCDw" name="INV32" label="INV32" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_LiBreFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBreVKUEfGAPIORTaYCDw" name="INV33" label="INV33" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_LiBrelKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBre1KUEfGAPIORTaYCDw" name="INV34" label="INV34" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrfFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrfVKUEfGAPIORTaYCDw" name="INV35" label="INV35" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_LiBrflKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrf1KUEfGAPIORTaYCDw" name="INV36" label="INV36" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrgFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrgVKUEfGAPIORTaYCDw" name="INV37" label="INV37" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrglKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrg1KUEfGAPIORTaYCDw" name="INV38" label="INV38" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrhFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrhVKUEfGAPIORTaYCDw" name="INV39" label="INV39" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrhlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrh1KUEfGAPIORTaYCDw" name="INV40" label="INV40" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBriFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBriVKUEfGAPIORTaYCDw" name="INV41" label="INV41" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrilKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBri1KUEfGAPIORTaYCDw" name="INV42" label="INV42" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrjFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrjVKUEfGAPIORTaYCDw" name="INV75" label="INV75" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrjlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrj1KUEfGAPIORTaYCDw" name="INV76" label="INV76" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrkFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrkVKUEfGAPIORTaYCDw" name="INV77" label="INV77" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrklKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrk1KUEfGAPIORTaYCDw" name="INV109" label="INV109" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrlFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrlVKUEfGAPIORTaYCDw" name="INV110" label="INV110" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrllKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrl1KUEfGAPIORTaYCDw" name="INV111" label="INV111" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrmFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrmVKUEfGAPIORTaYCDw" name="INV112" label="INV112" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrmlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrm1KUEfGAPIORTaYCDw" name="INV113" label="INV113" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrnFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrnVKUEfGAPIORTaYCDw" name="INV114" label="INV114" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrnlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrn1KUEfGAPIORTaYCDw" name="INV115" label="INV115" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBroFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBroVKUEfGAPIORTaYCDw" name="INV116" label="INV116" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBrolKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBro1KUEfGAPIORTaYCDw" name="INV117" label="INV117" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_LiBrpFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrpVKUEfGAPIORTaYCDw" name="INV118" label="INV118" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_LiBrplKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrp1KUEfGAPIORTaYCDw" name="INV121" label="INV121" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrqFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrqVKUEfGAPIORTaYCDw" name="INV122" label="INV122" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrqlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrq1KUEfGAPIORTaYCDw" name="INV123" label="INV123" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrrFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrrVKUEfGAPIORTaYCDw" name="INV124" label="INV124" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrrlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrr1KUEfGAPIORTaYCDw" name="INV125" label="INV125" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrsFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrsVKUEfGAPIORTaYCDw" name="INV126" label="INV126" length="150" precision="-1" sourceType="" talendType="id_String" originalLength="150">
+        <initialValue xmi:id="_LiBrslKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrs1KUEfGAPIORTaYCDw" name="INV127" label="INV127" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_LiBrtFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrtVKUEfGAPIORTaYCDw" name="INV128" label="INV128" length="6" precision="-1" sourceType="" talendType="id_Double" originalLength="6">
+        <initialValue xmi:id="_LiBrtlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrt1KUEfGAPIORTaYCDw" name="INV129" label="INV129" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_LiBruFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBruVKUEfGAPIORTaYCDw" name="INV130" label="INV130" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrulKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBru1KUEfGAPIORTaYCDw" name="INV131" label="INV131" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrvFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrvVKUEfGAPIORTaYCDw" name="INV132" label="INV132" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_LiBrvlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrv1KUEfGAPIORTaYCDw" name="INV133" label="INV133" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrwFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrwVKUEfGAPIORTaYCDw" name="INV134" label="INV134" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBrwlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrw1KUEfGAPIORTaYCDw" name="INV135" label="INV135" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrxFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrxVKUEfGAPIORTaYCDw" name="INV136" label="INV136" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrxlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrx1KUEfGAPIORTaYCDw" name="INV137" label="INV137" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_LiBryFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBryVKUEfGAPIORTaYCDw" name="INV138" label="INV138" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrylKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBry1KUEfGAPIORTaYCDw" name="INV139" label="INV139" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrzFKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrzVKUEfGAPIORTaYCDw" name="INV140" label="INV140" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBrzlKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBrz1KUEfGAPIORTaYCDw" name="INV141" label="INV141" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBr0FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr0VKUEfGAPIORTaYCDw" name="INV142" label="INV142" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBr0lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr01KUEfGAPIORTaYCDw" name="INV143" label="INV143" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBr1FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr1VKUEfGAPIORTaYCDw" name="INV144" label="INV144" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBr1lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr11KUEfGAPIORTaYCDw" name="INV145" label="INV145" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBr2FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr2VKUEfGAPIORTaYCDw" name="INV146" label="INV146" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBr2lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr21KUEfGAPIORTaYCDw" name="INV147" label="INV147" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_LiBr3FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr3VKUEfGAPIORTaYCDw" name="INV148" label="INV148" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBr3lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr31KUEfGAPIORTaYCDw" name="INV151" label="INV151" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBr4FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr4VKUEfGAPIORTaYCDw" name="INV153" label="INV153" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_LiBr4lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr41KUEfGAPIORTaYCDw" name="INV155" label="INV155" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBr5FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr5VKUEfGAPIORTaYCDw" name="INV156" label="INV156" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBr5lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr51KUEfGAPIORTaYCDw" name="INV157" label="INV157" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBr6FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr6VKUEfGAPIORTaYCDw" name="INV158" label="INV158" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBr6lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr61KUEfGAPIORTaYCDw" name="INV159" label="INV159" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBr7FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr7VKUEfGAPIORTaYCDw" name="INV160" label="INV160" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_LiBr7lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr71KUEfGAPIORTaYCDw" name="INV163" label="INV163" length="256" precision="-1" sourceType="" talendType="id_String" originalLength="256">
+        <initialValue xmi:id="_LiBr8FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr8VKUEfGAPIORTaYCDw" name="INV164" label="INV164" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_LiBr8lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr81KUEfGAPIORTaYCDw" name="INV165" label="INV165" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_LiBr9FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr9VKUEfGAPIORTaYCDw" name="INV166" label="INV166" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBr9lKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_LiBr91KUEfGAPIORTaYCDw" name="INV169" label="INV169" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_LiBr-FKUEfGAPIORTaYCDw" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_ry1VkFKTEfGAPIORTaYCDw" name="src_meco_INVOICE1" dataPackage="_ry1VkVKTEfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_invoice1.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_ry1VkVKTEfGAPIORTaYCDw" name="default" dataManager="_ry1VkFKTEfGAPIORTaYCDw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_ry1VklKTEfGAPIORTaYCDw" id="_jLaMwFKTEfGAPIORTaYCDw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1Vk1KTEfGAPIORTaYCDw" name="Invoice_ID" label="Invoice_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_ry1VlFKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1VlVKTEfGAPIORTaYCDw" name="Billed_Consumer" label="Billed_Consumer" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_ry1VllKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1Vl1KTEfGAPIORTaYCDw" name="Billed_Install" label="Billed_Install" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_ry1VmFKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1VmVKTEfGAPIORTaYCDw" name="Billed_Ledger" label="Billed_Ledger" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_ry1VmlKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1Vm1KTEfGAPIORTaYCDw" name="Statement_ID" label="Statement_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_ry1VnFKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1VnVKTEfGAPIORTaYCDw" name="Payment_Due_Date" label="Payment_Due_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_ry1VnlKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1Vn1KTEfGAPIORTaYCDw" name="Reverse_Type" label="Reverse_Type" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_ry1VoFKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1VoVKTEfGAPIORTaYCDw" name="Unused_Field_7" label="Unused_Field_7" length="3" precision="-1" sourceType="" talendType="id_Double" originalLength="3">
+        <initialValue xmi:id="_ry1VolKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1Vo1KTEfGAPIORTaYCDw" name="Installation_Address" label="Installation_Address" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_ry1VpFKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1VpVKTEfGAPIORTaYCDw" name="Billed_Date" label="Billed_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_ry1VplKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1Vp1KTEfGAPIORTaYCDw" name="Billing_Type" label="Billing_Type" length="150" precision="-1" sourceType="" talendType="id_String" originalLength="150">
+        <initialValue xmi:id="_ry1VqFKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1VqVKTEfGAPIORTaYCDw" name="Note_1" label="Note_1" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_ry1VqlKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1Vq1KTEfGAPIORTaYCDw" name="Note_2" label="Note_2" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_ry1VrFKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1VrVKTEfGAPIORTaYCDw" name="Unused_Field_13" label="Unused_Field_13" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_ry1VrlKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ry1Vr1KTEfGAPIORTaYCDw" name="Financial_Year_Month" label="Financial_Year_Month" length="6" precision="-1" sourceType="" talendType="id_Double" originalLength="6">
+        <initialValue xmi:id="_ry1VsFKTEfGAPIORTaYCDw" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

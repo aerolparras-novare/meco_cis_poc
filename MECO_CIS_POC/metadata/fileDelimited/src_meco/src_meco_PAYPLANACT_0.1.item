@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_5tvAEFIYEfGdn9L_G-9eWg" name="src_meco_PAYPLANACT" id="_5tuZAFIYEfGdn9L_G-9eWg" dataPackage="_5tvAEVIYEfGdn9L_G-9eWg" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_payplanact.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_5tvAEVIYEfGdn9L_G-9eWg" name="default" dataManager="_5tvAEFIYEfGdn9L_G-9eWg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_5tvAElIYEfGdn9L_G-9eWg" id="_zXTCcFIYEfGdn9L_G-9eWg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5tvAE1IYEfGdn9L_G-9eWg" name="Arrangement_ID_1" label="Arrangement_ID_1" length="12" precision="-1" sourceType="" talendType="id_Double" originalLength="12">
+        <initialValue xmi:id="_5tvAFFIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5tvAFVIYEfGdn9L_G-9eWg" name="Arrangement_ID_2" label="Arrangement_ID_2" length="12" precision="-1" sourceType="" talendType="id_Double" originalLength="12">
+        <initialValue xmi:id="_5tvAFlIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5tvAF1IYEfGdn9L_G-9eWg" name="Status_Date" label="Status_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_5tvAGFIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5tvAGVIYEfGdn9L_G-9eWg" name="Status_Time" label="Status_Time" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_5tvAGlIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5tvAG1IYEfGdn9L_G-9eWg" name="User_Account_Code" label="User_Account_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_5tvAHFIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5tvAHVIYEfGdn9L_G-9eWg" name="Activity_Status" label="Activity_Status" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_5tvAHlIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5tvAH1IYEfGdn9L_G-9eWg" name="Remarks" label="Remarks" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_5tvAIFIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5tvAIVIYEfGdn9L_G-9eWg" name="Unused_Field_20" label="Unused_Field_20" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_5tvAIlIYEfGdn9L_G-9eWg" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

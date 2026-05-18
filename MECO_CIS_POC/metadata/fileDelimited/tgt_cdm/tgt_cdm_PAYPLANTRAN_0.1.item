@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_nqJ3IFIeEfGdn9L_G-9eWg" name="tgt_cdm_PAYPLANTRAN" dataPackage="_nqJ3IVIeEfGdn9L_G-9eWg" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_payplantran.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_nqJ3IVIeEfGdn9L_G-9eWg" name="default" dataManager="_nqJ3IFIeEfGdn9L_G-9eWg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_nqJ3IlIeEfGdn9L_G-9eWg" id="_iJ-MEFIeEfGdn9L_G-9eWg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3I1IeEfGdn9L_G-9eWg" name="PAYPLANTRAN0" label="PAYPLANTRAN0" length="12" precision="-1" sourceType="" talendType="id_Double" originalLength="12">
+        <initialValue xmi:id="_nqJ3JFIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3JVIeEfGdn9L_G-9eWg" name="PAYPLANTRAN1" label="PAYPLANTRAN1" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_nqJ3JlIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3J1IeEfGdn9L_G-9eWg" name="PAYPLANTRAN2" label="PAYPLANTRAN2" length="12" precision="-1" sourceType="" talendType="id_Double" originalLength="12">
+        <initialValue xmi:id="_nqJ3KFIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3KVIeEfGdn9L_G-9eWg" name="PAYPLANTRAN3" label="PAYPLANTRAN3" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_nqJ3KlIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3K1IeEfGdn9L_G-9eWg" name="PAYPLANTRAN4" label="PAYPLANTRAN4" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_nqJ3LFIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3LVIeEfGdn9L_G-9eWg" name="PAYPLANTRAN5" label="PAYPLANTRAN5" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_nqJ3LlIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3L1IeEfGdn9L_G-9eWg" name="PAYPLANTRAN6" label="PAYPLANTRAN6" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_nqJ3MFIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3MVIeEfGdn9L_G-9eWg" name="PAYPLANTRAN7" label="PAYPLANTRAN7" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_nqJ3MlIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3M1IeEfGdn9L_G-9eWg" name="PAYPLANTRAN8" label="PAYPLANTRAN8" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_nqJ3NFIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3NVIeEfGdn9L_G-9eWg" name="PAYPLANTRAN9" label="PAYPLANTRAN9" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_nqJ3NlIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_nqJ3N1IeEfGdn9L_G-9eWg" name="PAYPLANTRAN10" label="PAYPLANTRAN10" length="10" precision="-1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_nqJ3OFIeEfGdn9L_G-9eWg" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

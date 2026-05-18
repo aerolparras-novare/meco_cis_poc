@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_i-KXMFIgEfGdn9L_G-9eWg" name="src_meco_PAYPLANTRANSCHED" id="_i-JwIFIgEfGdn9L_G-9eWg" dataPackage="_i-KXMVIgEfGdn9L_G-9eWg" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_payplantransched.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_i-KXMVIgEfGdn9L_G-9eWg" name="default" dataManager="_i-KXMFIgEfGdn9L_G-9eWg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_i-KXMlIgEfGdn9L_G-9eWg" id="_eB2OMFIgEfGdn9L_G-9eWg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_i-KXM1IgEfGdn9L_G-9eWg" name="Arrangement_Transaction_Schedule_Key" label="Arrangement_Transaction_Schedule_Key" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_i-KXNFIgEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_i-KXNVIgEfGdn9L_G-9eWg" name="Arrangement_Transaction_Key" label="Arrangement_Transaction_Key" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_i-KXNlIgEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_i-KXN1IgEfGdn9L_G-9eWg" name="Due_Date" label="Due_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_i-KXOFIgEfGdn9L_G-9eWg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_i-KXOVIgEfGdn9L_G-9eWg" name="Remaining_Balance" label="Remaining_Balance" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_i-KXOlIgEfGdn9L_G-9eWg" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

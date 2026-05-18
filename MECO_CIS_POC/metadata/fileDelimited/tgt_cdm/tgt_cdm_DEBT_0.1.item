@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_dRZZYE9GEfGMzefWQJEDZA" name="tgt_cdm_DEBT" dataPackage="_dRZZYU9GEfGMzefWQJEDZA" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_debt.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_dRZZYU9GEfGMzefWQJEDZA" name="default" dataManager="_dRZZYE9GEfGMzefWQJEDZA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_dRZZYk9GEfGMzefWQJEDZA" id="_E5G_4E9GEfGMzefWQJEDZA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZY09GEfGMzefWQJEDZA" name="DEBT0" label="DEBT0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZZE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZZU9GEfGMzefWQJEDZA" name="DEBT1" label="DEBT1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZZk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZZ09GEfGMzefWQJEDZA" name="DEBT2" label="DEBT2" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_dRZZaE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZaU9GEfGMzefWQJEDZA" name="DEBT3" label="DEBT3" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_dRZZak9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZa09GEfGMzefWQJEDZA" name="DEBT4" label="DEBT4" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZbE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZbU9GEfGMzefWQJEDZA" name="DEBT5" label="DEBT5" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_dRZZbk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZb09GEfGMzefWQJEDZA" name="DEBT6" label="DEBT6" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZcE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZcU9GEfGMzefWQJEDZA" name="DEBT7" label="DEBT7" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZck9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZc09GEfGMzefWQJEDZA" name="DEBT8" label="DEBT8" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_dRZZdE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZdU9GEfGMzefWQJEDZA" name="DEBT9" label="DEBT9" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRZZdk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZd09GEfGMzefWQJEDZA" name="DEBT10" label="DEBT10" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRZZeE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZeU9GEfGMzefWQJEDZA" name="DEBT11" label="DEBT11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRZZek9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZe09GEfGMzefWQJEDZA" name="DEBT12" label="DEBT12" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_dRZZfE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZfU9GEfGMzefWQJEDZA" name="DEBT13" label="DEBT13" length="60" precision="-1" sourceType="" talendType="id_String" originalLength="60">
+        <initialValue xmi:id="_dRZZfk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZf09GEfGMzefWQJEDZA" name="DEBT14" label="DEBT14" length="5" precision="-1" sourceType="" talendType="id_Double" originalLength="5">
+        <initialValue xmi:id="_dRZZgE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZgU9GEfGMzefWQJEDZA" name="DEBT15" label="DEBT15" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZgk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZg09GEfGMzefWQJEDZA" name="DEBT16" label="DEBT16" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZhE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZhU9GEfGMzefWQJEDZA" name="DEBT17" label="DEBT17" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_dRZZhk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZh09GEfGMzefWQJEDZA" name="DEBT18" label="DEBT18" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZiE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZiU9GEfGMzefWQJEDZA" name="DEBT19" label="DEBT19" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZik9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZi09GEfGMzefWQJEDZA" name="DEBT20" label="DEBT20" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_dRZZjE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZjU9GEfGMzefWQJEDZA" name="DEBT21" label="DEBT21" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_dRZZjk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZj09GEfGMzefWQJEDZA" name="DEBT22" label="DEBT22" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZkE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZkU9GEfGMzefWQJEDZA" name="DEBT23" label="DEBT23" length="22" precision="-1" sourceType="" talendType="id_String" originalLength="22">
+        <initialValue xmi:id="_dRZZkk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZk09GEfGMzefWQJEDZA" name="DEBT24" label="DEBT24" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZlE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZlU9GEfGMzefWQJEDZA" name="DEBT25" label="DEBT25" length="200" precision="-1" sourceType="" talendType="id_String" originalLength="200">
+        <initialValue xmi:id="_dRZZlk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZl09GEfGMzefWQJEDZA" name="DEBT26" label="DEBT26" length="200" precision="-1" sourceType="" talendType="id_String" originalLength="200">
+        <initialValue xmi:id="_dRZZmE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZmU9GEfGMzefWQJEDZA" name="DEBT27_1" label="DEBT27_1" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_dRZZmk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZm09GEfGMzefWQJEDZA" name="DEBT27_2" label="DEBT27_2" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_dRZZnE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZnU9GEfGMzefWQJEDZA" name="DEBT27_3" label="DEBT27_3" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_dRZZnk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZn09GEfGMzefWQJEDZA" name="DEBT28" label="DEBT28" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZoE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZoU9GEfGMzefWQJEDZA" name="DEBT29" label="DEBT29" length="6" precision="-1" sourceType="" talendType="id_Double" originalLength="6">
+        <initialValue xmi:id="_dRZZok9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZo09GEfGMzefWQJEDZA" name="DEBT30" label="DEBT30" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_dRZZpE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZpU9GEfGMzefWQJEDZA" name="DEBT31" label="DEBT31" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_dRZZpk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZp09GEfGMzefWQJEDZA" name="DEBT32" label="DEBT32" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_dRZZqE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZqU9GEfGMzefWQJEDZA" name="DEBT33" label="DEBT33" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZqk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZq09GEfGMzefWQJEDZA" name="DEBT34" label="DEBT34" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZrE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZrU9GEfGMzefWQJEDZA" name="DEBT35" label="DEBT35" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZrk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZr09GEfGMzefWQJEDZA" name="DEBT36" label="DEBT36" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZsE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZsU9GEfGMzefWQJEDZA" name="DEBT37" label="DEBT37" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZsk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZs09GEfGMzefWQJEDZA" name="DEBT38" label="DEBT38" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZtE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZtU9GEfGMzefWQJEDZA" name="DEBTGL1_0" label="DEBTGL1_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZtk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZt09GEfGMzefWQJEDZA" name="DEBTGL1_1" label="DEBTGL1_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZuE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZuU9GEfGMzefWQJEDZA" name="DEBTGL1_2" label="DEBTGL1_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZuk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZu09GEfGMzefWQJEDZA" name="DEBTGL1_3" label="DEBTGL1_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZvE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZvU9GEfGMzefWQJEDZA" name="DEBTGL1_4" label="DEBTGL1_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZvk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZv09GEfGMzefWQJEDZA" name="DEBTGL1_5" label="DEBTGL1_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZwE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZwU9GEfGMzefWQJEDZA" name="DEBTGL1_6" label="DEBTGL1_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZwk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZw09GEfGMzefWQJEDZA" name="DEBTGL1_7" label="DEBTGL1_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZxE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZxU9GEfGMzefWQJEDZA" name="DEBTGL1_8" label="DEBTGL1_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZxk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZx09GEfGMzefWQJEDZA" name="DEBTGL1_9" label="DEBTGL1_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZyE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZyU9GEfGMzefWQJEDZA" name="DEBTGL1_10" label="DEBTGL1_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZyk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZy09GEfGMzefWQJEDZA" name="DEBTGL1_11" label="DEBTGL1_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRZZzE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZzU9GEfGMzefWQJEDZA" name="DEBTGL1_12" label="DEBTGL1_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZzk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZz09GEfGMzefWQJEDZA" name="DEBTGL1_13" label="DEBTGL1_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ0E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ0U9GEfGMzefWQJEDZA" name="DEBTGL1_14" label="DEBTGL1_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ0k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ009GEfGMzefWQJEDZA" name="DEBTGL2_0" label="DEBTGL2_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ1E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ1U9GEfGMzefWQJEDZA" name="DEBTGL2_1" label="DEBTGL2_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ1k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ109GEfGMzefWQJEDZA" name="DEBTGL2_2" label="DEBTGL2_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ2E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ2U9GEfGMzefWQJEDZA" name="DEBTGL2_3" label="DEBTGL2_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ2k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ209GEfGMzefWQJEDZA" name="DEBTGL2_4" label="DEBTGL2_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ3E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ3U9GEfGMzefWQJEDZA" name="DEBTGL2_5" label="DEBTGL2_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ3k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ309GEfGMzefWQJEDZA" name="DEBTGL2_6" label="DEBTGL2_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ4E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ4U9GEfGMzefWQJEDZA" name="DEBTGL2_7" label="DEBTGL2_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ4k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ409GEfGMzefWQJEDZA" name="DEBTGL2_8" label="DEBTGL2_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ5E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ5U9GEfGMzefWQJEDZA" name="DEBTGL2_9" label="DEBTGL2_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ5k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ509GEfGMzefWQJEDZA" name="DEBTGL2_10" label="DEBTGL2_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ6E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ6U9GEfGMzefWQJEDZA" name="DEBTGL2_11" label="DEBTGL2_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRZZ6k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ609GEfGMzefWQJEDZA" name="DEBTGL2_12" label="DEBTGL2_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ7E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ7U9GEfGMzefWQJEDZA" name="DEBTGL2_13" label="DEBTGL2_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ7k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ709GEfGMzefWQJEDZA" name="DEBTGL2_14" label="DEBTGL2_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ8E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ8U9GEfGMzefWQJEDZA" name="DEBTGL3_0" label="DEBTGL3_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ8k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ809GEfGMzefWQJEDZA" name="DEBTGL3_1" label="DEBTGL3_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ9E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ9U9GEfGMzefWQJEDZA" name="DEBTGL3_2" label="DEBTGL3_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ9k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ909GEfGMzefWQJEDZA" name="DEBTGL3_3" label="DEBTGL3_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ-E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ-U9GEfGMzefWQJEDZA" name="DEBTGL3_4" label="DEBTGL3_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ-k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ-09GEfGMzefWQJEDZA" name="DEBTGL3_5" label="DEBTGL3_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZZ_E9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ_U9GEfGMzefWQJEDZA" name="DEBTGL3_6" label="DEBTGL3_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZZ_k9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZZ_09GEfGMzefWQJEDZA" name="DEBTGL3_7" label="DEBTGL3_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZaAE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaAU9GEfGMzefWQJEDZA" name="DEBTGL3_8" label="DEBTGL3_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZaAk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaA09GEfGMzefWQJEDZA" name="DEBTGL3_9" label="DEBTGL3_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZaBE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaBU9GEfGMzefWQJEDZA" name="DEBTGL3_10" label="DEBTGL3_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZaBk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaB09GEfGMzefWQJEDZA" name="DEBTGL3_11" label="DEBTGL3_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRZaCE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaCU9GEfGMzefWQJEDZA" name="DEBTGL3_12" label="DEBTGL3_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZaCk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaC09GEfGMzefWQJEDZA" name="DEBTGL3_13" label="DEBTGL3_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZaDE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaDU9GEfGMzefWQJEDZA" name="DEBTGL3_14" label="DEBTGL3_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZaDk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaD09GEfGMzefWQJEDZA" name="DEBTGL4_0" label="DEBTGL4_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZaEE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaEU9GEfGMzefWQJEDZA" name="DEBTGL4_1" label="DEBTGL4_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZaEk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaE09GEfGMzefWQJEDZA" name="DEBTGL4_2" label="DEBTGL4_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZaFE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaFU9GEfGMzefWQJEDZA" name="DEBTGL4_3" label="DEBTGL4_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZaFk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaF09GEfGMzefWQJEDZA" name="DEBTGL4_4" label="DEBTGL4_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZaGE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaGU9GEfGMzefWQJEDZA" name="DEBTGL4_5" label="DEBTGL4_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRZaGk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaG09GEfGMzefWQJEDZA" name="DEBTGL4_6" label="DEBTGL4_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZaHE9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRZaHU9GEfGMzefWQJEDZA" name="DEBTGL4_7" label="DEBTGL4_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRZaHk9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAcE9GEfGMzefWQJEDZA" name="DEBTGL4_8" label="DEBTGL4_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAcU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAck9GEfGMzefWQJEDZA" name="DEBTGL4_9" label="DEBTGL4_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAc09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAdE9GEfGMzefWQJEDZA" name="DEBTGL4_10" label="DEBTGL4_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAdU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAdk9GEfGMzefWQJEDZA" name="DEBTGL4_11" label="DEBTGL4_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRaAd09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAeE9GEfGMzefWQJEDZA" name="DEBTGL4_12" label="DEBTGL4_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAeU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAek9GEfGMzefWQJEDZA" name="DEBTGL4_13" label="DEBTGL4_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAe09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAfE9GEfGMzefWQJEDZA" name="DEBTGL4_14" label="DEBTGL4_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAfU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAfk9GEfGMzefWQJEDZA" name="DEBTGL5_0" label="DEBTGL5_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAf09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAgE9GEfGMzefWQJEDZA" name="DEBTGL5_1" label="DEBTGL5_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAgU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAgk9GEfGMzefWQJEDZA" name="DEBTGL5_2" label="DEBTGL5_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAg09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAhE9GEfGMzefWQJEDZA" name="DEBTGL5_3" label="DEBTGL5_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAhU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAhk9GEfGMzefWQJEDZA" name="DEBTGL5_4" label="DEBTGL5_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAh09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAiE9GEfGMzefWQJEDZA" name="DEBTGL5_5" label="DEBTGL5_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAiU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAik9GEfGMzefWQJEDZA" name="DEBTGL5_6" label="DEBTGL5_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAi09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAjE9GEfGMzefWQJEDZA" name="DEBTGL5_7" label="DEBTGL5_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAjU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAjk9GEfGMzefWQJEDZA" name="DEBTGL5_8" label="DEBTGL5_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAj09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAkE9GEfGMzefWQJEDZA" name="DEBTGL5_9" label="DEBTGL5_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAkU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAkk9GEfGMzefWQJEDZA" name="DEBTGL5_10" label="DEBTGL5_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAk09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAlE9GEfGMzefWQJEDZA" name="DEBTGL5_11" label="DEBTGL5_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRaAlU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAlk9GEfGMzefWQJEDZA" name="DEBTGL5_12" label="DEBTGL5_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAl09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAmE9GEfGMzefWQJEDZA" name="DEBTGL5_13" label="DEBTGL5_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAmU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAmk9GEfGMzefWQJEDZA" name="DEBTGL5_14" label="DEBTGL5_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAm09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAnE9GEfGMzefWQJEDZA" name="DEBTGL6_0" label="DEBTGL6_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAnU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAnk9GEfGMzefWQJEDZA" name="DEBTGL6_1" label="DEBTGL6_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAn09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAoE9GEfGMzefWQJEDZA" name="DEBTGL6_2" label="DEBTGL6_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAoU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAok9GEfGMzefWQJEDZA" name="DEBTGL6_3" label="DEBTGL6_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAo09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaApE9GEfGMzefWQJEDZA" name="DEBTGL6_4" label="DEBTGL6_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaApU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaApk9GEfGMzefWQJEDZA" name="DEBTGL6_5" label="DEBTGL6_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAp09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAqE9GEfGMzefWQJEDZA" name="DEBTGL6_6" label="DEBTGL6_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAqU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAqk9GEfGMzefWQJEDZA" name="DEBTGL6_7" label="DEBTGL6_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAq09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaArE9GEfGMzefWQJEDZA" name="DEBTGL6_8" label="DEBTGL6_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaArU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaArk9GEfGMzefWQJEDZA" name="DEBTGL6_9" label="DEBTGL6_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAr09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAsE9GEfGMzefWQJEDZA" name="DEBTGL6_10" label="DEBTGL6_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAsU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAsk9GEfGMzefWQJEDZA" name="DEBTGL6_11" label="DEBTGL6_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRaAs09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAtE9GEfGMzefWQJEDZA" name="DEBTGL6_12" label="DEBTGL6_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAtU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAtk9GEfGMzefWQJEDZA" name="DEBTGL6_13" label="DEBTGL6_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAt09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAuE9GEfGMzefWQJEDZA" name="DEBTGL6_14" label="DEBTGL6_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAuU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAuk9GEfGMzefWQJEDZA" name="DEBTGL7_0" label="DEBTGL7_0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAu09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAvE9GEfGMzefWQJEDZA" name="DEBTGL7_1" label="DEBTGL7_1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAvU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAvk9GEfGMzefWQJEDZA" name="DEBTGL7_2" label="DEBTGL7_2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAv09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAwE9GEfGMzefWQJEDZA" name="DEBTGL7_3" label="DEBTGL7_3" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAwU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAwk9GEfGMzefWQJEDZA" name="DEBTGL7_4" label="DEBTGL7_4" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAw09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAxE9GEfGMzefWQJEDZA" name="DEBTGL7_5" label="DEBTGL7_5" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAxU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAxk9GEfGMzefWQJEDZA" name="DEBTGL7_6" label="DEBTGL7_6" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAx09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAyE9GEfGMzefWQJEDZA" name="DEBTGL7_7" label="DEBTGL7_7" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAyU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAyk9GEfGMzefWQJEDZA" name="DEBTGL7_8" label="DEBTGL7_8" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAy09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAzE9GEfGMzefWQJEDZA" name="DEBTGL7_9" label="DEBTGL7_9" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaAzU9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaAzk9GEfGMzefWQJEDZA" name="DEBTGL7_10" label="DEBTGL7_10" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaAz09GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaA0E9GEfGMzefWQJEDZA" name="DEBTGL7_11" label="DEBTGL7_11" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_dRaA0U9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaA0k9GEfGMzefWQJEDZA" name="DEBTGL7_12" label="DEBTGL7_12" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_dRaA009GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaA1E9GEfGMzefWQJEDZA" name="DEBTGL7_13" label="DEBTGL7_13" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaA1U9GEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_dRaA1k9GEfGMzefWQJEDZA" name="DEBTGL7_14" label="DEBTGL7_14" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_dRaA109GEfGMzefWQJEDZA" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

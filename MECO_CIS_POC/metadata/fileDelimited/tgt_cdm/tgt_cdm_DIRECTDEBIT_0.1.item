@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_mkByAE-sEfGMzefWQJEDZA" name="tgt_cdm_DIRECTDEBIT" dataPackage="_mkByAU-sEfGMzefWQJEDZA" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_directdebit.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_mkByAU-sEfGMzefWQJEDZA" name="default" dataManager="_mkByAE-sEfGMzefWQJEDZA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_mkByAk-sEfGMzefWQJEDZA" id="_fUHOsE-sEfGMzefWQJEDZA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByA0-sEfGMzefWQJEDZA" name="DIRECT0" label="DIRECT0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_mkByBE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByBU-sEfGMzefWQJEDZA" name="DIRECT1" label="DIRECT1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_mkByBk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByB0-sEfGMzefWQJEDZA" name="DIRECT2" label="DIRECT2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_mkByCE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByCU-sEfGMzefWQJEDZA" name="DIRECT3" label="DIRECT3" length="-1" precision="-1" sourceType="" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_mkByCk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByC0-sEfGMzefWQJEDZA" name="DIRECT4" label="DIRECT4" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_mkByDE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByDU-sEfGMzefWQJEDZA" name="DIRECT5" label="DIRECT5" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_mkByDk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByD0-sEfGMzefWQJEDZA" name="DIRECT6" label="DIRECT6" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_mkByEE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByEU-sEfGMzefWQJEDZA" name="DIRECT7" label="DIRECT7" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_mkByEk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByE0-sEfGMzefWQJEDZA" name="DIRECT8" label="DIRECT8" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_mkByFE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByFU-sEfGMzefWQJEDZA" name="DIRECT9" label="DIRECT9" length="19" precision="2" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_mkByFk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByF0-sEfGMzefWQJEDZA" name="DIRECT10" label="DIRECT10" length="25" precision="-1" sourceType="" talendType="id_String" originalLength="25">
+        <initialValue xmi:id="_mkByGE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByGU-sEfGMzefWQJEDZA" name="DIRECT11" label="DIRECT11" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_mkByGk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByG0-sEfGMzefWQJEDZA" name="DIRECT12" label="DIRECT12" length="25" precision="-1" sourceType="" talendType="id_String" originalLength="25">
+        <initialValue xmi:id="_mkByHE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByHU-sEfGMzefWQJEDZA" name="DIRECT13" label="DIRECT13" length="4" precision="-1" sourceType="" talendType="id_String" originalLength="4">
+        <initialValue xmi:id="_mkByHk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByH0-sEfGMzefWQJEDZA" name="DIRECT14" label="DIRECT14" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_mkByIE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByIU-sEfGMzefWQJEDZA" name="DIRECT15" label="DIRECT15" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_mkByIk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByI0-sEfGMzefWQJEDZA" name="DIRECT16" label="DIRECT16" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_mkByJE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByJU-sEfGMzefWQJEDZA" name="DIRECT17" label="DIRECT17" length="-1" precision="-1" sourceType="" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_mkByJk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByJ0-sEfGMzefWQJEDZA" name="DIRECT18" label="DIRECT18" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_mkByKE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByKU-sEfGMzefWQJEDZA" name="DIRECT19" label="DIRECT19" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_mkByKk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByK0-sEfGMzefWQJEDZA" name="DIRECT20" label="DIRECT20" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_mkByLE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByLU-sEfGMzefWQJEDZA" name="DIRECT21" label="DIRECT21" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_mkByLk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByL0-sEfGMzefWQJEDZA" name="DIRECT22" label="DIRECT22" length="300" precision="-1" sourceType="" talendType="id_String" originalLength="300">
+        <initialValue xmi:id="_mkByME-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByMU-sEfGMzefWQJEDZA" name="DIRECT23" label="DIRECT23" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_mkByMk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByM0-sEfGMzefWQJEDZA" name="DIRECT24" label="DIRECT24" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_mkByNE-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_mkByNU-sEfGMzefWQJEDZA" name="DIRECT25" label="DIRECT25" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_mkByNk-sEfGMzefWQJEDZA" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

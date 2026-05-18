@@ -1,0 +1,1766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:f7KIQT7i9hyvzHZrYfL4pdUYaqstDtlf3nCmPwoH" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:diMssB5YQ64YFs2L4BlPOpyO0E2vrwmD4TmCmnLS" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ry0HcFKTEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ry0HcFKTEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_invoice1.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_ry0HcFKTEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_ID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Consumer" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Install" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Ledger" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Statement_ID" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Payment_Due_Date" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reverse_Type" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_7" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Address" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Date" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_Type" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Note_1" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Note_2" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_13" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Financial_Year_Month" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_ID" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Consumer" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Install" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Ledger" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Statement_ID" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Payment_Due_Date" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reverse_Type" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_7" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Address" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Date" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billing_Type" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Note_1" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Note_2" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_13" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Financial_Year_Month" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_mecoINVOICE1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="19" name="Invoice_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Consumer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Install" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Ledger" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Statement_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Payment_Due_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Reverse_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Unused_Field_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Installation_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Billed_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Billing_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Note_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Note_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Unused_Field_13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Financial_Year_Month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Invoice_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Consumer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Install" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Ledger" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Statement_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Payment_Due_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Reverse_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Unused_Field_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Installation_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Billed_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Billing_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Note_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Note_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Unused_Field_13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Financial_Year_Month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="160" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_3WKEQFKSEfGAPIORTaYCDw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="map_cdmInvoice"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" defaultValue="" key="false" length="19" name="INV0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV4" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV5" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INV6" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="INV7" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV9" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="INV10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="INV13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="INV14" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="INV15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="256" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="INV16" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="INV17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV18_1" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="INV18_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV18_3" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INV19" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="INV20" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INV21" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="INV22" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INV23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INV24" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INV25" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INV26" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="INV28" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="12" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV29" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV30" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV31" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INV32" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="INV33" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV34" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV35" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV36" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV37" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV38" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV39" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV40" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV41" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV42" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV75" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV76" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV77" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV109" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV110" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV111" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV112" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV113" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV114" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV115" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV116" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INV117" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INV118" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV121" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV122" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV123" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV124" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV125" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="INV126" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="INV127" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="INV128" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INV129" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV130" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV131" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV132" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV133" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV134" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV135" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV136" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INV137" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV138" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV139" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV140" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV141" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV142" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV143" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV144" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV145" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV146" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INV147" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV148" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV151" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INV153" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV155" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV156" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV157" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV158" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV159" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="INV160" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="256" name="INV163" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="256" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="INV164" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="INV165" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV166" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV169" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="INV0" expression="row1.Invoice_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV1" expression="row1.Billed_Consumer " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV2" expression="row1.Billed_Install " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV3" expression="row1.Billed_Ledger " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV4" expression="row1.Statement_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV5" expression="row1.Payment_Due_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV6" expression="row1.Reverse_Type " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV7" expression="row1.Unused_Field_7 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV8" expression="row1.Installation_Address " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV9" expression="row1.Billed_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV10" expression="row1.Billing_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV11" expression="row1.Note_1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV12" expression="row1.Note_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV13" expression="row1.Unused_Field_13 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV14" expression="row1.Financial_Year_Month " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV15" expression="row2.Billed_By_User " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV16" expression="row2.Last_Updated_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV17" expression="row2.Tax_Included_Flag " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV18_1" expression="row2.Unused_Field_18_1 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV18_2" expression="row2.Unused_Field_18_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV18_3" expression="row2.Unused_Field_18_3 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV19" expression="row2.Retailer_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV20" expression="row2.Connection_Point " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV21" expression="row2.Utility_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV22" expression="row2.Network_Connection_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV23" expression="row2.Network_Company " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV24" expression="row2.Area_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV25" expression="row2.End_Use_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV26" expression="row2.Building_Type_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV27" expression="row2.Unused_Field_27 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV28" expression="row2.Gas_Line_Factor " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV29" expression="row2.Altitude_Factor " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV30" expression="row3.Consumer_Start_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV31" expression="row3.Unused_Field_31 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV32" expression="row3.Unit_Of_Measure " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV33" expression="row3.Customer_Reference " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV34" expression="row3.Unused_Field_34 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV35" expression="row3.Unused_Field_35 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV36" expression="row3.Lot_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV37" expression="row3.Plan_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV38" expression="row3.Reading_From_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV39" expression="row3.Reading_To_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV40" expression="row3.Invoice_From_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV41" expression="row3.Invoice_To_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV42" expression="row3.Days_In_Bill " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV75" expression="row3.Unused_Field_75 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV76" expression="row3.Unused_Field_76 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV77" expression="row3.Unused_Field_77 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV109" expression="row3.Total_Amount_Rounded " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV110" expression="row3.Tax_Component " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV111" expression="row3.Prompt_Payment_Discount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV112" expression="row3.Total_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV113" expression="row3.Average_Daily_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV114" expression="row3.Next_Bill_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV115" expression="row3.Next_Read_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV116" expression="row3.Bill_Pullout_Code " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV117" expression="row3.Unused_Field_117 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV118" expression="row3.Unused_Field_118 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV121" expression="row3.Unused_Field_121 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV122" expression="row3.Unused_Field_122 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV123" expression="row3.Unused_Field_123 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV124" expression="row3.Unused_Field_124 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV125" expression="row3.Unused_Field_125 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV126" expression="row4.Reversed_By_User " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV127" expression="row4.Reversed_Datetime_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV128" expression="row4.Reversed_Bill_Period " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV129" expression="row4.Reversal_Reason_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV130" expression="row4.Reversal_Description " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV131" expression="row4.Adjustment_Details " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV132" expression="row4.Unused_Field_132 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV133" expression="row4.Unused_Field_133 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV134" expression="row4.Unused_Field_134 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV135" expression="row4.Unused_Field_135 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV136" expression="row4.Buyer_Tax_Invoice_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV137" expression="row4.Hold_Flag " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV138" expression="row4.Unused_Field_138 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV139" expression="row4.Unused_Field_139 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV140" expression="row4.Unused_Field_140 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV141" expression="row4.Unused_Field_141 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV142" expression="row4.Unused_Field_142 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV143" expression="row4.Unused_Field_143 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV144" expression="row4.Unused_Field_144 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV145" expression="row4.Unused_Field_145 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV146" expression="row4.Unused_Field_146 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV147" expression="row4.Unused_Field_147 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV148" expression="row4.New_Invoice_Number " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV151" expression="row4.Unused_Field_151 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV153" expression="row4.Issue_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV155" expression="row4.Unused_Field_155 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV156" expression="row4.Unused_Field_156 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV157" expression="row4.Unused_Field_157 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV158" expression="row4.Unused_Field_158 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV159" expression="row4.Unused_Field_159 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV160" expression="row4.Do_Not_Create_Tx_Time " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV163" expression="row4.Unused_Field_163 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV164" expression="row4.Unused_Field_164 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INV165" expression="row4.Unused_Field_165 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INV166" expression="row4.Unused_Field_166 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INV169" expression="row4.Unused_Field_169 " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Invoice_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Billed_Consumer" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Billed_Install" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Billed_Ledger" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Statement_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Payment_Due_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Reverse_Type" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_7" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Installation_Address" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Billed_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Billing_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Note_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Note_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_13" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Financial_Year_Month" type="id_Double" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Billed_Consumer" expression="row1.Billed_Consumer " type="id_Double" nullable="true" operator="="/>
+        <mapperTableEntries name="Billed_Install" expression="row1.Billed_Install " type="id_Double" nullable="true" operator="="/>
+        <mapperTableEntries name="Billed_By_User" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Last_Updated_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Tax_Included_Flag" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_18_1" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_18_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_18_3" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Retailer_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Connection_Point" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Utility_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Network_Connection_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Network_Company" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Area_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="End_Use_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Building_Type_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_27" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Gas_Line_Factor" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Altitude_Factor" type="id_Double" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Billed_Ledger" expression="row1.Billed_Ledger " type="id_Double" nullable="true" operator="="/>
+        <mapperTableEntries name="Consumer_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_31" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unit_Of_Measure" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Customer_Reference" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_34" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_35" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Lot_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Plan_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reading_From_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Reading_To_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Invoice_From_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Invoice_To_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Days_In_Bill" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_75" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_76" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_77" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Total_Amount_Rounded" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Tax_Component" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Prompt_Payment_Discount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Total_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Average_Daily_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Next_Bill_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Next_Read_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Bill_Pullout_Code" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_117" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_118" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_121" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_122" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_123" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_124" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_125" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Statement_ID" expression="row1.Statement_ID " type="id_Double" nullable="true" operator="="/>
+        <mapperTableEntries name="Reversed_By_User" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reversed_Datetime_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Reversed_Bill_Period" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Reversal_Reason_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reversal_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Adjustment_Details" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_132" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_133" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_134" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_135" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Buyer_Tax_Invoice_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Hold_Flag" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_138" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_139" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_140" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_141" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_142" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_143" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_144" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_145" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_146" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_147" type="id_String" nullable="true"/>
+        <mapperTableEntries name="New_Invoice_Number" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_151" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Issue_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_155" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_156" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_157" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_158" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_159" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Do_Not_Create_Tx_Time" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_163" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_164" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_165" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_166" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_169" type="id_Double" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="120" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ybsf8FKTEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_ybsf8FKTEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_invoice2.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_ybsf8FKTEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Consumer" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Install" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_By_User" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Last_Updated_UTC" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Included_Flag" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_18_1" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_18_2" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_18_3" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Retailer_Code" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Connection_Point" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utility_Type" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Network_Connection_Code" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Network_Company" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Area_Code" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="End_Use_Code" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Building_Type_Code" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_27" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gas_Line_Factor" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Altitude_Factor" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Consumer" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Install" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_By_User" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Last_Updated_UTC" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Included_Flag" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_18_1" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_18_2" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_18_3" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Retailer_Code" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Connection_Point" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utility_Type" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Network_Connection_Code" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Network_Company" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Area_Code" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="End_Use_Code" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Building_Type_Code" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_27" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gas_Line_Factor" id="34"/>
+      <elementValue elementRef="DECODE" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Altitude_Factor" id="36"/>
+      <elementValue elementRef="DECODE" value="false" id="37"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_mecoINVOICE2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Consumer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Install" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="256" name="Billed_By_User" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="256" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Last_Updated_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Tax_Included_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_18_1" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Unused_Field_18_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_18_3" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Retailer_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="Connection_Point" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Network_Connection_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Network_Company" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Area_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="End_Use_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Building_Type_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="Gas_Line_Factor" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="12" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Altitude_Factor" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Consumer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Install" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="256" name="Billed_By_User" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="256" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Last_Updated_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Tax_Included_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_18_1" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Unused_Field_18_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_18_3" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Retailer_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="Connection_Point" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Network_Connection_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Network_Company" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Area_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="End_Use_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Building_Type_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="Gas_Line_Factor" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="12" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Altitude_Factor" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="200" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_35b7AFKTEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_35b7AFKTEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_invoice3.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_35b7AFKTEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Ledger" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumer_Start_Date" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_31" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit_Of_Measure" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Reference" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_34" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_35" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lot_Number" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Plan_Number" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_From_Date" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_To_Date" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_From_Date" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_To_Date" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Days_In_Bill" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_75" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_76" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_77" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Amount_Rounded" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Component" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prompt_Payment_Discount" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Amount" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Average_Daily_Amount" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Next_Bill_Date" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Next_Read_Date" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bill_Pullout_Code" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_117" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_118" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_121" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_122" id="56"/>
+      <elementValue elementRef="TRIM" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_123" id="58"/>
+      <elementValue elementRef="TRIM" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_124" id="60"/>
+      <elementValue elementRef="TRIM" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_125" id="62"/>
+      <elementValue elementRef="TRIM" value="false" id="63"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billed_Ledger" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumer_Start_Date" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_31" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit_Of_Measure" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Reference" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_34" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_35" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lot_Number" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Plan_Number" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_From_Date" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_To_Date" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_From_Date" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_To_Date" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Days_In_Bill" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_75" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_76" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_77" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Amount_Rounded" id="34"/>
+      <elementValue elementRef="DECODE" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Component" id="36"/>
+      <elementValue elementRef="DECODE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prompt_Payment_Discount" id="38"/>
+      <elementValue elementRef="DECODE" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Amount" id="40"/>
+      <elementValue elementRef="DECODE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Average_Daily_Amount" id="42"/>
+      <elementValue elementRef="DECODE" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Next_Bill_Date" id="44"/>
+      <elementValue elementRef="DECODE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Next_Read_Date" id="46"/>
+      <elementValue elementRef="DECODE" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Bill_Pullout_Code" id="48"/>
+      <elementValue elementRef="DECODE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_117" id="50"/>
+      <elementValue elementRef="DECODE" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_118" id="52"/>
+      <elementValue elementRef="DECODE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_121" id="54"/>
+      <elementValue elementRef="DECODE" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_122" id="56"/>
+      <elementValue elementRef="DECODE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_123" id="58"/>
+      <elementValue elementRef="DECODE" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_124" id="60"/>
+      <elementValue elementRef="DECODE" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_125" id="62"/>
+      <elementValue elementRef="DECODE" value="false" id="63"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_mecoINVOICE3"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_3">
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Ledger" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Consumer_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_31" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unit_Of_Measure" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Customer_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_34" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_35" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Lot_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Plan_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_From_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_To_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Invoice_From_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Invoice_To_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Days_In_Bill" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_75" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_76" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_77" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Total_Amount_Rounded" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Tax_Component" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Prompt_Payment_Discount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Total_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Average_Daily_Amount" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Next_Bill_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Next_Read_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Bill_Pullout_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unused_Field_117" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_118" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_121" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_122" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_123" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_124" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_125" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Billed_Ledger" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Consumer_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_31" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unit_Of_Measure" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Customer_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_34" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_35" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Lot_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Plan_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_From_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_To_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Invoice_From_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Invoice_To_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Days_In_Bill" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_75" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_76" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_77" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Total_Amount_Rounded" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Tax_Component" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Prompt_Payment_Discount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Total_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Average_Daily_Amount" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Next_Bill_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Next_Read_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Bill_Pullout_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unused_Field_117" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_118" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_121" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_122" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_123" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_124" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_125" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="280" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_AxBmwFKUEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_AxBmwFKUEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_invoice4.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_AxBmwFKUEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Statement_ID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversed_By_User" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversed_Datetime_UTC" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversed_Bill_Period" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversal_Reason_Code" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversal_Description" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adjustment_Details" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_132" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_133" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_134" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_135" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Buyer_Tax_Invoice_Number" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hold_Flag" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_138" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_139" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_140" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_141" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_142" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_143" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_144" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_145" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_146" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_147" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="New_Invoice_Number" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_151" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Issue_Date" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_155" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_156" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_157" id="56"/>
+      <elementValue elementRef="TRIM" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_158" id="58"/>
+      <elementValue elementRef="TRIM" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_159" id="60"/>
+      <elementValue elementRef="TRIM" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Do_Not_Create_Tx_Time" id="62"/>
+      <elementValue elementRef="TRIM" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_163" id="64"/>
+      <elementValue elementRef="TRIM" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_164" id="66"/>
+      <elementValue elementRef="TRIM" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_165" id="68"/>
+      <elementValue elementRef="TRIM" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_166" id="70"/>
+      <elementValue elementRef="TRIM" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_169" id="72"/>
+      <elementValue elementRef="TRIM" value="false" id="73"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Statement_ID" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversed_By_User" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversed_Datetime_UTC" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversed_Bill_Period" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversal_Reason_Code" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reversal_Description" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adjustment_Details" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_132" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_133" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_134" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_135" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Buyer_Tax_Invoice_Number" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hold_Flag" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_138" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_139" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_140" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_141" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_142" id="34"/>
+      <elementValue elementRef="DECODE" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_143" id="36"/>
+      <elementValue elementRef="DECODE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_144" id="38"/>
+      <elementValue elementRef="DECODE" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_145" id="40"/>
+      <elementValue elementRef="DECODE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_146" id="42"/>
+      <elementValue elementRef="DECODE" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_147" id="44"/>
+      <elementValue elementRef="DECODE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="New_Invoice_Number" id="46"/>
+      <elementValue elementRef="DECODE" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_151" id="48"/>
+      <elementValue elementRef="DECODE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Issue_Date" id="50"/>
+      <elementValue elementRef="DECODE" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_155" id="52"/>
+      <elementValue elementRef="DECODE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_156" id="54"/>
+      <elementValue elementRef="DECODE" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_157" id="56"/>
+      <elementValue elementRef="DECODE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_158" id="58"/>
+      <elementValue elementRef="DECODE" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_159" id="60"/>
+      <elementValue elementRef="DECODE" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Do_Not_Create_Tx_Time" id="62"/>
+      <elementValue elementRef="DECODE" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_163" id="64"/>
+      <elementValue elementRef="DECODE" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_164" id="66"/>
+      <elementValue elementRef="DECODE" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_165" id="68"/>
+      <elementValue elementRef="DECODE" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_166" id="70"/>
+      <elementValue elementRef="DECODE" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_169" id="72"/>
+      <elementValue elementRef="DECODE" value="false" id="73"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_mecoINVOICE4"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_4">
+      <column comment="" defaultValue="" key="false" length="19" name="Statement_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Reversed_By_User" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Reversed_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Reversed_Bill_Period" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Reversal_Reason_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Reversal_Description" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Adjustment_Details" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_132" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_133" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_134" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_135" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Buyer_Tax_Invoice_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Hold_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_138" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_139" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_140" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_141" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_142" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_143" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_144" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_145" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_146" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_147" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="New_Invoice_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_151" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Issue_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_155" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_156" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_157" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_158" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_159" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Do_Not_Create_Tx_Time" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="256" name="Unused_Field_163" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="256" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_164" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Unused_Field_165" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_166" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_169" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Statement_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Reversed_By_User" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Reversed_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Reversed_Bill_Period" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Reversal_Reason_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Reversal_Description" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Adjustment_Details" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_132" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_133" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_134" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_135" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Buyer_Tax_Invoice_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Hold_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_138" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_139" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_140" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_141" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_142" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_143" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_144" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_145" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_146" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_147" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="New_Invoice_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_151" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Issue_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_155" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_156" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_157" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_158" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_159" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Do_Not_Create_Tx_Time" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="256" name="Unused_Field_163" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="256" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_164" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Unused_Field_165" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_166" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_169" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="160" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileOutputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.101 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Output" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileOutputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_invoice.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_LiBEIFKUEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tgt_cdmINVOICE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="19" name="INV0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV4" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV5" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INV6" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="INV7" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV9" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="INV10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="INV13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="INV14" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="256" name="INV15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="256" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV16" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INV17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV18_1" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="INV18_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV18_3" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INV19" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="INV20" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INV21" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="INV22" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INV23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INV24" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INV25" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INV26" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="INV28" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="12" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV29" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV30" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV31" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INV32" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="INV33" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV34" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV35" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV36" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV37" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV38" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV39" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV40" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV41" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV42" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV75" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV76" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV77" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV109" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV110" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV111" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV112" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV113" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV114" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV115" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV116" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INV117" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INV118" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV121" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV122" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV123" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV124" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV125" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="INV126" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV127" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="INV128" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INV129" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV130" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV131" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV132" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV133" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV134" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV135" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV136" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INV137" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV138" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV139" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV140" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV141" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV142" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV143" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV144" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV145" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV146" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INV147" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV148" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV151" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INV153" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV155" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV156" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV157" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV158" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV159" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV160" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="256" name="INV163" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="256" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV164" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="INV165" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV166" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INV169" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="INV31" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV30" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV19" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV11" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV33" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV10" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV32" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV13" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV35" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV12" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV34" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV15" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV37" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV0" id="39"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV14" id="42"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV36" id="45"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV17" id="48"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV39" id="51"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV16" id="54"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV38" id="57"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV3" id="60"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV4" id="63"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV1" id="66"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="67"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="68"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV2" id="69"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="70"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="71"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV7" id="72"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV8" id="75"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="76"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="77"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV5" id="78"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="79"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="80"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV20" id="81"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="82"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="83"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV6" id="84"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="85"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="86"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV9" id="87"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="88"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="89"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV29" id="90"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="91"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="92"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV18_2" id="93"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="94"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="95"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV22" id="96"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="97"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="98"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV18_1" id="99"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="100"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="101"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV21" id="102"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="103"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="104"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV24" id="105"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="106"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="107"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV23" id="108"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="109"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="110"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV26" id="111"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="112"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="113"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV25" id="114"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="115"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="116"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV28" id="117"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="118"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="119"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV18_3" id="120"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="121"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="122"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV27" id="123"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="124"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="125"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV41" id="126"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="127"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="128"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV148" id="129"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="130"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="131"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV144" id="132"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="133"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="134"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV145" id="135"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="136"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="137"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV146" id="138"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="139"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="140"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV147" id="141"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="142"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="143"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV109" id="144"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="145"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="146"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV151" id="147"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="148"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="149"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV153" id="150"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="151"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="152"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV110" id="153"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="154"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="155"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV115" id="156"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="157"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="158"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV159" id="159"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="160"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="161"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV116" id="162"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="163"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="164"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV117" id="165"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="166"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="167"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV118" id="168"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="169"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="170"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV111" id="171"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="172"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="173"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV155" id="174"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="175"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="176"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV112" id="177"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="178"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="179"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV156" id="180"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="181"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="182"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV113" id="183"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="184"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="185"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV157" id="186"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="187"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="188"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV114" id="189"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="190"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="191"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV158" id="192"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="193"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="194"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV163" id="195"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="196"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="197"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV164" id="198"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="199"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="200"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV121" id="201"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="202"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="203"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV165" id="204"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="205"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="206"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV160" id="207"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="208"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="209"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV126" id="210"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="211"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="212"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV127" id="213"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="214"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="215"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV128" id="216"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="217"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="218"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV129" id="219"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="220"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="221"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV122" id="222"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="223"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="224"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV166" id="225"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="226"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="227"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV123" id="228"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="229"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="230"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV75" id="231"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="232"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="233"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV124" id="234"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="235"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="236"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV125" id="237"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="238"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="239"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV77" id="240"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="241"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="242"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV76" id="243"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="244"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="245"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV130" id="246"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="247"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="248"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV131" id="249"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="250"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="251"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV132" id="252"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="253"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="254"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV137" id="255"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="256"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="257"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV138" id="258"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="259"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="260"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV139" id="261"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="262"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="263"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV133" id="264"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="265"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="266"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV134" id="267"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="268"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="269"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV135" id="270"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="271"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="272"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV136" id="273"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="274"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="275"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV140" id="276"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="277"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="278"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV141" id="279"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="280"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="281"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV142" id="282"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="283"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="284"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INV143" id="285"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="286"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="287"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tFileInputDelimited_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Ingestion of cdm_INVOICE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+</talendfile:ProcessType>
