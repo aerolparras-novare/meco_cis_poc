@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:f7KIQT7i9hyvzHZrYfL4pdUYaqstDtlf3nCmPwoH" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:diMssB5YQ64YFs2L4BlPOpyO0E2vrwmD4TmCmnLS" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="80" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Md_swFKrEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Md_swFKrEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_invoicecharge.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_Md_swFKrEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_Charge_ID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_ID" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Charge_Type" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Relationship" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Charge_Code" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Charge_Description" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_82" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_83" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Code" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utility_Type" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_86" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Plan_Code" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_88" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_89" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_90" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Step_Number" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Start_Date" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="End_Date" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit_Of_Measure" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumption_Units" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Loss_Units" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Alt_Consumption_Units" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rate" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Amount" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prompt_Payment_Discount" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Amount" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Analysis_Code" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Amount" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_General_Ledger_Code" id="56"/>
+      <elementValue elementRef="TRIM" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Consumption_Units" id="58"/>
+      <elementValue elementRef="TRIM" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_UOM" id="60"/>
+      <elementValue elementRef="TRIM" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Tax_Amount" id="62"/>
+      <elementValue elementRef="TRIM" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Unused_162" id="64"/>
+      <elementValue elementRef="TRIM" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Analysis_Code" id="66"/>
+      <elementValue elementRef="TRIM" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Amount" id="68"/>
+      <elementValue elementRef="TRIM" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_General_Ledger_Code" id="70"/>
+      <elementValue elementRef="TRIM" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Consumption_Units" id="72"/>
+      <elementValue elementRef="TRIM" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_UOM" id="74"/>
+      <elementValue elementRef="TRIM" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Tax_Amount" id="76"/>
+      <elementValue elementRef="TRIM" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Unused_162" id="78"/>
+      <elementValue elementRef="TRIM" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Analysis_Code" id="80"/>
+      <elementValue elementRef="TRIM" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Amount" id="82"/>
+      <elementValue elementRef="TRIM" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_General_Ledger_Code" id="84"/>
+      <elementValue elementRef="TRIM" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Consumption_Units" id="86"/>
+      <elementValue elementRef="TRIM" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_UOM" id="88"/>
+      <elementValue elementRef="TRIM" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Tax_Amount" id="90"/>
+      <elementValue elementRef="TRIM" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Unused_162" id="92"/>
+      <elementValue elementRef="TRIM" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Analysis_Code" id="94"/>
+      <elementValue elementRef="TRIM" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Amount" id="96"/>
+      <elementValue elementRef="TRIM" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_General_Ledger_Code" id="98"/>
+      <elementValue elementRef="TRIM" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Consumption_Units" id="100"/>
+      <elementValue elementRef="TRIM" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_UOM" id="102"/>
+      <elementValue elementRef="TRIM" value="false" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Tax_Amount" id="104"/>
+      <elementValue elementRef="TRIM" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Unused_162" id="106"/>
+      <elementValue elementRef="TRIM" value="false" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Analysis_Code" id="108"/>
+      <elementValue elementRef="TRIM" value="false" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Amount" id="110"/>
+      <elementValue elementRef="TRIM" value="false" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_General_Ledger_Code" id="112"/>
+      <elementValue elementRef="TRIM" value="false" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Consumption_Units" id="114"/>
+      <elementValue elementRef="TRIM" value="false" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_UOM" id="116"/>
+      <elementValue elementRef="TRIM" value="false" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Tax_Amount" id="118"/>
+      <elementValue elementRef="TRIM" value="false" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Unused_162" id="120"/>
+      <elementValue elementRef="TRIM" value="false" id="121"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Display_Only_Flag" id="122"/>
+      <elementValue elementRef="TRIM" value="false" id="123"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Info_Only_Amount" id="124"/>
+      <elementValue elementRef="TRIM" value="false" id="125"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Discount_Code" id="126"/>
+      <elementValue elementRef="TRIM" value="false" id="127"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Discount_Rate" id="128"/>
+      <elementValue elementRef="TRIM" value="false" id="129"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Charge_Label" id="130"/>
+      <elementValue elementRef="TRIM" value="false" id="131"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Percentage_Rate" id="132"/>
+      <elementValue elementRef="TRIM" value="false" id="133"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_150" id="134"/>
+      <elementValue elementRef="TRIM" value="false" id="135"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_152" id="136"/>
+      <elementValue elementRef="TRIM" value="false" id="137"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Rounding" id="138"/>
+      <elementValue elementRef="TRIM" value="false" id="139"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Field_161" id="140"/>
+      <elementValue elementRef="TRIM" value="false" id="141"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_167" id="142"/>
+      <elementValue elementRef="TRIM" value="false" id="143"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_168" id="144"/>
+      <elementValue elementRef="TRIM" value="false" id="145"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_42" id="146"/>
+      <elementValue elementRef="TRIM" value="false" id="147"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Order_Position" id="148"/>
+      <elementValue elementRef="TRIM" value="false" id="149"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_Charge_ID" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Invoice_ID" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Charge_Type" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Relationship" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Charge_Code" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Charge_Description" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_82" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_83" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Transaction_Code" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utility_Type" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_86" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Plan_Code" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_88" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_89" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_90" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Step_Number" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Start_Date" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="End_Date" id="34"/>
+      <elementValue elementRef="DECODE" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit_Of_Measure" id="36"/>
+      <elementValue elementRef="DECODE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumption_Units" id="38"/>
+      <elementValue elementRef="DECODE" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Loss_Units" id="40"/>
+      <elementValue elementRef="DECODE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Alt_Consumption_Units" id="42"/>
+      <elementValue elementRef="DECODE" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rate" id="44"/>
+      <elementValue elementRef="DECODE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Total_Amount" id="46"/>
+      <elementValue elementRef="DECODE" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prompt_Payment_Discount" id="48"/>
+      <elementValue elementRef="DECODE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Amount" id="50"/>
+      <elementValue elementRef="DECODE" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Analysis_Code" id="52"/>
+      <elementValue elementRef="DECODE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Amount" id="54"/>
+      <elementValue elementRef="DECODE" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_General_Ledger_Code" id="56"/>
+      <elementValue elementRef="DECODE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Consumption_Units" id="58"/>
+      <elementValue elementRef="DECODE" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_UOM" id="60"/>
+      <elementValue elementRef="DECODE" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Tax_Amount" id="62"/>
+      <elementValue elementRef="DECODE" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL1_Unused_162" id="64"/>
+      <elementValue elementRef="DECODE" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Analysis_Code" id="66"/>
+      <elementValue elementRef="DECODE" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Amount" id="68"/>
+      <elementValue elementRef="DECODE" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_General_Ledger_Code" id="70"/>
+      <elementValue elementRef="DECODE" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Consumption_Units" id="72"/>
+      <elementValue elementRef="DECODE" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_UOM" id="74"/>
+      <elementValue elementRef="DECODE" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Tax_Amount" id="76"/>
+      <elementValue elementRef="DECODE" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL2_Unused_162" id="78"/>
+      <elementValue elementRef="DECODE" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Analysis_Code" id="80"/>
+      <elementValue elementRef="DECODE" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Amount" id="82"/>
+      <elementValue elementRef="DECODE" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_General_Ledger_Code" id="84"/>
+      <elementValue elementRef="DECODE" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Consumption_Units" id="86"/>
+      <elementValue elementRef="DECODE" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_UOM" id="88"/>
+      <elementValue elementRef="DECODE" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Tax_Amount" id="90"/>
+      <elementValue elementRef="DECODE" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL3_Unused_162" id="92"/>
+      <elementValue elementRef="DECODE" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Analysis_Code" id="94"/>
+      <elementValue elementRef="DECODE" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Amount" id="96"/>
+      <elementValue elementRef="DECODE" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_General_Ledger_Code" id="98"/>
+      <elementValue elementRef="DECODE" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Consumption_Units" id="100"/>
+      <elementValue elementRef="DECODE" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_UOM" id="102"/>
+      <elementValue elementRef="DECODE" value="false" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Tax_Amount" id="104"/>
+      <elementValue elementRef="DECODE" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL4_Unused_162" id="106"/>
+      <elementValue elementRef="DECODE" value="false" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Analysis_Code" id="108"/>
+      <elementValue elementRef="DECODE" value="false" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Amount" id="110"/>
+      <elementValue elementRef="DECODE" value="false" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_General_Ledger_Code" id="112"/>
+      <elementValue elementRef="DECODE" value="false" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Consumption_Units" id="114"/>
+      <elementValue elementRef="DECODE" value="false" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_UOM" id="116"/>
+      <elementValue elementRef="DECODE" value="false" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Tax_Amount" id="118"/>
+      <elementValue elementRef="DECODE" value="false" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GL5_Unused_162" id="120"/>
+      <elementValue elementRef="DECODE" value="false" id="121"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Display_Only_Flag" id="122"/>
+      <elementValue elementRef="DECODE" value="false" id="123"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Info_Only_Amount" id="124"/>
+      <elementValue elementRef="DECODE" value="false" id="125"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Discount_Code" id="126"/>
+      <elementValue elementRef="DECODE" value="false" id="127"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Discount_Rate" id="128"/>
+      <elementValue elementRef="DECODE" value="false" id="129"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Charge_Label" id="130"/>
+      <elementValue elementRef="DECODE" value="false" id="131"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Percentage_Rate" id="132"/>
+      <elementValue elementRef="DECODE" value="false" id="133"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_150" id="134"/>
+      <elementValue elementRef="DECODE" value="false" id="135"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_152" id="136"/>
+      <elementValue elementRef="DECODE" value="false" id="137"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tax_Rounding" id="138"/>
+      <elementValue elementRef="DECODE" value="false" id="139"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Field_161" id="140"/>
+      <elementValue elementRef="DECODE" value="false" id="141"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_167" id="142"/>
+      <elementValue elementRef="DECODE" value="false" id="143"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_168" id="144"/>
+      <elementValue elementRef="DECODE" value="false" id="145"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_42" id="146"/>
+      <elementValue elementRef="DECODE" value="false" id="147"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Order_Position" id="148"/>
+      <elementValue elementRef="DECODE" value="false" id="149"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_meco_INVOICECHARGE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="19" name="Invoice_Charge_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Invoice_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Charge_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Register_Relationship" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Charge_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Charge_Description" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_82" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_83" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Transaction_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Unused_Field_86" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Plan_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Unused_Field_88" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_89" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_90" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="Step_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unit_Of_Measure" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Loss_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Alt_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Rate" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Total_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Prompt_Payment_Discount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL1_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL1_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL1_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL1_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL1_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL1_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL1_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL2_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL2_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL2_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL2_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL2_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL2_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL2_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL3_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL3_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL3_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL3_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL3_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL3_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL3_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL4_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL4_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL4_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL4_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL4_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL4_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL4_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL5_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL5_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL5_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL5_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL5_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL5_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL5_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Display_Only_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Info_Only_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Discount_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Discount_Rate" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Charge_Label" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="Tax_Percentage_Rate" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_150" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_152" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Tax_Rounding" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="Field_161" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_167" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_168" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_42" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Order_Position" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Invoice_Charge_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Invoice_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Charge_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Register_Relationship" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Charge_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Charge_Description" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_82" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_83" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Transaction_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Unused_Field_86" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Plan_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="Unused_Field_88" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_89" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_90" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="Step_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="End_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unit_Of_Measure" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Loss_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Alt_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Rate" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Total_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Prompt_Payment_Discount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL1_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL1_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL1_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL1_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL1_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL1_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL1_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL2_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL2_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL2_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL2_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL2_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL2_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL2_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL3_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL3_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL3_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL3_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL3_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL3_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL3_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL4_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL4_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL4_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL4_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL4_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL4_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL4_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="GL5_Analysis_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL5_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="GL5_General_Ledger_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL5_Consumption_Units" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="GL5_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="GL5_Tax_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="GL5_Unused_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Display_Only_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Info_Only_Amount" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Discount_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Discount_Rate" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Charge_Label" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="Tax_Percentage_Rate" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_150" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_152" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Tax_Rounding" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="Field_161" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_167" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_168" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_42" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Order_Position" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="80" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_5ljckFKpEfGAPIORTaYCDw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="map_cdmINVOICECHARGE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG78" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INVCHG79" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHG80" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INVCHG81" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INVCHG82" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INVCHG83" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHG84" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHG85" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="INVCHG86" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHG87" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="150" name="INVCHG88" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="INVCHG89" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="INVCHG90" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="INVCHG91" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INVCHG92" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INVCHG93" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHG94" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG95" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG96" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG97" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG98" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG99" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG100" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG101" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="INVCHGTAR1_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR1_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHGTAR1_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR1_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INVCHGTAR1_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR1_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INVCHGTAR1_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="INVCHGTAR2_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR2_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHGTAR2_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR2_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INVCHGTAR2_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR2_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INVCHGTAR2_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="INVCHGTAR3_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR3_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHGTAR3_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR3_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INVCHGTAR3_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR3_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INVCHGTAR3_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="INVCHGTAR4_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR4_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHGTAR4_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR4_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INVCHGTAR4_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR4_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INVCHGTAR4_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="INVCHGTAR5_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR5_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHGTAR5_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR5_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="INVCHGTAR5_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR5_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INVCHGTAR5_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INVCHG107" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG108" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHG119" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG120" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="INVCHG138" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="INVCHG149" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INVCHG150" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG152" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG154" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="INVCHG161" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="5" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INVCHG167" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INVCHG168" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="INVCHG42" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHGVMC" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="o_INV99" expression="row1.Consumption_Units * row1.Rate " type="id_Double"/>
+        <mapperTableEntries name="o_INV101" expression="Var.o_INV99 / 10" type="id_Double"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="INVCHG0" expression="row1.Invoice_Charge_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG1" expression="row1.Invoice_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG78" expression="row1.Charge_Type " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG79" expression="row1.Register_Relationship " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG80" expression="row1.Charge_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG81" expression="row1.Charge_Description " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG82" expression="row1.Unused_Field_82 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG83" expression="row1.Unused_Field_83 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG84" expression="row1.Transaction_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG85" expression="row1.Utility_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG86" expression="row1.Unused_Field_86 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG87" expression="row1.Plan_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG88" expression="row1.Unused_Field_88 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG89" expression="row1.Unused_Field_89 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG90" expression="row1.Unused_Field_90 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG91" expression="row1.Step_Number " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG92" expression="row1.Start_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INVCHG93" expression="row1.End_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INVCHG94" expression="row1.Unit_Of_Measure " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG95" expression="row1.Consumption_Units " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG96" expression="row1.Loss_Units " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG97" expression="row1.Alt_Consumption_Units " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG98" expression="row1.Rate " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG99" expression="Var.o_INV99 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG100" expression="row1.Prompt_Payment_Discount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG101" expression="Var.o_INV101 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR1_102" expression="row1.GL1_Analysis_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR1_103" expression="row1.GL1_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR1_104" expression="row1.GL1_General_Ledger_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR1_105" expression="row1.GL1_Consumption_Units " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR1_106" expression="row1.GL1_UOM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR1_161" expression="row1.GL1_Tax_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR1_162" expression="row1.GL1_Unused_162 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR2_102" expression="row1.GL2_Analysis_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR2_103" expression="row1.GL2_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR2_104" expression="row1.GL2_General_Ledger_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR2_105" expression="row1.GL2_Consumption_Units " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR2_106" expression="row1.GL2_UOM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR2_161" expression="row1.GL2_Tax_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR2_162" expression="row1.GL2_Unused_162 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR3_102" expression="row1.GL3_Analysis_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR3_103" expression="row1.GL3_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR3_104" expression="row1.GL3_General_Ledger_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR3_105" expression="row1.GL3_Consumption_Units " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR3_106" expression="row1.GL3_UOM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR3_161" expression="row1.GL3_Tax_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR3_162" expression="row1.GL3_Unused_162 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR4_102" expression="row1.GL4_Analysis_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR4_103" expression="row1.GL4_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR4_104" expression="row1.GL4_General_Ledger_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR4_105" expression="row1.GL4_Consumption_Units " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR4_106" expression="row1.GL4_UOM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR4_161" expression="row1.GL4_Tax_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR4_162" expression="row1.GL4_Unused_162 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR5_102" expression="row1.GL5_Analysis_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR5_103" expression="row1.GL5_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR5_104" expression="row1.GL5_General_Ledger_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR5_105" expression="row1.GL5_Consumption_Units " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR5_106" expression="row1.GL5_UOM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR5_161" expression="row1.GL5_Tax_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHGTAR5_162" expression="row1.GL5_Unused_162 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG107" expression="row1.Display_Only_Flag " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG108" expression="row1.Info_Only_Amount " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG119" expression="row1.Discount_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG120" expression="row1.Discount_Rate " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG138" expression="row1.Charge_Label " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG149" expression="row1.Tax_Percentage_Rate " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG150" expression="row1.Unused_Field_150 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG152" expression="row1.Unused_Field_152 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG154" expression="row1.Tax_Rounding " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG161" expression="row1.Field_161 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INVCHG167" expression="row1.Unused_Field_167 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG168" expression="row1.Unused_Field_168 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHG42" expression="row1.Unused_Field_42 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INVCHGVMC" expression="row1.Order_Position " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Invoice_Charge_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Invoice_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Charge_Type" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Register_Relationship" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Charge_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Charge_Description" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_82" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_83" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Transaction_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Utility_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_86" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Plan_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_88" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_89" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_90" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Step_Number" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="End_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unit_Of_Measure" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Consumption_Units" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Loss_Units" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Alt_Consumption_Units" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Rate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Total_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Prompt_Payment_Discount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Tax_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL1_Analysis_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL1_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL1_General_Ledger_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL1_Consumption_Units" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL1_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL1_Tax_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL1_Unused_162" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL2_Analysis_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL2_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL2_General_Ledger_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL2_Consumption_Units" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL2_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL2_Tax_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL2_Unused_162" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL3_Analysis_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL3_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL3_General_Ledger_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL3_Consumption_Units" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL3_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL3_Tax_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL3_Unused_162" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL4_Analysis_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL4_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL4_General_Ledger_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL4_Consumption_Units" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL4_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL4_Tax_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL4_Unused_162" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL5_Analysis_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL5_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL5_General_Ledger_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL5_Consumption_Units" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL5_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GL5_Tax_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GL5_Unused_162" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Display_Only_Flag" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Info_Only_Amount" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Discount_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Discount_Rate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Charge_Label" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Tax_Percentage_Rate" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_150" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_152" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Tax_Rounding" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Field_161" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_167" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_168" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_42" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Order_Position" type="id_Double" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="80" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileOutputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.101 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Output" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileOutputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_invoicecharge.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_BjoQ8FKrEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tgt_cdm_INVOICECHARGE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG78" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHG79" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHG80" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INVCHG81" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INVCHG82" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INVCHG83" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHG84" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHG85" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="INVCHG86" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHG87" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="150" name="INVCHG88" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="150" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INVCHG89" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INVCHG90" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="INVCHG91" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHG92" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHG93" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHG94" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG95" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG96" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG97" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG98" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG99" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG100" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG101" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="INVCHGTAR1_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR1_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHGTAR1_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR1_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHGTAR1_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR1_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="INVCHGTAR1_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="INVCHGTAR2_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR2_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHGTAR2_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR2_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHGTAR2_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR2_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="INVCHGTAR2_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="INVCHGTAR3_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR3_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHGTAR3_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR3_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHGTAR3_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR3_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="INVCHGTAR3_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="INVCHGTAR4_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR4_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHGTAR4_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR4_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHGTAR4_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR4_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="INVCHGTAR4_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="INVCHGTAR5_102" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR5_103" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHGTAR5_104" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR5_105" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHGTAR5_106" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHGTAR5_161" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="INVCHGTAR5_162" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INVCHG107" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG108" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHG119" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG120" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="INVCHG138" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="INVCHG149" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="INVCHG150" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG152" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="INVCHG154" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="INVCHG161" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INVCHG167" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INVCHG168" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="INVCHG42" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INVCHGVMC" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG96" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR3_104" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG97" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR3_103" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG94" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR3_106" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG95" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR3_105" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG92" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG93" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG90" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR3_102" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG91" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG119" id="39"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR2_106" id="42"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR2_105" id="45"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR2_104" id="48"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR2_103" id="51"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR2_102" id="54"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG161" id="57"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG120" id="60"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG98" id="63"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG99" id="66"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="67"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="68"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG85" id="69"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="70"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="71"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG86" id="72"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG42" id="75"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="76"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="77"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG83" id="78"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="79"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="80"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG101" id="81"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="82"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="83"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG0" id="84"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="85"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="86"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG84" id="87"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="88"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="89"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG100" id="90"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="91"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="92"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG81" id="93"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="94"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="95"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR5_102" id="96"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="97"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="98"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG107" id="99"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="100"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="101"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG82" id="102"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="103"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="104"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR5_104" id="105"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="106"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="107"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG149" id="108"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="109"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="110"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG80" id="111"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="112"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="113"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR5_103" id="114"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="115"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="116"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR5_106" id="117"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="118"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="119"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR5_105" id="120"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="121"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="122"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG108" id="123"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="124"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="125"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR1_161" id="126"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="127"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="128"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR1_162" id="129"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="130"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="131"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR4_105" id="132"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="133"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="134"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR4_104" id="135"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="136"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="137"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR4_103" id="138"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="139"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="140"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR4_102" id="141"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="142"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="143"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG150" id="144"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="145"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="146"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR4_106" id="147"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="148"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="149"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG89" id="150"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="151"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="152"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG154" id="153"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="154"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="155"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG87" id="156"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="157"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="158"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG152" id="159"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="160"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="161"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG88" id="162"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="163"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="164"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG138" id="165"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="166"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="167"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR2_162" id="168"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="169"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="170"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR2_161" id="171"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="172"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="173"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR3_162" id="174"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="175"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="176"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR3_161" id="177"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="178"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="179"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG1" id="180"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="181"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="182"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG78" id="183"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="184"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="185"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG79" id="186"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="187"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="188"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG168" id="189"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="190"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="191"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHG167" id="192"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="193"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="194"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR1_102" id="195"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="196"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="197"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR1_103" id="198"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="199"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="200"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR1_104" id="201"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="202"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="203"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR1_105" id="204"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="205"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="206"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR1_106" id="207"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="208"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="209"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR4_162" id="210"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="211"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="212"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR4_161" id="213"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="214"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="215"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR5_162" id="216"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="217"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="218"/>
+      <elementValue elementRef="TRACE_COLUMN" value="INVCHGTAR5_161" id="219"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="220"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="221"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Ingestion for cdm_INVOICECHARGE"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+</talendfile:ProcessType>
