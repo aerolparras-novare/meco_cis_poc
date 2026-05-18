@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_eeKSUFLGEfGAPIORTaYCDw" name="tgt_cdm_MRIINSTALL" dataPackage="_eeKSUVLGEfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_mriinstall.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_eeKSUVLGEfGAPIORTaYCDw" name="default" dataManager="_eeKSUFLGEfGAPIORTaYCDw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_eeKSUlLGEfGAPIORTaYCDw" id="_RjONQFLDEfGAPIORTaYCDw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSU1LGEfGAPIORTaYCDw" name="MRI0" label="MRI0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_eeKSVFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSVVLGEfGAPIORTaYCDw" name="MRI1" label="MRI1" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSVlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSV1LGEfGAPIORTaYCDw" name="MRI2" label="MRI2" length="10" precision="-1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_eeKSWFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSWVLGEfGAPIORTaYCDw" name="MRI3" label="MRI3" length="10" precision="-1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_eeKSWlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSW1LGEfGAPIORTaYCDw" name="MRI4" label="MRI4" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_eeKSXFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSXVLGEfGAPIORTaYCDw" name="MRI5" label="MRI5" length="10" precision="-1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_eeKSXlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSX1LGEfGAPIORTaYCDw" name="MRI6" label="MRI6" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_eeKSYFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSYVLGEfGAPIORTaYCDw" name="MRI7" label="MRI7" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSYlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSY1LGEfGAPIORTaYCDw" name="MRI8" label="MRI8" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSZFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSZVLGEfGAPIORTaYCDw" name="MRI9" label="MRI9" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_eeKSZlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSZ1LGEfGAPIORTaYCDw" name="MRI10" label="MRI10" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_eeKSaFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSaVLGEfGAPIORTaYCDw" name="MRI11" label="MRI11" length="9" precision="-1" sourceType="" talendType="id_String" originalLength="9">
+        <initialValue xmi:id="_eeKSalLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSa1LGEfGAPIORTaYCDw" name="MRI12" label="MRI12" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSbFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSbVLGEfGAPIORTaYCDw" name="MRI13" label="MRI13" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_eeKSblLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSb1LGEfGAPIORTaYCDw" name="MRI14" label="MRI14" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_eeKScFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKScVLGEfGAPIORTaYCDw" name="MRI15" label="MRI15" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSclLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSc1LGEfGAPIORTaYCDw" name="MRI16" label="MRI16" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSdFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSdVLGEfGAPIORTaYCDw" name="MRI17" label="MRI17" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSdlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSd1LGEfGAPIORTaYCDw" name="MRI18" label="MRI18" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSeFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSeVLGEfGAPIORTaYCDw" name="MRI19" label="MRI19" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSelLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSe1LGEfGAPIORTaYCDw" name="MRI20" label="MRI20" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_eeKSfFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSfVLGEfGAPIORTaYCDw" name="MRI21" label="MRI21" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKSflLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSf1LGEfGAPIORTaYCDw" name="MRI22" label="MRI22" length="200" precision="-1" sourceType="" talendType="id_String" originalLength="200">
+        <initialValue xmi:id="_eeKSgFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSgVLGEfGAPIORTaYCDw" name="MRI23" label="MRI23" length="200" precision="-1" sourceType="" talendType="id_String" originalLength="200">
+        <initialValue xmi:id="_eeKSglLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSg1LGEfGAPIORTaYCDw" name="MRI24" label="MRI24" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_eeKShFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKShVLGEfGAPIORTaYCDw" name="MRI25" label="MRI25" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKShlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSh1LGEfGAPIORTaYCDw" name="MRI26" label="MRI26" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSiFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSiVLGEfGAPIORTaYCDw" name="MRI27" label="MRI27" length="19" precision="-1" sourceType="" talendType="id_String" originalLength="19">
+        <initialValue xmi:id="_eeKSilLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSi1LGEfGAPIORTaYCDw" name="MRI28" label="MRI28" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSjFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSjVLGEfGAPIORTaYCDw" name="MRI29" label="MRI29" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSjlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSj1LGEfGAPIORTaYCDw" name="MRI30" label="MRI30" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKSkFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSkVLGEfGAPIORTaYCDw" name="MRI31" label="MRI31" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKSklLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSk1LGEfGAPIORTaYCDw" name="MRI32" label="MRI32" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSlFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSlVLGEfGAPIORTaYCDw" name="MRI33" label="MRI33" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_eeKSllLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSl1LGEfGAPIORTaYCDw" name="MRI34" label="MRI34" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSmFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSmVLGEfGAPIORTaYCDw" name="MRI35" label="MRI35" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSmlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSm1LGEfGAPIORTaYCDw" name="MRI36" label="MRI36" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSnFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSnVLGEfGAPIORTaYCDw" name="MRI37" label="MRI37" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSnlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSn1LGEfGAPIORTaYCDw" name="MRI38" label="MRI38" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSoFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSoVLGEfGAPIORTaYCDw" name="MRI39" label="MRI39" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSolLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSo1LGEfGAPIORTaYCDw" name="MRI40" label="MRI40" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSpFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSpVLGEfGAPIORTaYCDw" name="MRI41" label="MRI41" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSplLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSp1LGEfGAPIORTaYCDw" name="MRI42" label="MRI42" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKSqFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSqVLGEfGAPIORTaYCDw" name="MRI43" label="MRI43" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_eeKSqlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSq1LGEfGAPIORTaYCDw" name="MRI44" label="MRI44" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSrFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSrVLGEfGAPIORTaYCDw" name="MRI45" label="MRI45" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKSrlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSr1LGEfGAPIORTaYCDw" name="MRI46" label="MRI46" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSsFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSsVLGEfGAPIORTaYCDw" name="MRI47" label="MRI47" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_eeKSslLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSs1LGEfGAPIORTaYCDw" name="MRI48" label="MRI48" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKStFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKStVLGEfGAPIORTaYCDw" name="MRI49" label="MRI49" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKStlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSt1LGEfGAPIORTaYCDw" name="MRI50" label="MRI50" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSuFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSuVLGEfGAPIORTaYCDw" name="MRI51" label="MRI51" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSulLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSu1LGEfGAPIORTaYCDw" name="MRI52" label="MRI52" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_eeKSvFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSvVLGEfGAPIORTaYCDw" name="MRI53" label="MRI53" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_eeKSvlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSv1LGEfGAPIORTaYCDw" name="MRI54" label="MRI54" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSwFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSwVLGEfGAPIORTaYCDw" name="MRI55" label="MRI55" length="10" precision="-1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_eeKSwlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSw1LGEfGAPIORTaYCDw" name="MRI56" label="MRI56" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSxFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSxVLGEfGAPIORTaYCDw" name="MRI57" label="MRI57" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSxlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSx1LGEfGAPIORTaYCDw" name="MRI58" label="MRI58" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSyFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSyVLGEfGAPIORTaYCDw" name="MRI59" label="MRI59" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSylLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSy1LGEfGAPIORTaYCDw" name="MRI60" label="MRI60" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSzFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSzVLGEfGAPIORTaYCDw" name="MRI61" label="MRI61" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKSzlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKSz1LGEfGAPIORTaYCDw" name="MRI62" label="MRI62" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS0FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS0VLGEfGAPIORTaYCDw" name="MRI63" label="MRI63" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS0lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS01LGEfGAPIORTaYCDw" name="MRI64" label="MRI64" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_eeKS1FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS1VLGEfGAPIORTaYCDw" name="MRI65" label="MRI65" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKS1lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS11LGEfGAPIORTaYCDw" name="MRI66" label="MRI66" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKS2FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS2VLGEfGAPIORTaYCDw" name="MRI67" label="MRI67" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKS2lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS21LGEfGAPIORTaYCDw" name="MRI68" label="MRI68" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS3FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS3VLGEfGAPIORTaYCDw" name="MRI69" label="MRI69" length="10" precision="-1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_eeKS3lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS31LGEfGAPIORTaYCDw" name="MRI70" label="MRI70" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS4FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS4VLGEfGAPIORTaYCDw" name="MRI71" label="MRI71" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS4lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS41LGEfGAPIORTaYCDw" name="MRI72" label="MRI72" length="10" precision="-1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_eeKS5FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS5VLGEfGAPIORTaYCDw" name="MRI73" label="MRI73" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKS5lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS51LGEfGAPIORTaYCDw" name="MRI74" label="MRI74" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKS6FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS6VLGEfGAPIORTaYCDw" name="MRI75" label="MRI75" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_eeKS6lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS61LGEfGAPIORTaYCDw" name="MRI76" label="MRI76" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS7FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS7VLGEfGAPIORTaYCDw" name="MRI77" label="MRI77" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS7lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS71LGEfGAPIORTaYCDw" name="MRI78" label="MRI78" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKS8FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS8VLGEfGAPIORTaYCDw" name="MRI79" label="MRI79" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS8lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS81LGEfGAPIORTaYCDw" name="MRI80" label="MRI80" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS9FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS9VLGEfGAPIORTaYCDw" name="MRI81" label="MRI81" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKS9lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS91LGEfGAPIORTaYCDw" name="MRI82" label="MRI82" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS-FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS-VLGEfGAPIORTaYCDw" name="MRI83" label="MRI83" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS-lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS-1LGEfGAPIORTaYCDw" name="MRI84" label="MRI84" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS_FLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS_VLGEfGAPIORTaYCDw" name="MRI85" label="MRI85" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKS_lLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKS_1LGEfGAPIORTaYCDw" name="MRI86" label="MRI86" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTAFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTAVLGEfGAPIORTaYCDw" name="MRI87" label="MRI87" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTAlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTA1LGEfGAPIORTaYCDw" name="MRI88" label="MRI88" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTBFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTBVLGEfGAPIORTaYCDw" name="MRI89" label="MRI89" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTBlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTB1LGEfGAPIORTaYCDw" name="MRI90" label="MRI90" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTCFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTCVLGEfGAPIORTaYCDw" name="MRI91" label="MRI91" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTClLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTC1LGEfGAPIORTaYCDw" name="MRI92" label="MRI92" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTDFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTDVLGEfGAPIORTaYCDw" name="MRI93" label="MRI93" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTDlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTD1LGEfGAPIORTaYCDw" name="MRI94" label="MRI94" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTEFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTEVLGEfGAPIORTaYCDw" name="MRI95" label="MRI95" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTElLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTE1LGEfGAPIORTaYCDw" name="MRI96" label="MRI96" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTFFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTFVLGEfGAPIORTaYCDw" name="MRI97" label="MRI97" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTFlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTF1LGEfGAPIORTaYCDw" name="MRI98" label="MRI98" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTGFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTGVLGEfGAPIORTaYCDw" name="MRI99" label="MRI99" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTGlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTG1LGEfGAPIORTaYCDw" name="MRI100" label="MRI100" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_eeKTHFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTHVLGEfGAPIORTaYCDw" name="MRI21_1" label="MRI21_1" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTHlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTH1LGEfGAPIORTaYCDw" name="MRI21_2" label="MRI21_2" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTIFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTIVLGEfGAPIORTaYCDw" name="MRI21_3" label="MRI21_3" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTIlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTI1LGEfGAPIORTaYCDw" name="MRI21_4" label="MRI21_4" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTJFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTJVLGEfGAPIORTaYCDw" name="MRI21_5" label="MRI21_5" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTJlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTJ1LGEfGAPIORTaYCDw" name="MRI21_6" label="MRI21_6" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTKFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTKVLGEfGAPIORTaYCDw" name="MRI21_7" label="MRI21_7" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTKlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTK1LGEfGAPIORTaYCDw" name="MRI21_8" label="MRI21_8" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTLFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTLVLGEfGAPIORTaYCDw" name="MRI21_9" label="MRI21_9" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTLlLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_eeKTL1LGEfGAPIORTaYCDw" name="MRI21_10" label="MRI21_10" length="2000" precision="-1" sourceType="" talendType="id_String" originalLength="2000">
+        <initialValue xmi:id="_eeKTMFLGEfGAPIORTaYCDw" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:f7KIQT7i9hyvzHZrYfL4pdUYaqstDtlf3nCmPwoH" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:diMssB5YQ64YFs2L4BlPOpyO0E2vrwmD4TmCmnLS" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_P02qIFLHEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_P02qIFLHEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_mriinstall.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_P02qIFLHEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Number" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_1" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_2" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_3" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_4" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_5" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_6" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_7" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_8" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_9" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_10" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_11" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_12" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_13" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_14" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_15" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_16" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_17" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_18" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_19" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unique_Identifier" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Address" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumer_Surname" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_23" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contact_Phone" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_Frequency_1" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_26" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_27" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_28" id="56"/>
+      <elementValue elementRef="TRIM" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hazard_Code" id="58"/>
+      <elementValue elementRef="TRIM" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_30" id="60"/>
+      <elementValue elementRef="TRIM" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Reader_Notes" id="62"/>
+      <elementValue elementRef="TRIM" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Occupier_State" id="64"/>
+      <elementValue elementRef="TRIM" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Occupier_Record_ID" id="66"/>
+      <elementValue elementRef="TRIM" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="District" id="68"/>
+      <elementValue elementRef="TRIM" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_35" id="70"/>
+      <elementValue elementRef="TRIM" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_36" id="72"/>
+      <elementValue elementRef="TRIM" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_37" id="74"/>
+      <elementValue elementRef="TRIM" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_38" id="76"/>
+      <elementValue elementRef="TRIM" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_Frequency_2" id="78"/>
+      <elementValue elementRef="TRIM" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_40" id="80"/>
+      <elementValue elementRef="TRIM" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Next_Reading_Date" id="82"/>
+      <elementValue elementRef="TRIM" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Key_Location_Notes" id="84"/>
+      <elementValue elementRef="TRIM" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lot_Plan_Number" id="86"/>
+      <elementValue elementRef="TRIM" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tenancy_Code" id="88"/>
+      <elementValue elementRef="TRIM" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hazard_Information" id="90"/>
+      <elementValue elementRef="TRIM" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_46" id="92"/>
+      <elementValue elementRef="TRIM" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Status" id="94"/>
+      <elementValue elementRef="TRIM" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_48" id="96"/>
+      <elementValue elementRef="TRIM" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_Notes" id="98"/>
+      <elementValue elementRef="TRIM" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_50" id="100"/>
+      <elementValue elementRef="TRIM" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utility_Type" id="102"/>
+      <elementValue elementRef="TRIM" value="false" id="103"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Number" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_1" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_2" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_3" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_4" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_5" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_6" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_7" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_8" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_9" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_10" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_11" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_12" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_13" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_14" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_15" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_16" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_17" id="34"/>
+      <elementValue elementRef="DECODE" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_18" id="36"/>
+      <elementValue elementRef="DECODE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_19" id="38"/>
+      <elementValue elementRef="DECODE" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unique_Identifier" id="40"/>
+      <elementValue elementRef="DECODE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Address" id="42"/>
+      <elementValue elementRef="DECODE" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumer_Surname" id="44"/>
+      <elementValue elementRef="DECODE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_23" id="46"/>
+      <elementValue elementRef="DECODE" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contact_Phone" id="48"/>
+      <elementValue elementRef="DECODE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_Frequency_1" id="50"/>
+      <elementValue elementRef="DECODE" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_26" id="52"/>
+      <elementValue elementRef="DECODE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_27" id="54"/>
+      <elementValue elementRef="DECODE" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_28" id="56"/>
+      <elementValue elementRef="DECODE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hazard_Code" id="58"/>
+      <elementValue elementRef="DECODE" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_30" id="60"/>
+      <elementValue elementRef="DECODE" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Reader_Notes" id="62"/>
+      <elementValue elementRef="DECODE" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Occupier_State" id="64"/>
+      <elementValue elementRef="DECODE" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Occupier_Record_ID" id="66"/>
+      <elementValue elementRef="DECODE" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="District" id="68"/>
+      <elementValue elementRef="DECODE" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_35" id="70"/>
+      <elementValue elementRef="DECODE" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_36" id="72"/>
+      <elementValue elementRef="DECODE" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_37" id="74"/>
+      <elementValue elementRef="DECODE" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_38" id="76"/>
+      <elementValue elementRef="DECODE" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_Frequency_2" id="78"/>
+      <elementValue elementRef="DECODE" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_40" id="80"/>
+      <elementValue elementRef="DECODE" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Next_Reading_Date" id="82"/>
+      <elementValue elementRef="DECODE" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Key_Location_Notes" id="84"/>
+      <elementValue elementRef="DECODE" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Lot_Plan_Number" id="86"/>
+      <elementValue elementRef="DECODE" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Tenancy_Code" id="88"/>
+      <elementValue elementRef="DECODE" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Hazard_Information" id="90"/>
+      <elementValue elementRef="DECODE" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_46" id="92"/>
+      <elementValue elementRef="DECODE" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Status" id="94"/>
+      <elementValue elementRef="DECODE" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_48" id="96"/>
+      <elementValue elementRef="DECODE" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Other_Notes" id="98"/>
+      <elementValue elementRef="DECODE" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_50" id="100"/>
+      <elementValue elementRef="DECODE" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Utility_Type" id="102"/>
+      <elementValue elementRef="DECODE" value="false" id="103"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_meco_MRIINSTALL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_5" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_6" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Unused_Field_9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_10" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="Unused_Field_11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Unused_Field_13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_14" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_16" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_18" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_19" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Unique_Identifier" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Installation_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="200" name="Consumer_Surname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="200" name="Unused_Field_23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Contact_Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_Frequency_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_26" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_28" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Hazard_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_30" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Meter_Reader_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Occupier_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Occupier_Record_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="District" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_35" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_36" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_37" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_38" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_Frequency_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_40" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Next_Reading_Date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Key_Location_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Lot_Plan_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Tenancy_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Hazard_Information" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_46" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Installation_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_48" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Other_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_50" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_5" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_6" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Unused_Field_9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_10" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="Unused_Field_11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Unused_Field_13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_14" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_16" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_18" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_19" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Unique_Identifier" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Installation_Address" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="200" name="Consumer_Surname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="200" name="Unused_Field_23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Contact_Phone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_Frequency_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_26" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_28" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Hazard_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_30" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Meter_Reader_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Occupier_State" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Occupier_Record_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="District" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_35" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_36" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_37" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_38" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_Frequency_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_40" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Next_Reading_Date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Key_Location_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Lot_Plan_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Tenancy_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Hazard_Information" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_46" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Installation_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_48" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Other_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_50" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="120" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_QNmeIFLDEfGAPIORTaYCDw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="map_cdmMRIINSTALL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" defaultValue="" key="false" length="19" name="MRI0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI5" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI6" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MRI9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI10" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="MRI11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MRI13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MRI14" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI16" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI18" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI19" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MRI20" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="MRI22" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="200" name="MRI23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MRI24" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI25" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI26" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="MRI27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI28" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI29" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI30" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI31" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI32" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MRI33" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI34" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI35" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI36" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI37" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI38" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI39" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI40" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI41" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI42" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MRI43" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI44" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI45" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI46" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MRI47" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI48" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI49" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI50" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI51" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MRI52" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MRI53" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI54" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI55" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI56" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI57" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI58" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI59" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI60" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI61" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI62" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI63" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI64" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI65" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI66" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI67" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI68" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI69" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI70" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI71" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI72" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI73" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI74" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI75" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI76" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI77" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI78" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI79" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI80" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI81" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI82" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI83" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI84" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI85" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI86" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI87" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI88" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI89" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI90" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI91" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI92" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI93" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI94" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI95" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI96" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI97" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI98" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI99" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="MRI100" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="MRI21_10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="MRI0" expression="row1.Installation_Number " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MRI1" expression="row1.Unused_Field_1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI2" expression="row1.Unused_Field_2 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MRI3" expression="row1.Unused_Field_3 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MRI4" expression="row1.Unused_Field_4 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="MRI5" expression="row1.Unused_Field_5 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MRI6" expression="row1.Unused_Field_6 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="MRI7" expression="row1.Unused_Field_7 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI8" expression="row1.Unused_Field_8 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI9" expression="row1.Unused_Field_9 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI10" expression="row1.Unused_Field_10 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="MRI11" expression="row1.Unused_Field_11 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI12" expression="row1.Unused_Field_12 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI13" expression="row1.Unused_Field_13 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI14" expression="row1.Unused_Field_14 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MRI15" expression="row1.Unused_Field_15 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI16" expression="row1.Unused_Field_16 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI17" expression="row1.Unused_Field_17 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI18" expression="row1.Unused_Field_18 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI19" expression="row1.Unused_Field_19 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI20" expression="row1.Unique_Identifier " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21" expression="row1.Installation_Address " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI22" expression="row1.Consumer_Surname " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI23" expression="row1.Unused_Field_23 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI24" expression="row1.Contact_Phone " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI25" expression="row1.Reading_Frequency_1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI26" expression="row1.Unused_Field_26 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI27" expression="row1.Unused_Field_27 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI28" expression="row1.Unused_Field_28 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI29" expression="row1.Hazard_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI30" expression="row1.Unused_Field_30 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI31" expression="row1.Meter_Reader_Notes " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI32" expression="row1.Occupier_State " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI33" expression="row1.Occupier_Record_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MRI34" expression="row1.District " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI35" expression="row1.Unused_Field_35 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI36" expression="row1.Unused_Field_36 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI37" expression="row1.Unused_Field_37 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI38" expression="row1.Unused_Field_38 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI39" expression="row1.Reading_Frequency_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI40" expression="row1.Unused_Field_40 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI41" expression="row1.Next_Reading_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI42" expression="row1.Key_Location_Notes " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI43" expression="row1.Lot_Plan_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI44" expression="row1.Tenancy_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI45" expression="row1.Hazard_Information " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI46" expression="row1.Unused_Field_46 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI47" expression="row1.Installation_Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI48" expression="row1.Unused_Field_48 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI49" expression="row1.Other_Notes " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI50" expression="row1.Unused_Field_50 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI51" expression="row1.Utility_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI52" expression="row2.Key_Register_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI53" expression="row2.Security_System_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI54" expression="row2.Reading_Sequence " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI55" expression="row2.Sequence_Position " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MRI56" expression="row2.Geographic_Area_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI57" expression="row2.Retailer " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI58" expression="row2.Occupancy_Status " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI59" expression="row2.Disconnected_Flag " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI60" expression="row2.Unused_Field_60 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI61" expression="row2.Unused_Field_61 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI62" expression="row2.Unused_Field_62 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI63" expression="row2.Meter_Reader " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI64" expression="row2.Contract_Removed_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="MRI65" expression="row2.Unused_Field_65 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI66" expression="row2.Unused_Field_66 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI67" expression="row2.Contract_Cancelled_Reason " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI68" expression="row2.Actual_Sequence_Position " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI69" expression="row2.Group_Billing_Consumer " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MRI70" expression="row2.Prepay_Metering_Flag " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI71" expression="row2.Installation_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI72" expression="row2.Linked_Installation_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="MRI73" expression="row2.Unused_Field_73 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI74" expression="row2.Contracted_Reading_Notes " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI75" expression="row2.Job_Notes_Expiry_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="MRI76" expression="row2.Customer_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI77" expression="row2.Contractor_Next_Read_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI78" expression="row2.Contractor_Next_Read_Notes " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI79" expression="row2.Linked_Install_Contractor_ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI80" expression="row2.Unused_Field_80 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI81" expression="row2.Consecutive_Failed_Reads " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI82" expression="row2.Unused_Field_82 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI83" expression="row2.Unused_Field_83 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI84" expression="row2.Unused_Field_84 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI85" expression="row2.Unused_Field_85 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI86" expression="row2.Unused_Field_86 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI87" expression="row2.Unused_Field_87 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI88" expression="row2.Unused_Field_88 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI89" expression="row2.Unused_Field_89 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI90" expression="row2.Unused_Field_90 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI91" expression="row2.Unused_Field_91 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI92" expression="row2.Unused_Field_92 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI93" expression="row2.Unused_Field_93 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI94" expression="row2.Unused_Field_94 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI95" expression="row2.Unused_Field_95 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI96" expression="row2.Unused_Field_96 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI97" expression="row2.Unused_Field_97 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI98" expression="row2.Unused_Field_98 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI99" expression="row2.Unused_Field_99 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI100" expression="row2.Unused_Field_100 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_1" expression="row2.Unused_Field_21_1 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_2" expression="row2.Unused_Field_21_2 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_3" expression="row2.Unused_Field_21_3 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_4" expression="row2.Unused_Field_21_4 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_5" expression="row2.Unused_Field_21_5 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_6" expression="row2.Unused_Field_21_6 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_7" expression="row2.Unused_Field_21_7 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_8" expression="row2.Unused_Field_21_8 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_9" expression="row2.Unused_Field_21_9 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MRI21_10" expression="row2.Unused_Field_21_10 " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Installation_Number" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_2" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_3" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_4" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_5" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_6" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_7" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_8" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_9" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_10" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_11" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_12" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_13" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_14" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_15" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_16" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_17" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_18" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_19" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unique_Identifier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Installation_Address" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Consumer_Surname" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_23" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Contact_Phone" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reading_Frequency_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_26" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_27" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_28" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Hazard_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_30" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Meter_Reader_Notes" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Occupier_State" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Occupier_Record_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="District" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_35" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_36" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_37" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_38" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reading_Frequency_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_40" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Next_Reading_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Key_Location_Notes" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Lot_Plan_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Tenancy_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Hazard_Information" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_46" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Installation_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_48" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Other_Notes" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_50" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Utility_Type" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Installation_Number" expression="row1.Installation_Number " type="id_Double" nullable="true" operator="="/>
+        <mapperTableEntries name="Key_Register_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Security_System_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reading_Sequence" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Sequence_Position" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Geographic_Area_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Retailer" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Occupancy_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Disconnected_Flag" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_60" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_61" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_62" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Meter_Reader" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Contract_Removed_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_65" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_66" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Contract_Cancelled_Reason" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Actual_Sequence_Position" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Group_Billing_Consumer" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Prepay_Metering_Flag" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Installation_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Linked_Installation_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_73" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Contracted_Reading_Notes" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Job_Notes_Expiry_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Customer_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Contractor_Next_Read_Date" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Contractor_Next_Read_Notes" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Linked_Install_Contractor_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_80" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Consecutive_Failed_Reads" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_82" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_83" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_84" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_85" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_86" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_87" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_88" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_89" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_90" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_91" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_92" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_93" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_94" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_95" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_96" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_97" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_98" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_99" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_100" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_6" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_7" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_8" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_9" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_21_10" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="200" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Xms10FLHEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Xms10FLHEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_mriinstall2.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_Xms10FLHEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Number" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Key_Register_Number" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Security_System_Code" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_Sequence" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sequence_Position" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Geographic_Area_Code" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Retailer" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Occupancy_Status" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Disconnected_Flag" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_60" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_61" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_62" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Reader" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contract_Removed_Date" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_65" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_66" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contract_Cancelled_Reason" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Actual_Sequence_Position" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Group_Billing_Consumer" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prepay_Metering_Flag" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Type" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Linked_Installation_ID" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_73" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contracted_Reading_Notes" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Job_Notes_Expiry_Date" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Type" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contractor_Next_Read_Date" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contractor_Next_Read_Notes" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Linked_Install_Contractor_ID" id="56"/>
+      <elementValue elementRef="TRIM" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_80" id="58"/>
+      <elementValue elementRef="TRIM" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consecutive_Failed_Reads" id="60"/>
+      <elementValue elementRef="TRIM" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_82" id="62"/>
+      <elementValue elementRef="TRIM" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_83" id="64"/>
+      <elementValue elementRef="TRIM" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_84" id="66"/>
+      <elementValue elementRef="TRIM" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_85" id="68"/>
+      <elementValue elementRef="TRIM" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_86" id="70"/>
+      <elementValue elementRef="TRIM" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_87" id="72"/>
+      <elementValue elementRef="TRIM" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_88" id="74"/>
+      <elementValue elementRef="TRIM" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_89" id="76"/>
+      <elementValue elementRef="TRIM" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_90" id="78"/>
+      <elementValue elementRef="TRIM" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_91" id="80"/>
+      <elementValue elementRef="TRIM" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_92" id="82"/>
+      <elementValue elementRef="TRIM" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_93" id="84"/>
+      <elementValue elementRef="TRIM" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_94" id="86"/>
+      <elementValue elementRef="TRIM" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_95" id="88"/>
+      <elementValue elementRef="TRIM" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_96" id="90"/>
+      <elementValue elementRef="TRIM" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_97" id="92"/>
+      <elementValue elementRef="TRIM" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_98" id="94"/>
+      <elementValue elementRef="TRIM" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_99" id="96"/>
+      <elementValue elementRef="TRIM" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_100" id="98"/>
+      <elementValue elementRef="TRIM" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_1" id="100"/>
+      <elementValue elementRef="TRIM" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_2" id="102"/>
+      <elementValue elementRef="TRIM" value="false" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_3" id="104"/>
+      <elementValue elementRef="TRIM" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_4" id="106"/>
+      <elementValue elementRef="TRIM" value="false" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_5" id="108"/>
+      <elementValue elementRef="TRIM" value="false" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_6" id="110"/>
+      <elementValue elementRef="TRIM" value="false" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_7" id="112"/>
+      <elementValue elementRef="TRIM" value="false" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_8" id="114"/>
+      <elementValue elementRef="TRIM" value="false" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_9" id="116"/>
+      <elementValue elementRef="TRIM" value="false" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_10" id="118"/>
+      <elementValue elementRef="TRIM" value="false" id="119"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Number" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Key_Register_Number" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Security_System_Code" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_Sequence" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Sequence_Position" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Geographic_Area_Code" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Retailer" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Occupancy_Status" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Disconnected_Flag" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_60" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_61" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_62" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Reader" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contract_Removed_Date" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_65" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_66" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contract_Cancelled_Reason" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Actual_Sequence_Position" id="34"/>
+      <elementValue elementRef="DECODE" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Group_Billing_Consumer" id="36"/>
+      <elementValue elementRef="DECODE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Prepay_Metering_Flag" id="38"/>
+      <elementValue elementRef="DECODE" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Type" id="40"/>
+      <elementValue elementRef="DECODE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Linked_Installation_ID" id="42"/>
+      <elementValue elementRef="DECODE" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_73" id="44"/>
+      <elementValue elementRef="DECODE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contracted_Reading_Notes" id="46"/>
+      <elementValue elementRef="DECODE" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Job_Notes_Expiry_Date" id="48"/>
+      <elementValue elementRef="DECODE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Customer_Type" id="50"/>
+      <elementValue elementRef="DECODE" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contractor_Next_Read_Date" id="52"/>
+      <elementValue elementRef="DECODE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Contractor_Next_Read_Notes" id="54"/>
+      <elementValue elementRef="DECODE" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Linked_Install_Contractor_ID" id="56"/>
+      <elementValue elementRef="DECODE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_80" id="58"/>
+      <elementValue elementRef="DECODE" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consecutive_Failed_Reads" id="60"/>
+      <elementValue elementRef="DECODE" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_82" id="62"/>
+      <elementValue elementRef="DECODE" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_83" id="64"/>
+      <elementValue elementRef="DECODE" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_84" id="66"/>
+      <elementValue elementRef="DECODE" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_85" id="68"/>
+      <elementValue elementRef="DECODE" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_86" id="70"/>
+      <elementValue elementRef="DECODE" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_87" id="72"/>
+      <elementValue elementRef="DECODE" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_88" id="74"/>
+      <elementValue elementRef="DECODE" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_89" id="76"/>
+      <elementValue elementRef="DECODE" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_90" id="78"/>
+      <elementValue elementRef="DECODE" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_91" id="80"/>
+      <elementValue elementRef="DECODE" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_92" id="82"/>
+      <elementValue elementRef="DECODE" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_93" id="84"/>
+      <elementValue elementRef="DECODE" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_94" id="86"/>
+      <elementValue elementRef="DECODE" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_95" id="88"/>
+      <elementValue elementRef="DECODE" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_96" id="90"/>
+      <elementValue elementRef="DECODE" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_97" id="92"/>
+      <elementValue elementRef="DECODE" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_98" id="94"/>
+      <elementValue elementRef="DECODE" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_99" id="96"/>
+      <elementValue elementRef="DECODE" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_100" id="98"/>
+      <elementValue elementRef="DECODE" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_1" id="100"/>
+      <elementValue elementRef="DECODE" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_2" id="102"/>
+      <elementValue elementRef="DECODE" value="false" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_3" id="104"/>
+      <elementValue elementRef="DECODE" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_4" id="106"/>
+      <elementValue elementRef="DECODE" value="false" id="107"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_5" id="108"/>
+      <elementValue elementRef="DECODE" value="false" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_6" id="110"/>
+      <elementValue elementRef="DECODE" value="false" id="111"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_7" id="112"/>
+      <elementValue elementRef="DECODE" value="false" id="113"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_8" id="114"/>
+      <elementValue elementRef="DECODE" value="false" id="115"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_9" id="116"/>
+      <elementValue elementRef="DECODE" value="false" id="117"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_21_10" id="118"/>
+      <elementValue elementRef="DECODE" value="false" id="119"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_meco_MRIINSTALL2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_3">
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Key_Register_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Security_System_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_Sequence" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Sequence_Position" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Geographic_Area_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Retailer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Occupancy_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Disconnected_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_60" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_61" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_62" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Meter_Reader" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Contract_Removed_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_65" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_66" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Contract_Cancelled_Reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Actual_Sequence_Position" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Group_Billing_Consumer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Prepay_Metering_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Installation_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Linked_Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_73" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Contracted_Reading_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Job_Notes_Expiry_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Customer_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Contractor_Next_Read_Date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Contractor_Next_Read_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Linked_Install_Contractor_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_80" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Consecutive_Failed_Reads" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_82" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_83" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_84" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_85" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_86" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_87" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_88" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_89" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_90" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_91" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_92" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_93" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_94" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_95" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_96" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_97" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_98" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_99" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_100" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Key_Register_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Security_System_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_Sequence" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Sequence_Position" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Geographic_Area_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Retailer" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Occupancy_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Disconnected_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_60" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_61" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_62" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Meter_Reader" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Contract_Removed_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_65" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_66" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Contract_Cancelled_Reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Actual_Sequence_Position" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Group_Billing_Consumer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Prepay_Metering_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Installation_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Linked_Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_73" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Contracted_Reading_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Job_Notes_Expiry_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Customer_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Contractor_Next_Read_Date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Contractor_Next_Read_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Linked_Install_Contractor_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_80" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Consecutive_Failed_Reads" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_82" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_83" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_84" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_85" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_86" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_87" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_88" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_89" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_90" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_91" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_92" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_93" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_94" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_95" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_96" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_97" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_98" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_99" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_100" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Unused_Field_21_10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="120" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileOutputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.101 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Output" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileOutputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_mriinstall.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_eeJEMFLGEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tgt_cdm_MRIINSTALL"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="19" name="MRI0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI5" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI6" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="MRI9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI10" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="MRI11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="9" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="MRI13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MRI14" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI16" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI18" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI19" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="MRI20" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="200" name="MRI22" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="200" name="MRI23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="200" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="MRI24" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI25" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI26" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MRI27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI28" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI29" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI30" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI31" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI32" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="MRI33" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI34" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI35" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI36" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI37" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI38" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI39" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI40" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI41" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI42" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="MRI43" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI44" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI45" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI46" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="MRI47" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI48" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI49" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI50" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI51" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="MRI52" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="MRI53" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI54" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI55" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI56" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI57" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI58" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI59" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI60" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI61" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI62" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI63" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI64" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI65" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI66" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI67" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI68" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI69" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI70" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI71" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI72" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI73" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI74" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI75" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI76" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI77" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI78" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI79" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI80" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI81" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI82" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI83" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI84" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI85" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI86" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI87" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI88" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI89" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI90" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI91" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI92" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI93" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI94" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI95" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI96" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI97" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI98" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI99" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MRI100" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="MRI21_10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="MRI21_5" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MRI21_4" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MRI21_7" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MRI21_6" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MRI21_9" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MRI21_8" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MRI21_1" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MRI21_3" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="MRI21_2" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Ingestion for MRIINSTALL"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+</talendfile:ProcessType>
