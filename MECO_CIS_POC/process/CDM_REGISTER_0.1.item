@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:f7KIQT7i9hyvzHZrYfL4pdUYaqstDtlf3nCmPwoH" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:diMssB5YQ64YFs2L4BlPOpyO0E2vrwmD4TmCmnLS" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_bbJ84FLdEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_bbJ84FLdEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_register1.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_bbJ84FLdEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_ID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_ID" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Serial_Number" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Number" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Device_ID" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Status" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Order" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Datetime_UTC" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Install_Reading" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Removal_Datetime_UTC" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Removal_Reason" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_11" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Multiplier_1" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Multiplier_2" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_14" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Map_Plan_Code" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Interval_Flag" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_ID" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_ID" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Serial_Number" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Number" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Device_ID" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Status" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Order" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_Datetime_UTC" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Install_Reading" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Removal_Datetime_UTC" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Removal_Reason" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_11" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Multiplier_1" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Multiplier_2" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_14" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Map_Plan_Code" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Interval_Flag" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_meco_REGISTER1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="19" name="Register_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Meter_Serial_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Register_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Meter_Device_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Register_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="Register_Order" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Install_Reading" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Removal_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Removal_Reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_11" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Multiplier_1" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Multiplier_2" nullable="true" pattern="" precision="5" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Map_Plan_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Interval_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Register_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Meter_Serial_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Register_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Meter_Device_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Register_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="Register_Order" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Install_Reading" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Removal_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Removal_Reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_11" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Multiplier_1" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Multiplier_2" nullable="true" pattern="" precision="5" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Map_Plan_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Interval_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="160" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_NO3dUFLdEfGAPIORTaYCDw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="map_cdmREGISTER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" defaultValue="" key="false" length="19" name="REG0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="REG3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG4" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG5" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="REG6" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="4" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="REG7" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="REG8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="REG9" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG11" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG12" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG13" nullable="true" pattern="" precision="5" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="REG14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="REG15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG16" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="REG17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG18" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="REG19" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="REG20" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG21" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="REG22" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="REG23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="REG24" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="REG25" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG26" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="REG27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG28" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG29" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="REG30" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="REG31" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG32" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG33" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="REG34" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG35" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG36" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG37" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG38" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG39" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="REG40" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="REG41" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="REG42" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="REG43" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG44" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG45" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="REG46" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="REG47" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="REG48" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="REG49" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="REG50" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="REG51" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG52" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG53" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="REG54" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG55" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG56" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG57" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REG58" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG59" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="REG60" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG61" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="STREAM2" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="STREAM3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM4" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="STREAM5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM6" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="STREAM7" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="STREAM8" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="STREAM9" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="STREAM10" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="STREAM11" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="STREAM12" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM13" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="STREAM14" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REGHIST12" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REGHIST13" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REGHIST14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REGHIST15" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="REGHIST16" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="2000" name="REGHIST17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="REGHIST18" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="REGHIST19" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REGHIST20" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REGHIST22" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REGHIST23" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REGHIST24" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="STREAMHIST13" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="STREAMHIST14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="STREAMHIST15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAMHIST16" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="STREAMHIST17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="REG0" expression="row1.Register_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG1" expression="row1.Installation_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG2" expression="row1.Meter_Serial_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG3" expression="row1.Register_Number " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG4" expression="row1.Meter_Device_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG5" expression="row1.Register_Status " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG6" expression="row1.Register_Order " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG7" expression="row1.Installation_Datetime_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REG8" expression="row1.Install_Reading " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG9" expression="row1.Removal_Datetime_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REG10" expression="row1.Removal_Reason " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG11" expression="row1.Unused_Field_11 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG12" expression="row1.Multiplier_1 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG13" expression="row1.Multiplier_2 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG14" expression="row1.Unused_Field_14 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG15" expression="row1.Map_Plan_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG16" expression="row1.Interval_Flag " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG17" expression="row2.Reading_Treatment " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG18" expression="row2.Unit_Of_Measure " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG19" expression="row2.Digits " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG20" expression="row2.Decimals " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG21" expression="row2.Adjustment_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG22" expression="row2.Validation_Configuration " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG23" expression="row2.Unused_Field_23 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG24" expression="row2.Previous_Bill_Datetime_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REG25" expression="row2.Previous_Bill_Reading " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG26" expression="row2.Previous_Read_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG27" expression="row2.Removal_Reading " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG28" expression="row2.Billable_Flag " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG29" expression="row2.Record_Source " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG30" expression="row2.Disconnection_Date_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REG31" expression="row2.Estimate_Override_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG32" expression="row2.Override_Consumption " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG33" expression="row2.Profile_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG34" expression="row2.Time_Pattern_Regime " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG35" expression="row2.Unused_Field_35 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG36" expression="row2.Unused_Field_36 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG37" expression="row2.Unused_Field_37 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG38" expression="row2.Unused_Field_38 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG39" expression="row2.Meter_Contact " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG40" expression="row3.Voltage_Load_Category " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG41" expression="row3.Unused_Field_41 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REG42" expression="row3.Energy_Flow_Direction " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG43" expression="row3.Installed_Register_Content " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG44" expression="row3.Unused_Field_44 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG45" expression="row3.Time_Of_Day_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG46" expression="row3.Register_Suffix " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG47" expression="row3.Fixture_Class_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG48" expression="row3.Unused_Field_48 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG49" expression="row3.Unused_Field_49 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG50" expression="row3.Unused_Field_50 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG51" expression="row3.Stream_Effective_Datetime_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REG52" expression="row3.External_Reference " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG53" expression="row3.Consumption_Periods_Per_Day " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG54" expression="row3.Stream_Modifier " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG55" expression="row3.Unused_Field_55 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG56" expression="row3.Meter_Location_Reference " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG57" expression="row3.Controlled_Load " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG58" expression="row3.Profile_Shape " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REG59" expression="row3.Market_Submission_Flag " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REG60" expression="row3.Next_Publish_Date_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REG61" expression="row3.Registry_Ack_Flag " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STREAM1" expression="row3.Unused_Field_STREAM1 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STREAM2" expression="row3.Stream_Close_Datetime_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STREAM3" expression="row3.Stream_UOM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STREAM4" expression="row3.Master_Stream_Register_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STREAM5" expression="row3.Stream_Association_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STREAM6" expression="row3.Stream_Check_Register_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STREAM7" expression="row3.Stream_Validation_Datetime_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STREAM8" expression="row3.Unused_Field_STREAM8 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STREAM9" expression="row3.Unused_Field_STREAM9 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STREAM10" expression="row3.Last_Market_Send_Datetime_UTC " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STREAM11" expression="row3.Unused_Field_STREAM11 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STREAM12" expression="row3.Unused_Field_STREAM12 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STREAM13" expression="row3.Interval_Offset_Time " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STREAM14" expression="row3.Unused_Field_STREAM14 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="REGHIST12" expression="row3.Estimated_Annual_Usage " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REGHIST13" expression="row3.Unused_Field_REGHIST13 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REGHIST14" expression="row3.Unused_Field_REGHIST14 " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REGHIST15" expression="row3.Average_Daily_Load " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REGHIST16" expression="row3.Network_Charge " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REGHIST17" expression="row3.Network_Charge_Text " type="id_String" nullable="true"/>
+        <mapperTableEntries name="REGHIST18" expression="row3.Peak_Demand_Summer " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REGHIST19" expression="row3.Peak_Demand_Other " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REGHIST20" expression="row3.Unused_Field_REGHIST20 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REGHIST22" expression="row3.Unused_Field_REGHIST22 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REGHIST23" expression="row3.Unused_Field_REGHIST23 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="REGHIST24" expression="row3.Consumption_Adjustment " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STREAMHIST13" expression="row3.Datastream_Registered_Date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="STREAMHIST14" expression="row3.Data_Stream_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STREAMHIST15" expression="row3.Consumption_Characteristics " type="id_String" nullable="true"/>
+        <mapperTableEntries name="STREAMHIST16" expression="row3.Normalised_Energy_Per_Day " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="STREAMHIST17" expression="row3.Datastream_Active_Flag " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Register_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Installation_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Meter_Serial_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Register_Number" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Meter_Device_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Register_Status" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Register_Order" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Installation_Datetime_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Install_Reading" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Removal_Datetime_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Removal_Reason" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_11" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Multiplier_1" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Multiplier_2" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_14" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Map_Plan_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Interval_Flag" type="id_Double" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Register_ID" expression="row1.Register_ID " type="id_Double" nullable="true" operator="="/>
+        <mapperTableEntries name="Reading_Treatment" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unit_Of_Measure" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Digits" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Decimals" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Adjustment_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Validation_Configuration" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_23" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Previous_Bill_Datetime_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Previous_Bill_Reading" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Previous_Read_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Removal_Reading" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Billable_Flag" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Record_Source" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Disconnection_Date_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Estimate_Override_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Override_Consumption" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Profile_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Time_Pattern_Regime" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_35" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_36" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_37" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_38" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Meter_Contact" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Installation_ID" expression="row1.Installation_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Voltage_Load_Category" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_41" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Energy_Flow_Direction" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Installed_Register_Content" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_44" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Time_Of_Day_Code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Register_Suffix" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Fixture_Class_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_48" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_49" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_50" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Stream_Effective_Datetime_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="External_Reference" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Consumption_Periods_Per_Day" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Stream_Modifier" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_55" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Meter_Location_Reference" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Controlled_Load" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Profile_Shape" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Market_Submission_Flag" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Next_Publish_Date_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Registry_Ack_Flag" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_STREAM1" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Stream_Close_Datetime_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Stream_UOM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Master_Stream_Register_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Stream_Association_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Stream_Check_Register_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Stream_Validation_Datetime_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_STREAM8" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_STREAM9" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Last_Market_Send_Datetime_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_STREAM11" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_STREAM12" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Interval_Offset_Time" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_STREAM14" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Estimated_Annual_Usage" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_REGHIST13" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_REGHIST14" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Average_Daily_Load" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Network_Charge" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Network_Charge_Text" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Peak_Demand_Summer" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Peak_Demand_Other" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_REGHIST20" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_REGHIST22" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Unused_Field_REGHIST23" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Consumption_Adjustment" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Datastream_Registered_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Data_Stream_Type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Consumption_Characteristics" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Normalised_Energy_Per_Day" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Datastream_Active_Flag" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="160" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_iXOXIFLdEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_iXOXIFLdEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_register2.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_iXOXIFLdEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_ID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_Treatment" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit_Of_Measure" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Digits" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Decimals" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adjustment_Type" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Validation_Configuration" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_23" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Previous_Bill_Datetime_UTC" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Previous_Bill_Reading" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Previous_Read_Type" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Removal_Reading" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billable_Flag" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Record_Source" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Disconnection_Date_UTC" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Estimate_Override_Type" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Override_Consumption" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Profile_Code" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time_Pattern_Regime" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_35" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_36" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_37" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_38" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Contact" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_ID" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reading_Treatment" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unit_Of_Measure" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Digits" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Decimals" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Adjustment_Type" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Validation_Configuration" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_23" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Previous_Bill_Datetime_UTC" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Previous_Bill_Reading" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Previous_Read_Type" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Removal_Reading" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Billable_Flag" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Record_Source" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Disconnection_Date_UTC" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Estimate_Override_Type" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Override_Consumption" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Profile_Code" id="34"/>
+      <elementValue elementRef="DECODE" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time_Pattern_Regime" id="36"/>
+      <elementValue elementRef="DECODE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_35" id="38"/>
+      <elementValue elementRef="DECODE" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_36" id="40"/>
+      <elementValue elementRef="DECODE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_37" id="42"/>
+      <elementValue elementRef="DECODE" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_38" id="44"/>
+      <elementValue elementRef="DECODE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Contact" id="46"/>
+      <elementValue elementRef="DECODE" value="false" id="47"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_meco_REGISTER2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
+      <column comment="" defaultValue="" key="false" length="19" name="Register_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_Treatment" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unit_Of_Measure" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Digits" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Decimals" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Adjustment_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Validation_Configuration" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Unused_Field_23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Previous_Bill_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Previous_Bill_Reading" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Previous_Read_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Removal_Reading" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Billable_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Record_Source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Disconnection_Date_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Estimate_Override_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Override_Consumption" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Profile_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="Time_Pattern_Regime" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_35" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_36" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_37" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_38" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Meter_Contact" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Register_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reading_Treatment" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unit_Of_Measure" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="Digits" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Decimals" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Adjustment_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Validation_Configuration" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Unused_Field_23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Previous_Bill_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Previous_Bill_Reading" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Previous_Read_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Removal_Reading" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Billable_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Record_Source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Disconnection_Date_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Estimate_Override_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Override_Consumption" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Profile_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="Time_Pattern_Regime" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_35" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_36" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_37" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_38" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Meter_Contact" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="280" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Input" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileInputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_os3qkFLdEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_os3qkFLdEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_register3.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_os3qkFLdEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_ID" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Voltage_Load_Category" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_41" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Energy_Flow_Direction" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installed_Register_Content" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_44" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time_Of_Day_Code" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Suffix" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fixture_Class_Type" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_48" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_49" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_50" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Effective_Datetime_UTC" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="External_Reference" id="26"/>
+      <elementValue elementRef="TRIM" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumption_Periods_Per_Day" id="28"/>
+      <elementValue elementRef="TRIM" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Modifier" id="30"/>
+      <elementValue elementRef="TRIM" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_55" id="32"/>
+      <elementValue elementRef="TRIM" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Location_Reference" id="34"/>
+      <elementValue elementRef="TRIM" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Controlled_Load" id="36"/>
+      <elementValue elementRef="TRIM" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Profile_Shape" id="38"/>
+      <elementValue elementRef="TRIM" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Market_Submission_Flag" id="40"/>
+      <elementValue elementRef="TRIM" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Next_Publish_Date_UTC" id="42"/>
+      <elementValue elementRef="TRIM" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registry_Ack_Flag" id="44"/>
+      <elementValue elementRef="TRIM" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM1" id="46"/>
+      <elementValue elementRef="TRIM" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Close_Datetime_UTC" id="48"/>
+      <elementValue elementRef="TRIM" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_UOM" id="50"/>
+      <elementValue elementRef="TRIM" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Master_Stream_Register_ID" id="52"/>
+      <elementValue elementRef="TRIM" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Association_Type" id="54"/>
+      <elementValue elementRef="TRIM" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Check_Register_ID" id="56"/>
+      <elementValue elementRef="TRIM" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Validation_Datetime_UTC" id="58"/>
+      <elementValue elementRef="TRIM" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM8" id="60"/>
+      <elementValue elementRef="TRIM" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM9" id="62"/>
+      <elementValue elementRef="TRIM" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Last_Market_Send_Datetime_UTC" id="64"/>
+      <elementValue elementRef="TRIM" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM11" id="66"/>
+      <elementValue elementRef="TRIM" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM12" id="68"/>
+      <elementValue elementRef="TRIM" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Interval_Offset_Time" id="70"/>
+      <elementValue elementRef="TRIM" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM14" id="72"/>
+      <elementValue elementRef="TRIM" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Estimated_Annual_Usage" id="74"/>
+      <elementValue elementRef="TRIM" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST13" id="76"/>
+      <elementValue elementRef="TRIM" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST14" id="78"/>
+      <elementValue elementRef="TRIM" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Average_Daily_Load" id="80"/>
+      <elementValue elementRef="TRIM" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Network_Charge" id="82"/>
+      <elementValue elementRef="TRIM" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Network_Charge_Text" id="84"/>
+      <elementValue elementRef="TRIM" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Peak_Demand_Summer" id="86"/>
+      <elementValue elementRef="TRIM" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Peak_Demand_Other" id="88"/>
+      <elementValue elementRef="TRIM" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST20" id="90"/>
+      <elementValue elementRef="TRIM" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST22" id="92"/>
+      <elementValue elementRef="TRIM" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST23" id="94"/>
+      <elementValue elementRef="TRIM" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumption_Adjustment" id="96"/>
+      <elementValue elementRef="TRIM" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Datastream_Registered_Date" id="98"/>
+      <elementValue elementRef="TRIM" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Stream_Type" id="100"/>
+      <elementValue elementRef="TRIM" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumption_Characteristics" id="102"/>
+      <elementValue elementRef="TRIM" value="false" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Normalised_Energy_Per_Day" id="104"/>
+      <elementValue elementRef="TRIM" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Datastream_Active_Flag" id="106"/>
+      <elementValue elementRef="TRIM" value="false" id="107"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installation_ID" id="0"/>
+      <elementValue elementRef="DECODE" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Voltage_Load_Category" id="2"/>
+      <elementValue elementRef="DECODE" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_41" id="4"/>
+      <elementValue elementRef="DECODE" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Energy_Flow_Direction" id="6"/>
+      <elementValue elementRef="DECODE" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Installed_Register_Content" id="8"/>
+      <elementValue elementRef="DECODE" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_44" id="10"/>
+      <elementValue elementRef="DECODE" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Time_Of_Day_Code" id="12"/>
+      <elementValue elementRef="DECODE" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Register_Suffix" id="14"/>
+      <elementValue elementRef="DECODE" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fixture_Class_Type" id="16"/>
+      <elementValue elementRef="DECODE" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_48" id="18"/>
+      <elementValue elementRef="DECODE" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_49" id="20"/>
+      <elementValue elementRef="DECODE" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_50" id="22"/>
+      <elementValue elementRef="DECODE" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Effective_Datetime_UTC" id="24"/>
+      <elementValue elementRef="DECODE" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="External_Reference" id="26"/>
+      <elementValue elementRef="DECODE" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumption_Periods_Per_Day" id="28"/>
+      <elementValue elementRef="DECODE" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Modifier" id="30"/>
+      <elementValue elementRef="DECODE" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_55" id="32"/>
+      <elementValue elementRef="DECODE" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Meter_Location_Reference" id="34"/>
+      <elementValue elementRef="DECODE" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Controlled_Load" id="36"/>
+      <elementValue elementRef="DECODE" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Profile_Shape" id="38"/>
+      <elementValue elementRef="DECODE" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Market_Submission_Flag" id="40"/>
+      <elementValue elementRef="DECODE" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Next_Publish_Date_UTC" id="42"/>
+      <elementValue elementRef="DECODE" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Registry_Ack_Flag" id="44"/>
+      <elementValue elementRef="DECODE" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM1" id="46"/>
+      <elementValue elementRef="DECODE" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Close_Datetime_UTC" id="48"/>
+      <elementValue elementRef="DECODE" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_UOM" id="50"/>
+      <elementValue elementRef="DECODE" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Master_Stream_Register_ID" id="52"/>
+      <elementValue elementRef="DECODE" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Association_Type" id="54"/>
+      <elementValue elementRef="DECODE" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Check_Register_ID" id="56"/>
+      <elementValue elementRef="DECODE" value="false" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Stream_Validation_Datetime_UTC" id="58"/>
+      <elementValue elementRef="DECODE" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM8" id="60"/>
+      <elementValue elementRef="DECODE" value="false" id="61"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM9" id="62"/>
+      <elementValue elementRef="DECODE" value="false" id="63"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Last_Market_Send_Datetime_UTC" id="64"/>
+      <elementValue elementRef="DECODE" value="false" id="65"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM11" id="66"/>
+      <elementValue elementRef="DECODE" value="false" id="67"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM12" id="68"/>
+      <elementValue elementRef="DECODE" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Interval_Offset_Time" id="70"/>
+      <elementValue elementRef="DECODE" value="false" id="71"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_STREAM14" id="72"/>
+      <elementValue elementRef="DECODE" value="false" id="73"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Estimated_Annual_Usage" id="74"/>
+      <elementValue elementRef="DECODE" value="false" id="75"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST13" id="76"/>
+      <elementValue elementRef="DECODE" value="false" id="77"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST14" id="78"/>
+      <elementValue elementRef="DECODE" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Average_Daily_Load" id="80"/>
+      <elementValue elementRef="DECODE" value="false" id="81"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Network_Charge" id="82"/>
+      <elementValue elementRef="DECODE" value="false" id="83"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Network_Charge_Text" id="84"/>
+      <elementValue elementRef="DECODE" value="false" id="85"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Peak_Demand_Summer" id="86"/>
+      <elementValue elementRef="DECODE" value="false" id="87"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Peak_Demand_Other" id="88"/>
+      <elementValue elementRef="DECODE" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST20" id="90"/>
+      <elementValue elementRef="DECODE" value="false" id="91"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST22" id="92"/>
+      <elementValue elementRef="DECODE" value="false" id="93"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Unused_Field_REGHIST23" id="94"/>
+      <elementValue elementRef="DECODE" value="false" id="95"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumption_Adjustment" id="96"/>
+      <elementValue elementRef="DECODE" value="false" id="97"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Datastream_Registered_Date" id="98"/>
+      <elementValue elementRef="DECODE" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Data_Stream_Type" id="100"/>
+      <elementValue elementRef="DECODE" value="false" id="101"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Consumption_Characteristics" id="102"/>
+      <elementValue elementRef="DECODE" value="false" id="103"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Normalised_Energy_Per_Day" id="104"/>
+      <elementValue elementRef="DECODE" value="false" id="105"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Datastream_Active_Flag" id="106"/>
+      <elementValue elementRef="DECODE" value="false" id="107"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_HEADER_AS_IS" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="src_meco_REGISTER3"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_3">
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Voltage_Load_Category" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_41" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Energy_Flow_Direction" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Installed_Register_Content" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unused_Field_44" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Time_Of_Day_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="Register_Suffix" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Fixture_Class_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Unused_Field_48" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Unused_Field_49" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_50" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Stream_Effective_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="External_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Consumption_Periods_Per_Day" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Stream_Modifier" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_55" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Meter_Location_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Controlled_Load" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Profile_Shape" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Market_Submission_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Next_Publish_Date_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Registry_Ack_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Stream_Close_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Stream_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Master_Stream_Register_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Stream_Association_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Stream_Check_Register_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Stream_Validation_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM8" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM9" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Last_Market_Send_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM11" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Unused_Field_STREAM12" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Interval_Offset_Time" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM14" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Estimated_Annual_Usage" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_REGHIST13" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unused_Field_REGHIST14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Average_Daily_Load" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Network_Charge" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Network_Charge_Text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Peak_Demand_Summer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Peak_Demand_Other" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_REGHIST20" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_REGHIST22" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_REGHIST23" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Consumption_Adjustment" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Datastream_Registered_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Data_Stream_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Consumption_Characteristics" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Normalised_Energy_Per_Day" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Datastream_Active_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Voltage_Load_Category" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_41" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Energy_Flow_Direction" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Installed_Register_Content" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unused_Field_44" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Time_Of_Day_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="Register_Suffix" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Fixture_Class_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Unused_Field_48" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Unused_Field_49" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_50" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Stream_Effective_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="External_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Consumption_Periods_Per_Day" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Stream_Modifier" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_55" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Meter_Location_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Controlled_Load" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Profile_Shape" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Market_Submission_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Next_Publish_Date_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Registry_Ack_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Stream_Close_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Stream_UOM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Master_Stream_Register_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Stream_Association_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Stream_Check_Register_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Stream_Validation_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM8" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM9" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Last_Market_Send_Datetime_UTC" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM11" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Unused_Field_STREAM12" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Interval_Offset_Time" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_STREAM14" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Estimated_Annual_Usage" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_REGHIST13" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unused_Field_REGHIST14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Average_Daily_Load" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Network_Charge" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="Network_Charge_Text" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Peak_Demand_Summer" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="Peak_Demand_Other" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_REGHIST20" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_REGHIST22" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Unused_Field_REGHIST23" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Consumption_Adjustment" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Datastream_Registered_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Data_Stream_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Consumption_Characteristics" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Normalised_Energy_Per_Day" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Datastream_Active_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="160" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileOutputDelimited" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.101 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="File/Output" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tFileOutputDelimited" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_vJwOcFLdEfGAPIORTaYCDw" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_register.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_vJwOcFLdEfGAPIORTaYCDw - metadata" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="tgt_cdm_REGISTER"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_1">
+      <column comment="" defaultValue="" key="false" length="19" name="REG0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="REG3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG4" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG5" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="REG6" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="4" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG7" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="REG8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG9" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG11" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG12" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG13" nullable="true" pattern="" precision="5" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="REG14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="REG15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG16" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="REG17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG18" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="REG19" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="6" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="REG20" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG21" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="REG22" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="REG23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG24" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="REG25" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG26" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="REG27" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG28" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG29" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG30" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG31" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG32" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG33" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="REG34" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="5" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG35" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG36" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG37" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG38" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG39" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="REG40" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG41" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG42" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="REG43" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG44" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG45" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2" name="REG46" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="REG47" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="REG48" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="REG49" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="REG50" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG51" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG52" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG53" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG54" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG55" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG56" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG57" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REG58" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG59" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REG60" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REG61" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM2" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="STREAM3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM4" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="STREAM5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM6" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM7" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM8" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM9" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM10" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM11" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="STREAM12" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM13" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAM14" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REGHIST12" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REGHIST13" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REGHIST14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REGHIST15" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="REGHIST16" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="REGHIST17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="REGHIST18" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="8" name="REGHIST19" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="8" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REGHIST20" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REGHIST22" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="REGHIST23" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="REGHIST24" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="STREAMHIST13" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="STREAMHIST14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="STREAMHIST15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="STREAMHIST16" nullable="true" pattern="" precision="6" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="STREAMHIST17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Ingestion for cdmREGISTER"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+</talendfile:ProcessType>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_bbLLAFLdEfGAPIORTaYCDw" name="src_meco_REGISTER1" dataPackage="_bbLLAVLdEfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_register1.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_bbLLAVLdEfGAPIORTaYCDw" name="default" dataManager="_bbLLAFLdEfGAPIORTaYCDw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_bbLLAlLdEfGAPIORTaYCDw" id="_Pbfs8FLdEfGAPIORTaYCDw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLA1LdEfGAPIORTaYCDw" name="Register_ID" label="Register_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_bbLLBFLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLBVLdEfGAPIORTaYCDw" name="Installation_ID" label="Installation_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_bbLLBlLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLB1LdEfGAPIORTaYCDw" name="Meter_Serial_Number" label="Meter_Serial_Number" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_bbLLCFLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLCVLdEfGAPIORTaYCDw" name="Register_Number" label="Register_Number" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_bbLLClLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLC1LdEfGAPIORTaYCDw" name="Meter_Device_ID" label="Meter_Device_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_bbLLDFLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLDVLdEfGAPIORTaYCDw" name="Register_Status" label="Register_Status" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_bbLLDlLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLD1LdEfGAPIORTaYCDw" name="Register_Order" label="Register_Order" length="4" precision="-1" sourceType="" talendType="id_Double" originalLength="4">
+        <initialValue xmi:id="_bbLLEFLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLEVLdEfGAPIORTaYCDw" name="Installation_Datetime_UTC" label="Installation_Datetime_UTC" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_bbLLElLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLE1LdEfGAPIORTaYCDw" name="Install_Reading" label="Install_Reading" length="15" precision="-1" sourceType="" talendType="id_String" originalLength="15">
+        <initialValue xmi:id="_bbLLFFLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLFVLdEfGAPIORTaYCDw" name="Removal_Datetime_UTC" label="Removal_Datetime_UTC" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_bbLLFlLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLF1LdEfGAPIORTaYCDw" name="Removal_Reason" label="Removal_Reason" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_bbLLGFLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLGVLdEfGAPIORTaYCDw" name="Unused_Field_11" label="Unused_Field_11" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_bbLLGlLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLG1LdEfGAPIORTaYCDw" name="Multiplier_1" label="Multiplier_1" length="19" precision="6" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_bbLLHFLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLHVLdEfGAPIORTaYCDw" name="Multiplier_2" label="Multiplier_2" length="19" precision="5" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_bbLLHlLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLH1LdEfGAPIORTaYCDw" name="Unused_Field_14" label="Unused_Field_14" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_bbLLIFLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLIVLdEfGAPIORTaYCDw" name="Map_Plan_Code" label="Map_Plan_Code" length="15" precision="-1" sourceType="" talendType="id_String" originalLength="15">
+        <initialValue xmi:id="_bbLLIlLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_bbLLI1LdEfGAPIORTaYCDw" name="Interval_Flag" label="Interval_Flag" length="1" precision="-1" sourceType="" talendType="id_Double" originalLength="1">
+        <initialValue xmi:id="_bbLLJFLdEfGAPIORTaYCDw" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
