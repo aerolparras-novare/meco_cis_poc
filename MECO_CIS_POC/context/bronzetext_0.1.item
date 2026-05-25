@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_yNee4FNxEfGAPIORTaYCDw" confirmationNeeded="false" hide="false" name="Default">
+  <contextParameter xmi:id="_yNee4VNxEfGAPIORTaYCDw" comment="" name="src_file_dir" prompt="src_file_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/development/CSV/"/>
+  <contextParameter xmi:id="_yNee4lNxEfGAPIORTaYCDw" comment="" name="filename" prompt="filename?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="customers"/>
+  <contextParameter xmi:id="_yNee41NxEfGAPIORTaYCDw" comment="" name="file_extension" prompt="file_extension?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=".csv"/>
+  <contextParameter xmi:id="_yNee5FNxEfGAPIORTaYCDw" comment="" name="hdfs_raw_src_file_dir" prompt="hdfs_raw_src_file_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/dev/raw/"/>
+  <contextParameter xmi:id="_yNee5VNxEfGAPIORTaYCDw" comment="" name="source_schema" prompt="source_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="hdfs"/>
+  <contextParameter xmi:id="_yNee5lNxEfGAPIORTaYCDw" comment="" name="target_schema" prompt="target_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="bronze"/>
+  <contextParameter xmi:id="_yNee51NxEfGAPIORTaYCDw" comment="" name="target_tablename" prompt="target_tablename?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="customers_csv"/>
+  <contextParameter xmi:id="_yNee6FNxEfGAPIORTaYCDw" comment="" name="target_table_location" prompt="target_table_location?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/dev/bronze/customers_csv/"/>
+  <contextParameter xmi:id="_yNee6VNxEfGAPIORTaYCDw" comment="" name="create_table_schema" prompt="create_table_schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="customer_id STRING, first_name STRING, last_name STRING, email STRING, join_date STRING, kyc_status STRING, source_system STRING, scd_status STRING, scd_timestamp STRING"/>
+  <contextParameter xmi:id="_yNee6lNxEfGAPIORTaYCDw" comment="" name="select_columns" prompt="select_columns?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="customer_id, first_name, last_name, email, join_date, kyc_status "/>
+  <contextParameter xmi:id="_3B53MFNxEfGAPIORTaYCDw" comment="" name="field_seperator" prompt="field_seperator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=","/>
+  <contextParameter xmi:id="_3B53MVNxEfGAPIORTaYCDw" comment="" name="header" prompt="header?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1"/>
+</talendfile:ContextType>

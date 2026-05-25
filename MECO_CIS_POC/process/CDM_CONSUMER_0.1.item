@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="src_file_dir" prompt="src_file_dir?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="/development/CSV/" internalId="_1X3h0FNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="customers" internalId="_1X3h0VNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="file_extension" prompt="file_extension?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value=".csv" internalId="_1X3h0lNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="hdfs_raw_src_file_dir" prompt="hdfs_raw_src_file_dir?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="/dev/raw/" internalId="_1X3h01NyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="source_schema" prompt="source_schema?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="hdfs" internalId="_1X3h1FNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="target_schema" prompt="target_schema?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="bronze" internalId="_1X3h1VNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="target_tablename" prompt="target_tablename?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="customers_csv" internalId="_1X3h1lNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="target_table_location" prompt="target_table_location?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="/dev/bronze/customers_csv/" internalId="_1X3h11NyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="create_table_schema" prompt="create_table_schema?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="customer_id STRING, first_name STRING, last_name STRING, email STRING, join_date STRING, kyc_status STRING, source_system STRING, scd_status STRING, scd_timestamp STRING" internalId="_1X3h2FNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="select_columns" prompt="select_columns?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="customer_id, first_name, last_name, email, join_date, kyc_status " internalId="_1X3h2VNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="field_seperator" prompt="field_seperator?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="," internalId="_1X3h2lNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="header" prompt="header?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="1" internalId="_1X3h21NyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="local_file_loc_tgt" prompt="local_file_loc_tgt?" promptNeeded="false" repositoryContextId="_NGDq4FNyEfGAPIORTaYCDw" type="id_String" value="C:/Users/angelo.baloy/Desktop/Meralco Files/target/" internalId="_1X3h3FNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="local_file_loc_src" prompt="local_file_loc_src?" promptNeeded="false" repositoryContextId="_NGDq4FNyEfGAPIORTaYCDw" type="id_String" value="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/" internalId="_1X3h3VNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_ResourceManager" prompt="conn_hadoop_cluster_ResourceManager?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="dao-cdp-poc-master1.novare.com.ph:8032" internalId="_5o6gQFNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_useCustomClasspath" prompt="conn_hadoop_cluster_useCustomClasspath?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_Boolean" value="" internalId="_5o6gQVNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_ResourceManagerScheduler" prompt="conn_hadoop_cluster_ResourceManagerScheduler?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="dao-cdp-poc-master1.novare.com.ph:8030" internalId="_5o6gQlNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_hadoopConfSpecificJar" prompt="conn_hadoop_cluster_hadoopConfSpecificJar?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="" internalId="_5o6gQ1NyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_JobHistory" prompt="conn_hadoop_cluster_JobHistory?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="dao-cdp-poc-edge1.novare.com.ph:10020" internalId="_5o6gRFNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_StagingDirectory" prompt="conn_hadoop_cluster_StagingDirectory?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="/user" internalId="_5o6gRVNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_User" prompt="conn_hadoop_cluster_User?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="admin" internalId="_5o6gRlNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_customClasspath" prompt="conn_hadoop_cluster_customClasspath?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="" internalId="_5o6gR1NyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_NameNodeUri" prompt="conn_hadoop_cluster_NameNodeUri?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="hdfs://dao-cdp-poc-master1.novare.com.ph:8020" internalId="_5o6gSFNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_setHadoopConf" prompt="conn_hadoop_cluster_setHadoopConf?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_Boolean" value="false" internalId="_5o6gSVNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_OracleDriverClass" prompt="conn_oracle_source_table_OracleDriverClass?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="oracle.jdbc.OracleDriver" internalId="_5o6gSlNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_ServiceName" prompt="conn_oracle_source_table_ServiceName?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="mbtcDb" internalId="_5o6gS1NyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_Login" prompt="conn_oracle_source_table_Login?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="nvre_dev1" internalId="_5o6gTFNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_SqoopJDBC" prompt="conn_oracle_source_table_SqoopJDBC?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="jdbc:oracle:thin:@//18.136.114.179:1521/mbtcDb" internalId="_5o6gTVNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_Schema" prompt="conn_oracle_source_table_Schema?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="MBTC" internalId="_5o6gTlNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_Port" prompt="conn_oracle_source_table_Port?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="1521" internalId="_5o6gT1NyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_Password" prompt="conn_oracle_source_table_Password?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_Password" value="enc:system.encryption.key.v1:/vjrmZqNRWqr/MPler3+TbBXhx2nPFaAdmutnIxvxNgRYWEakiysfg==" internalId="_5o7HUFNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_Server" prompt="conn_oracle_source_table_Server?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="18.136.114.179" internalId="_5o7HUVNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table__AdditionalParams" prompt="conn_oracle_source_table__AdditionalParams?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="" internalId="_5o7HUlNyEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hive_target_table_AdditionalJDBCParameters" prompt="conn_hive_target_table_AdditionalJDBCParameters?" promptNeeded="false" repositoryContextId="_C6ROcPKdEfCNScNTrRRCvQ" type="id_String" value="" internalId="_KhAZEPzfEfCfbIgCyI7b-w"/>
+    <contextParameter comment="" name="conn_hive_target_table_Database" prompt="conn_hive_target_table_Database?" promptNeeded="false" repositoryContextId="_C6ROcPKdEfCNScNTrRRCvQ" type="id_String" value="" internalId="_KhAZEfzfEfCfbIgCyI7b-w"/>
+    <contextParameter comment="" name="conn_hive_target_table_Password" prompt="conn_hive_target_table_Password?" promptNeeded="false" repositoryContextId="_C6ROcPKdEfCNScNTrRRCvQ" type="id_Password" value="enc:system.encryption.key.v1:TFWMQe2gre4+R6rQaBy7HmIK+qLfC3X2mdd4LMITAvH4agmU2sTChg==" internalId="_KhAZEvzfEfCfbIgCyI7b-w"/>
+    <contextParameter comment="" name="conn_hive_target_table_Server" prompt="conn_hive_target_table_Server?" promptNeeded="false" repositoryContextId="_C6ROcPKdEfCNScNTrRRCvQ" type="id_String" value="13.215.89.162" internalId="_KhAZE_zfEfCfbIgCyI7b-w"/>
+    <contextParameter comment="" name="conn_hive_target_table_Port" prompt="conn_hive_target_table_Port?" promptNeeded="false" repositoryContextId="_C6ROcPKdEfCNScNTrRRCvQ" type="id_String" value="10000" internalId="_KhAZFPzfEfCfbIgCyI7b-w"/>
+    <contextParameter comment="" name="conn_hive_target_table_Login" prompt="conn_hive_target_table_Login?" promptNeeded="false" repositoryContextId="_C6ROcPKdEfCNScNTrRRCvQ" type="id_String" value="nvre_dev1" internalId="_KhAZFfzfEfCfbIgCyI7b-w"/>
+    <contextParameter comment="" name="target_count" prompt="target_count?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_Integer" value="0" internalId="_WDrQsFNzEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="source_count" prompt="source_count?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_Integer" value="0" internalId="_WDrQsVNzEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="job_server_file_dir" prompt="job_server_file_dir?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_String" value="/opt/talend/talend-runtime/data/tmp/development-files/" internalId="_WDrQslNzEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="audit_database" prompt="audit_database?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_String" value="audit" internalId="_WDrQs1NzEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="manifest_table" prompt="manifest_table?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_String" value="MBTC_MANIFEST_TABLE" internalId="_WDrQtFNzEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_sftp_mbtc_username" prompt="conn_sftp_mbtc_username?" promptNeeded="false" repositoryContextId="_6_AJgPXoEfCzdeB6aeN2sw" type="id_String" value="sftpuser" internalId="_cI5igFNzEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_sftp_mbtc_host" prompt="conn_sftp_mbtc_host?" promptNeeded="false" repositoryContextId="_6_AJgPXoEfCzdeB6aeN2sw" type="id_String" value="47.131.5.132" internalId="_cI5igVNzEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_sftp_mbtc_port" prompt="conn_sftp_mbtc_port?" promptNeeded="false" repositoryContextId="_6_AJgPXoEfCzdeB6aeN2sw" type="id_Integer" value="22" internalId="_cI5iglNzEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_sftp_mbtc_password" prompt="conn_sftp_mbtc_password?" promptNeeded="false" repositoryContextId="_6_AJgPXoEfCzdeB6aeN2sw" type="id_Password" value="enc:system.encryption.key.v1:KP96Y/l6KM4S7+1b48GQzb24TkxkUjvxsV7yiOuRikT29P3cySeFXlymSOk=" internalId="_cI5ig1NzEfGAPIORTaYCDw"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="160" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -99,7 +148,7 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="80" sizeX="121" sizeY="40">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="520" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_1I5fIFJpEfGdn9L_G-9eWg" show="false"/>
@@ -476,7 +525,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="200" sizeX="121" sizeY="40">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="520" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -582,96 +631,96 @@
       <column comment="" defaultValue="" key="false" length="19" name="QCONCONTRACT21" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="C0" expression="row1.Consumer_ID " type="id_Double" nullable="true"/>
         <mapperTableEntries name="C1" expression="row1.Account_ID " type="id_Double" nullable="true"/>
         <mapperTableEntries name="C2" expression="row1.Installation_ID " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="C3" expression="row1.Status_Code " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="C4" expression="row1.Move_In_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C5" expression="row1.Final_Bill_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C6" expression="row1.Utility_Type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C7" expression="row1.Category " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C8" expression="row1.Tax_Included_Flag " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C9" expression="row1.Taxation_Type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C10" expression="row1.Unit_Of_Measure " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C11" expression="row1.Billing_Classification " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C12" expression="row1.Unused_Field_12 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C13" expression="row1.Application_Notes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C14" expression="row1.Bill_Layout " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C15" expression="row1.End_Use_Code " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C3" expression="(!Relational.ISNULL(row1.Final_Bill_Date) &amp;&amp; row1.Status_Code != 40) ? null : row1.Status_Code " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="C4" expression="Relational.ISNULL(row1.Move_In_Date) ? null : (TalendDate.compareDate(TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Move_In_Date), TalendDate.getCurrentDate(), &quot;dd/MM/yyyy&quot;) &lt;= 0 ? TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Move_In_Date) : null)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C5" expression="Relational.ISNULL(row1.Final_Bill_Date) ? null : (row1.Status_Code == 40 ? TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Final_Bill_Date) : null)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C6" expression="StringHandling.TRIM(row1.Utility_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C7" expression="StringHandling.TRIM(row1.Category)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C8" expression="StringHandling.TRIM(row1.Tax_Included_Flag)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C9" expression="StringHandling.TRIM(row1.Taxation_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C10" expression="StringHandling.TRIM(row1.Unit_Of_Measure)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C11" expression="StringHandling.TRIM(row1.Billing_Classification)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C12" expression="StringHandling.TRIM(row1.Unused_Field_12)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C13" expression="StringHandling.TRIM(row1.Application_Notes)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C14" expression="StringHandling.TRIM(row1.Bill_Layout)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C15" expression="StringHandling.TRIM(row1.End_Use_Code)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C16" expression="row1.Unused_Field_16 " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="C17" expression="row1.Next_Bill_Message " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C18" expression="row1.Message_Expiry_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C19" expression="row1.Tenancy_Type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C20" expression="row1.Dog_Type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C21" expression="row1.Hazard_Notes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C22" expression="row1.Meter_Reader_Notes " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C23" expression="row1.Reporting_Code " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C24" expression="row1.Miscellaneous_Info " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C25" expression="row1.Status_Changed_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C26_1" expression="row1.Unused_Field_26_1 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C26_2" expression="row1.Unused_Field_26_2 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C26_3" expression="row1.Unused_Field_26_3 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C27" expression="row1.Unused_Field_27 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C28" expression="row1.Suspended_Flag " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C29" expression="row1.Suspension_Lifted_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C30" expression="row1.Suspension_Reason " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C31" expression="row1.Suspension_Start_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C32" expression="row1.Suspension_Cancelled_Date " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C17" expression="StringHandling.TRIM(row1.Next_Bill_Message)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C18" expression="Relational.ISNULL(row1.Message_Expiry_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Message_Expiry_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C19" expression="StringHandling.TRIM(row1.Tenancy_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C20" expression="StringHandling.TRIM(row1.Dog_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C21" expression="StringHandling.TRIM(row1.Hazard_Notes)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C22" expression="StringHandling.TRIM(row1.Meter_Reader_Notes)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C23" expression="StringHandling.TRIM(row1.Reporting_Code)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C24" expression="StringHandling.TRIM(row1.Miscellaneous_Info)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C25" expression="Relational.ISNULL(row1.Status_Changed_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Status_Changed_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C26_1" expression="StringHandling.TRIM(row1.Unused_Field_26_1)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C26_2" expression="StringHandling.TRIM(row1.Unused_Field_26_2)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C26_3" expression="StringHandling.TRIM(row1.Unused_Field_26_3)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C27" expression="Relational.ISNULL(row1.Unused_Field_27) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row1.Unused_Field_27)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C28" expression="StringHandling.TRIM(row1.Suspended_Flag)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C29" expression="Relational.ISNULL(row1.Suspension_Lifted_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Suspension_Lifted_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C30" expression="StringHandling.TRIM(row1.Suspension_Reason)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C31" expression="Relational.ISNULL(row1.Suspension_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Suspension_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C32" expression="StringHandling.TRIM(row1.Suspension_Cancelled_Date)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C33" expression="row1.Campaign_Code " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="C34" expression="row1.Sales_Media " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C35" expression="row1.Acquisition_Method " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C36" expression="row1.Sales_Person " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C37" expression="row1.Sale_Completed_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C38" expression="row1.Reconciliation_Reference " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C39" expression="row1.Application_Received_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C40" expression="row1.Application_Form_Number " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C41" expression="row1.Transfer_Balance_Status " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C42" expression="row1.Switch_Start_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C43" expression="row1.Switch_Confirmed_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C44" expression="row1.Acquisition_Type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C45" expression="row1.Commission_Cancel_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C46" expression="row1.Commission_Cancelled_Datetime " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C47" expression="row1.Cancellation_Reason " type="id_String" nullable="true"/>
-        <mapperTableEntries name="C48" expression="row1.New_Retailer " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C34" expression="StringHandling.TRIM(row1.Sales_Media)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C35" expression="StringHandling.TRIM(row1.Acquisition_Method)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C36" expression="StringHandling.TRIM(row1.Sales_Person)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C37" expression="Relational.ISNULL(row1.Sale_Completed_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Sale_Completed_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C38" expression="StringHandling.TRIM(row1.Reconciliation_Reference)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C39" expression="Relational.ISNULL(row1.Application_Received_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Application_Received_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C40" expression="StringHandling.TRIM(row1.Application_Form_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C41" expression="StringHandling.TRIM(row1.Transfer_Balance_Status)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C42" expression="Relational.ISNULL(row1.Switch_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Switch_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C43" expression="Relational.ISNULL(row1.Switch_Confirmed_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Switch_Confirmed_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C44" expression="StringHandling.TRIM(row1.Acquisition_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C45" expression="Relational.ISNULL(row1.Commission_Cancel_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Commission_Cancel_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C46" expression="Relational.ISNULL(row1.Commission_Cancelled_Datetime) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row1.Commission_Cancelled_Datetime)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C47" expression="StringHandling.TRIM(row1.Cancellation_Reason)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C48" expression="StringHandling.TRIM(row1.New_Retailer)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C49" expression="row1.Master_Consumer_ID " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="C50" expression="row1.Ceased_Status_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C51" expression="row1.Unused_Field_51 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT1_1" expression="row2.Critical_Condition_1 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT1_2" expression="row2.Crit1_Start_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT1_3" expression="row2.Crit1_End_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT1_4" expression="row2.Crit1_Status " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT2_1" expression="row2.Critical_Condition_2 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT2_2" expression="row2.Crit2_Start_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT2_3" expression="row2.Crit2_End_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT2_4" expression="row2.Crit2_Status " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT3_1" expression="row2.Critical_Condition_3 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT3_2" expression="row2.Crit3_Start_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT3_3" expression="row2.Crit3_End_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT3_4" expression="row2.Crit3_Status " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT4_1" expression="row2.Critical_Condition_4 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT4_2" expression="row2.Crit4_Start_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT4_3" expression="row2.Crit4_End_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT4_4" expression="row2.Crit4_Status " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT0" expression="row3.Contract_ID " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT1" expression="row3.Unused_Field_Contract_1 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT2_1" expression="row3.Primary_Plan " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT2_2" expression="row3.Secondary_Plan " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT3" expression="row3.Contract_Start_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT4" expression="row3.Contract_Review_Date " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT5" expression="row3.Contract_Status " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT6" expression="row3.Contract_Number " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT7" expression="row3.Override_Transmission_Loss " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT8" expression="row3.Override_Distribution_Loss " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT9" expression="row3.Confirmation_Type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT10" expression="row3.Unused_Field_Contract_10 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT11" expression="row3.Unused_Field_Contract_11 " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT12" expression="row3.Contract_Loaded_By " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT13" expression="row3.Unused_Field_Contract_13 " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT19" expression="row3.Uplift_Percentage " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACTVCONTROL" expression="row3.Validation_Control " type="id_String" nullable="true"/>
+        <mapperTableEntries name="C50" expression="Relational.ISNULL(row1.Ceased_Status_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Ceased_Status_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C51" expression="StringHandling.TRIM(row1.Unused_Field_51)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRIT1_1" expression="StringHandling.TRIM(row2.Critical_Condition_1)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRIT1_2" expression="Relational.ISNULL(row2.Crit1_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit1_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT1_3" expression="Relational.ISNULL(row2.Crit1_End_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit1_End_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT1_4" expression="StringHandling.TRIM(row2.Crit1_Status) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRIT2_1" expression="StringHandling.TRIM(row2.Critical_Condition_2)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRIT2_2" expression="Relational.ISNULL(row2.Crit2_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit2_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT2_3" expression="Relational.ISNULL(row2.Crit2_End_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit2_End_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT2_4" expression="StringHandling.TRIM(row2.Crit2_Status)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRIT3_1" expression="StringHandling.TRIM(row2.Critical_Condition_3)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRIT3_2" expression="Relational.ISNULL(row2.Crit3_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit3_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT3_3" expression="Relational.ISNULL(row2.Crit3_End_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit3_End_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT3_4" expression="StringHandling.TRIM(row2.Crit3_Status)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRIT4_1" expression="StringHandling.TRIM(row2.Critical_Condition_4)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CRIT4_2" expression="Relational.ISNULL(row2.Crit4_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit4_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT4_3" expression="Relational.ISNULL(row2.Crit4_End_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit4_End_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT4_4" expression="StringHandling.TRIM(row2.Crit4_Status)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT0" expression="row3.Account_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT1" expression="row3.Contract_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT2_1" expression="StringHandling.TRIM(row3.Primary_Plan)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT2_2" expression="StringHandling.TRIM(row3.Secondary_Plan)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT3" expression="Relational.ISNULL(row3.Contract_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row3.Contract_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT4" expression="Relational.ISNULL(row3.Contract_Review_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row3.Contract_Review_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT5" expression="StringHandling.TRIM(row3.Contract_Status)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT6" expression="StringHandling.TRIM(row3.Contract_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT7" expression="StringHandling.TRIM(row3.Override_Transmission_Loss)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT8" expression="StringHandling.TRIM(row3.Override_Distribution_Loss)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT9" expression="StringHandling.TRIM(row3.Confirmation_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT10" expression="Relational.ISNULL(row3.Unused_Field_Contract_10) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row3.Unused_Field_Contract_10)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT11" expression="Relational.ISNULL(row3.Unused_Field_Contract_11) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row3.Unused_Field_Contract_11)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT12" expression="StringHandling.TRIM(row3.Contract_Loaded_By)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT13" expression="StringHandling.TRIM(row3.Unused_Field_Contract_13)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT19" expression="row3.Uplift_Percentage" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACTVCONTROL" expression="StringHandling.TRIM(row3.Validation_Control)" type="id_String" nullable="true"/>
         <mapperTableEntries name="QCONCONTRACT21" expression="row3.Discount_Percentage " type="id_Double" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -772,11 +821,11 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="200" sizeX="121" sizeY="40">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="520" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_consumer.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.local_file_loc_tgt+&quot;cdm_consumer.csv&quot;"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -896,7 +945,7 @@
       <column comment="" defaultValue="" key="false" length="19" name="QCONCONTRACT21" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="200" sizeX="121" sizeY="40">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="400" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7AEG0FJpEfGdn9L_G-9eWg" show="false"/>
@@ -1051,7 +1100,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="320" sizeX="121" sizeY="40">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="640" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_WQg1sFJpEfGdn9L_G-9eWg" show="false"/>
@@ -1218,9 +1267,361 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="joblet_util_logcatcher" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="960" posY="40" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="joblet_util_logcatcher_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="joblet_util_logcatcher"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-120" posY="40" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="preJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tHiveConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2234" posY="40" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveConnection_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="HADOOP_LIBRARIES" name="HIVE" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_YARN" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CROSS_PLATFORM_SUBMISSION" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_MODE" value="STANDALONE"/>
+    <elementParameter field="CLOSED_LIST" name="HIVE_SERVER" value="HIVE3"/>
+    <elementParameter field="CLOSED_LIST" name="HADOOP_VERSION" value="HADOOP3"/>
+    <elementParameter field="TEXT" name="HOST" value="context.conn_hive_target_table_Server"/>
+    <elementParameter field="TEXT" name="TYPE" value="HIVE" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.conn_hive_target_table_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.conn_hive_target_table_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.conn_hive_target_table_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uW6JLRZ2/KJ9w8mBe14Z6wB3HAU9ti7vPzq3Iw6ClZJld9lbu9czcRa/rZkI+D0ztlpGHfRK1DtuJHJo/N/xLa951g=="/>
+    <elementParameter field="TEXT" name="HIVE_ADDITIONAL_JDBC" value="context.conn_hive_target_table_AdditionalJDBCParameters"/>
+    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="HIVE_PRINCIPAL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:Zb9VIr5ZWByPOl8iZ7yQ159ZRMNW8uZwfK/AFZNJ" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="FILE" name="SSL_TRUST_STORE" value="&quot;/home/usr1/ssl/trust_store.jks&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUST_STORE_PASSWORD" value="enc:system.encryption.key.v1:7/cyDvCN7j1ZQkJYeaibmxE0D3K6OzxVj2Jd+I8AxLW0ekpp7jY=" show="false"/>
+    <elementParameter field="CHECK" name="SET_RESOURCE_MANAGER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCE_MANAGER" value="&quot;localhost:8032&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_FS_DEFAULT_NAME" value="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_SCHEDULER_ADDRESS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="&quot;localhost:8030&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="JOBHISTORY_ADDRESS" value="&quot;localhost:10020&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_USER" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_USER" value="&quot;hadoop&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WEBHCAT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="STATUSDIR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="HDINSIGHT_PASSWORD" value="enc:system.encryption.key.v1:OLjjejTBWtpMmH21600tkWA4R0MkF9ZhZ6hwwcyU" show="false"/>
+    <elementParameter field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="WASB_PASSWORD" value="enc:system.encryption.key.v1:P0frZheeG9PX4Bqdf1wq01Ucq9zR/EOzPGgxdcFh" show="false"/>
+    <elementParameter field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_PROJECT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_REGION" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GOOGLE_JARS_BUCKET" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="false" show="false"/>
+    <elementParameter field="FILE" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="EXECUTION_ENGINE" value="mr"/>
+    <elementParameter field="CLOSED_LIST" name="TEZ_LIB" value="INSTALL" show="false"/>
+    <elementParameter field="DIRECTORY_HADOOP" name="TEZ_LIB_FOLDER" value="&quot;/tmp/{USERNAME}/talend_tez_libs/{custom|HIVE_VERSION}&quot;" show="false"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEZ_JARS_NAME" value="" show="false"/>
+    <elementParameter field="BOTH_HADOOP" name="TEZ_LIB_PATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="TEZ_LIB_NAME" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="TABLE" name="ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="SET_MEMORY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_MAP_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPREDUCE_REDUCE_MEMORY_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="YARN_APP_MAPREDUCE_AM_RESOURCE_MB" value="&quot;1024&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLASSPATH_SEPARATOR" value="&quot;:&quot;"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="openConnHive"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="2474" posY="40" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="HOST" value="context.conn_sftp_mbtc_host"/>
+    <elementParameter field="TEXT" name="PORT" value="context.conn_sftp_mbtc_port"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="22" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGON_TYPE" value="PASSWORD" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="context.conn_sftp_mbtc_username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lgip/IYC9gGP0ONoun4KmaDe7nbQ8Zu/MBx9xunoAha2wKMJ5xTOQDUnslQGYClUihb/tE7HHjgQ+gQ="/>
+    <elementParameter field="TEXT" name="ACCOUNT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="true"/>
+    <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:sKGtR/pqkOC3a+4LtZ2kBANtrREgn4hmxa+F/2cf" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:s7vmTG5rtg7pEAv2Urq4/JG9Ku0YNny8hy2kii3J" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:OtR8enQAKgI4VN08ZLi+ogZzItdRS0ohlSAB83hV" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="CHECK" name="USE_STRICT_REPLY_PARSING" value="false"/>
+    <elementParameter field="CHECK" name="CONFIG_CLIENT" value="false"/>
+    <elementParameter field="TABLE" name="CLIENT_PARAMETERS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="openConnSftp"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-120" posY="200" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="postJob"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tHiveClose" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="200" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveClose_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tHiveConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="closeConnHive"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="360" posY="200" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="closeConnSftp"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="40" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ingest_date" id="0"/>
+      <elementValue elementRef="VALUE" value="TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate())" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parquet_location" id="2"/>
+      <elementValue elementRef="VALUE" value="context.target_table_location + &quot;ingest_date=&quot; + TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate())" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="source_system" id="4"/>
+      <elementValue elementRef="VALUE" value="&quot;flat_file&quot;" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="processing_start_time" id="6"/>
+      <elementValue elementRef="VALUE" value="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, TalendDate.getCurrentDate())" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="raw_file_dir" id="8"/>
+      <elementValue elementRef="VALUE" value="context.hdfs_raw_src_file_dir +context.target_tablename +&quot;/ingest_date=&quot; + TalendDate.formatDate(&quot;yyyyMMdd&quot;, TalendDate.getCurrentDate())" id="9"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="setGlobalVar"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="ingest_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="parquet_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="source_system" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="processing_start_time" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="raw_file_dir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="360" posY="40" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ingest_date" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="parquet_location" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="source_system" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="processing_start_time" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="raw_file_dir" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="printVariables"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="ingest_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="parquet_location" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="source_system" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="processing_start_time" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="raw_file_dir" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="40" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="false"/>
+    <elementParameter field="TABLE" name="MAP">
+      <elementValue elementRef="KEY" value="&quot;ingest_date&quot;" id="0"/>
+      <elementValue elementRef="VALUE" value="ingest_date" id="1"/>
+      <elementValue elementRef="KEY" value="&quot;parquet_location&quot;" id="2"/>
+      <elementValue elementRef="VALUE" value="parquet_location" id="3"/>
+      <elementValue elementRef="KEY" value="&quot;source_system&quot;" id="4"/>
+      <elementValue elementRef="VALUE" value="source_system" id="5"/>
+      <elementValue elementRef="KEY" value="&quot;processing_start_time&quot;" id="6"/>
+      <elementValue elementRef="VALUE" value="processing_start_time" id="7"/>
+      <elementValue elementRef="KEY" value="&quot;raw_file_dir&quot;" id="8"/>
+      <elementValue elementRef="VALUE" value="raw_file_dir" id="9"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="storeGlobalVar"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tHDFSConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2714" posY="40" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSConnection_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="HADOOP_VERSION" value="HADOOP3"/>
+    <elementParameter field="CLOSED_LIST" name="SCHEME" value="HDFS"/>
+    <elementParameter field="CHECK" name="USE_KNOX" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KNOX_GATEWAY_URL" value="&quot;http://localhost:8080/gateway/&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KNOX_USER" value="&quot;knox_user&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KNOX_PASSWORD" value="" show="false"/>
+    <elementParameter field="CHECK" name="SET_KNOX_TIMEOUT" value="false" show="false"/>
+    <elementParameter field="TEXT" name="KNOX_TIMEOUT" value="120" show="false"/>
+    <elementParameter field="TEXT" name="FS_DEFAULT_NAME" value="context.conn_hadoop_cluster_NameNodeUri"/>
+    <elementParameter field="CHECK" name="CONFIGURATIONS_FROM_CLASSPATH" value="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;hdfs/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_MAPRTICKET" value="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;admin&quot;"/>
+    <elementParameter field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="MAPRTICKET_PASSWORD" value="enc:system.encryption.key.v1:0pYIrTqRqx7UXpT+yB5VhNOB5aVZuaWXxtk68l5P" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="MAPRTICKET_DURATION" value="" show="false"/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter field="CHECK" name="USE_HDFS_ENCRYPTION" value="false"/>
+    <elementParameter field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" value="&quot;kms://http@localhost:16000/kms&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ADLS_FS_DEFAULT_NAME" value="&quot;adl://account.azuredatalakestore.net&quot;" show="false"/>
+    <elementParameter field="TEXT" name="ADLS_CLIENT_ID" value="&quot;XXXX&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="ADLS_AUTH_TOKEN_ENDPOINT" value="enc:system.encryption.key.v1:SvAAVInyXmMaDY33mpoQJPDdqMWKXZah62RIkDuUYaIQR8OpnhmPkeX5fOVsT+fOqvtno4/nE235k+52B69kAWDsTXsdD3lq8T4PbbBIrcA=" show="false"/>
+    <elementParameter field="PASSWORD" name="ADLS_CLIENT_KEY" value="enc:system.encryption.key.v1:sdmdCzSUj8ROEnyNBLOIQRDjqsytukyzbN0ch2e72859sQ==" show="false"/>
+    <elementParameter field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="joblet_manifest_generator" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="200" sizeX="120" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="joblet_manifest_generator_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="SUBJOB_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tFTPClose_1"/>
+    <elementParameter field="TEXT" name="LABEL" value="joblet_manifest_generator"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="840">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn" id="0"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;tFileInputDelimited_1_NB_LINE&quot;))" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn1" id="2"/>
+      <elementValue elementRef="VALUE" value="((Integer)globalMap.get(&quot;tFileInputDelimited_2_NB_LINE&quot;))" id="3"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_2">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="840">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn1" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tFixedFlowInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1488,11 +1889,128 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHiveConnection_1" offsetLabelX="0" offsetLabelY="0" source="tHiveConnection_1" target="tFTPConnection_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tHDFSConnection_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tHiveClose_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tHiveClose_1" offsetLabelX="0" offsetLabelY="0" source="tHiveClose_1" target="tFTPClose_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFTPClose_1" offsetLabelX="0" offsetLabelY="0" source="tFTPClose_1" target="joblet_manifest_generator_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="parquet_location" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="source_system" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ingest_date" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="processing_start_time" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="raw_file_dir" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn1" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Ingestion for cdmCONSUMER"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="joblet_util_logcatcher_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHiveClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tHDFSConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="joblet_manifest_generator_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
 </talendfile:ProcessType>
