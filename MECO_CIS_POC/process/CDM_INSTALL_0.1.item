@@ -14,6 +14,39 @@
     <contextParameter comment="" name="conn_hive_target_table_Server" prompt="conn_hive_target_table_Server?" promptNeeded="false" repositoryContextId="_C6ROcPKdEfCNScNTrRRCvQ" type="id_String" value="13.215.89.162" internalId="_KhAZE_zfEfCfbIgCyI7b-w"/>
     <contextParameter comment="" name="conn_hive_target_table_Port" prompt="conn_hive_target_table_Port?" promptNeeded="false" repositoryContextId="_C6ROcPKdEfCNScNTrRRCvQ" type="id_String" value="10000" internalId="_KhAZFPzfEfCfbIgCyI7b-w"/>
     <contextParameter comment="" name="conn_hive_target_table_Login" prompt="conn_hive_target_table_Login?" promptNeeded="false" repositoryContextId="_C6ROcPKdEfCNScNTrRRCvQ" type="id_String" value="nvre_dev1" internalId="_KhAZFfzfEfCfbIgCyI7b-w"/>
+    <contextParameter comment="" name="target_count" prompt="target_count?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_Integer" value="0" internalId="_R6EIoFilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="source_count" prompt="source_count?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_Integer" value="0" internalId="_R6EIoVilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="job_server_file_dir" prompt="job_server_file_dir?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_String" value="/opt/talend/talend-runtime/data/tmp/development-files/" internalId="_R6EIolilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="audit_database" prompt="audit_database?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_String" value="audit" internalId="_R6EIo1ilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="manifest_table" prompt="manifest_table?" promptNeeded="false" repositoryContextId="_uVguEAcuEfGqGfeJ7LYmLQ" type="id_String" value="MBTC_MANIFEST_TABLE" internalId="_R6EIpFilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="filename" prompt="filename?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="customers" internalId="_R6EIpVilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="target_schema" prompt="target_schema?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="bronze" internalId="_R6EIplilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="field_seperator" prompt="field_seperator?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="," internalId="_R6EIp1ilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="target_table_location" prompt="target_table_location?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="/dev/bronze/customers_csv/" internalId="_R6EIqFilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="select_columns" prompt="select_columns?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="customer_id, first_name, last_name, email, join_date, kyc_status " internalId="_R6EIqVilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="header" prompt="header?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="1" internalId="_R6EIqlilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="file_extension" prompt="file_extension?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value=".csv" internalId="_R6EIq1ilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="src_file_dir" prompt="src_file_dir?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/" internalId="_R6EIrFilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="hdfs_raw_src_file_dir" prompt="hdfs_raw_src_file_dir?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="/dev/raw/" internalId="_R6EIrVilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="source_schema" prompt="source_schema?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="hdfs" internalId="_R6EIrlilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="target_tablename" prompt="target_tablename?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="customers_csv" internalId="_R6EIr1ilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="create_table_schema" prompt="create_table_schema?" promptNeeded="false" repositoryContextId="_yNMyEFNxEfGAPIORTaYCDw" type="id_String" value="customer_id STRING, first_name STRING, last_name STRING, email STRING, join_date STRING, kyc_status STRING, source_system STRING, scd_status STRING, scd_timestamp STRING" internalId="_R6EIsFilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="local_file_loc_tgt" prompt="local_file_loc_tgt?" promptNeeded="false" repositoryContextId="_NGDq4FNyEfGAPIORTaYCDw" type="id_String" value="C:/Users/angelo.baloy/Desktop/Meralco Files/target/" internalId="_R6EIsVilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="local_file_loc_src" prompt="local_file_loc_src?" promptNeeded="false" repositoryContextId="_NGDq4FNyEfGAPIORTaYCDw" type="id_String" value="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/" internalId="_R6EIslilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_ResourceManager" prompt="conn_hadoop_cluster_ResourceManager?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="dao-cdp-poc-master1.novare.com.ph:8032" internalId="_R6EIs1ilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_useCustomClasspath" prompt="conn_hadoop_cluster_useCustomClasspath?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_Boolean" value="" internalId="_R6EItFilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_ResourceManagerScheduler" prompt="conn_hadoop_cluster_ResourceManagerScheduler?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="dao-cdp-poc-master1.novare.com.ph:8030" internalId="_R6EItVilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_hadoopConfSpecificJar" prompt="conn_hadoop_cluster_hadoopConfSpecificJar?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="" internalId="_R6EItlilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_JobHistory" prompt="conn_hadoop_cluster_JobHistory?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="dao-cdp-poc-edge1.novare.com.ph:10020" internalId="_R6EIt1ilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_StagingDirectory" prompt="conn_hadoop_cluster_StagingDirectory?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="/user" internalId="_R6EIuFilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_User" prompt="conn_hadoop_cluster_User?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="admin" internalId="_R6EIuVilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_customClasspath" prompt="conn_hadoop_cluster_customClasspath?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="" internalId="_R6EIulilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_NameNodeUri" prompt="conn_hadoop_cluster_NameNodeUri?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_String" value="hdfs://dao-cdp-poc-master1.novare.com.ph:8020" internalId="_R6EIu1ilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_hadoop_cluster_setHadoopConf" prompt="conn_hadoop_cluster_setHadoopConf?" promptNeeded="false" repositoryContextId="_kyD8APdCEfCAt6AmyhhERg" type="id_Boolean" value="false" internalId="_R6EIvFilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_OracleDriverClass" prompt="conn_oracle_source_table_OracleDriverClass?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="oracle.jdbc.OracleDriver" internalId="_R6EIvVilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="conn_oracle_source_table_SqoopJDBC" prompt="conn_oracle_source_table_SqoopJDBC?" promptNeeded="false" repositoryContextId="_vxyFQO9oEfCcepb0inUXkA" type="id_String" value="jdbc:oracle:thin:@//18.136.114.179:1521/mbtcDb" internalId="_R6EIvlilEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LOCAL" internalId="_6CfgcFitEfGAPIORTaYCDw"/>
+    <contextParameter comment="" name="map_component_label" prompt="map_component_label?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tFileInputDelimited_1:src_meco_INSTALL&#xD;&#xA;tFileInputDelimited_2:src_meco_INSTALL2LOC&#xD;&#xA;tFileOutputDelimited_1:tgt_cdm_INSTALL" internalId="_6CfgcVitEfGAPIORTaYCDw"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -115,18 +148,16 @@
   </parameters>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="520" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_QNIh4FK0EfGAPIORTaYCDw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_QNIh4FK0EfGAPIORTaYCDw - metadata" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_install.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.src_file_dir + &quot;meco_install&quot; + context.file_extension"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.field_seperator"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
@@ -798,12 +829,12 @@
         <mapperTableEntries name="I8" expression="StringHandling.TRIM(row1.Utility_Type)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I9" expression="StringHandling.TRIM(row1.Installation_Category)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I10" expression="StringHandling.TRIM(row1.End_Use_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I11" expression="StringHandling.TRIM(row1.District_Area_Code)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I11" expression="StringHandling.LPAD(StringHandling.TRIM(row1.District_Area_Code), 2, &quot;0&quot;) " type="id_String" nullable="true"/>
         <mapperTableEntries name="I12" expression="StringHandling.TRIM(row1.Transmission_Point)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I13" expression="StringHandling.TRIM(row1.Building_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I14" expression="Relational.ISNULL(row1.Connection_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Connection_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I14" expression="Relational.ISNULL(row1.Connection_Date) ? null : row1.Connection_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="I15" expression="(row1.Connection_Status.equalsIgnoreCase(&quot;Active&quot;) &amp;&amp; (Relational.ISNULL(row1.Retailer_Code) || Relational.ISNULL(row1.Network_Company_Code))) ? null : row1.Connection_Status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I16" expression="Relational.ISNULL(row1.Status_Change_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Status_Change_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I16" expression="Relational.ISNULL(row1.Status_Change_Date) ? null : row1.Status_Change_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="I17" expression="StringHandling.TRIM(row1.Invoicing_Method)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I18" expression="StringHandling.TRIM(row1.Estimate_Suppression_Type)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I19" expression="row1.Max_Metering_Points" type="id_Double" nullable="true"/>
@@ -835,40 +866,40 @@
         <mapperTableEntries name="I45" expression="row1.Gas_Line_Pressure " type="id_Double" nullable="true"/>
         <mapperTableEntries name="I46" expression="StringHandling.TRIM(row1.Network_Account_Number)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I47" expression="StringHandling.TRIM(row1.Retailer_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I48" expression="Relational.ISNULL(row1.Retailer_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Retailer_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I48" expression="Relational.ISNULL(row1.Retailer_Start_Date) ? null :row1.Retailer_Start_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="I49" expression="StringHandling.TRIM(row1.Other_Supplier_Consumer_Name)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I50" expression="StringHandling.TRIM(row1.Network_Company_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I51" expression="Relational.ISNULL(row1.Network_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Network_Start_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="I52" expression="Relational.ISNULL(row1.Unused_Field_52) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row1.Unused_Field_52)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I51" expression="Relational.ISNULL(row1.Network_Start_Date) ? null :  row1.Network_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I52" expression="Relational.ISNULL(row1.Unused_Field_52) ? null :  row1.Unused_Field_52" type="id_Date" nullable="true"/>
         <mapperTableEntries name="I53" expression="row1.Unused_Field_53 " type="id_Double" nullable="true"/>
         <mapperTableEntries name="I54" expression="StringHandling.TRIM(row1.Unused_Field_54)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I55" expression="StringHandling.TRIM(row1.Unused_Field_55)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I56" expression="row1.Physical_Location " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="GBC1" expression="Relational.ISNULL(row1.Invoice_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Invoice_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC1" expression="Relational.ISNULL(row1.Invoice_Start_Date) ? null : row1.Invoice_Start_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="GBC2" expression="StringHandling.TRIM(row1.Reading_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC3" expression="Relational.ISNULL(row1.Next_Invoice_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Next_Invoice_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC3" expression="Relational.ISNULL(row1.Next_Invoice_Date) ? null :  row1.Next_Invoice_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="GBC4" expression="StringHandling.TRIM(row1.Next_Invoice_Schedule_Type)" type="id_String" nullable="true"/>
         <mapperTableEntries name="GBC5" expression="StringHandling.TRIM(row1.Unused_Field_GBC5)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC6" expression="Relational.ISNULL(row1.Unused_Field_GBC6) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Unused_Field_GBC6)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC7" expression="Relational.ISNULL(row1.Unused_Field_GBC7) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Unused_Field_GBC7)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC8" expression="Relational.ISNULL(row1.Unused_Field_GBC8) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Unused_Field_GBC8)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC9" expression="Relational.ISNULL(row1.Next_Read_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Next_Read_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC10" expression="Relational.ISNULL(row1.Last_Billed_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Last_Billed_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC6" expression="Relational.ISNULL(row1.Unused_Field_GBC6) ? null :row1.Unused_Field_GBC6" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC7" expression="Relational.ISNULL(row1.Unused_Field_GBC7) ? null :  row1.Unused_Field_GBC7" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC8" expression="Relational.ISNULL(row1.Unused_Field_GBC8) ? null : row1.Unused_Field_GBC8" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC9" expression="Relational.ISNULL(row1.Next_Read_Date) ? null :  row1.Next_Read_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC10" expression="Relational.ISNULL(row1.Last_Billed_Date) ? null : row1.Last_Billed_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="GBC11" expression="StringHandling.TRIM(row1.Interim_Header_Reason)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC12" expression="Relational.ISNULL(row1.Reason_Added_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Reason_Added_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC13" expression="Relational.ISNULL(row1.Unused_Field_GBC13) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row1.Unused_Field_GBC13)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC14" expression="Relational.ISNULL(row1.Unused_Field_GBC14) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Unused_Field_GBC14)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC15" expression="Relational.ISNULL(row1.Unused_Field_GBC15) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Unused_Field_GBC15)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC16" expression="Relational.ISNULL(row1.Most_Recent_Meter_Read_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Most_Recent_Meter_Read_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC12" expression="Relational.ISNULL(row1.Reason_Added_Date) ? null :  row1.Reason_Added_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC13" expression="Relational.ISNULL(row1.Unused_Field_GBC13) ? null :row1.Unused_Field_GBC13" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC14" expression="Relational.ISNULL(row1.Unused_Field_GBC14) ? null : row1.Unused_Field_GBC14" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC15" expression="Relational.ISNULL(row1.Unused_Field_GBC15) ? null :  row1.Unused_Field_GBC15" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC16" expression="Relational.ISNULL(row1.Most_Recent_Meter_Read_Date) ? null : row1.Most_Recent_Meter_Read_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="GBC17" expression="StringHandling.TRIM(row1.Unused_Field_GBC17)" type="id_String" nullable="true"/>
         <mapperTableEntries name="GBC18" expression="StringHandling.TRIM(row1.Unused_Field_GBC18)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC19" expression="Relational.ISNULL(row1.Invoiced_Up_To_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Invoiced_Up_To_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC19" expression="Relational.ISNULL(row1.Invoiced_Up_To_Date) ? null : row1.Invoiced_Up_To_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="GBC20" expression="row1.Unused_Field_GBC20 " type="id_Double" nullable="true"/>
         <mapperTableEntries name="GBC21" expression="row1.Unused_Field_GBC21 " type="id_Double" nullable="true"/>
         <mapperTableEntries name="INSTLOCA1" expression="&quot;INSTALL&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTLOCA2" expression="row2.Installation_ID" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA3" expression="Relational.ISNULL(row2.Unused_Field_LOCA3) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Unused_Field_LOCA3)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA4" expression="Relational.ISNULL(row2.Unused_Field_LOCA4) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Unused_Field_LOCA4)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA3" expression="Relational.ISNULL(row2.Unused_Field_LOCA3) ? null :  row2.Unused_Field_LOCA3" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA4" expression="Relational.ISNULL(row2.Unused_Field_LOCA4) ? null : row2.Unused_Field_LOCA4" type="id_Date" nullable="true"/>
         <mapperTableEntries name="INSTLOCA5" expression="row2.Unused_Field_LOCA5 " type="id_Double" nullable="true"/>
         <mapperTableEntries name="INSTLOCA6" expression="StringHandling.TRIM(row2.Address_Reference)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTLOCA7" expression="row2.Unit_Identifier " type="id_String" nullable="true"/>
@@ -892,8 +923,8 @@
         <mapperTableEntries name="INSTLOCA25" expression="StringHandling.TRIM(row2.House_Number_Prefix)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTLOCA26" expression="StringHandling.TRIM(row2.House_Number_Suffix)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTLOCA27" expression="row2.Floor_Type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA28" expression="Relational.ISNULL(row2.Address_Last_Changed_UTC) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row2.Address_Last_Changed_UTC)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA29" expression="Relational.ISNULL(row2.Unused_Field_LOCA29) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row2.Unused_Field_LOCA29)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA28" expression="Relational.ISNULL(row2.Address_Last_Changed_UTC) ? null : row2.Address_Last_Changed_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA29" expression="Relational.ISNULL(row2.Unused_Field_LOCA29) ? null : row2.Unused_Field_LOCA29" type="id_Date" nullable="true"/>
         <mapperTableEntries name="INSTLOCA30" expression="StringHandling.TRIM(row2.Unstructured_Address_1)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTLOCA31" expression="StringHandling.TRIM(row2.Unstructured_Address_2)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTLOCA32" expression="StringHandling.TRIM(row2.Unstructured_Address_3)" type="id_String" nullable="true"/>
@@ -905,20 +936,20 @@
         <mapperTableEntries name="INSTCONT1" expression="row2.Unused_Field_CONT1 " type="id_Double" nullable="true"/>
         <mapperTableEntries name="INSTCONT2_1" expression="StringHandling.TRIM(row2.Primary_Plan_Code)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTCONT2_2" expression="StringHandling.TRIM(row2.Secondary_Plan_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT3" expression="Relational.ISNULL(row2.Contract_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Contract_Start_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTCONT4" expression="Relational.ISNULL(row2.Contract_Review_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Contract_Review_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTCONT3" expression="Relational.ISNULL(row2.Contract_Start_Date) ? null : row2.Contract_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTCONT4" expression="Relational.ISNULL(row2.Contract_Review_Date) ? null : row2.Contract_Review_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="INSTCONT5" expression="StringHandling.TRIM(row2.Unused_Field_CONT5)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTCONT6" expression="StringHandling.TRIM(row2.Contract_Number)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTCONT7" expression="StringHandling.TRIM(row2.Override_Transmission_Loss)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTCONT8" expression="StringHandling.TRIM(row2.Override_Distribution_Loss)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTCONT9" expression="StringHandling.TRIM(row2.Confirmation_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT10" expression="Relational.ISNULL(row2.Unused_Field_CONT10) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row2.Unused_Field_CONT10)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTCONT11" expression="Relational.ISNULL(row2.Unused_Field_CONT11) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row2.Unused_Field_CONT11)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTCONT10" expression="Relational.ISNULL(row2.Unused_Field_CONT10) ? null : row2.Unused_Field_CONT10" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTCONT11" expression="Relational.ISNULL(row2.Unused_Field_CONT11) ? null :  row2.Unused_Field_CONT11" type="id_Date" nullable="true"/>
         <mapperTableEntries name="INSTCONT12" expression="StringHandling.TRIM(row2.Unused_Field_CONT12)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTCONT13" expression="StringHandling.TRIM(row2.Load_Criteria)" type="id_String" nullable="true"/>
         <mapperTableEntries name="INSTCONT14" expression="row2.Unused_Field_CONT14 " type="id_Double" nullable="true"/>
         <mapperTableEntries name="INSTCONT15" expression="StringHandling.TRIM(row2.Discount_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT16" expression="Relational.ISNULL(row2.Unused_Field_CONT16) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row2.Unused_Field_CONT16)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTCONT16" expression="Relational.ISNULL(row2.Unused_Field_CONT16) ? null : row2.Unused_Field_CONT16" type="id_Date" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Installation_ID" type="id_Double" nullable="true"/>
@@ -1062,14 +1093,12 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="400" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Wnbr0FK0EfGAPIORTaYCDw" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Wnbr0FK0EfGAPIORTaYCDw - metadata" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_install2loc.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.src_file_dir + &quot;meco_install2loc&quot; + context.file_extension"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -1453,11 +1482,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_install.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.local_file_loc_tgt + &quot;cdm_install&quot; + context.file_extension"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.field_seperator"/>
     <elementParameter field="CHECK" name="APPEND" value="true"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
     <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
@@ -1917,9 +1946,83 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="121" posY="760" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_1" show="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_START" value="//Initialize the context mapping exactly like before&#xD;&#xA;java.util.Map&lt;String, String> componentLabels = new java.util.HashMap&lt;>();&#xD;&#xA;if (context.map_component_label != null &amp;&amp; !context.map_component_label.trim().isEmpty()) {&#xD;&#xA; String[] pairs = context.map_component_label.split(&quot;\\r?\\n&quot;);&#xD;&#xA; for (String pair : pairs) {&#xD;&#xA;     if (pair.trim().isEmpty()) continue;&#xD;&#xA;     String[] keyValue = pair.split(&quot;:&quot;);&#xD;&#xA;     if (keyValue.length == 2) {&#xD;&#xA;         componentLabels.put(keyValue[0].trim(), keyValue[1].trim());&#xD;&#xA;     }&#xD;&#xA; }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Start looping through Talend's memory&#xD;&#xA;for (java.util.Map.Entry&lt;String, Object> entry : globalMap.entrySet()) {&#xD;&#xA; String key = entry.getKey();&#xD;&#xA; if (key.contains(&quot;_NB_LINE&quot;)) {&#xD;&#xA;     String uniqueName = key.split(&quot;_NB_LINE&quot;)[0];&#xD;&#xA;     String labelName = componentLabels.get(uniqueName);&#xD;&#xA;     &#xD;&#xA;     // If it's not in our context mapping, we skip it to keep audit clean&#xD;&#xA;     if (labelName == null) continue; &#xD;&#xA;     &#xD;&#xA;     long count = Long.parseLong(String.valueOf(entry.getValue()));&#xD;&#xA;     String compType = uniqueName.contains(&quot;Input&quot;) ? &quot;INPUT&quot; : &quot;OUTPUT&quot;;"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_MAIN" value="//'row2' is the name of the output link connecting tJavaFlex to tDBOutput&#xD;&#xA;row5.job_name = jobName;&#xD;&#xA;row5.run_id = pid;&#xD;&#xA;row5.environment = context.environment; // Assuming you have an env variable&#xD;&#xA;row5.component_name = uniqueName;&#xD;&#xA;row5.component_lable = labelName;&#xD;&#xA;row5.component_type = compType;&#xD;&#xA;row5.record_count = count;&#xD;&#xA;row5.run_status = &quot;SUCCESS&quot;;&#xD;&#xA;row5.created_at = java.util.Calendar.getInstance().getTime();"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE_END" value=" }&#xD;&#xA; }"/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true" show="false"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_1">
+      <column comment="" key="false" length="100" name="job_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="environment" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="component_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="component_lable" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="component_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="record_count" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="run_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_at" nullable="true" pattern="&quot;yyyyMMdd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="361" posY="760" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="job_name" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="run_id" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="environment" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="component_name" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="component_lable" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="component_type" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="record_count" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="run_status" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="created_at" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="100" name="job_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="run_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="environment" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="component_name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="component_lable" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="component_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="record_count" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="run_status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="created_at" nullable="true" pattern="&quot;yyyyMMdd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tJavaFlex_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -2375,6 +2478,39 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
   </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="record_count" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="component_type" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="environment" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="run_id" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="job_name" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="component_name" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="created_at" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="component_lable" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="run_status" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
@@ -2431,6 +2567,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="joblet_manifest_generator_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
