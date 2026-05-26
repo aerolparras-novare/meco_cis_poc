@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/BRONZE</deletedFolders>
+  <deletedFolders>process/BRONZE/BASIC</deletedFolders>
   <deletedFolders>process/BRONZE/BASIC/sqoop_job</deletedFolders>
+  <deletedItems id="_6_AJgPXoEfCzdeB6aeN2sw" path="" type="CONTEXT"/>
+  <deletedItems id="_C6ROcPKdEfCNScNTrRRCvQ" path="" type="CONTEXT"/>
+  <deletedItems id="_kyD8APdCEfCAt6AmyhhERg" path="" type="CONTEXT"/>
+  <deletedItems id="_uVguEAcuEfGqGfeJ7LYmLQ" path="" type="CONTEXT"/>
+  <deletedItems id="_vxyFQO9oEfCcepb0inUXkA" path="" type="CONTEXT"/>
+  <deletedItems id="_7LkhYPThEfCnI8GHxx3_pw" path="" type="JOBLET"/>
+  <deletedItems id="_7b3c8OwqEfC3YPYsXBPNOA" path="" type="JOBLET"/>
+  <deletedItems id="_E2q3oPLHEfCCCuz9yrvv0A" path="" type="JOBLET"/>
+  <deletedItems id="_Vy3hkPKcEfCNScNTrRRCvQ" path="" type="METADATA_CONNECTIONS"/>
   <deletedItems id="_1BQrgPdjEfCg_5SQhzKgrQ" path="BRONZE/BASIC" type="PROCESS"/>
+  <deletedItems id="_XFLckPgDEfCVZsdSWz8YYw" path="BRONZE/BASIC" type="PROCESS"/>
   <deletedItems id="_dUnU8PfwEfCVZsdSWz8YYw" path="BRONZE/BASIC" type="PROCESS"/>
   <deletedItems id="_xEiBIPdsEfCg_5SQhzKgrQ" path="BRONZE/BASIC" type="PROCESS"/>
   <deletedItems id="_DnvlAPdqEfCg_5SQhzKgrQ" path="BRONZE/BASIC/sqoop_job" type="PROCESS"/>
