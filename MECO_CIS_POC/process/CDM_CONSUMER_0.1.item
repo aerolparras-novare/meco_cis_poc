@@ -637,9 +637,9 @@
         <mapperTableEntries name="C0" expression="row1.Consumer_ID " type="id_Double" nullable="true"/>
         <mapperTableEntries name="C1" expression="row1.Account_ID " type="id_Double" nullable="true"/>
         <mapperTableEntries name="C2" expression="row1.Installation_ID " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="C3" expression="(!Relational.ISNULL(row1.Final_Bill_Date) &amp;&amp; row1.Status_Code != 40) ? null : row1.Status_Code " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="C4" expression="Relational.ISNULL(row1.Move_In_Date) ? null : (TalendDate.compareDate(TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Move_In_Date), TalendDate.getCurrentDate(), &quot;dd/MM/yyyy&quot;) &lt;= 0 ? TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Move_In_Date) : null)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C5" expression="Relational.ISNULL(row1.Final_Bill_Date) ? null : (row1.Status_Code == 40 ? TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Final_Bill_Date) : null)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C3" expression="(!Relational.ISNULL(row1.Final_Bill_Date) &amp;&amp; row1.Status_Code != 40) ? null : row1.Status_Code" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="C4" expression="Relational.ISNULL(row1.Move_In_Date) ? null : (TalendDate.compareDate(row1.Move_In_Date, TalendDate.getCurrentDate(), &quot;dd/MM/yyyy&quot;) &lt;= 0 ? row1.Move_In_Date : null) " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C5" expression="Relational.ISNULL(row1.Final_Bill_Date) ? null : (row1.Status_Code == 40 ? row1.Final_Bill_Date : null)" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C6" expression="StringHandling.TRIM(row1.Utility_Type)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C7" expression="StringHandling.TRIM(row1.Category)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C8" expression="StringHandling.TRIM(row1.Tax_Included_Flag)" type="id_String" nullable="true"/>
@@ -652,78 +652,78 @@
         <mapperTableEntries name="C15" expression="StringHandling.TRIM(row1.End_Use_Code)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C16" expression="row1.Unused_Field_16 " type="id_Double" nullable="true"/>
         <mapperTableEntries name="C17" expression="StringHandling.TRIM(row1.Next_Bill_Message)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C18" expression="Relational.ISNULL(row1.Message_Expiry_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Message_Expiry_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C18" expression="Relational.ISNULL(row1.Message_Expiry_Date) ? null : row1.Message_Expiry_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C19" expression="StringHandling.TRIM(row1.Tenancy_Type)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C20" expression="StringHandling.TRIM(row1.Dog_Type)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C21" expression="StringHandling.TRIM(row1.Hazard_Notes)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C22" expression="StringHandling.TRIM(row1.Meter_Reader_Notes)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C23" expression="StringHandling.TRIM(row1.Reporting_Code)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C24" expression="StringHandling.TRIM(row1.Miscellaneous_Info)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C25" expression="Relational.ISNULL(row1.Status_Changed_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Status_Changed_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C25" expression="Relational.ISNULL(row1.Status_Changed_Date) ? null : row1.Status_Changed_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C26_1" expression="StringHandling.TRIM(row1.Unused_Field_26_1)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C26_2" expression="StringHandling.TRIM(row1.Unused_Field_26_2)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C26_3" expression="StringHandling.TRIM(row1.Unused_Field_26_3)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C27" expression="Relational.ISNULL(row1.Unused_Field_27) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row1.Unused_Field_27)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C27" expression="Relational.ISNULL(row1.Unused_Field_27) ? null : row1.Unused_Field_27" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C28" expression="StringHandling.TRIM(row1.Suspended_Flag)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C29" expression="Relational.ISNULL(row1.Suspension_Lifted_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Suspension_Lifted_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C29" expression="Relational.ISNULL(row1.Suspension_Lifted_Date) ? null : row1.Suspension_Lifted_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C30" expression="StringHandling.TRIM(row1.Suspension_Reason)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C31" expression="Relational.ISNULL(row1.Suspension_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Suspension_Start_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C31" expression="Relational.ISNULL(row1.Suspension_Start_Date) ? null :  row1.Suspension_Start_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C32" expression="StringHandling.TRIM(row1.Suspension_Cancelled_Date)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C33" expression="row1.Campaign_Code " type="id_Double" nullable="true"/>
         <mapperTableEntries name="C34" expression="StringHandling.TRIM(row1.Sales_Media)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C35" expression="StringHandling.TRIM(row1.Acquisition_Method)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C36" expression="StringHandling.TRIM(row1.Sales_Person)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C37" expression="Relational.ISNULL(row1.Sale_Completed_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Sale_Completed_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C37" expression="Relational.ISNULL(row1.Sale_Completed_Date) ? null : row1.Sale_Completed_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C38" expression="StringHandling.TRIM(row1.Reconciliation_Reference)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C39" expression="Relational.ISNULL(row1.Application_Received_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Application_Received_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C39" expression="Relational.ISNULL(row1.Application_Received_Date) ? null :  row1.Application_Received_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C40" expression="StringHandling.TRIM(row1.Application_Form_Number)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C41" expression="StringHandling.TRIM(row1.Transfer_Balance_Status)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C42" expression="Relational.ISNULL(row1.Switch_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Switch_Start_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C43" expression="Relational.ISNULL(row1.Switch_Confirmed_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Switch_Confirmed_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C42" expression="Relational.ISNULL(row1.Switch_Start_Date) ? null :  row1.Switch_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C43" expression="Relational.ISNULL(row1.Switch_Confirmed_Date) ? null :  row1.Switch_Confirmed_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C44" expression="StringHandling.TRIM(row1.Acquisition_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="C45" expression="Relational.ISNULL(row1.Commission_Cancel_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Commission_Cancel_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="C46" expression="Relational.ISNULL(row1.Commission_Cancelled_Datetime) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row1.Commission_Cancelled_Datetime)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C45" expression="Relational.ISNULL(row1.Commission_Cancel_Date) ? null : row1.Commission_Cancel_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C46" expression="Relational.ISNULL(row1.Commission_Cancelled_Datetime) ? null : row1.Commission_Cancelled_Datetime" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C47" expression="StringHandling.TRIM(row1.Cancellation_Reason)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C48" expression="StringHandling.TRIM(row1.New_Retailer)" type="id_String" nullable="true"/>
         <mapperTableEntries name="C49" expression="row1.Master_Consumer_ID " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="C50" expression="Relational.ISNULL(row1.Ceased_Status_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row1.Ceased_Status_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="C50" expression="Relational.ISNULL(row1.Ceased_Status_Date) ? null : row1.Ceased_Status_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="C51" expression="StringHandling.TRIM(row1.Unused_Field_51)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CRIT1_1" expression="StringHandling.TRIM(row2.Critical_Condition_1)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT1_2" expression="Relational.ISNULL(row2.Crit1_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit1_Start_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT1_3" expression="Relational.ISNULL(row2.Crit1_End_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit1_End_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT1_2" expression="Relational.ISNULL(row2.Crit1_Start_Date) ? null :  row2.Crit1_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT1_3" expression="Relational.ISNULL(row2.Crit1_End_Date) ? null :row2.Crit1_End_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CRIT1_4" expression="StringHandling.TRIM(row2.Crit1_Status) " type="id_String" nullable="true"/>
         <mapperTableEntries name="CRIT2_1" expression="StringHandling.TRIM(row2.Critical_Condition_2)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT2_2" expression="Relational.ISNULL(row2.Crit2_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit2_Start_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT2_3" expression="Relational.ISNULL(row2.Crit2_End_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit2_End_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT2_2" expression="Relational.ISNULL(row2.Crit2_Start_Date) ? null : row2.Crit2_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT2_3" expression="Relational.ISNULL(row2.Crit2_End_Date) ? null : row2.Crit2_End_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CRIT2_4" expression="StringHandling.TRIM(row2.Crit2_Status)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CRIT3_1" expression="StringHandling.TRIM(row2.Critical_Condition_3)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT3_2" expression="Relational.ISNULL(row2.Crit3_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit3_Start_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT3_3" expression="Relational.ISNULL(row2.Crit3_End_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit3_End_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT3_2" expression="Relational.ISNULL(row2.Crit3_Start_Date) ? null : row2.Crit3_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT3_3" expression="Relational.ISNULL(row2.Crit3_End_Date) ? null :  row2.Crit3_End_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CRIT3_4" expression="StringHandling.TRIM(row2.Crit3_Status)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CRIT4_1" expression="StringHandling.TRIM(row2.Critical_Condition_4)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CRIT4_2" expression="Relational.ISNULL(row2.Crit4_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit4_Start_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CRIT4_3" expression="Relational.ISNULL(row2.Crit4_End_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row2.Crit4_End_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT4_2" expression="Relational.ISNULL(row2.Crit4_Start_Date) ? null :  row2.Crit4_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CRIT4_3" expression="Relational.ISNULL(row2.Crit4_End_Date) ? null :  row2.Crit4_End_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CRIT4_4" expression="StringHandling.TRIM(row2.Crit4_Status)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT0" expression="row3.Account_ID" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT1" expression="row3.Contract_ID" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT1" expression="String.valueOf(row3.Contract_ID) " type="id_String" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT2_1" expression="StringHandling.TRIM(row3.Primary_Plan)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT2_2" expression="StringHandling.TRIM(row3.Secondary_Plan)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT3" expression="Relational.ISNULL(row3.Contract_Start_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row3.Contract_Start_Date)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT4" expression="Relational.ISNULL(row3.Contract_Review_Date) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy&quot;, row3.Contract_Review_Date)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT3" expression="Relational.ISNULL(row3.Contract_Start_Date) ? null :  row3.Contract_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT4" expression="Relational.ISNULL(row3.Contract_Review_Date) ? null : row3.Contract_Review_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT5" expression="StringHandling.TRIM(row3.Contract_Status)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT6" expression="StringHandling.TRIM(row3.Contract_Number)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT7" expression="StringHandling.TRIM(row3.Override_Transmission_Loss)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT8" expression="StringHandling.TRIM(row3.Override_Distribution_Loss)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT9" expression="StringHandling.TRIM(row3.Confirmation_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT10" expression="Relational.ISNULL(row3.Unused_Field_Contract_10) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row3.Unused_Field_Contract_10)" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="CONCONTRACT11" expression="Relational.ISNULL(row3.Unused_Field_Contract_11) ? null : TalendDate.parseDate(&quot;dd/MM/yyyy HH:mm:ss&quot;, row3.Unused_Field_Contract_11)" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT10" expression="Relational.ISNULL(row3.Unused_Field_Contract_10) ? null : row3.Unused_Field_Contract_10 " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="CONCONTRACT11" expression="Relational.ISNULL(row3.Unused_Field_Contract_11) ? null : row3.Unused_Field_Contract_11" type="id_Date" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT12" expression="StringHandling.TRIM(row3.Contract_Loaded_By)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT13" expression="StringHandling.TRIM(row3.Unused_Field_Contract_13)" type="id_String" nullable="true"/>
         <mapperTableEntries name="CONCONTRACT19" expression="row3.Uplift_Percentage" type="id_Double" nullable="true"/>
         <mapperTableEntries name="CONCONTRACTVCONTROL" expression="StringHandling.TRIM(row3.Validation_Control)" type="id_String" nullable="true"/>
         <mapperTableEntries name="QCONCONTRACT21" expression="row3.Discount_Percentage " type="id_Double" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row1" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Consumer_ID" type="id_Double" nullable="true"/>
         <mapperTableEntries name="Account_ID" type="id_Double" nullable="true"/>
         <mapperTableEntries name="Installation_ID" type="id_Double" nullable="true"/>
@@ -779,7 +779,7 @@
         <mapperTableEntries name="Ceased_Status_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Unused_Field_51" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row2" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Consumer_ID" expression="row1.Consumer_ID " type="id_Double" nullable="true" operator="="/>
         <mapperTableEntries name="Critical_Condition_1" type="id_String" nullable="true"/>
         <mapperTableEntries name="Crit1_Start_Date" type="id_Date" nullable="true"/>
@@ -799,8 +799,8 @@
         <mapperTableEntries name="Crit4_Status" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Account_ID" expression="row1.Account_ID" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="Contract_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Account_ID" expression="" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Contract_ID" expression="row1.Consumer_ID " type="id_Double" nullable="true"/>
         <mapperTableEntries name="Unused_Field_Contract_1" type="id_String" nullable="true"/>
         <mapperTableEntries name="Primary_Plan" type="id_String" nullable="true"/>
         <mapperTableEntries name="Secondary_Plan" type="id_String" nullable="true"/>
