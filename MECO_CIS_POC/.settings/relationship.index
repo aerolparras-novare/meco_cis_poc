@@ -840,18 +840,6 @@
     "version" : "Latest",
     "type" : "joblet"
   }, {
-    "id" : "_1I5fIFJpEfGdn9L_G-9eWg",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_7AEG0FJpEfGdn9L_G-9eWg",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_WQg1sFJpEfGdn9L_G-9eWg",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
     "id" : "_1I5fIFJpEfGdn9L_G-9eWg - metadata",
     "version" : "Latest",
     "type" : "schema"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_yNee4FNxEfGAPIORTaYCDw" confirmationNeeded="false" hide="false" name="Default">
-  <contextParameter xmi:id="_yNee4VNxEfGAPIORTaYCDw" comment="" name="src_file_dir" prompt="src_file_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/development/CSV/"/>
+  <contextParameter xmi:id="_yNee4VNxEfGAPIORTaYCDw" comment="" name="src_file_dir" prompt="src_file_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/"/>
   <contextParameter xmi:id="_yNee4lNxEfGAPIORTaYCDw" comment="" name="filename" prompt="filename?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="customers"/>
   <contextParameter xmi:id="_yNee41NxEfGAPIORTaYCDw" comment="" name="file_extension" prompt="file_extension?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=".csv"/>
   <contextParameter xmi:id="_yNee5FNxEfGAPIORTaYCDw" comment="" name="hdfs_raw_src_file_dir" prompt="hdfs_raw_src_file_dir?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/dev/raw/"/>
