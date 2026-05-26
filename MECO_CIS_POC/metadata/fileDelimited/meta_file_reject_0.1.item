@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_yGTecFjYEfGtN5BJmGG-8w" name="meta_file_reject" dataPackage="_yGTecVjYEfGtN5BJmGG-8w" Server="Localhost 127.0.0.1" FilePath="C:/Users/aerol.parras/Documents/meco_cis/UT/reject/YYYYMMDD/reject.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;'&quot;" TextEnclosure="&quot;'&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_yGTecVjYEfGtN5BJmGG-8w" name="default" dataManager="_yGTecFjYEfGtN5BJmGG-8w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_yGTecljYEfGtN5BJmGG-8w" id="_l-UY8FjYEfGtN5BJmGG-8w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTec1jYEfGtN5BJmGG-8w" name="REJECT_ID" label="REJECT_ID" length="50" talendType="id_String" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_yGTedFjYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTedVjYEfGtN5BJmGG-8w" name="PROJECT_NAME" label="PROJECT_NAME" length="100" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_yGTedljYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTed1jYEfGtN5BJmGG-8w" name="JOB_NAME" label="JOB_NAME" length="100" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_yGTeeFjYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTeeVjYEfGtN5BJmGG-8w" name="EXECUTION_ID" label="EXECUTION_ID" length="50" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_yGTeeljYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTee1jYEfGtN5BJmGG-8w" name="JOB_START_TIME" label="JOB_START_TIME" length="-1" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_yGTefFjYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTefVjYEfGtN5BJmGG-8w" name="STAGE" label="STAGE" length="10" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_yGTefljYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTef1jYEfGtN5BJmGG-8w" name="ENTITY_NAME" label="ENTITY_NAME" length="100" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_yGTegFjYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTegVjYEfGtN5BJmGG-8w" name="ENTITY_COLUMN" label="ENTITY_COLUMN" length="4000" talendType="id_String" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTegljYEfGtN5BJmGG-8w" name="ERROR_MESSAGE" label="ERROR_MESSAGE" length="4000" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_yGTeg1jYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTehFjYEfGtN5BJmGG-8w" name="REJECTED_DATA" label="REJECTED_DATA" length="2147483647" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_yGTehVjYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTehljYEfGtN5BJmGG-8w" name="REJECTED_ON" label="REJECTED_ON" length="-1" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;">
+        <initialValue xmi:id="_yGTeh1jYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_yGTeiFjYEfGtN5BJmGG-8w" name="STEWARD_STATUS" label="STEWARD_STATUS" length="20" talendType="id_String" nullable="false" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_yGTeiVjYEfGtN5BJmGG-8w" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

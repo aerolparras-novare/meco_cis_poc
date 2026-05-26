@@ -1,5 +1,6 @@
 package routines;
 
+import java.util.StringJoiner;
 /*
  * user specification: the standard utility class
  */
@@ -84,5 +85,39 @@ public class Custom {
         return null; // Return null if no regex matches
     }
     
-    
+    /**
+     * concat_ws: Concatenates any number of arguments of any data type using a specified separator.
+     * Null values are automatically skipped.
+     * * {Category} User Defined
+     * {param} string(" ") separator: The delimiter to place between elements.
+     * {param} object(args) args: Infinite list of arguments of any data type.
+     * * {example} CustomConcat.concat_ws(", ", row1.FIRST_NAME, row1.AGE, row1.HIRE_DATE)
+     */
+    public static String concat_ws(String separator, Object... args) {
+        // If the separator itself is null, default to an empty string
+        String sep = (separator == null) ? "" : separator;
+        
+        StringJoiner joiner = new StringJoiner(sep);
+        
+        if (args == null) {
+            return null;
+        }
+        
+        for (Object arg : args) {
+            // SQL CONCAT_WS explicitly skips NULL values
+            if (arg == null) {
+                continue;
+            }
+            
+            String strValue = String.valueOf(arg).trim();
+            
+            // Optional: Skip empty strings so you don't get double separators (e.g., "John,,Smith")
+            if (!strValue.isEmpty()) {
+                joiner.add(strValue);
+            }
+        }
+        
+        // If nothing was added, return null (consistent with safe SQL operations)
+        return joiner.length() == 0 ? null : joiner.toString();
+    }
 }
