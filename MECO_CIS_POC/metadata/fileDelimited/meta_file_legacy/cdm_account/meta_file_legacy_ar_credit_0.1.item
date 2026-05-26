@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_0aCYUFfrEfGtN5BJmGG-8w" name="meta_file_legacy_ar_credit" dataPackage="_0aCYUVfrEfGtN5BJmGG-8w" Server="Localhost 127.0.0.1" FilePath="C:/Users/aerol.parras/Downloads/LEGACY_AR_CREDIT.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_0aCYUVfrEfGtN5BJmGG-8w" name="default" dataManager="_0aCYUFfrEfGtN5BJmGG-8w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_0aCYUlfrEfGtN5BJmGG-8w" id="_Gzn0MFfrEfGtN5BJmGG-8w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYU1frEfGtN5BJmGG-8w" label="LEG_ACC_ID" length="19" talendType="id_Integer" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYVFfrEfGtN5BJmGG-8w" label="RISK_SCORE" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYVVfrEfGtN5BJmGG-8w" label="SYS_MOD_TIME" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy 24HH:mm:ss&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYVlfrEfGtN5BJmGG-8w" label="BAL_OUTSTAND" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYV1frEfGtN5BJmGG-8w" label="LAST_STMT_BAL" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYWFfrEfGtN5BJmGG-8w" label="STMT_GEN_DT" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYWVfrEfGtN5BJmGG-8w" label="STMT_DUE_DT" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;">
+        <initialValue xmi:id="_0aCYWlfrEfGtN5BJmGG-8w" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYW1frEfGtN5BJmGG-8w" label="GRACE_DAYS" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYXFfrEfGtN5BJmGG-8w" label="OLDEST_DEBT_DT" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYXVfrEfGtN5BJmGG-8w" label="LAST_PAY_DT" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYXlfrEfGtN5BJmGG-8w" label="LAST_PAY_AMT" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYX1frEfGtN5BJmGG-8w" label="SUSPEND_ALLOC" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYYFfrEfGtN5BJmGG-8w" label="HIST_CR_STR" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYYVfrEfGtN5BJmGG-8w" label="CRED_STATUS" length="2000" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYYlfrEfGtN5BJmGG-8w" label="CODE" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYY1frEfGtN5BJmGG-8w" label="PPD_AVAIL" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYZFfrEfGtN5BJmGG-8w" label="DEP_HELD" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYZVfrEfGtN5BJmGG-8w" label="PENDING_VAL" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYZlfrEfGtN5BJmGG-8w" label="UNAGED_BAL" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYZ1frEfGtN5BJmGG-8w" label="PREPAY_STAT" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYaFfrEfGtN5BJmGG-8w" label="PREPAY_TS" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy 24HH:mm:ss&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYaVfrEfGtN5BJmGG-8w" label="PAUSE_ALLOC_DT" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYalfrEfGtN5BJmGG-8w" label="INT_ACT_DT" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYa1frEfGtN5BJmGG-8w" label="LAST_TXN_ID" length="-1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0aCYbFfrEfGtN5BJmGG-8w" label="ACC_CLASS" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

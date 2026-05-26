@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_n6D-sFftEfGtN5BJmGG-8w" name="meta_file_legacy_contact" dataPackage="_n6D-sVftEfGtN5BJmGG-8w" Server="Localhost 127.0.0.1" FilePath="C:/Users/aerol.parras/Downloads/LEGACY_CUST_CONTACT.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_n6D-sVftEfGtN5BJmGG-8w" name="default" dataManager="_n6D-sFftEfGtN5BJmGG-8w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_n6D-slftEfGtN5BJmGG-8w" id="_a5-MgFftEfGtN5BJmGG-8w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_n6D-s1ftEfGtN5BJmGG-8w" label="LEG_CUST_ID" length="19" talendType="id_Integer" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_n6D-tFftEfGtN5BJmGG-8w" label="EMAIL_PRI" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_n6D-tVftEfGtN5BJmGG-8w" label="PHONE_MOB" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_n6D-tlftEfGtN5BJmGG-8w" label="PHONE_HOME" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_n6D-t1ftEfGtN5BJmGG-8w" label="FAX_PRI" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_n6D-uFftEfGtN5BJmGG-8w" label="EMAIL_SEC" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_n6D-uVftEfGtN5BJmGG-8w" label="PHONE_WORK" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_n6D-ulftEfGtN5BJmGG-8w" label="FAX_SEC" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

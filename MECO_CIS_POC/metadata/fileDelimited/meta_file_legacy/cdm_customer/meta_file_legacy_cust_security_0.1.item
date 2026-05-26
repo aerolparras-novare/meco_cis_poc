@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_L0BEkFfuEfGtN5BJmGG-8w" name="meta_file_legacy_cust_security" dataPackage="_L0BEkVfuEfGtN5BJmGG-8w" Server="Localhost 127.0.0.1" FilePath="C:/Users/aerol.parras/Downloads/LEGACY_CUST_SECURITY.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_L0BEkVfuEfGtN5BJmGG-8w" name="default" dataManager="_L0BEkFfuEfGtN5BJmGG-8w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_L0BEklfuEfGtN5BJmGG-8w" id="_xxmrkFftEfGtN5BJmGG-8w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BEk1fuEfGtN5BJmGG-8w" label="LEG_CUST_ID" length="19" talendType="id_Integer" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BElFfuEfGtN5BJmGG-8w" label="ID_VERIFIED_FLG" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BElVfuEfGtN5BJmGG-8w" label="CRM_ID" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BEllfuEfGtN5BJmGG-8w" label="DESIG_TITLE" length="2000" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BEl1fuEfGtN5BJmGG-8w" label="DOC_TYPE" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BEmFfuEfGtN5BJmGG-8w" label="ELEC_LIC_NO" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BEmVfuEfGtN5BJmGG-8w" label="PWD_QUESTION" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BEmlfuEfGtN5BJmGG-8w" label="PWD_ANSWER" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BEm1fuEfGtN5BJmGG-8w" label="NOK_CUST_FK" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BEnFfuEfGtN5BJmGG-8w" label="NOK_RELATION" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_L0BEnVfuEfGtN5BJmGG-8w" label="JOB_LEVEL" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

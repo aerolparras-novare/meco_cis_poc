@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_oDJ2AFf9EfGtN5BJmGG-8w" name="meta_file_target_cdm_custrole" dataPackage="_oDLrMFf9EfGtN5BJmGG-8w" Server="Localhost 127.0.0.1" FilePath="C:/Users/aerol.parras/Downloads/Gentrack CDM STM &amp; Mock Data - CDM_CUSTROLE.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_oDLrMFf9EfGtN5BJmGG-8w" name="default" dataManager="_oDJ2AFf9EfGtN5BJmGG-8w">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_oDLrMVf9EfGtN5BJmGG-8w" id="_GJ8f4Ff9EfGtN5BJmGG-8w" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrMlf9EfGtN5BJmGG-8w" label="CUSTROLE0" length="19" talendType="id_Integer" key="true" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrM1f9EfGtN5BJmGG-8w" label="CUSTROLE1" length="19" talendType="id_Integer" nullable="false" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrNFf9EfGtN5BJmGG-8w" label="CUSTROLE2" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrNVf9EfGtN5BJmGG-8w" label="CUSTROLE3" length="19" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrNlf9EfGtN5BJmGG-8w" label="CUSTROLE4" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrN1f9EfGtN5BJmGG-8w" label="CUSTROLE5" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss z&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrOFf9EfGtN5BJmGG-8w" label="CUSTROLE6" length="-1" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrOVf9EfGtN5BJmGG-8w" label="CUSTROLE7" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrOlf9EfGtN5BJmGG-8w" label="CUSTROLE8_1" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrO1f9EfGtN5BJmGG-8w" label="CUSTROLE8_2" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrPFf9EfGtN5BJmGG-8w" label="CUSTROLE8_3" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrPVf9EfGtN5BJmGG-8w" label="CUSTROLE9_1" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrPlf9EfGtN5BJmGG-8w" label="CUSTROLE9_2" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrP1f9EfGtN5BJmGG-8w" label="CUSTROLE9_3" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrQFf9EfGtN5BJmGG-8w" label="CUSTROLE10" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrQVf9EfGtN5BJmGG-8w" label="CUSTROLE11" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrQlf9EfGtN5BJmGG-8w" label="CUSTROLE12" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrQ1f9EfGtN5BJmGG-8w" label="CUSTROLE13" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_oDLrRFf9EfGtN5BJmGG-8w" label="CUSTROLE14" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

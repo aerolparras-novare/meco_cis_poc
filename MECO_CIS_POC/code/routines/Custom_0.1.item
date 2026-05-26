@@ -1,0 +1,88 @@
+package routines;
+
+/*
+ * user specification: the standard utility class
+ */
+public class Custom {
+
+    /**
+     * coalesce: Returns the first non-null, non-blank, and non-literal "null" value.
+     * * {Category} User Defined
+     * * {param} object(row1.column1, row1.column2) input: The columns or values to check.
+     * * {example} CustomCoalesce.coalesce(row1.col1, row1.col2, "Fallback")
+     */
+    @SafeVarargs
+    public static <T> T coalesce(T... items) {
+        if (items == null) {
+            return null;
+        }
+        
+        for (T item : items) {
+            if (item != null) {
+                // If it's a String, check for blanks AND literal "null" text
+                if (item instanceof String) {
+                    String strValue = ((String) item).trim();
+                    
+                    if (!strValue.isEmpty() && !strValue.equalsIgnoreCase("null")) {
+                        return item;
+                    }
+                } else {
+                    // For non-string types (Integer, Date, etc.), return if it passed the null check
+                    return item;
+                }
+            }
+        }
+        return null;
+    }
+    
+    /**
+     * regexDecode: Dynamically decodes an input value by evaluating the context map values as Regular Expressions.
+     * * {Category} User Defined
+     * * {param} string(context.map_residentialCode) mapping: The context variable containing the key:regex pairs.
+     * * {param} string(row1.residential_value) searchValue: The raw incoming data value to evaluate.
+     * * {example} CustomDecode.regexDecode(context.map_residentialCode, row1.my_column)
+     */
+    public static String regexDecode(String mapping, String searchValue) {
+        if (mapping == null || searchValue == null) {
+            return null;
+        }
+        
+        String target = searchValue.trim();
+        if (target.isEmpty()) {
+            return null;
+        }
+        
+        // Split context map by newlines
+        String[] lines = mapping.split("\\r?\\n");
+        
+        for (String line : lines) {
+            if (line.trim().isEmpty()) {
+                continue;
+            }
+            
+            // Limit split to 2 parts so regex patterns can safely contain colons
+            String[] parts = line.split(":", 2);
+            if (parts.length == 2) {
+                String key = parts[0].trim();
+                String regexPattern = parts[1].trim();
+                
+                try {
+                    // (?i) forces case-insensitivity automatically so context mapping stays clean
+                    // ^ and $ ensure the entire string must match the pattern, not just a substring
+                    String strictRegex = "(?i)^(" + regexPattern + ")$";
+                    
+                    if (target.matches(strictRegex)) {
+                        return key;
+                    }
+                } catch (java.util.regex.PatternSyntaxException e) {
+                    // Prevents a bad regex pattern from crashing your entire Talend ETL job
+                    System.err.println("ERROR: Invalid regex pattern for key [" + key + "]: " + regexPattern);
+                }
+            }
+        }
+        
+        return null; // Return null if no regex matches
+    }
+    
+    
+}
