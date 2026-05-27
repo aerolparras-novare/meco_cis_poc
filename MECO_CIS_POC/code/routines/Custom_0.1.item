@@ -123,16 +123,16 @@ public class Custom {
     
     /**
      * Converts a newline-separated string of standard filemasks into an optimized Regex string.
-     * Can handle traditional wildcards like '*'
+     * Returns null if the input list is null, empty, or blank.
      * * {talendTypes} String
-     * * {Category} User Defined
-     * * {param} string(context.yourVariable) input: The raw newline-separated string.
-     * * {example} buildRegex(context.fileListString)
+     * {Category} User Defined
+     * {param} string(context.yourVariable) input
+     * {example} buildRegex(context.fileListString)
      */
     public static String buildRegex(String newlineSeparatedMasks) {
-        // Fallback: If null or empty, return match-all regex pattern
+        // 1. Return null if the initial input string is empty
         if (newlineSeparatedMasks == null || newlineSeparatedMasks.trim().isEmpty()) {
-            return "^.*$"; 
+            return null; 
         }
         
         String[] lines = newlineSeparatedMasks.split("\\r?\\n");
@@ -142,18 +142,17 @@ public class Custom {
             String trimmedLine = line.trim();
             
             if (!trimmedLine.isEmpty()) {
-                // Escape periods and convert standard wildcards (*) to regex wildcards (.*)
                 String cleanRegex = trimmedLine.replace(".", "\\.").replace("*", ".*");
                 regexPatterns.add(cleanRegex);
             }
         }
         
-        // If no valid lines were processed, fall back to match-all
+        // 2. Return null if the string had text but no valid file masks (e.g., just empty newlines)
         if (regexPatterns.isEmpty()) {
-            return "^.*$";
+            return null;
         }
         
-        // Join into a high-performance single regex: ^(pattern1|pattern2|pattern3)$
+        // Return case-insensitive regex pattern
         return "(?i)^(" + String.join("|", regexPatterns) + ")$";
     }
 }

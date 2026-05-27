@@ -5,7 +5,7 @@
     <contextParameter comment="" name="maxRetries" prompt="maxRetries?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3" internalId="_QM_FQFl1EfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="currentRetry" prompt="currentRetry?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_QM_FQVl1EfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="isSuccess" prompt="isSuccess?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_QM_FQll1EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="map_sourceFiles" prompt="map_sourceFiles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_account_base*.csv&#xD;&#xA;legacy_account_noted*.csv&#xD;&#xA;legacy_ar_credit*.csv&#xD;&#xA;legacy_billing_terms*.csv" internalId="_VTHm4FmcEfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="map_sourceFiles" prompt="map_sourceFiles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_VTHm4FmcEfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_VTIN8FmcEfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/archive&quot;" internalId="_VTIN8VmcEfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis&quot;" internalId="_VTIN8lmcEfGtN5BJmGG-8w"/>
@@ -67,7 +67,7 @@
     <contextParameter comment="" name="maxRetries" prompt="maxRetries?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3" internalId="_QM_FTll1EfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="currentRetry" prompt="currentRetry?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0" internalId="_QM_FT1l1EfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="isSuccess" prompt="isSuccess?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false" internalId="_QM_FUFl1EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="map_sourceFiles" prompt="map_sourceFiles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_VTKDPFmcEfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="map_sourceFiles" prompt="map_sourceFiles?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_account_base*.csv&#xD;&#xA;legacy_account_noted*.csv&#xD;&#xA;legacy_ar_credit*.csv&#xD;&#xA;legacy_billing_terms*.csv" internalId="_VTKDPFmcEfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_VTKDPVmcEfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/archive&quot;" internalId="_VTKDPlmcEfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT&quot;" internalId="_VTKDP1mcEfGtN5BJmGG-8w"/>
@@ -1702,10 +1702,10 @@
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="NO"/>
-    <elementParameter field="CHECK" name="ERROR" value="true"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
     <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="false"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="Custom.buildRegex(context.map_sourceFiles)" id="0"/>
+      <elementValue elementRef="FILEMASK" value="Custom.buildRegex(context.map_sourceFiles) == null ? &quot;^%&quot; : Custom.buildRegex(context.map_sourceFiles)" id="0"/>
     </elementParameter>
     <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
     <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
@@ -1737,7 +1737,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileCopy_1"/>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="2080">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1200" posY="2080">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;)) + &quot; successfully move to /data/processing/&lt;job>/&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="42"/>
@@ -1756,21 +1756,31 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDie_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="1880" sizeX="121" sizeY="40">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="2080" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Create an ordered unique set to hold our expected file masks&#xD;&#xA;java.util.Set&lt;String> checklist = new java.util.LinkedHashSet&lt;>();&#xD;&#xA;&#xD;&#xA;//Split your newline context parameter&#xD;&#xA;for (String line : context.map_sourceFiles.split(&quot;\\r?\\n&quot;)) {&#xD;&#xA; if (!line.trim().isEmpty()) {&#xD;&#xA;     checklist.add(line.trim());&#xD;&#xA; }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Save this checklist globally so other components can access it&#xD;&#xA;globalMap.put(&quot;fileChecklist&quot;, checklist);&#xD;&#xA;System.out.println(&quot;Verification active. Expecting &quot; + checklist.size() + &quot; file pattern(s).&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Create a thread-safe concurrent set&#xD;&#xA;java.util.Set&lt;String> checklist = java.util.concurrent.ConcurrentHashMap.newKeySet();&#xD;&#xA;&#xD;&#xA;//Split your newline context parameter&#xD;&#xA;for (String line : context.map_sourceFiles.split(&quot;\\r?\\n&quot;)) {&#xD;&#xA; if (!line.trim().isEmpty()) {&#xD;&#xA;     checklist.add(line.trim());&#xD;&#xA; }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;//Save this thread-safe checklist globally&#xD;&#xA;globalMap.put(&quot;fileChecklist&quot;, checklist);&#xD;&#xA;System.out.println(&quot;Parallel Verification active. Expecting &quot; + checklist.size() + &quot; pattern(s).&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="LABEL" value="initialize_checklist"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="1880" sizeX="121" sizeY="40">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="2080" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="String currentFile = (String)globalMap.get(&quot;tFileList_1_CURRENT_FILE&quot;);&#xD;&#xA;java.util.Set&lt;String> checklist = (java.util.Set&lt;String>)globalMap.get(&quot;fileChecklist&quot;);&#xD;&#xA;&#xD;&#xA;String matchedMask = null;&#xD;&#xA;&#xD;&#xA;// Loop through our checklist to see which mask matches the file&#xD;&#xA;for (String mask : checklist) {&#xD;&#xA;    // Inject (?i) at the beginning of the evaluation string&#xD;&#xA;    String regex = &quot;(?i)^&quot; + mask.replace(&quot;.&quot;, &quot;\\.&quot;).replace(&quot;*&quot;, &quot;.*&quot;) + &quot;$&quot;;&#xD;&#xA;    &#xD;&#xA;    if (currentFile.matches(regex)) {&#xD;&#xA;        matchedMask = mask;&#xD;&#xA;        break;&#xD;&#xA;    }&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// If a match is found, remove it from the checklist&#xD;&#xA;if (matchedMask != null) {&#xD;&#xA;    checklist.remove(matchedMask);&#xD;&#xA;    System.out.println(&quot;Successfully processed and verified: &quot; + currentFile);&#xD;&#xA;}"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="LABEL" value="crossoff_checklist"/>
+    <elementParameter field="TEXT" name="LABEL" value="crossOff_checklist"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_6"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="2200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;ETL Validation Failed! Missing expected files for: [&quot; + String.join(&quot;, &quot;, ((java.util.Set&lt;String>)globalMap.get(&quot;fileChecklist&quot;)))+ &quot;]&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_2"/>
   </node>
   <connection connectorName="FLOW" label="input" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFlowMeter_9">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -2061,6 +2071,22 @@
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="context.num_ops_childThreads"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate2" show="false"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileCopy_1" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_1" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tDie_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="!((java.util.Set&lt;String>)globalMap.get(&quot;fileChecklist&quot;)).isEmpty()"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tWarn_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
+  </connection>
   <note opaque="true" posX="40" posY="680" sizeHeight="80" sizeWidth="241" text="ERROR HANDLING">
     <elementParameter field="COLOR" name="NOTE_COLOR" value="237;201;122"/>
   </note>
@@ -2199,5 +2225,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+    <elementParameter field="CHECK" name="SUBJOB_DISPLAYED" value="false" show="false"/>
   </subjob>
 </talendfile:ProcessType>
