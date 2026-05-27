@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_GLB-8FkDEfGtN5BJmGG-8w" confirmationNeeded="false" hide="false" name="LOCAL">
+    <contextParameter xmi:id="_GLB-8VkDEfGtN5BJmGG-8w" comment="" name="cfg_mon_active" prompt="cfg_mon_active?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter xmi:id="_GLB-81kDEfGtN5BJmGG-8w" comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tstatcatcher"/>
+    <contextParameter xmi:id="_GLB-9FkDEfGtN5BJmGG-8w" comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tlogcatcher"/>
+    <contextParameter xmi:id="_GLB-9VkDEfGtN5BJmGG-8w" comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tflowmetercatcher"/>
+    <contextParameter xmi:id="_GLB-9lkDEfGtN5BJmGG-8w" comment="" name="file_mon_delimiter" prompt="file_mon_delimiter?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_GLB-91kDEfGtN5BJmGG-8w" confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter xmi:id="_GLB--FkDEfGtN5BJmGG-8w" comment="" name="cfg_mon_active" prompt="cfg_mon_active?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter xmi:id="_GLB--lkDEfGtN5BJmGG-8w" comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tstatcatcher"/>
+    <contextParameter xmi:id="_GLB--1kDEfGtN5BJmGG-8w" comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tlogcatcher"/>
+    <contextParameter xmi:id="_GLB-_FkDEfGtN5BJmGG-8w" comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tflowmetercatcher"/>
+    <contextParameter xmi:id="_GLB-_VkDEfGtN5BJmGG-8w" comment="" name="file_mon_delimiter" prompt="file_mon_delimiter?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_D1m44Fl1EfGtN5BJmGG-8w" confirmationNeeded="false" hide="false" name="UAT">
+    <contextParameter xmi:id="_D1m44Vl1EfGtN5BJmGG-8w" comment="" name="cfg_mon_active" prompt="cfg_mon_active?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="true"/>
+    <contextParameter xmi:id="_D1m44ll1EfGtN5BJmGG-8w" comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tstatcatcher"/>
+    <contextParameter xmi:id="_D1m441l1EfGtN5BJmGG-8w" comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tlogcatcher"/>
+    <contextParameter xmi:id="_D1m45Fl1EfGtN5BJmGG-8w" comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tflowmetercatcher"/>
+    <contextParameter xmi:id="_D1m45Vl1EfGtN5BJmGG-8w" comment="" name="file_mon_delimiter" prompt="file_mon_delimiter?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

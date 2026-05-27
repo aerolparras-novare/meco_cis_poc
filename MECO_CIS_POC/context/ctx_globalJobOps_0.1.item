@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_0zP-IFjeEfGtN5BJmGG-8w" confirmationNeeded="false" hide="false" name="LOCAL">
+    <contextParameter xmi:id="_0zP-IVjeEfGtN5BJmGG-8w" comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+    <contextParameter xmi:id="_0zP-IljeEfGtN5BJmGG-8w" comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+    <contextParameter xmi:id="_bPsO4FjfEfGtN5BJmGG-8w" comment="" name="str_ops_execution_env" prompt="str_ops_execution_env?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LOCAL"/>
+    <contextParameter xmi:id="_bPsO4VjfEfGtN5BJmGG-8w" comment="" name="str_ops_steward_default" prompt="str_ops_steward_default?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NEW"/>
+    <contextParameter xmi:id="_bPsO4ljfEfGtN5BJmGG-8w" comment="" name="num_ops_max_retry_limit" prompt="num_ops_max_retry_limit?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3"/>
+    <contextParameter xmi:id="_bPsO41jfEfGtN5BJmGG-8w" comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter xmi:id="_icafAFkFEfGtN5BJmGG-8w" comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis&quot;"/>
+    <contextParameter xmi:id="_Koh4oFk9EfGtN5BJmGG-8w" comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/input&quot;"/>
+    <contextParameter xmi:id="_Koh4oVk9EfGtN5BJmGG-8w" comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/processing&quot;"/>
+    <contextParameter xmi:id="_Koh4olk9EfGtN5BJmGG-8w" comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/output&quot;"/>
+    <contextParameter xmi:id="_Koh4o1k9EfGtN5BJmGG-8w" comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/archive&quot;"/>
+    <contextParameter xmi:id="_Koh4pFk9EfGtN5BJmGG-8w" comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/reject&quot;"/>
+    <contextParameter xmi:id="_Koh4pVk9EfGtN5BJmGG-8w" comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/tmp&quot;"/>
+    <contextParameter xmi:id="_Koh4plk9EfGtN5BJmGG-8w" comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/logs&quot;"/>
+    <contextParameter xmi:id="_w4wJIFl7EfGtN5BJmGG-8w" comment="" name="num_ops_childThreads" prompt="num_ops_childThreads?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="7"/>
+    <contextParameter xmi:id="_w4wJIVl7EfGtN5BJmGG-8w" comment="" name="num_ops_queueSize" prompt="num_ops_queueSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="10000"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_0zP-I1jeEfGtN5BJmGG-8w" confirmationNeeded="false" hide="false" name="DEV">
+    <contextParameter xmi:id="_0zP-JFjeEfGtN5BJmGG-8w" comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+    <contextParameter xmi:id="_0zP-JVjeEfGtN5BJmGG-8w" comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+    <contextParameter xmi:id="_bPsO5FjfEfGtN5BJmGG-8w" comment="" name="str_ops_execution_env" prompt="str_ops_execution_env?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DEV"/>
+    <contextParameter xmi:id="_bPsO5VjfEfGtN5BJmGG-8w" comment="" name="str_ops_steward_default" prompt="str_ops_steward_default?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NEW"/>
+    <contextParameter xmi:id="_bPsO5ljfEfGtN5BJmGG-8w" comment="" name="num_ops_max_retry_limit" prompt="num_ops_max_retry_limit?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3"/>
+    <contextParameter xmi:id="_bPsO51jfEfGtN5BJmGG-8w" comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter xmi:id="_icafAVkFEfGtN5BJmGG-8w" comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="/data/talend/cis_pos/DEV"/>
+    <contextParameter xmi:id="_Koh4p1k9EfGtN5BJmGG-8w" comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/data/talend/cis_pos/DEV/data/input"/>
+    <contextParameter xmi:id="_Koh4qFk9EfGtN5BJmGG-8w" comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/data/talend/cis_pos/DEV/data/processing"/>
+    <contextParameter xmi:id="_Koh4qVk9EfGtN5BJmGG-8w" comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/data/talend/cis_pos/DEV/data/output"/>
+    <contextParameter xmi:id="_Koh4qlk9EfGtN5BJmGG-8w" comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/data/talend/cis_pos/DEV/data/archive"/>
+    <contextParameter xmi:id="_Koh4q1k9EfGtN5BJmGG-8w" comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/data/talend/cis_pos/DEV/data/reject"/>
+    <contextParameter xmi:id="_Koh4rFk9EfGtN5BJmGG-8w" comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/data/talend/cis_pos/DEV/tmp"/>
+    <contextParameter xmi:id="_Koh4rVk9EfGtN5BJmGG-8w" comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/data/talend/cis_pos/DEV/logs"/>
+    <contextParameter xmi:id="_w4wJIll7EfGtN5BJmGG-8w" comment="" name="num_ops_childThreads" prompt="num_ops_childThreads?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="4"/>
+    <contextParameter xmi:id="_w4wJI1l7EfGtN5BJmGG-8w" comment="" name="num_ops_queueSize" prompt="num_ops_queueSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="10000"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_AFtfsFl1EfGtN5BJmGG-8w" confirmationNeeded="false" hide="false" name="UAT">
+    <contextParameter xmi:id="_AFtfsVl1EfGtN5BJmGG-8w" comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+    <contextParameter xmi:id="_AFtfsll1EfGtN5BJmGG-8w" comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
+    <contextParameter xmi:id="_AFtfs1l1EfGtN5BJmGG-8w" comment="" name="str_ops_execution_env" prompt="str_ops_execution_env?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="LOCAL"/>
+    <contextParameter xmi:id="_AFtftFl1EfGtN5BJmGG-8w" comment="" name="str_ops_steward_default" prompt="str_ops_steward_default?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NEW"/>
+    <contextParameter xmi:id="_AFtftVl1EfGtN5BJmGG-8w" comment="" name="num_ops_max_retry_limit" prompt="num_ops_max_retry_limit?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3"/>
+    <contextParameter xmi:id="_AFtftll1EfGtN5BJmGG-8w" comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="built-in" type="id_Boolean" value="false"/>
+    <contextParameter xmi:id="_AFtft1l1EfGtN5BJmGG-8w" comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT&quot;"/>
+    <contextParameter xmi:id="_AFtfuFl1EfGtN5BJmGG-8w" comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/input&quot;"/>
+    <contextParameter xmi:id="_AFtfuVl1EfGtN5BJmGG-8w" comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/processing&quot;"/>
+    <contextParameter xmi:id="_AFtfull1EfGtN5BJmGG-8w" comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/output&quot;"/>
+    <contextParameter xmi:id="_AFtfu1l1EfGtN5BJmGG-8w" comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/archive&quot;"/>
+    <contextParameter xmi:id="_AFtfvFl1EfGtN5BJmGG-8w" comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/reject&quot;"/>
+    <contextParameter xmi:id="_AFtfvVl1EfGtN5BJmGG-8w" comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/tmp&quot;"/>
+    <contextParameter xmi:id="_AFtfvll1EfGtN5BJmGG-8w" comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/logs&quot;"/>
+    <contextParameter xmi:id="_w4wJJFl7EfGtN5BJmGG-8w" comment="" name="num_ops_childThreads" prompt="num_ops_childThreads?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="4"/>
+    <contextParameter xmi:id="_w4wJJVl7EfGtN5BJmGG-8w" comment="" name="num_ops_queueSize" prompt="num_ops_queueSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="10000"/>
+  </talendfile:ContextType>
+</xmi:XMI>
