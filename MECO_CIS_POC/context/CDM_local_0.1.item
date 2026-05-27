@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_NGTigFNyEfGAPIORTaYCDw" confirmationNeeded="false" hide="false" name="Default">
-  <contextParameter xmi:id="_NGTigVNyEfGAPIORTaYCDw" comment="" name="local_file_loc_src" prompt="local_file_loc_src?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/"/>
-  <contextParameter xmi:id="_WWeGUFNyEfGAPIORTaYCDw" comment="" name="local_file_loc_tgt" prompt="local_file_loc_tgt?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="C:/Users/angelo.baloy/Desktop/Meralco Files/target/"/>
-</talendfile:ContextType>
