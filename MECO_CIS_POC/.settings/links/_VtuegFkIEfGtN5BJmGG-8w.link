@@ -130,5 +130,70 @@
       "id" : "_GLB--lkDEfGtN5BJmGG-8w",
       "name" : "file_mon_statName"
     } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_GKWpgFkDEfGtN5BJmGG-8w",
+    "parameterList" : [ {
+      "id" : "_D1m44Vl1EfGtN5BJmGG-8w",
+      "name" : "cfg_mon_active"
+    }, {
+      "id" : "_D1m45Vl1EfGtN5BJmGG-8w",
+      "name" : "file_mon_delimiter"
+    }, {
+      "id" : "_D1m45Fl1EfGtN5BJmGG-8w",
+      "name" : "file_mon_flowName"
+    }, {
+      "id" : "_D1m441l1EfGtN5BJmGG-8w",
+      "name" : "file_mon_logName"
+    }, {
+      "id" : "_D1m44ll1EfGtN5BJmGG-8w",
+      "name" : "file_mon_statName"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_0ynE8FjeEfGtN5BJmGG-8w",
+    "parameterList" : [ {
+      "id" : "_AFtfsVl1EfGtN5BJmGG-8w",
+      "name" : "dt_ops_job_start_time"
+    }, {
+      "id" : "_AFtfsll1EfGtN5BJmGG-8w",
+      "name" : "dt_ops_job_end_time"
+    }, {
+      "id" : "_AFtfs1l1EfGtN5BJmGG-8w",
+      "name" : "str_ops_execution_env"
+    }, {
+      "id" : "_AFtftFl1EfGtN5BJmGG-8w",
+      "name" : "str_ops_steward_default"
+    }, {
+      "id" : "_AFtftVl1EfGtN5BJmGG-8w",
+      "name" : "num_ops_max_retry_limit"
+    }, {
+      "id" : "_AFtftll1EfGtN5BJmGG-8w",
+      "name" : "bl_ops_die_on_error"
+    }, {
+      "id" : "_AFtft1l1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_base"
+    }, {
+      "id" : "_AFtfuFl1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_input"
+    }, {
+      "id" : "_AFtfuVl1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_processing"
+    }, {
+      "id" : "_AFtfull1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_output"
+    }, {
+      "id" : "_AFtfu1l1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_archive"
+    }, {
+      "id" : "_AFtfvFl1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_reject"
+    }, {
+      "id" : "_AFtfvVl1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_tmp"
+    }, {
+      "id" : "_AFtfvll1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_logs"
+    } ]
   } ]
 }

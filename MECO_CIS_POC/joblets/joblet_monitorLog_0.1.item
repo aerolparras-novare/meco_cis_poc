@@ -2,7 +2,6 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
   <model:JobletProcess defaultContext="LOCAL" jobType="Standard">
     <context confirmationNeeded="false" hide="false" name="LOCAL">
-      <contextParameter comment="" name="dir_mon_outputPath" prompt="dir_mon_outputPath?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/var/log/talend&quot;" internalId="_LmY9SVk_EfGtN5BJmGG-8w"/>
       <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_DK7FUFlCEfGtN5BJmGG-8w"/>
       <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/archive&quot;" internalId="_DK7FUVlCEfGtN5BJmGG-8w"/>
       <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis&quot;" internalId="_DK7FUllCEfGtN5BJmGG-8w"/>
@@ -24,7 +23,6 @@
       <contextParameter comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tstatcatcher" internalId="_DK7FYllCEfGtN5BJmGG-8w"/>
     </context>
     <context confirmationNeeded="false" hide="false" name="DEV">
-      <contextParameter comment="" name="dir_mon_outputPath" prompt="dir_mon_outputPath?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="" internalId="_LmY9NVk_EfGtN5BJmGG-8w"/>
       <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_DK7FY1lCEfGtN5BJmGG-8w"/>
       <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/archive" internalId="_DK7FZFlCEfGtN5BJmGG-8w"/>
       <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="/data/talend/cis_pos/DEV" internalId="_DK7FZVlCEfGtN5BJmGG-8w"/>
@@ -44,6 +42,27 @@
       <contextParameter comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tflowmetercatcher" internalId="_DK7Fc1lCEfGtN5BJmGG-8w"/>
       <contextParameter comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tlogcatcher" internalId="_DK7FdFlCEfGtN5BJmGG-8w"/>
       <contextParameter comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tstatcatcher" internalId="_DK7FdVlCEfGtN5BJmGG-8w"/>
+    </context>
+    <context confirmationNeeded="false" hide="false" name="UAT">
+      <contextParameter comment="" name="cfg_mon_active" prompt="cfg_mon_active?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_Boolean" value="true" internalId="_UvQWkFl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="file_mon_delimiter" prompt="file_mon_delimiter?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_UvQWkVl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tflowmetercatcher" internalId="_UvQWkll1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tlogcatcher" internalId="_UvQWk1l1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tstatcatcher" internalId="_UvQWlFl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_UvQWlVl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_UvQWlll1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="str_ops_execution_env" prompt="str_ops_execution_env?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="LOCAL" internalId="_UvQWl1l1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="str_ops_steward_default" prompt="str_ops_steward_default?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="NEW" internalId="_UvQWmFl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="num_ops_max_retry_limit" prompt="num_ops_max_retry_limit?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="3" internalId="_UvQWmVl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_UvQWmll1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT&quot;" internalId="_UvQWm1l1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/input&quot;" internalId="_UvQWnFl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/processing&quot;" internalId="_UvQWnVl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/output&quot;" internalId="_UvQWnll1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/archive&quot;" internalId="_UvQWn1l1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/reject&quot;" internalId="_UvQWoFl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/tmp&quot;" internalId="_UvQWoVl1EfGtN5BJmGG-8w"/>
+      <contextParameter comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/logs&quot;" internalId="_UvQWoll1EfGtN5BJmGG-8w"/>
     </context>
     <parameters>
       <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>

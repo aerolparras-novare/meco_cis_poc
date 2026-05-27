@@ -120,4 +120,40 @@ public class Custom {
         // If nothing was added, return null (consistent with safe SQL operations)
         return joiner.length() == 0 ? null : joiner.toString();
     }
+    
+    /**
+     * Converts a newline-separated string of standard filemasks into an optimized Regex string.
+     * Can handle traditional wildcards like '*'
+     * * {talendTypes} String
+     * * {Category} User Defined
+     * * {param} string(context.yourVariable) input: The raw newline-separated string.
+     * * {example} buildRegex(context.fileListString)
+     */
+    public static String buildRegex(String newlineSeparatedMasks) {
+        // Fallback: If null or empty, return match-all regex pattern
+        if (newlineSeparatedMasks == null || newlineSeparatedMasks.trim().isEmpty()) {
+            return "^.*$"; 
+        }
+        
+        String[] lines = newlineSeparatedMasks.split("\\r?\\n");
+        java.util.List<String> regexPatterns = new java.util.ArrayList<String>();
+        
+        for (String line : lines) {
+            String trimmedLine = line.trim();
+            
+            if (!trimmedLine.isEmpty()) {
+                // Escape periods and convert standard wildcards (*) to regex wildcards (.*)
+                String cleanRegex = trimmedLine.replace(".", "\\.").replace("*", ".*");
+                regexPatterns.add(cleanRegex);
+            }
+        }
+        
+        // If no valid lines were processed, fall back to match-all
+        if (regexPatterns.isEmpty()) {
+            return "^.*$";
+        }
+        
+        // Join into a high-performance single regex: ^(pattern1|pattern2|pattern3)$
+        return "(?i)^(" + String.join("|", regexPatterns) + ")$";
+    }
 }

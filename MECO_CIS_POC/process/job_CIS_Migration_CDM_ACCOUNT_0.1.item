@@ -4,57 +4,88 @@
     <contextParameter comment="" name="map_componentLabel" prompt="map_componentLabel?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tFileInputDelimited_1:legacy_account_base&#xD;&#xA;tFileInputDelimited_2:legacy_account_noted&#xD;&#xA;tFileInputDelimited_4:legacy_ar_credit&#xD;&#xA;tFileInputDelimited_7:legacy_billing_terms&#xD;&#xA;tFileOutputDelimited_1:cdm_account&#xD;&#xA;tFileOutputDelimited_2:reject_legacy_account_base&#xD;&#xA;tFileOutputDelimited_3:reject_legacy_billing_terms&#xD;&#xA;tFileOutputDelimited_4:reject_legacy_ar_credit&#xD;&#xA;tFileOutputDelimited_5:reject_legacy_account_noted" internalId="_Zh0jcFgREfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="map_accountClass" prompt="map_accountClass?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_AwlsMFgWEfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="map_accountBillType" prompt="map_accountBillType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB:Direct Billed&#xD;&#xA;RT:Retailer&#xD;&#xA;NT:Network Billed" internalId="_AwlsMVgWEfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_oldxAFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/archive&quot;" internalId="_oldxAVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis&quot;" internalId="_oldxAlk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/input&quot;" internalId="_oldxA1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/logs&quot;" internalId="_oldxBFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/output&quot;" internalId="_oldxBVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/processing&quot;" internalId="_oldxBlk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/reject&quot;" internalId="_oldxB1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/tmp&quot;" internalId="_oldxCFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_oldxCVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_oldxClk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="num_ops_max_retry_limit" prompt="num_ops_max_retry_limit?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="3" internalId="_oldxC1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="str_ops_execution_env" prompt="str_ops_execution_env?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="LOCAL" internalId="_oldxDFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="str_ops_steward_default" prompt="str_ops_steward_default?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="NEW" internalId="_oldxDVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="cfg_mon_active" prompt="cfg_mon_active?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_Boolean" value="true" internalId="_oldxDlk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_mon_outputPath" prompt="dir_mon_outputPath?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/var/log/talend&quot;" internalId="_oldxD1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_mon_delimiter" prompt="file_mon_delimiter?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_oldxEFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tflowmetercatcher" internalId="_oldxEVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tlogcatcher" internalId="_oldxElk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tstatcatcher" internalId="_oldxE1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_reject_ouputPath" prompt="dir_reject_ouputPath?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/UT/reject&quot;" internalId="_oldxFFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_reject_baseName" prompt="file_reject_baseName?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;rejects&quot;" internalId="_oldxFVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_oldxFlk-EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_0bjhgFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/archive&quot;" internalId="_0bjhgVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis&quot;" internalId="_0bjhgll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/input&quot;" internalId="_0bjhg1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/logs&quot;" internalId="_0bjhhFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/output&quot;" internalId="_0bjhhVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/processing&quot;" internalId="_0bjhhll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/reject&quot;" internalId="_0bjhh1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/tmp&quot;" internalId="_0bjhiFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_0bjhiVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_0bjhill7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="num_ops_childThreads" prompt="num_ops_childThreads?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="7" internalId="_0bjhi1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="num_ops_max_retry_limit" prompt="num_ops_max_retry_limit?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="3" internalId="_0bjhjFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="num_ops_queueSize" prompt="num_ops_queueSize?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="10000" internalId="_0bjhjVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="str_ops_execution_env" prompt="str_ops_execution_env?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="LOCAL" internalId="_0bjhjll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="str_ops_steward_default" prompt="str_ops_steward_default?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="NEW" internalId="_0bjhj1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="cfg_mon_active" prompt="cfg_mon_active?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_Boolean" value="true" internalId="_0bkIkFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_delimiter" prompt="file_mon_delimiter?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_0bkIkVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tflowmetercatcher" internalId="_0bkIkll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tlogcatcher" internalId="_0bkIk1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tstatcatcher" internalId="_0bkIlFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_reject_ouputPath" prompt="dir_reject_ouputPath?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/reject&quot;" internalId="_0bkIlVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_reject_baseName" prompt="file_reject_baseName?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;rejects&quot;" internalId="_0bkIlll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_0bkIl1l7EfGtN5BJmGG-8w"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DEV">
     <contextParameter comment="" name="map_componentLabel" prompt="map_componentLabel?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tFileInputDelimited_1:legacy_account_base&#xD;&#xA;tFileInputDelimited_2:legacy_account_noted&#xD;&#xA;tFileInputDelimited_4:legacy_ar_credit&#xD;&#xA;tFileInputDelimited_7:legacy_billing_terms&#xD;&#xA;tFileOutputDelimited_1:cdm_account" internalId="_Zh0jcVgREfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="map_accountClass" prompt="map_accountClass?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_AwlsMlgWEfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="map_accountBillType" prompt="map_accountBillType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB:Direct Billed&#xD;&#xA;RT:Retailer&#xD;&#xA;NT:Network Billed" internalId="_AwlsM1gWEfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_oldxF1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/archive" internalId="_oldxGFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="/data/talend/cis_pos/DEV" internalId="_oldxGVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/input" internalId="_oldxGlk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/logs" internalId="_oldxG1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/output" internalId="_oldxHFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/processing" internalId="_oldxHVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/reject" internalId="_oldxHlk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/tmp" internalId="_oldxH1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_oldxIFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_oldxIVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="num_ops_max_retry_limit" prompt="num_ops_max_retry_limit?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="3" internalId="_oldxIlk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="str_ops_execution_env" prompt="str_ops_execution_env?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="DEV" internalId="_oldxI1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="str_ops_steward_default" prompt="str_ops_steward_default?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="NEW" internalId="_oldxJFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="cfg_mon_active" prompt="cfg_mon_active?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_Boolean" value="true" internalId="_oldxJVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_mon_outputPath" prompt="dir_mon_outputPath?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="" internalId="_oldxJlk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_mon_delimiter" prompt="file_mon_delimiter?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_oldxJ1k-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tflowmetercatcher" internalId="_oldxKFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tlogcatcher" internalId="_oldxKVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tstatcatcher" internalId="_oldxKlk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="dir_reject_ouputPath" prompt="dir_reject_ouputPath?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_Directory" value="&quot;/data/talend/cis_pos/DEV/data/reject&quot;" internalId="_oleYEFk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_reject_baseName" prompt="file_reject_baseName?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;rejects&quot;" internalId="_oleYEVk-EfGtN5BJmGG-8w"/>
-    <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_oleYElk-EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_0bkImFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/archive" internalId="_0bkImVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="/data/talend/cis_pos/DEV" internalId="_0bkImll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/input" internalId="_0bkIm1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/logs" internalId="_0bkInFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/output" internalId="_0bkInVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/processing" internalId="_0bkInll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/reject" internalId="_0bkIn1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/tmp" internalId="_0bkIoFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_0bkIoVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_0bkIoll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="num_ops_childThreads" prompt="num_ops_childThreads?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="4" internalId="_0bkIo1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="num_ops_max_retry_limit" prompt="num_ops_max_retry_limit?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="3" internalId="_0bkIpFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="num_ops_queueSize" prompt="num_ops_queueSize?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="10000" internalId="_0bkIpVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="str_ops_execution_env" prompt="str_ops_execution_env?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="DEV" internalId="_0bkIpll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="str_ops_steward_default" prompt="str_ops_steward_default?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="NEW" internalId="_0bkIp1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="cfg_mon_active" prompt="cfg_mon_active?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_Boolean" value="true" internalId="_0bkIqFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_delimiter" prompt="file_mon_delimiter?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_0bkIqVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tflowmetercatcher" internalId="_0bkIqll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tlogcatcher" internalId="_0bkIq1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tstatcatcher" internalId="_0bkIrFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_reject_ouputPath" prompt="dir_reject_ouputPath?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_Directory" value="&quot;/data/talend/cis_pos/DEV/data/reject&quot;" internalId="_0bkIrVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_reject_baseName" prompt="file_reject_baseName?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;rejects&quot;" internalId="_0bkIrll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_0bkIr1l7EfGtN5BJmGG-8w"/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="UAT">
+    <contextParameter comment="" name="map_componentLabel" prompt="map_componentLabel?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tFileInputDelimited_1:legacy_account_base&#xD;&#xA;tFileInputDelimited_2:legacy_account_noted&#xD;&#xA;tFileInputDelimited_4:legacy_ar_credit&#xD;&#xA;tFileInputDelimited_7:legacy_billing_terms&#xD;&#xA;tFileOutputDelimited_1:cdm_account&#xD;&#xA;tFileOutputDelimited_2:reject_legacy_account_base&#xD;&#xA;tFileOutputDelimited_3:reject_legacy_billing_terms&#xD;&#xA;tFileOutputDelimited_4:reject_legacy_ar_credit&#xD;&#xA;tFileOutputDelimited_5:reject_legacy_account_noted" internalId="_Zh0jcFgREfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="map_accountClass" prompt="map_accountClass?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_AwlsMFgWEfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="map_accountBillType" prompt="map_accountBillType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="DB:Direct Billed&#xD;&#xA;RT:Retailer&#xD;&#xA;NT:Network Billed" internalId="_AwlsMVgWEfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_0bkIsFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/archive&quot;" internalId="_0bkIsVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT&quot;" internalId="_0bkIsll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/input&quot;" internalId="_0bkIs1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/logs&quot;" internalId="_0bkItFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/output&quot;" internalId="_0bkItVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/processing&quot;" internalId="_0bkItll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/reject&quot;" internalId="_0bkIt1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/tmp&quot;" internalId="_0bkIuFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_0bkIuVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_0bkIull7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="num_ops_childThreads" prompt="num_ops_childThreads?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="4" internalId="_0bkIu1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="num_ops_max_retry_limit" prompt="num_ops_max_retry_limit?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="3" internalId="_0bkIvFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="num_ops_queueSize" prompt="num_ops_queueSize?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Integer" value="10000" internalId="_0bkIvVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="str_ops_execution_env" prompt="str_ops_execution_env?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="LOCAL" internalId="_0bkIvll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="str_ops_steward_default" prompt="str_ops_steward_default?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="NEW" internalId="_0bkIv1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="cfg_mon_active" prompt="cfg_mon_active?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_Boolean" value="true" internalId="_0bkIwFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_delimiter" prompt="file_mon_delimiter?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_0bkIwVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tflowmetercatcher" internalId="_0bkIwll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tlogcatcher" internalId="_0bkIw1l7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tstatcatcher" internalId="_0bkIxFl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="dir_reject_ouputPath" prompt="dir_reject_ouputPath?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/reject&quot;" internalId="_0bkIxVl7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_reject_baseName" prompt="file_reject_baseName?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;rejects&quot;" internalId="_0bkIxll7EfGtN5BJmGG-8w"/>
+    <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_0bkIx1l7EfGtN5BJmGG-8w"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
@@ -302,14 +333,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value="context.dir_ops_tmp"/>
     <elementParameter field="IMAGE" name="PREVIEW" value="_hiGl0FfnEfGtN5BJmGG-8w-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
     <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="200000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="map_account"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1503,7 +1534,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_2"/>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="240">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;PostJob Completed&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="0"/>
@@ -1526,22 +1557,6 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="job_manifestLog" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="560" posY="240" sizeX="121" sizeY="40">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="job_manifestLog_1"/>
-    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
-    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-    <elementParameter field="CHECK" name="START" value="false" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
-    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="COMPONENT_OK"/>
-    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value="tJava_2"/>
-    <elementParameter field="TEXT" name="LABEL" value="job_manifestLog"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-    <elementParameter field="MEMO" name="COMMENT" value=""/>
-  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
@@ -1552,6 +1567,14 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;legacy_account_base&quot;"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="context.num_ops_childThreads"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="context.num_ops_queueSize"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
+    <elementParameter field="TABLE" name="HASH_KEYS">
+      <elementValue elementRef="KEY_COLUMN" value="LEG_ACC_ID" id="0"/>
+    </elementParameter>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="acct" show="false"/>
   </connection>
   <connection connectorName="REJECT" label="reject_acc" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileInputDelimited_1" target="tJavaRow_1">
@@ -1567,6 +1590,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;cdm_account&quot;"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="context.num_ops_queueSize"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="cdm_account" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="bill" lineStyle="8" metaname="tFileInputDelimited_7" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputDelimited_7" target="tMap_1">
@@ -1791,13 +1817,8 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tWarn_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="job_manifestLog_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tWarn_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
-  </connection>
-  <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk ((TRIGGER_OUTPUT_1))" lineStyle="3" metaname="job_manifestLog_1" offsetLabelX="0" offsetLabelY="0" source="job_manifestLog_1" target="tWarn_3">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
@@ -1855,11 +1876,6 @@
   <subjob>
     <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="joblet_monitorLog_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="job_manifestLog_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
