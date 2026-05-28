@@ -37,6 +37,12 @@
       "id" : "_0zP-IVjeEfGtN5BJmGG-8w",
       "name" : "dt_ops_job_start_time"
     }, {
+      "id" : "_enTxAFpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_name"
+    }, {
+      "id" : "_enTxAVpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_pid"
+    }, {
       "id" : "_w4wJIFl7EfGtN5BJmGG-8w",
       "name" : "num_ops_childThreads"
     }, {
@@ -121,6 +127,12 @@
       "id" : "_0zP-JFjeEfGtN5BJmGG-8w",
       "name" : "dt_ops_job_start_time"
     }, {
+      "id" : "_enTxAlpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_name"
+    }, {
+      "id" : "_enTxA1pKEfGo8ccnbOKY3g",
+      "name" : "job_ops_pid"
+    }, {
       "id" : "_w4wJIll7EfGtN5BJmGG-8w",
       "name" : "num_ops_childThreads"
     }, {
@@ -204,6 +216,12 @@
     }, {
       "id" : "_AFtfsVl1EfGtN5BJmGG-8w",
       "name" : "dt_ops_job_start_time"
+    }, {
+      "id" : "_enTxBFpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_name"
+    }, {
+      "id" : "_enTxBVpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_pid"
     }, {
       "id" : "_w4wJJFl7EfGtN5BJmGG-8w",
       "name" : "num_ops_childThreads"

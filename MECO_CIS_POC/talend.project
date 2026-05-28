@@ -5,6 +5,6 @@
     <componentsSettings xmi:id="__EvlsVW1EfGtN5BJmGG-8w" name="DI|tHashOutput" family="Technical"/>
     <migrationTask xmi:id="_laHkAFJnEfG_d6zj1N_C1A" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
-  <TalendProperties:User xmi:id="_PYK_EkkMEfGoHNOD61ujjQ" login="aerol.parras@mdinfr" firstName="Tom" lastName="Parras" type="DQ"/>
+  <TalendProperties:User xmi:id="_PYK_EkkMEfGoHNOD61ujjQ" login="aerol.parras@mdinfr" firstName="Aerol" lastName="Parras" type="DQ"/>
   <TalendProperties:User xmi:id="_DDHEYFQkEfGtN5BJmGG-8w" login="angelo.baloy@mdinfr" firstName="Angelo" lastName="Baloy" type="DQ"/>
 </xmi:XMI>

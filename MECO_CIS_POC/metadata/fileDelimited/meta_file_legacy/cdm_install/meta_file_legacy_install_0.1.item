@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_QNK-IFK0EfGAPIORTaYCDw" name="meta_file_legacy_install" dataPackage="_QNK-IVK0EfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_install.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_QNK-IVK0EfGAPIORTaYCDw" name="default" dataManager="_QNK-IFK0EfGAPIORTaYCDw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_QNK-IlK0EfGAPIORTaYCDw" id="_LAFOMFK0EfGAPIORTaYCDw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-I1K0EfGAPIORTaYCDw" name="Installation_ID" label="Installation_ID" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
+        <initialValue xmi:id="_QNK-JFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-JVK0EfGAPIORTaYCDw" name="Installation_MSSL" label="Installation_MSSL" length="30" precision="-1" sourceType="" talendType="id_String" originalLength="30">
+        <initialValue xmi:id="_QNK-JlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-J1K0EfGAPIORTaYCDw" name="Consumer_ID" label="Consumer_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_QNK-KFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-KVK0EfGAPIORTaYCDw" name="Unused_Field_3" label="Unused_Field_3" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_QNK-KlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-K1K0EfGAPIORTaYCDw" name="Unused_Field_4" label="Unused_Field_4" length="30" precision="-1" sourceType="" talendType="id_String" originalLength="30">
+        <initialValue xmi:id="_QNK-LFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-LVK0EfGAPIORTaYCDw" name="Master_Installation_ID" label="Master_Installation_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_QNK-LlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-L1K0EfGAPIORTaYCDw" name="Unused_Field_6" label="Unused_Field_6" length="40" precision="-1" sourceType="" talendType="id_String" originalLength="40">
+        <initialValue xmi:id="_QNK-MFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-MVK0EfGAPIORTaYCDw" name="Unused_Field_7" label="Unused_Field_7" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_QNK-MlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-M1K0EfGAPIORTaYCDw" name="Utility_Type" label="Utility_Type" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNK-NFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-NVK0EfGAPIORTaYCDw" name="Installation_Category" label="Installation_Category" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNK-NlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-N1K0EfGAPIORTaYCDw" name="End_Use_Code" label="End_Use_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNK-OFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-OVK0EfGAPIORTaYCDw" name="District_Area_Code" label="District_Area_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNK-OlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-O1K0EfGAPIORTaYCDw" name="Transmission_Point" label="Transmission_Point" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_QNK-PFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-PVK0EfGAPIORTaYCDw" name="Building_Type" label="Building_Type" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNK-PlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-P1K0EfGAPIORTaYCDw" name="Connection_Date" label="Connection_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNK-QFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-QVK0EfGAPIORTaYCDw" name="Connection_Status" label="Connection_Status" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNK-QlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-Q1K0EfGAPIORTaYCDw" name="Status_Change_Date" label="Status_Change_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNK-RFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-RVK0EfGAPIORTaYCDw" name="Invoicing_Method" label="Invoicing_Method" length="1" precision="-1" sourceType="" talendType="id_String" originalLength="1">
+        <initialValue xmi:id="_QNK-RlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-R1K0EfGAPIORTaYCDw" name="Estimate_Suppression_Type" label="Estimate_Suppression_Type" length="1" precision="-1" sourceType="" talendType="id_String" originalLength="1">
+        <initialValue xmi:id="_QNK-SFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-SVK0EfGAPIORTaYCDw" name="Max_Metering_Points" label="Max_Metering_Points" length="3" precision="-1" sourceType="" talendType="id_Double" originalLength="3">
+        <initialValue xmi:id="_QNK-SlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-S1K0EfGAPIORTaYCDw" name="Validation_Control_Type" label="Validation_Control_Type" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_QNK-TFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-TVK0EfGAPIORTaYCDw" name="Site_Property_Number" label="Site_Property_Number" length="40" precision="-1" sourceType="" talendType="id_String" originalLength="40">
+        <initialValue xmi:id="_QNK-TlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-T1K0EfGAPIORTaYCDw" name="Fire_Service_Number" label="Fire_Service_Number" length="30" precision="-1" sourceType="" talendType="id_String" originalLength="30">
+        <initialValue xmi:id="_QNK-UFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-UVK0EfGAPIORTaYCDw" name="Rural_Property_Number" label="Rural_Property_Number" length="30" precision="-1" sourceType="" talendType="id_String" originalLength="30">
+        <initialValue xmi:id="_QNK-UlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-U1K0EfGAPIORTaYCDw" name="Meshblock_Number" label="Meshblock_Number" length="15" precision="-1" sourceType="" talendType="id_Double" originalLength="15">
+        <initialValue xmi:id="_QNK-VFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-VVK0EfGAPIORTaYCDw" name="Lot_Number" label="Lot_Number" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_QNK-VlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-V1K0EfGAPIORTaYCDw" name="Plan_Number" label="Plan_Number" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_QNK-WFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-WVK0EfGAPIORTaYCDw" name="Plan_Reference" label="Plan_Reference" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_QNK-WlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-W1K0EfGAPIORTaYCDw" name="Crown_Lot_Number" label="Crown_Lot_Number" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_QNK-XFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-XVK0EfGAPIORTaYCDw" name="Crown_Section_Number" label="Crown_Section_Number" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_QNK-XlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-X1K0EfGAPIORTaYCDw" name="Map_Number" label="Map_Number" length="-1" precision="-1" sourceType="" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_QNK-YFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-YVK0EfGAPIORTaYCDw" name="X_Coordinate" label="X_Coordinate" length="-1" precision="-1" sourceType="" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_QNK-YlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-Y1K0EfGAPIORTaYCDw" name="Y_Coordinate" label="Y_Coordinate" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_QNK-ZFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-ZVK0EfGAPIORTaYCDw" name="Location_Notes" label="Location_Notes" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_QNK-ZlK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-Z1K0EfGAPIORTaYCDw" name="Connection_Type" label="Connection_Type" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNK-aFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-aVK0EfGAPIORTaYCDw" name="Unused_Field_35" label="Unused_Field_35" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_QNK-alK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-a1K0EfGAPIORTaYCDw" name="High_Voltage_Flag" label="High_Voltage_Flag" length="1" precision="-1" sourceType="" talendType="id_String" originalLength="1">
+        <initialValue xmi:id="_QNK-bFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-bVK0EfGAPIORTaYCDw" name="Expected_Max_KVA" label="Expected_Max_KVA" length="10" precision="1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_QNK-blK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-b1K0EfGAPIORTaYCDw" name="Billable_KVA" label="Billable_KVA" length="9" precision="2" sourceType="" talendType="id_Double" originalLength="9">
+        <initialValue xmi:id="_QNK-cFK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlMFK0EfGAPIORTaYCDw" name="Control_Period_Demand_KW" label="Control_Period_Demand_KW" length="10" precision="-1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_QNLlMVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlMlK0EfGAPIORTaYCDw" name="Override_Loss_Code" label="Override_Loss_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNLlM1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlNFK0EfGAPIORTaYCDw" name="Standard_Transmission_Loss" label="Standard_Transmission_Loss" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNLlNVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlNlK0EfGAPIORTaYCDw" name="Shutdown_Type" label="Shutdown_Type" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNLlN1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlOFK0EfGAPIORTaYCDw" name="Supply_Type" label="Supply_Type" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNLlOVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlOlK0EfGAPIORTaYCDw" name="Altitude" label="Altitude" length="10" precision="1" sourceType="" talendType="id_Double" originalLength="10">
+        <initialValue xmi:id="_QNLlO1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlPFK0EfGAPIORTaYCDw" name="Gas_Line_Pressure" label="Gas_Line_Pressure" length="12" precision="1" sourceType="" talendType="id_Double" originalLength="12">
+        <initialValue xmi:id="_QNLlPVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlPlK0EfGAPIORTaYCDw" name="Network_Account_Number" label="Network_Account_Number" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_QNLlP1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlQFK0EfGAPIORTaYCDw" name="Retailer_Code" label="Retailer_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNLlQVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlQlK0EfGAPIORTaYCDw" name="Retailer_Start_Date" label="Retailer_Start_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlQ1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlRFK0EfGAPIORTaYCDw" name="Other_Supplier_Consumer_Name" label="Other_Supplier_Consumer_Name" length="-1" precision="-1" sourceType="" talendType="id_String" originalLength="-1">
+        <initialValue xmi:id="_QNLlRVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlRlK0EfGAPIORTaYCDw" name="Network_Company_Code" label="Network_Company_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNLlR1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlSFK0EfGAPIORTaYCDw" name="Network_Start_Date" label="Network_Start_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlSVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlSlK0EfGAPIORTaYCDw" name="Unused_Field_52" label="Unused_Field_52" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_QNLlS1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlTFK0EfGAPIORTaYCDw" name="Unused_Field_53" label="Unused_Field_53" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_QNLlTVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlTlK0EfGAPIORTaYCDw" name="Unused_Field_54" label="Unused_Field_54" length="20" precision="-1" sourceType="" talendType="id_String" originalLength="20">
+        <initialValue xmi:id="_QNLlT1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlUFK0EfGAPIORTaYCDw" name="Unused_Field_55" label="Unused_Field_55" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_QNLlUVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlUlK0EfGAPIORTaYCDw" name="Physical_Location" label="Physical_Location" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_QNLlU1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlVFK0EfGAPIORTaYCDw" name="Invoice_Start_Date" label="Invoice_Start_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlVVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlVlK0EfGAPIORTaYCDw" name="Reading_Type" label="Reading_Type" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNLlV1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlWFK0EfGAPIORTaYCDw" name="Next_Invoice_Date" label="Next_Invoice_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlWVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlWlK0EfGAPIORTaYCDw" name="Next_Invoice_Schedule_Type" label="Next_Invoice_Schedule_Type" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_QNLlW1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlXFK0EfGAPIORTaYCDw" name="Unused_Field_GBC5" label="Unused_Field_GBC5" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNLlXVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlXlK0EfGAPIORTaYCDw" name="Unused_Field_GBC6" label="Unused_Field_GBC6" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlX1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlYFK0EfGAPIORTaYCDw" name="Unused_Field_GBC7" label="Unused_Field_GBC7" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlYVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlYlK0EfGAPIORTaYCDw" name="Unused_Field_GBC8" label="Unused_Field_GBC8" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlY1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlZFK0EfGAPIORTaYCDw" name="Next_Read_Date" label="Next_Read_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlZVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlZlK0EfGAPIORTaYCDw" name="Last_Billed_Date" label="Last_Billed_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlZ1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlaFK0EfGAPIORTaYCDw" name="Interim_Header_Reason" label="Interim_Header_Reason" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_QNLlaVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlalK0EfGAPIORTaYCDw" name="Reason_Added_Date" label="Reason_Added_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLla1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlbFK0EfGAPIORTaYCDw" name="Unused_Field_GBC13" label="Unused_Field_GBC13" length="19" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" originalLength="19">
+        <initialValue xmi:id="_QNLlbVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlblK0EfGAPIORTaYCDw" name="Unused_Field_GBC14" label="Unused_Field_GBC14" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlb1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlcFK0EfGAPIORTaYCDw" name="Unused_Field_GBC15" label="Unused_Field_GBC15" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlcVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlclK0EfGAPIORTaYCDw" name="Most_Recent_Meter_Read_Date" label="Most_Recent_Meter_Read_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLlc1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLldFK0EfGAPIORTaYCDw" name="Unused_Field_GBC17" label="Unused_Field_GBC17" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_QNLldVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLldlK0EfGAPIORTaYCDw" name="Unused_Field_GBC18" label="Unused_Field_GBC18" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">
+        <initialValue xmi:id="_QNLld1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLleFK0EfGAPIORTaYCDw" name="Invoiced_Up_To_Date" label="Invoiced_Up_To_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_QNLleVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlelK0EfGAPIORTaYCDw" name="Unused_Field_GBC20" label="Unused_Field_GBC20" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_QNLle1K0EfGAPIORTaYCDw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNLlfFK0EfGAPIORTaYCDw" name="Unused_Field_GBC21" label="Unused_Field_GBC21" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+        <initialValue xmi:id="_QNLlfVK0EfGAPIORTaYCDw" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

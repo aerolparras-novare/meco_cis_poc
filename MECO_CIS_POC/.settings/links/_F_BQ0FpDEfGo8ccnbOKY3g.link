@@ -1,0 +1,199 @@
+{
+  "itemId" : "_F_BQ0FpDEfGo8ccnbOKY3g",
+  "contextList" : [ {
+    "contextName" : "DEV",
+    "repoId" : "_mOW0MFpFEfGo8ccnbOKY3g",
+    "parameterList" : [ {
+      "id" : "_mOySAVpFEfGo8ccnbOKY3g",
+      "name" : "file_stg_source_mask_list"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_0ynE8FjeEfGtN5BJmGG-8w",
+    "parameterList" : [ {
+      "id" : "_bPsO51jfEfGtN5BJmGG-8w",
+      "name" : "bl_ops_die_on_error"
+    }, {
+      "id" : "_Koh4qlk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_archive"
+    }, {
+      "id" : "_icafAVkFEfGtN5BJmGG-8w",
+      "name" : "dir_ops_base"
+    }, {
+      "id" : "_Koh4p1k9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_input"
+    }, {
+      "id" : "_Koh4rVk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_logs"
+    }, {
+      "id" : "_Koh4qVk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_output"
+    }, {
+      "id" : "_Koh4qFk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_processing"
+    }, {
+      "id" : "_Koh4q1k9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_reject"
+    }, {
+      "id" : "_Koh4rFk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_tmp"
+    }, {
+      "id" : "_0zP-JVjeEfGtN5BJmGG-8w",
+      "name" : "dt_ops_job_end_time"
+    }, {
+      "id" : "_0zP-JFjeEfGtN5BJmGG-8w",
+      "name" : "dt_ops_job_start_time"
+    }, {
+      "id" : "_enTxAlpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_name"
+    }, {
+      "id" : "_enTxA1pKEfGo8ccnbOKY3g",
+      "name" : "job_ops_pid"
+    }, {
+      "id" : "_w4wJIll7EfGtN5BJmGG-8w",
+      "name" : "num_ops_childThreads"
+    }, {
+      "id" : "_bPsO5ljfEfGtN5BJmGG-8w",
+      "name" : "num_ops_max_retry_limit"
+    }, {
+      "id" : "_w4wJI1l7EfGtN5BJmGG-8w",
+      "name" : "num_ops_queueSize"
+    }, {
+      "id" : "_bPsO5FjfEfGtN5BJmGG-8w",
+      "name" : "str_ops_execution_env"
+    }, {
+      "id" : "_bPsO5VjfEfGtN5BJmGG-8w",
+      "name" : "str_ops_steward_default"
+    } ]
+  }, {
+    "contextName" : "LOCAL",
+    "repoId" : "_mOW0MFpFEfGo8ccnbOKY3g",
+    "parameterList" : [ {
+      "id" : "_mOxq8VpFEfGo8ccnbOKY3g",
+      "name" : "file_stg_source_mask_list"
+    } ]
+  }, {
+    "contextName" : "LOCAL",
+    "repoId" : "_0ynE8FjeEfGtN5BJmGG-8w",
+    "parameterList" : [ {
+      "id" : "_bPsO41jfEfGtN5BJmGG-8w",
+      "name" : "bl_ops_die_on_error"
+    }, {
+      "id" : "_Koh4o1k9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_archive"
+    }, {
+      "id" : "_icafAFkFEfGtN5BJmGG-8w",
+      "name" : "dir_ops_base"
+    }, {
+      "id" : "_Koh4oFk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_input"
+    }, {
+      "id" : "_Koh4plk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_logs"
+    }, {
+      "id" : "_Koh4olk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_output"
+    }, {
+      "id" : "_Koh4oVk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_processing"
+    }, {
+      "id" : "_Koh4pFk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_reject"
+    }, {
+      "id" : "_Koh4pVk9EfGtN5BJmGG-8w",
+      "name" : "dir_ops_tmp"
+    }, {
+      "id" : "_0zP-IljeEfGtN5BJmGG-8w",
+      "name" : "dt_ops_job_end_time"
+    }, {
+      "id" : "_0zP-IVjeEfGtN5BJmGG-8w",
+      "name" : "dt_ops_job_start_time"
+    }, {
+      "id" : "_enTxAFpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_name"
+    }, {
+      "id" : "_enTxAVpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_pid"
+    }, {
+      "id" : "_w4wJIFl7EfGtN5BJmGG-8w",
+      "name" : "num_ops_childThreads"
+    }, {
+      "id" : "_bPsO4ljfEfGtN5BJmGG-8w",
+      "name" : "num_ops_max_retry_limit"
+    }, {
+      "id" : "_w4wJIVl7EfGtN5BJmGG-8w",
+      "name" : "num_ops_queueSize"
+    }, {
+      "id" : "_bPsO4FjfEfGtN5BJmGG-8w",
+      "name" : "str_ops_execution_env"
+    }, {
+      "id" : "_bPsO4VjfEfGtN5BJmGG-8w",
+      "name" : "str_ops_steward_default"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_mOW0MFpFEfGo8ccnbOKY3g",
+    "parameterList" : [ {
+      "id" : "_mOySA1pFEfGo8ccnbOKY3g",
+      "name" : "file_stg_source_mask_list"
+    } ]
+  }, {
+    "contextName" : "UAT",
+    "repoId" : "_0ynE8FjeEfGtN5BJmGG-8w",
+    "parameterList" : [ {
+      "id" : "_AFtftll1EfGtN5BJmGG-8w",
+      "name" : "bl_ops_die_on_error"
+    }, {
+      "id" : "_AFtfu1l1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_archive"
+    }, {
+      "id" : "_AFtft1l1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_base"
+    }, {
+      "id" : "_AFtfuFl1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_input"
+    }, {
+      "id" : "_AFtfvll1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_logs"
+    }, {
+      "id" : "_AFtfull1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_output"
+    }, {
+      "id" : "_AFtfuVl1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_processing"
+    }, {
+      "id" : "_AFtfvFl1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_reject"
+    }, {
+      "id" : "_AFtfvVl1EfGtN5BJmGG-8w",
+      "name" : "dir_ops_tmp"
+    }, {
+      "id" : "_AFtfsll1EfGtN5BJmGG-8w",
+      "name" : "dt_ops_job_end_time"
+    }, {
+      "id" : "_AFtfsVl1EfGtN5BJmGG-8w",
+      "name" : "dt_ops_job_start_time"
+    }, {
+      "id" : "_enTxBFpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_name"
+    }, {
+      "id" : "_enTxBVpKEfGo8ccnbOKY3g",
+      "name" : "job_ops_pid"
+    }, {
+      "id" : "_w4wJJFl7EfGtN5BJmGG-8w",
+      "name" : "num_ops_childThreads"
+    }, {
+      "id" : "_AFtftVl1EfGtN5BJmGG-8w",
+      "name" : "num_ops_max_retry_limit"
+    }, {
+      "id" : "_w4wJJVl7EfGtN5BJmGG-8w",
+      "name" : "num_ops_queueSize"
+    }, {
+      "id" : "_AFtfs1l1EfGtN5BJmGG-8w",
+      "name" : "str_ops_execution_env"
+    }, {
+      "id" : "_AFtftFl1EfGtN5BJmGG-8w",
+      "name" : "str_ops_steward_default"
+    } ]
+  } ]
+}

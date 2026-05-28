@@ -17,6 +17,8 @@
     <contextParameter xmi:id="_Koh4plk9EfGtN5BJmGG-8w" comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/logs&quot;"/>
     <contextParameter xmi:id="_w4wJIFl7EfGtN5BJmGG-8w" comment="" name="num_ops_childThreads" prompt="num_ops_childThreads?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="7"/>
     <contextParameter xmi:id="_w4wJIVl7EfGtN5BJmGG-8w" comment="" name="num_ops_queueSize" prompt="num_ops_queueSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="10000"/>
+    <contextParameter xmi:id="_enTxAFpKEfGo8ccnbOKY3g" comment="" name="job_ops_name" prompt="job_ops_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_enTxAVpKEfGo8ccnbOKY3g" comment="" name="job_ops_pid" prompt="job_ops_pid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_0zP-I1jeEfGtN5BJmGG-8w" confirmationNeeded="false" hide="false" name="DEV">
     <contextParameter xmi:id="_0zP-JFjeEfGtN5BJmGG-8w" comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
@@ -35,6 +37,8 @@
     <contextParameter xmi:id="_Koh4rVk9EfGtN5BJmGG-8w" comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="/data/talend/cis_pos/DEV/logs"/>
     <contextParameter xmi:id="_w4wJIll7EfGtN5BJmGG-8w" comment="" name="num_ops_childThreads" prompt="num_ops_childThreads?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="4"/>
     <contextParameter xmi:id="_w4wJI1l7EfGtN5BJmGG-8w" comment="" name="num_ops_queueSize" prompt="num_ops_queueSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="10000"/>
+    <contextParameter xmi:id="_enTxAlpKEfGo8ccnbOKY3g" comment="" name="job_ops_name" prompt="job_ops_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_enTxA1pKEfGo8ccnbOKY3g" comment="" name="job_ops_pid" prompt="job_ops_pid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_AFtfsFl1EfGtN5BJmGG-8w" confirmationNeeded="false" hide="false" name="UAT">
     <contextParameter xmi:id="_AFtfsVl1EfGtN5BJmGG-8w" comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="built-in" type="id_Date" value=""/>
@@ -53,5 +57,7 @@
     <contextParameter xmi:id="_AFtfvll1EfGtN5BJmGG-8w" comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/logs&quot;"/>
     <contextParameter xmi:id="_w4wJJFl7EfGtN5BJmGG-8w" comment="" name="num_ops_childThreads" prompt="num_ops_childThreads?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="4"/>
     <contextParameter xmi:id="_w4wJJVl7EfGtN5BJmGG-8w" comment="" name="num_ops_queueSize" prompt="num_ops_queueSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="10000"/>
+    <contextParameter xmi:id="_enTxBFpKEfGo8ccnbOKY3g" comment="" name="job_ops_name" prompt="job_ops_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter xmi:id="_enTxBVpKEfGo8ccnbOKY3g" comment="" name="job_ops_pid" prompt="job_ops_pid?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
   </talendfile:ContextType>
 </xmi:XMI>
