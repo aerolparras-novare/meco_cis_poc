@@ -80,7 +80,7 @@
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="240" show="false"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
@@ -176,20 +176,20 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="520" sizeX="121" sizeY="40">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="520" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_QNIh4FK0EfGAPIORTaYCDw - metadata" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.src_file_dir + &quot;meco_install&quot; + context.file_extension"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.field_seperator"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="java.nio.file.Paths.get(context.dir_ops_input, &quot;LEGACY_INSTALL.csv&quot;).toString()"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
@@ -202,7 +202,7 @@
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
     <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
@@ -367,7 +367,7 @@
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
-    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
     <elementParameter field="TABLE" name="DECODE_COLS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="Installation_ID" id="0"/>
@@ -534,19 +534,19 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
       <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="30" name="Installation_MSSL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Installation_MSSL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Consumer_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="30" name="Unused_Field_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Unused_Field_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Master_Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="40" name="Unused_Field_6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="40" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="Unused_Field_6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="40" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="Installation_Category" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="End_Use_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="District_Area_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="20" name="Transmission_Point" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="Building_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Installation_Category" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="End_Use_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="District_Area_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="Transmission_Point" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Building_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Connection_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="50" name="Connection_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Status_Change_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
@@ -614,7 +614,7 @@
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="30" name="Installation_MSSL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Installation_MSSL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Consumer_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="30" name="Unused_Field_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
@@ -695,7 +695,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="520" sizeX="121" sizeY="40">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="720" posY="520" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -710,7 +710,7 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="map_install"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out1" name="out1">
+    <metadata connector="FLOW" label="out1" name="cdm_install">
       <column comment="" defaultValue="" key="false" length="19" name="I0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="I1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="I2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
@@ -845,143 +845,143 @@
       <column comment="" key="false" length="19" name="INSTCONT16" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-      <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="I0" expression="row1.Installation_ID " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I1" expression="StringHandling.TRIM(row1.Installation_MSSL)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I2" expression="row1.Consumer_ID " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I3" expression="row1.Unused_Field_3 " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I4" expression="StringHandling.TRIM(row1.Unused_Field_4)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I5" expression="row1.Master_Installation_ID " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I6" expression="StringHandling.TRIM(row1.Unused_Field_6)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I7" expression="row1.Unused_Field_7 " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I8" expression="StringHandling.TRIM(row1.Utility_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I9" expression="StringHandling.TRIM(row1.Installation_Category)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I10" expression="StringHandling.TRIM(row1.End_Use_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I11" expression="StringHandling.LPAD(StringHandling.TRIM(row1.District_Area_Code), 2, &quot;0&quot;) " type="id_String" nullable="true"/>
-        <mapperTableEntries name="I12" expression="StringHandling.TRIM(row1.Transmission_Point)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I13" expression="StringHandling.TRIM(row1.Building_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I14" expression="Relational.ISNULL(row1.Connection_Date) ? null : row1.Connection_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="I15" expression="(row1.Connection_Status.equalsIgnoreCase(&quot;Active&quot;) &amp;&amp; (Relational.ISNULL(row1.Retailer_Code) || Relational.ISNULL(row1.Network_Company_Code))) ? null : row1.Connection_Status" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I16" expression="Relational.ISNULL(row1.Status_Change_Date) ? null : row1.Status_Change_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="I17" expression="StringHandling.TRIM(row1.Invoicing_Method)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I18" expression="StringHandling.TRIM(row1.Estimate_Suppression_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I19" expression="row1.Max_Metering_Points" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I20" expression="StringHandling.TRIM(row1.Validation_Control_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I21" expression="StringHandling.TRIM(row1.Site_Property_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I22" expression="StringHandling.TRIM(row1.Fire_Service_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I23" expression="StringHandling.TRIM(row1.Rural_Property_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I24" expression="row1.Meshblock_Number " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I25" expression="StringHandling.TRIM(row1.Lot_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I26" expression="StringHandling.TRIM(row1.Plan_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I27" expression="StringHandling.TRIM(row1.Plan_Reference)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I28" expression="StringHandling.TRIM(row1.Crown_Lot_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I29" expression="StringHandling.TRIM(row1.Crown_Section_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I30" expression="StringHandling.TRIM(row1.Map_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I31" expression="StringHandling.TRIM(row1.X_Coordinate)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I32" expression="StringHandling.TRIM(row1.Y_Coordinate)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I33" expression="StringHandling.TRIM(row1.Location_Notes)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I34" expression="StringHandling.TRIM(row1.Connection_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I35" expression="row1.Unused_Field_35 " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I36" expression="StringHandling.TRIM(row1.High_Voltage_Flag)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I37" expression="row1.Expected_Max_KVA " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I38" expression="row1.Billable_KVA " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I39" expression="row1.Control_Period_Demand_KW " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I40" expression="StringHandling.TRIM(row1.Override_Loss_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I41" expression="StringHandling.TRIM(row1.Standard_Transmission_Loss)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I42" expression="StringHandling.TRIM(row1.Shutdown_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I43" expression="StringHandling.TRIM(row1.Supply_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I44" expression="row1.Altitude " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I45" expression="row1.Gas_Line_Pressure " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I46" expression="StringHandling.TRIM(row1.Network_Account_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I47" expression="StringHandling.TRIM(row1.Retailer_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I48" expression="Relational.ISNULL(row1.Retailer_Start_Date) ? null :row1.Retailer_Start_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="I49" expression="StringHandling.TRIM(row1.Other_Supplier_Consumer_Name)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I50" expression="StringHandling.TRIM(row1.Network_Company_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I51" expression="Relational.ISNULL(row1.Network_Start_Date) ? null :  row1.Network_Start_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="I52" expression="Relational.ISNULL(row1.Unused_Field_52) ? null :  row1.Unused_Field_52" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="I53" expression="row1.Unused_Field_53 " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="I54" expression="StringHandling.TRIM(row1.Unused_Field_54)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I55" expression="StringHandling.TRIM(row1.Unused_Field_55)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I56" expression="row1.Physical_Location " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="GBC1" expression="Relational.ISNULL(row1.Invoice_Start_Date) ? null : row1.Invoice_Start_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC2" expression="StringHandling.TRIM(row1.Reading_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC3" expression="Relational.ISNULL(row1.Next_Invoice_Date) ? null :  row1.Next_Invoice_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC4" expression="StringHandling.TRIM(row1.Next_Invoice_Schedule_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC5" expression="StringHandling.TRIM(row1.Unused_Field_GBC5)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC6" expression="Relational.ISNULL(row1.Unused_Field_GBC6) ? null :row1.Unused_Field_GBC6" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC7" expression="Relational.ISNULL(row1.Unused_Field_GBC7) ? null :  row1.Unused_Field_GBC7" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC8" expression="Relational.ISNULL(row1.Unused_Field_GBC8) ? null : row1.Unused_Field_GBC8" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC9" expression="Relational.ISNULL(row1.Next_Read_Date) ? null :  row1.Next_Read_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC10" expression="Relational.ISNULL(row1.Last_Billed_Date) ? null : row1.Last_Billed_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC11" expression="StringHandling.TRIM(row1.Interim_Header_Reason)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC12" expression="Relational.ISNULL(row1.Reason_Added_Date) ? null :  row1.Reason_Added_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC13" expression="Relational.ISNULL(row1.Unused_Field_GBC13) ? null :row1.Unused_Field_GBC13" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC14" expression="Relational.ISNULL(row1.Unused_Field_GBC14) ? null : row1.Unused_Field_GBC14" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC15" expression="Relational.ISNULL(row1.Unused_Field_GBC15) ? null :  row1.Unused_Field_GBC15" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC16" expression="Relational.ISNULL(row1.Most_Recent_Meter_Read_Date) ? null : row1.Most_Recent_Meter_Read_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC17" expression="StringHandling.TRIM(row1.Unused_Field_GBC17)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC18" expression="StringHandling.TRIM(row1.Unused_Field_GBC18)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="GBC19" expression="Relational.ISNULL(row1.Invoiced_Up_To_Date) ? null : row1.Invoiced_Up_To_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="GBC20" expression="row1.Unused_Field_GBC20 " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="GBC21" expression="row1.Unused_Field_GBC21 " type="id_Double" nullable="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="cdm_install">
+        <mapperTableEntries name="I0" expression="install.Installation_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I1" expression="StringHandling.TRIM(install.Installation_MSSL)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I2" expression="install.Consumer_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I3" expression="install.Unused_Field_3 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I4" expression="StringHandling.TRIM(install.Unused_Field_4)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I5" expression="install.Master_Installation_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I6" expression="StringHandling.TRIM(install.Unused_Field_6)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I7" expression="install.Unused_Field_7 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I8" expression="StringHandling.TRIM(install.Utility_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I9" expression="StringHandling.TRIM(install.Installation_Category)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I10" expression="StringHandling.TRIM(install.End_Use_Code)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I11" expression="StringHandling.LPAD(StringHandling.TRIM(install.District_Area_Code), 2, &quot;0&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="I12" expression="StringHandling.TRIM(install.Transmission_Point)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I13" expression="StringHandling.TRIM(install.Building_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I14" expression="Relational.ISNULL(install.Connection_Date) ? null : install.Connection_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I15" expression="(install.Connection_Status.equalsIgnoreCase(&quot;Active&quot;) &amp;&amp; (Relational.ISNULL(install.Retailer_Code) || Relational.ISNULL(install.Network_Company_Code))) ? null : install.Connection_Status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I16" expression="Relational.ISNULL(install.Status_Change_Date) ? null : install.Status_Change_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I17" expression="StringHandling.TRIM(install.Invoicing_Method)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I18" expression="StringHandling.TRIM(install.Estimate_Suppression_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I19" expression="install.Max_Metering_Points" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I20" expression="StringHandling.TRIM(install.Validation_Control_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I21" expression="StringHandling.TRIM(install.Site_Property_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I22" expression="StringHandling.TRIM(install.Fire_Service_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I23" expression="StringHandling.TRIM(install.Rural_Property_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I24" expression="install.Meshblock_Number " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I25" expression="StringHandling.TRIM(install.Lot_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I26" expression="StringHandling.TRIM(install.Plan_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I27" expression="StringHandling.TRIM(install.Plan_Reference)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I28" expression="StringHandling.TRIM(install.Crown_Lot_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I29" expression="StringHandling.TRIM(install.Crown_Section_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I30" expression="StringHandling.TRIM(install.Map_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I31" expression="StringHandling.TRIM(install.X_Coordinate)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I32" expression="StringHandling.TRIM(install.Y_Coordinate)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I33" expression="StringHandling.TRIM(install.Location_Notes)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I34" expression="StringHandling.TRIM(install.Connection_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I35" expression="install.Unused_Field_35 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I36" expression="StringHandling.TRIM(install.High_Voltage_Flag)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I37" expression="install.Expected_Max_KVA " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I38" expression="install.Billable_KVA " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I39" expression="install.Control_Period_Demand_KW " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I40" expression="StringHandling.TRIM(install.Override_Loss_Code)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I41" expression="StringHandling.TRIM(install.Standard_Transmission_Loss)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I42" expression="StringHandling.TRIM(install.Shutdown_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I43" expression="StringHandling.TRIM(install.Supply_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I44" expression="install.Altitude " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I45" expression="install.Gas_Line_Pressure " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I46" expression="StringHandling.TRIM(install.Network_Account_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I47" expression="StringHandling.TRIM(install.Retailer_Code)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I48" expression="Relational.ISNULL(install.Retailer_Start_Date) ? null :install.Retailer_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I49" expression="StringHandling.TRIM(install.Other_Supplier_Consumer_Name)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I50" expression="StringHandling.TRIM(install.Network_Company_Code)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I51" expression="Relational.ISNULL(install.Network_Start_Date) ? null :  install.Network_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I52" expression="Relational.ISNULL(install.Unused_Field_52) ? null :  install.Unused_Field_52" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="I53" expression="install.Unused_Field_53 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="I54" expression="StringHandling.TRIM(install.Unused_Field_54)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I55" expression="StringHandling.TRIM(install.Unused_Field_55)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="I56" expression="install.Physical_Location " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GBC1" expression="Relational.ISNULL(install.Invoice_Start_Date) ? null : install.Invoice_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC2" expression="StringHandling.TRIM(install.Reading_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GBC3" expression="Relational.ISNULL(install.Next_Invoice_Date) ? null :  install.Next_Invoice_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC4" expression="StringHandling.TRIM(install.Next_Invoice_Schedule_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GBC5" expression="StringHandling.TRIM(install.Unused_Field_GBC5)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GBC6" expression="Relational.ISNULL(install.Unused_Field_GBC6) ? null :install.Unused_Field_GBC6" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC7" expression="Relational.ISNULL(install.Unused_Field_GBC7) ? null :  install.Unused_Field_GBC7" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC8" expression="Relational.ISNULL(install.Unused_Field_GBC8) ? null : install.Unused_Field_GBC8" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC9" expression="Relational.ISNULL(install.Next_Read_Date) ? null :  install.Next_Read_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC10" expression="Relational.ISNULL(install.Last_Billed_Date) ? null : install.Last_Billed_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC11" expression="StringHandling.TRIM(install.Interim_Header_Reason)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GBC12" expression="Relational.ISNULL(install.Reason_Added_Date) ? null :  install.Reason_Added_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC13" expression="Relational.ISNULL(install.Unused_Field_GBC13) ? null :install.Unused_Field_GBC13" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC14" expression="Relational.ISNULL(install.Unused_Field_GBC14) ? null : install.Unused_Field_GBC14" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC15" expression="Relational.ISNULL(install.Unused_Field_GBC15) ? null :  install.Unused_Field_GBC15" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC16" expression="Relational.ISNULL(install.Most_Recent_Meter_Read_Date) ? null : install.Most_Recent_Meter_Read_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC17" expression="StringHandling.TRIM(install.Unused_Field_GBC17)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GBC18" expression="StringHandling.TRIM(install.Unused_Field_GBC18)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GBC19" expression="Relational.ISNULL(install.Invoiced_Up_To_Date) ? null : install.Invoiced_Up_To_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="GBC20" expression="install.Unused_Field_GBC20 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="GBC21" expression="install.Unused_Field_GBC21 " type="id_Double" nullable="true"/>
         <mapperTableEntries name="INSTLOCA1" expression="&quot;INSTALL&quot;" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA2" expression="row2.Installation_ID" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA3" expression="Relational.ISNULL(row2.Unused_Field_LOCA3) ? null :  row2.Unused_Field_LOCA3" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA4" expression="Relational.ISNULL(row2.Unused_Field_LOCA4) ? null : row2.Unused_Field_LOCA4" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA5" expression="row2.Unused_Field_LOCA5 " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA6" expression="StringHandling.TRIM(row2.Address_Reference)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA7" expression="row2.Unit_Identifier " type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA8" expression="row2.Street_Number " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA9" expression="StringHandling.TRIM(row2.Street_Name)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA10" expression="StringHandling.TRIM(row2.Delivery_Service)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA11" expression="StringHandling.TRIM(row2.Suburb)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA12" expression="StringHandling.TRIM(row2.Town_City)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA13" expression="StringHandling.TRIM(row2.Postcode)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA14" expression="StringHandling.TRIM(row2.Unit_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA15" expression="StringHandling.TRIM(row2.Building_Name)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA16" expression="StringHandling.TRIM(row2.State_Territory)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA17" expression="StringHandling.TRIM(row2.Floor_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA18" expression="StringHandling.TRIM(row2.Country)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA19" expression="StringHandling.TRIM(row2.Street_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA20" expression="StringHandling.TRIM(row2.Street_Direction)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA21" expression="StringHandling.TRIM(row2.County_Borough)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA22" expression="StringHandling.TRIM(row2.Subdivision)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA23" expression="StringHandling.TRIM(row2.Postal_Code_Alternative)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA24" expression="StringHandling.TRIM(row2.Highest_Street_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA25" expression="StringHandling.TRIM(row2.House_Number_Prefix)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA26" expression="StringHandling.TRIM(row2.House_Number_Suffix)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA27" expression="row2.Floor_Type " type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA28" expression="Relational.ISNULL(row2.Address_Last_Changed_UTC) ? null : row2.Address_Last_Changed_UTC" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA29" expression="Relational.ISNULL(row2.Unused_Field_LOCA29) ? null : row2.Unused_Field_LOCA29" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA30" expression="StringHandling.TRIM(row2.Unstructured_Address_1)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA31" expression="StringHandling.TRIM(row2.Unstructured_Address_2)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA32" expression="StringHandling.TRIM(row2.Unstructured_Address_3)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA33" expression="StringHandling.TRIM(row2.Location_Description)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA34" expression="StringHandling.TRIM(row2.Postal_Name_Override)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA35" expression="StringHandling.TRIM(row2.Care_Of_Name)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA36" expression="StringHandling.TRIM(row2.Data_Source)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTLOCA37" expression="StringHandling.TRIM(row2.Data_Source_ID)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT1" expression="row2.Unused_Field_CONT1 " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="INSTCONT2_1" expression="StringHandling.TRIM(row2.Primary_Plan_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT2_2" expression="StringHandling.TRIM(row2.Secondary_Plan_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT3" expression="Relational.ISNULL(row2.Contract_Start_Date) ? null : row2.Contract_Start_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTCONT4" expression="Relational.ISNULL(row2.Contract_Review_Date) ? null : row2.Contract_Review_Date" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTCONT5" expression="StringHandling.TRIM(row2.Unused_Field_CONT5)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT6" expression="StringHandling.TRIM(row2.Contract_Number)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT7" expression="StringHandling.TRIM(row2.Override_Transmission_Loss)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT8" expression="StringHandling.TRIM(row2.Override_Distribution_Loss)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT9" expression="StringHandling.TRIM(row2.Confirmation_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT10" expression="Relational.ISNULL(row2.Unused_Field_CONT10) ? null : row2.Unused_Field_CONT10" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTCONT11" expression="Relational.ISNULL(row2.Unused_Field_CONT11) ? null :  row2.Unused_Field_CONT11" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="INSTCONT12" expression="StringHandling.TRIM(row2.Unused_Field_CONT12)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT13" expression="StringHandling.TRIM(row2.Load_Criteria)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT14" expression="row2.Unused_Field_CONT14 " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="INSTCONT15" expression="StringHandling.TRIM(row2.Discount_Type)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="INSTCONT16" expression="Relational.ISNULL(row2.Unused_Field_CONT16) ? null : row2.Unused_Field_CONT16" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA2" expression="install2loc.Installation_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA3" expression="Relational.ISNULL(install2loc.Unused_Field_LOCA3) ? null :  install2loc.Unused_Field_LOCA3" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA4" expression="Relational.ISNULL(install2loc.Unused_Field_LOCA4) ? null : install2loc.Unused_Field_LOCA4" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA5" expression="install2loc.Unused_Field_LOCA5 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA6" expression="StringHandling.TRIM(install2loc.Address_Reference)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA7" expression="install2loc.Unit_Identifier " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA8" expression="install2loc.Street_Number " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA9" expression="StringHandling.TRIM(install2loc.Street_Name)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA10" expression="StringHandling.TRIM(install2loc.Delivery_Service)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA11" expression="StringHandling.TRIM(install2loc.Suburb)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA12" expression="StringHandling.TRIM(install2loc.Town_City)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA13" expression="StringHandling.TRIM(install2loc.Postcode)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA14" expression="StringHandling.TRIM(install2loc.Unit_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA15" expression="StringHandling.TRIM(install2loc.Building_Name)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA16" expression="StringHandling.TRIM(install2loc.State_Territory)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA17" expression="StringHandling.TRIM(install2loc.Floor_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA18" expression="StringHandling.TRIM(install2loc.Country)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA19" expression="StringHandling.TRIM(install2loc.Street_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA20" expression="StringHandling.TRIM(install2loc.Street_Direction)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA21" expression="StringHandling.TRIM(install2loc.County_Borough)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA22" expression="StringHandling.TRIM(install2loc.Subdivision)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA23" expression="StringHandling.TRIM(install2loc.Postal_Code_Alternative)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA24" expression="StringHandling.TRIM(install2loc.Highest_Street_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA25" expression="StringHandling.TRIM(install2loc.House_Number_Prefix)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA26" expression="StringHandling.TRIM(install2loc.House_Number_Suffix)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA27" expression="install2loc.Floor_Type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA28" expression="Relational.ISNULL(install2loc.Address_Last_Changed_UTC) ? null : install2loc.Address_Last_Changed_UTC" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA29" expression="Relational.ISNULL(install2loc.Unused_Field_LOCA29) ? null : install2loc.Unused_Field_LOCA29" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA30" expression="StringHandling.TRIM(install2loc.Unstructured_Address_1)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA31" expression="StringHandling.TRIM(install2loc.Unstructured_Address_2)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA32" expression="StringHandling.TRIM(install2loc.Unstructured_Address_3)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA33" expression="StringHandling.TRIM(install2loc.Location_Description)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA34" expression="StringHandling.TRIM(install2loc.Postal_Name_Override)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA35" expression="StringHandling.TRIM(install2loc.Care_Of_Name)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA36" expression="StringHandling.TRIM(install2loc.Data_Source)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTLOCA37" expression="StringHandling.TRIM(install2loc.Data_Source_ID)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT1" expression="install2loc.Unused_Field_CONT1 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INSTCONT2_1" expression="StringHandling.TRIM(install2loc.Primary_Plan_Code)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT2_2" expression="StringHandling.TRIM(install2loc.Secondary_Plan_Code)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT3" expression="Relational.ISNULL(install2loc.Contract_Start_Date) ? null : install2loc.Contract_Start_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTCONT4" expression="Relational.ISNULL(install2loc.Contract_Review_Date) ? null : install2loc.Contract_Review_Date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTCONT5" expression="StringHandling.TRIM(install2loc.Unused_Field_CONT5)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT6" expression="StringHandling.TRIM(install2loc.Contract_Number)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT7" expression="StringHandling.TRIM(install2loc.Override_Transmission_Loss)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT8" expression="StringHandling.TRIM(install2loc.Override_Distribution_Loss)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT9" expression="StringHandling.TRIM(install2loc.Confirmation_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT10" expression="Relational.ISNULL(install2loc.Unused_Field_CONT10) ? null : install2loc.Unused_Field_CONT10" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTCONT11" expression="Relational.ISNULL(install2loc.Unused_Field_CONT11) ? null :  install2loc.Unused_Field_CONT11" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="INSTCONT12" expression="StringHandling.TRIM(install2loc.Unused_Field_CONT12)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT13" expression="StringHandling.TRIM(install2loc.Load_Criteria)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT14" expression="install2loc.Unused_Field_CONT14 " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="INSTCONT15" expression="StringHandling.TRIM(install2loc.Discount_Type)" type="id_String" nullable="true"/>
+        <mapperTableEntries name="INSTCONT16" expression="Relational.ISNULL(install2loc.Unused_Field_CONT16) ? null : install2loc.Unused_Field_CONT16" type="id_Date" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="install" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Installation_ID" type="id_Double" nullable="true"/>
         <mapperTableEntries name="Installation_MSSL" type="id_String" nullable="true"/>
         <mapperTableEntries name="Consumer_ID" type="id_Double" nullable="true"/>
@@ -1061,9 +1061,9 @@
         <mapperTableEntries name="Unused_Field_GBC20" type="id_Double" nullable="true"/>
         <mapperTableEntries name="Unused_Field_GBC21" type="id_Double" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Installation_ID" expression="row1.Installation_ID " type="id_Double" nullable="true" operator="="/>
-        <mapperTableEntries name="Consumer_ID" expression="row1.Consumer_ID" type="id_Double" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="install2loc" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Installation_ID" expression="install.Installation_ID " type="id_Double" nullable="true" operator="="/>
+        <mapperTableEntries name="Consumer_ID" expression="" type="id_Double" nullable="true"/>
         <mapperTableEntries name="Unused_Field_LOCA1" type="id_String" nullable="true"/>
         <mapperTableEntries name="Unused_Field_LOCA2" type="id_Double" nullable="true"/>
         <mapperTableEntries name="Unused_Field_LOCA3" type="id_Date" nullable="true"/>
@@ -1121,20 +1121,20 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="400" sizeX="121" sizeY="40">
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="720" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Wnbr0FK0EfGAPIORTaYCDw - metadata" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.src_file_dir + &quot;meco_install2loc&quot; + context.file_extension"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="java.nio.file.Paths.get(context.dir_ops_input, &quot;LEGACY_INSTALL2LOC.csv&quot;).toString()"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
@@ -1147,7 +1147,7 @@
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CHECK" name="RANDOM" value="false" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
     <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
@@ -1268,7 +1268,7 @@
     <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
-    <elementParameter field="CHECK" name="SPLITRECORD" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
     <elementParameter field="TABLE" name="DECODE_COLS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="Installation_ID" id="0"/>
@@ -1450,7 +1450,7 @@
     <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Consumer_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="50" name="Unused_Field_LOCA1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Unused_Field_LOCA1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_LOCA2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_LOCA3" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_LOCA4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
@@ -1508,26 +1508,26 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="520" sizeX="121" sizeY="40">
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="520" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.local_file_loc_tgt + &quot;cdm_install&quot; + context.file_extension"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
-    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.field_seperator"/>
-    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="FILE" name="FILENAME" value="java.nio.file.Paths.get(context.dir_ops_output, &quot;cdm_install.csv&quot;).toString()"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
     <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_fWGFEFK0EfGAPIORTaYCDw - metadata" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="SPLIT" value="false"/>
     <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
@@ -1537,7 +1537,7 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;US-ASCII&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
     <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="cdm_install"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1676,6 +1676,140 @@
       <column comment="" defaultValue="" key="false" length="19" name="INSTCONT16" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="721" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//UPDATE VALUES&#xD;&#xA;String stage = &quot;SRC&quot;; //SRC or TGT&#xD;&#xA;String entity = &quot;legacy_consumer&quot;; //Input Name&#xD;&#xA;&#xD;&#xA;StringBuilder sbData = new StringBuilder();&#xD;&#xA;StringBuilder sbCols = new StringBuilder(); // &lt;-- Added to collect column names&#xD;&#xA;//Get all fields belonging to the incoming row structure&#xD;&#xA;java.lang.reflect.Field[] fields = reject_install2loc.getClass().getDeclaredFields();&#xD;&#xA;&#xD;&#xA;boolean isFirstField = true;&#xD;&#xA;&#xD;&#xA;for (java.lang.reflect.Field field : fields) {&#xD;&#xA;String fieldName = field.getName();&#xD;&#xA;&#xD;&#xA;// 1. SKIP TALEND SYSTEM FIELDS (Prevents internal object hash values)&#xD;&#xA;if (fieldName.equals(&quot;hashCode&quot;) || &#xD;&#xA;   fieldName.equals(&quot;hashCodeDirty&quot;) || &#xD;&#xA;   fieldName.equals(&quot;loopKey&quot;) || &#xD;&#xA;   fieldName.equals(&quot;errorCode&quot;) || &#xD;&#xA;   fieldName.equals(&quot;errorMessage&quot;) || &#xD;&#xA;   fieldName.startsWith(&quot;checkNulls&quot;) ||&#xD;&#xA;   fieldName.startsWith(&quot;_&quot;) || &#xD;&#xA;   java.lang.reflect.Modifier.isStatic(field.getModifiers())) {&#xD;&#xA;   continue; &#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;try {&#xD;&#xA;   field.setAccessible(true);&#xD;&#xA;   Object value = field.get(reject_install2loc); // Extract the actual field data&#xD;&#xA;   &#xD;&#xA;   String cleanValue = &quot;&quot;;&#xD;&#xA;   &#xD;&#xA;   if (value != null) {&#xD;&#xA;       // 2. FIX FOR BYTE ARRAYS (Converts binary data to normal text instead of [B@hash)&#xD;&#xA;       if (value instanceof byte[]) {&#xD;&#xA;           cleanValue = new String((byte[]) value, &quot;UTF-8&quot;);&#xD;&#xA;       } &#xD;&#xA;       // 3. FIX FOR ARRAYS (Converts lists/arrays to standard readable strings)&#xD;&#xA;       else if (value.getClass().isArray()) {&#xD;&#xA;           cleanValue = java.util.Arrays.deepToString((Object[]) value);&#xD;&#xA;       } &#xD;&#xA;       // 4. STANDARD CONVERSION (For Strings, Integers, Dates, Decimals, etc.)&#xD;&#xA;       else {&#xD;&#xA;           cleanValue = value.toString();&#xD;&#xA;       }&#xD;&#xA;   }&#xD;&#xA;   &#xD;&#xA;   // Append pipe delimiter between column values and names&#xD;&#xA;   if (!isFirstField) {&#xD;&#xA;       sbData.append(&quot;|&quot;); &#xD;&#xA;       sbCols.append(&quot;|&quot;); // &lt;-- Added delimiter for column headers&#xD;&#xA;   }&#xD;&#xA;   &#xD;&#xA;   sbData.append(cleanValue);&#xD;&#xA;   sbCols.append(fieldName); // &lt;-- Added to track current column name&#xD;&#xA;   isFirstField = false;&#xD;&#xA;   &#xD;&#xA;} catch (Exception e) {&#xD;&#xA;   // Fail-safe: if a column can't be read, add an empty placeholder to preserve structure&#xD;&#xA;   if (!isFirstField) {&#xD;&#xA;       sbData.append(&quot;|&quot;);&#xD;&#xA;       sbCols.append(&quot;|&quot;);&#xD;&#xA;   }&#xD;&#xA;   sbData.append(&quot;&quot;);&#xD;&#xA;   sbCols.append(fieldName);&#xD;&#xA;   isFirstField = false;&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//Pass the fully concatenated string to the output component row&#xD;&#xA;install2loc_reject.REJECT_ID = java.util.UUID.randomUUID().toString();&#xD;&#xA;install2loc_reject.PROJECT_NAME = projectName;&#xD;&#xA;install2loc_reject.JOB_NAME = jobName;&#xD;&#xA;install2loc_reject.EXECUTION_ID = pid;&#xD;&#xA;install2loc_reject.JOB_START_TIME = null; // Tip: Map your job start context variable here if available&#xD;&#xA;install2loc_reject.STAGE = stage;&#xD;&#xA;install2loc_reject.ENTITY_NAME = entity;&#xD;&#xA;install2loc_reject.ENTITY_COLUMN = sbCols.toString(); // &lt;-- Maps the structured headers to the schema&#xD;&#xA;install2loc_reject.ERROR_MESSAGE = reject_install2loc.errorMessage;&#xD;&#xA;install2loc_reject.REJECTED_DATA = sbData.toString();&#xD;&#xA;install2loc_reject.REJECTED_ON = TalendDate.getCurrentDate();&#xD;&#xA;install2loc_reject.STEWARD_STATUS = &quot;NEW&quot;;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="java_reject"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_2">
+      <column comment="" key="true" length="50" name="REJECT_ID" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PROJECT_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="JOB_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="EXECUTION_ID" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JOB_START_TIME" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="STAGE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ENTITY_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="ENTITY_COLUMN" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="ERROR_MESSAGE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="REJECTED_DATA" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REJECTED_ON" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="STEWARD_STATUS" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-200" posY="721" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_3" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="java.nio.file.Paths.get(context.dir_ops_reject, jobName,TalendDate.getDate(&quot;yyyyMMdd&quot;), jobName + &quot;_&quot; + pid + &quot;_&quot; + context.file_reject_baseName).toString()"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.file_reject_fieldSeparator"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;'&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;'&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="reject_legacy_install2loc"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_3">
+      <column comment="" defaultValue="" key="true" length="50" name="REJECT_ID" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="PROJECT_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="JOB_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="EXECUTION_ID" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="JOB_START_TIME" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="STAGE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="ENTITY_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="ENTITY_COLUMN" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4000" name="ERROR_MESSAGE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2147483647" name="REJECTED_DATA" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="REJECTED_ON" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="STEWARD_STATUS" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="80" posY="640" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//UPDATE VALUES&#xD;&#xA;String stage = &quot;SRC&quot;; //SRC or TGT&#xD;&#xA;String entity = &quot;legacy_consumer&quot;; //Input Name&#xD;&#xA;&#xD;&#xA;StringBuilder sbData = new StringBuilder();&#xD;&#xA;StringBuilder sbCols = new StringBuilder(); // &lt;-- Added to collect column names&#xD;&#xA;//Get all fields belonging to the incoming row structure&#xD;&#xA;java.lang.reflect.Field[] fields = reject_install.getClass().getDeclaredFields();&#xD;&#xA;&#xD;&#xA;boolean isFirstField = true;&#xD;&#xA;&#xD;&#xA;for (java.lang.reflect.Field field : fields) {&#xD;&#xA;String fieldName = field.getName();&#xD;&#xA;&#xD;&#xA;// 1. SKIP TALEND SYSTEM FIELDS (Prevents internal object hash values)&#xD;&#xA;if (fieldName.equals(&quot;hashCode&quot;) || &#xD;&#xA;   fieldName.equals(&quot;hashCodeDirty&quot;) || &#xD;&#xA;   fieldName.equals(&quot;loopKey&quot;) || &#xD;&#xA;   fieldName.equals(&quot;errorCode&quot;) || &#xD;&#xA;   fieldName.equals(&quot;errorMessage&quot;) || &#xD;&#xA;   fieldName.startsWith(&quot;checkNulls&quot;) ||&#xD;&#xA;   fieldName.startsWith(&quot;_&quot;) || &#xD;&#xA;   java.lang.reflect.Modifier.isStatic(field.getModifiers())) {&#xD;&#xA;   continue; &#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;try {&#xD;&#xA;   field.setAccessible(true);&#xD;&#xA;   Object value = field.get(reject_install); // Extract the actual field data&#xD;&#xA;   &#xD;&#xA;   String cleanValue = &quot;&quot;;&#xD;&#xA;   &#xD;&#xA;   if (value != null) {&#xD;&#xA;       // 2. FIX FOR BYTE ARRAYS (Converts binary data to normal text instead of [B@hash)&#xD;&#xA;       if (value instanceof byte[]) {&#xD;&#xA;           cleanValue = new String((byte[]) value, &quot;UTF-8&quot;);&#xD;&#xA;       } &#xD;&#xA;       // 3. FIX FOR ARRAYS (Converts lists/arrays to standard readable strings)&#xD;&#xA;       else if (value.getClass().isArray()) {&#xD;&#xA;           cleanValue = java.util.Arrays.deepToString((Object[]) value);&#xD;&#xA;       } &#xD;&#xA;       // 4. STANDARD CONVERSION (For Strings, Integers, Dates, Decimals, etc.)&#xD;&#xA;       else {&#xD;&#xA;           cleanValue = value.toString();&#xD;&#xA;       }&#xD;&#xA;   }&#xD;&#xA;   &#xD;&#xA;   // Append pipe delimiter between column values and names&#xD;&#xA;   if (!isFirstField) {&#xD;&#xA;       sbData.append(&quot;|&quot;); &#xD;&#xA;       sbCols.append(&quot;|&quot;); // &lt;-- Added delimiter for column headers&#xD;&#xA;   }&#xD;&#xA;   &#xD;&#xA;   sbData.append(cleanValue);&#xD;&#xA;   sbCols.append(fieldName); // &lt;-- Added to track current column name&#xD;&#xA;   isFirstField = false;&#xD;&#xA;   &#xD;&#xA;} catch (Exception e) {&#xD;&#xA;   // Fail-safe: if a column can't be read, add an empty placeholder to preserve structure&#xD;&#xA;   if (!isFirstField) {&#xD;&#xA;       sbData.append(&quot;|&quot;);&#xD;&#xA;       sbCols.append(&quot;|&quot;);&#xD;&#xA;   }&#xD;&#xA;   sbData.append(&quot;&quot;);&#xD;&#xA;   sbCols.append(fieldName);&#xD;&#xA;   isFirstField = false;&#xD;&#xA;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;//Pass the fully concatenated string to the output component row&#xD;&#xA;install_reject.REJECT_ID = java.util.UUID.randomUUID().toString();&#xD;&#xA;install_reject.PROJECT_NAME = projectName;&#xD;&#xA;install_reject.JOB_NAME = jobName;&#xD;&#xA;install_reject.EXECUTION_ID = pid;&#xD;&#xA;install_reject.JOB_START_TIME = null; // Tip: Map your job start context variable here if available&#xD;&#xA;install_reject.STAGE = stage;&#xD;&#xA;install_reject.ENTITY_NAME = entity;&#xD;&#xA;install_reject.ENTITY_COLUMN = sbCols.toString(); // &lt;-- Maps the structured headers to the schema&#xD;&#xA;install_reject.ERROR_MESSAGE = reject_install.errorMessage;&#xD;&#xA;install_reject.REJECTED_DATA = sbData.toString();&#xD;&#xA;install_reject.REJECTED_ON = TalendDate.getCurrentDate();&#xD;&#xA;install_reject.STEWARD_STATUS = &quot;NEW&quot;;"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="java_reject"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="true" length="50" name="REJECT_ID" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="PROJECT_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="JOB_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="EXECUTION_ID" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="JOB_START_TIME" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="STAGE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ENTITY_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="ENTITY_COLUMN" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="ERROR_MESSAGE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2147483647" name="REJECTED_DATA" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REJECTED_ON" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="STEWARD_STATUS" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-200" posY="640" sizeX="121" sizeY="40">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="java.nio.file.Paths.get(context.dir_ops_reject, jobName,TalendDate.getDate(&quot;yyyyMMdd&quot;), jobName + &quot;_&quot; + pid + &quot;_&quot; + context.file_reject_baseName).toString()"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="context.file_reject_fieldSeparator"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;'&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;'&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="reject_legacy_install"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_2">
+      <column comment="" defaultValue="" key="true" length="50" name="REJECT_ID" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="PROJECT_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="JOB_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="EXECUTION_ID" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="JOB_START_TIME" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="STAGE" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="ENTITY_NAME" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4000" name="ENTITY_COLUMN" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4000" name="ERROR_MESSAGE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2147483647" name="REJECTED_DATA" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="REJECTED_ON" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="STEWARD_STATUS" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="joblet_monitorLog" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="80" sizeX="120" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="joblet_monitorLog_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
@@ -1734,11 +1868,215 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_2"/>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1320" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;CDM_INSTALL migration SUCCESS&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="0"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="LABEL" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tWarn_3">
+      <column comment="" defaultValue="" key="false" length="19" name="C0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="C1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="C2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="C3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C5" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="C8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C10" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="C11" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="C13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C14" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C15" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="C16" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="12" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="C17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C18" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C19" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C20" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="C21" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="C22" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C23" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C24" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C25" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="C26_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="C26_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="C26_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="C27" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="C28" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C29" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="80" name="C30" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="80" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C31" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="C32" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="C33" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C34" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C35" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C36" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C37" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="C38" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C39" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C40" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C41" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C42" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C43" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C44" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C45" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="C46" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="C47" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C48" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="C49" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="C50" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="C51" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CRIT1_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CRIT1_2" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CRIT1_3" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CRIT1_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CRIT2_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CRIT2_2" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CRIT2_3" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CRIT2_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CRIT3_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CRIT3_2" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CRIT3_3" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CRIT3_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CRIT4_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CRIT4_2" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CRIT4_3" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="CRIT4_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CONCONTRACT0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="CONCONTRACT1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CONCONTRACT2_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CONCONTRACT2_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CONCONTRACT3" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="CONCONTRACT4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CONCONTRACT5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="CONCONTRACT6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CONCONTRACT7" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CONCONTRACT8" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CONCONTRACT9" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CONCONTRACT10" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CONCONTRACT11" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="CONCONTRACT12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="2000" name="CONCONTRACT13" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2000" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="CONCONTRACT19" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="CONCONTRACTVCONTROL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="QCONCONTRACT21" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="40" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;CDM_INSTALL migration FAIL&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="1"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="6"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tDie_1">
+      <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="Installation_MSSL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Consumer_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="Unused_Field_4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Master_Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="40" name="Unused_Field_6" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="40" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_7" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Installation_Category" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="End_Use_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="District_Area_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Transmission_Point" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Building_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Connection_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Connection_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Status_Change_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Invoicing_Method" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Estimate_Suppression_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="Max_Metering_Points" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="3" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Validation_Control_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="40" name="Site_Property_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="40" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="Fire_Service_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="30" name="Rural_Property_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="30" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="Meshblock_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="15" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Lot_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Plan_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Plan_Reference" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Crown_Lot_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Crown_Section_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Map_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="X_Coordinate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Y_Coordinate" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="100" name="Location_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Connection_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_35" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="High_Voltage_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Expected_Max_KVA" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="9" name="Billable_KVA" nullable="true" pattern="" precision="2" sourceType="" type="id_Double" originalLength="9" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Control_Period_Demand_KW" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Override_Loss_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Standard_Transmission_Loss" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Shutdown_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Supply_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Altitude" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="12" name="Gas_Line_Pressure" nullable="true" pattern="" precision="1" sourceType="" type="id_Double" originalLength="12" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Network_Account_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Retailer_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Retailer_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Other_Supplier_Consumer_Name" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Network_Company_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Network_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_52" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_53" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Unused_Field_54" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_55" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Physical_Location" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Invoice_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Reading_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Next_Invoice_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Next_Invoice_Schedule_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unused_Field_GBC5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_GBC6" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_GBC7" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_GBC8" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Next_Read_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Last_Billed_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Interim_Header_Reason" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Reason_Added_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_GBC13" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_GBC14" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_GBC15" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Most_Recent_Meter_Read_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_GBC17" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_GBC18" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Invoiced_Up_To_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_GBC20" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_GBC21" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="install" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="context.num_ops_childThreads"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="context.num_ops_queueSize"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="true"/>
+    <elementParameter field="TABLE" name="HASH_KEYS">
+      <elementValue elementRef="KEY_COLUMN" value="Installation_ID" id="0"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="install" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+  <connection connectorName="REJECT" label="reject_install" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileInputDelimited_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="reject_install" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="cdm_install" lineStyle="0" metaname="cdm_install" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="GBC21" id="0"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
@@ -2135,11 +2473,111 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="392"/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="true"/>
+    <elementParameter field="RADIO" name="NONE" value="false"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="context.num_ops_queueSize"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="cdm_install" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_1">
+  <connection connectorName="FLOW" label="install2loc" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputDelimited_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="install2loc" show="false"/>
+  </connection>
+  <connection connectorName="REJECT" label="reject_install2loc" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileInputDelimited_2" target="tJavaRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="reject_install2loc" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tWarn_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="install2loc_reject" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tFileOutputDelimited_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="EXECUTION_ID" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOB_START_TIME" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="STEWARD_STATUS" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="REJECT_ID" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ERROR_MESSAGE" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="REJECTED_DATA" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="STAGE" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="REJECTED_ON" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROJECT_NAME" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOB_NAME" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ENTITY_NAME" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ENTITY_COLUMNS" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ENTITY_COLUMN" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="install2loc_reject" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="install_reject" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tFileOutputDelimited_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="EXECUTION_ID" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOB_START_TIME" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="STEWARD_STATUS" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="REJECT_ID" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ERROR_MESSAGE" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="REJECTED_DATA" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="STAGE" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="REJECTED_ON" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="PROJECT_NAME" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+      <elementValue elementRef="TRACE_COLUMN" value="JOB_NAME" id="27"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ENTITY_NAME" id="30"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ENTITY_COLUMNS" id="33"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
+      <elementValue elementRef="TRACE_COLUMN" value="ENTITY_COLUMN" id="36"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="install_reject" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
@@ -2194,6 +2632,16 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="93;174;241" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="93;174;241"/>
   </subjob>
