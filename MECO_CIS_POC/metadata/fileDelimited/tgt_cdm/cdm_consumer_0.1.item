@@ -3,13 +3,13 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_wcHcYFJoEfGdn9L_G-9eWg" name="cdm_consumer" dataPackage="_wcHcYVJoEfGdn9L_G-9eWg" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_consumer.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_wcHcYVJoEfGdn9L_G-9eWg" name="default" dataManager="_wcHcYFJoEfGdn9L_G-9eWg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_wcHcYlJoEfGdn9L_G-9eWg" id="_qXQ-AFJoEfGdn9L_G-9eWg" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wcHcY1JoEfGdn9L_G-9eWg" name="C0" label="C0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wcHcY1JoEfGdn9L_G-9eWg" name="C0" label="C0" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_wcHcZFJoEfGdn9L_G-9eWg" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wcHcZVJoEfGdn9L_G-9eWg" name="C1" label="C1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
         <initialValue xmi:id="_wcHcZlJoEfGdn9L_G-9eWg" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wcHcZ1JoEfGdn9L_G-9eWg" name="C2" label="C2" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wcHcZ1JoEfGdn9L_G-9eWg" name="C2" label="C2" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_wcHcaFJoEfGdn9L_G-9eWg" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_wcHcaVJoEfGdn9L_G-9eWg" name="C3" label="C3" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">

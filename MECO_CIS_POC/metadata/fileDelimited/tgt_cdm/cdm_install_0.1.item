@@ -3,7 +3,7 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_fWHTMFK0EfGAPIORTaYCDw" name="cdm_install" dataPackage="_fWHTMVK0EfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_install.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_fWHTMVK0EfGAPIORTaYCDw" name="default" dataManager="_fWHTMFK0EfGAPIORTaYCDw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_fWHTMlK0EfGAPIORTaYCDw" id="_XeOw8FK0EfGAPIORTaYCDw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWHTM1K0EfGAPIORTaYCDw" name="I0" label="I0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWHTM1K0EfGAPIORTaYCDw" name="I0" label="I0" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_fWHTNFK0EfGAPIORTaYCDw" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWHTNVK0EfGAPIORTaYCDw" name="I1" label="I1" length="30" precision="-1" sourceType="" talendType="id_String" originalLength="30">
@@ -240,7 +240,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWHTz1K0EfGAPIORTaYCDw" name="INSTLOCA1" label="INSTLOCA1" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
         <initialValue xmi:id="_fWHT0FK0EfGAPIORTaYCDw" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWHT0VK0EfGAPIORTaYCDw" name="INSTLOCA2" label="INSTLOCA2" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWHT0VK0EfGAPIORTaYCDw" name="INSTLOCA2" label="INSTLOCA2" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_fWHT0lK0EfGAPIORTaYCDw" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fWHT01K0EfGAPIORTaYCDw" name="INSTLOCA3" label="INSTLOCA3" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">

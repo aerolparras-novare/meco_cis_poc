@@ -437,17 +437,17 @@
     <elementParameter field="TEXT" name="LABEL" value="legacy_consumer"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_1">
-      <column comment="" defaultValue="" key="false" length="19" name="Consumer_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Consumer_ID" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Account_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Installation_ID" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Status_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Move_In_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Final_Bill_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Category" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Tax_Included_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Taxation_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Unit_Of_Measure" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Move_In_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Final_Bill_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Category" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Tax_Included_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Taxation_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Unit_Of_Measure" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="20" name="Billing_Classification" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Unused_Field_12" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="100" name="Application_Notes" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
@@ -493,13 +493,13 @@
       <column comment="" defaultValue="" key="false" length="50" name="Unused_Field_51" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" defaultValue="" key="false" length="19" name="Consumer_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Consumer_ID" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Account_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="19" name="Installation_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Installation_ID" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Status_Code" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Move_In_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Final_Bill_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Move_In_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Final_Bill_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Utility_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="50" name="Category" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="1" name="Tax_Included_Flag" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="50" name="Taxation_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -567,9 +567,9 @@
     <elementParameter field="TEXT" name="LABEL" value="map_consumer"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out1" name="cdm_consumer">
-      <column comment="" defaultValue="" key="false" length="19" name="C0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="C0" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="C1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="19" name="C2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="C2" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="C3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="C4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="C5" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
@@ -660,9 +660,9 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="cdm_consumer">
-        <mapperTableEntries name="C0" expression="consumer.Consumer_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="C0" expression="consumer.Consumer_ID " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="C1" expression="consumer.Account_ID " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="C2" expression="consumer.Installation_ID " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="C2" expression="consumer.Installation_ID " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="C3" expression="(!Relational.ISNULL(consumer.Final_Bill_Date) &amp;&amp; consumer.Status_Code != 40) ? null : consumer.Status_Code" type="id_Double" nullable="true"/>
         <mapperTableEntries name="C4" expression="Relational.ISNULL(consumer.Move_In_Date) ? null : (TalendDate.compareDate(consumer.Move_In_Date, TalendDate.getCurrentDate(), &quot;dd/MM/yyyy&quot;) &lt;= 0 ? consumer.Move_In_Date : null) " type="id_Date" nullable="true"/>
         <mapperTableEntries name="C5" expression="Relational.ISNULL(consumer.Final_Bill_Date) ? null : (consumer.Status_Code == 40 ? consumer.Final_Bill_Date : null)" type="id_Date" nullable="true"/>
@@ -749,10 +749,10 @@
         <mapperTableEntries name="CONCONTRACTVCONTROL" expression="StringHandling.TRIM(concontract.Validation_Control)" type="id_String" nullable="true"/>
         <mapperTableEntries name="QCONCONTRACT21" expression="concontract.Discount_Percentage " type="id_Double" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="consumer" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Consumer_ID" type="id_Double" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="consumer" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Consumer_ID" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Account_ID" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="Installation_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Installation_ID" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Status_Code" type="id_Double" nullable="true"/>
         <mapperTableEntries name="Move_In_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Final_Bill_Date" type="id_Date" nullable="true"/>
@@ -806,7 +806,7 @@
         <mapperTableEntries name="Unused_Field_51" type="id_String" nullable="true"/>
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="concrit" minimized="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="Consumer_ID" expression="consumer.Consumer_ID " type="id_Double" nullable="true" operator="="/>
+        <mapperTableEntries name="Consumer_ID" expression="consumer.Consumer_ID " type="id_BigDecimal" nullable="true" operator="="/>
         <mapperTableEntries name="Critical_Condition_1" type="id_String" nullable="true"/>
         <mapperTableEntries name="Crit1_Start_Date" type="id_Date" nullable="true"/>
         <mapperTableEntries name="Crit1_End_Date" expression="" type="id_Date" nullable="true"/>
@@ -826,7 +826,7 @@
       </inputTables>
       <inputTables sizeState="INTERMEDIATE" name="concontract" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Account_ID" expression="" type="id_Double" nullable="true"/>
-        <mapperTableEntries name="Contract_ID" expression="consumer.Consumer_ID" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="Contract_ID" expression="consumer.Consumer_ID" type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="Unused_Field_Contract_1" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="Primary_Plan" type="id_String" nullable="true"/>
         <mapperTableEntries name="Secondary_Plan" type="id_String" nullable="true"/>
@@ -881,9 +881,9 @@
     <elementParameter field="TEXT" name="LABEL" value="cdm_consumer"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileOutputDelimited_1">
-      <column comment="" defaultValue="" key="false" length="19" name="C0" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="C0" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="C1" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="19" name="C2" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="C2" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="C3" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="C4" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="C5" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
@@ -1084,13 +1084,13 @@
     <elementParameter field="TEXT" name="LABEL" value="legacy_concrit"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_2">
-      <column comment="" defaultValue="" key="false" length="19" name="Consumer_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Critical_Condition_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Crit1_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Crit1_End_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Crit1_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Critical_Condition_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Crit2_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Consumer_ID" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Critical_Condition_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Crit1_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Crit1_End_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Crit1_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Critical_Condition_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Crit2_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Crit2_End_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="1" name="Crit2_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="50" name="Critical_Condition_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -1103,13 +1103,13 @@
       <column comment="" defaultValue="" key="false" length="1" name="Crit4_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" defaultValue="" key="false" length="19" name="Consumer_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Critical_Condition_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Crit1_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Crit1_End_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Crit1_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Critical_Condition_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Crit2_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Consumer_ID" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Critical_Condition_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Crit1_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Crit1_End_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="Crit1_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Critical_Condition_2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Crit2_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="10" name="Crit2_End_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="1" name="Crit2_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="50" name="Critical_Condition_3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -1126,6 +1126,8 @@
   </node>
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="801" sizeX="121" sizeY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_WQg1sFJpEfGdn9L_G-9eWg - metadata" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_DYNAMIC" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="DYNAMIC" value="" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
@@ -1242,19 +1244,19 @@
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="legacy_concontract"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileInputDelimited_3">
+    <metadata connector="FLOW" label="metadata" name="tFileInputDelimited_3">
       <column comment="" defaultValue="" key="false" length="19" name="Account_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="19" name="Contract_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Unused_Field_Contract_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Primary_Plan" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Secondary_Plan" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Contract_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Contract_Review_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Contract_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Contract_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Override_Transmission_Loss" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Override_Distribution_Loss" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Confirmation_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Contract_ID" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Unused_Field_Contract_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Primary_Plan" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Secondary_Plan" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Contract_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Contract_Review_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Contract_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Contract_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Override_Transmission_Loss" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Override_Distribution_Loss" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Confirmation_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_Contract_10" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_Contract_11" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="50" name="Contract_Loaded_By" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
@@ -1263,19 +1265,19 @@
       <column comment="" defaultValue="" key="false" length="20" name="Validation_Control" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Discount_Percentage" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" name="REJECT">
+    <metadata connector="REJECT" label="metadata" name="REJECT">
       <column comment="" defaultValue="" key="false" length="19" name="Account_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="19" name="Contract_ID" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Unused_Field_Contract_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Primary_Plan" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Secondary_Plan" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Contract_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="Contract_Review_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Contract_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="Contract_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Override_Transmission_Loss" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Override_Distribution_Loss" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Confirmation_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Contract_ID" nullable="true" pattern="" precision="0" sourceType="" type="id_BigDecimal" originalLength="19" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Unused_Field_Contract_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Primary_Plan" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Secondary_Plan" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Contract_Start_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="Contract_Review_Date" nullable="true" pattern="&quot;dd/MM/yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="10" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Contract_Status" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="20" name="Contract_Number" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="20" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Override_Transmission_Loss" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Override_Distribution_Loss" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="50" name="Confirmation_Type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_Contract_10" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="19" name="Unused_Field_Contract_11" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="50" name="Contract_Loaded_By" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>

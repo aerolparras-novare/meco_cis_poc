@@ -3,7 +3,7 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_41vLgFiDEfGAPIORTaYCDw" name="legacy_meter3" dataPackage="_41vLgViDEfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_meter3.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_41vLgViDEfGAPIORTaYCDw" name="default" dataManager="_41vLgFiDEfGAPIORTaYCDw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_41vLgliDEfGAPIORTaYCDw" id="_yWPYgFiDEfGAPIORTaYCDw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_41vLg1iDEfGAPIORTaYCDw" name="Meter_ID" label="Meter_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_41vLg1iDEfGAPIORTaYCDw" name="Meter_ID" label="Meter_ID" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_41vLhFiDEfGAPIORTaYCDw" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_41vLhViDEfGAPIORTaYCDw" name="Key_Type" label="Key_Type" length="10" precision="-1" sourceType="" talendType="id_String" originalLength="10">

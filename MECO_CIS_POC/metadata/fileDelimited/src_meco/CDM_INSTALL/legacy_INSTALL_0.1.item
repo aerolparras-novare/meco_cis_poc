@@ -3,7 +3,7 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_QNK-IFK0EfGAPIORTaYCDw" name="legacy_INSTALL" dataPackage="_QNK-IVK0EfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_install.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_QNK-IVK0EfGAPIORTaYCDw" name="default" dataManager="_QNK-IFK0EfGAPIORTaYCDw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_QNK-IlK0EfGAPIORTaYCDw" id="_LAFOMFK0EfGAPIORTaYCDw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-I1K0EfGAPIORTaYCDw" name="Installation_ID" label="Installation_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-I1K0EfGAPIORTaYCDw" name="Installation_ID" label="Installation_ID" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_QNK-JFK0EfGAPIORTaYCDw" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QNK-JVK0EfGAPIORTaYCDw" name="Installation_MSSL" label="Installation_MSSL" length="30" precision="-1" sourceType="" talendType="id_String" originalLength="30">

@@ -3,7 +3,7 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_sb0ScFLmEfGAPIORTaYCDw" name="cdm_meter" dataPackage="_sb0ScVLmEfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/target/cdm_meter.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_sb0ScVLmEfGAPIORTaYCDw" name="default" dataManager="_sb0ScFLmEfGAPIORTaYCDw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_sb0SclLmEfGAPIORTaYCDw" id="_l8fekFLmEfGAPIORTaYCDw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sb0Sc1LmEfGAPIORTaYCDw" name="AT0" label="AT0" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sb0Sc1LmEfGAPIORTaYCDw" name="AT0" label="AT0" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_sb0SdFLmEfGAPIORTaYCDw" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sb0SdVLmEfGAPIORTaYCDw" name="AT1" label="AT1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
@@ -12,7 +12,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sb0Sd1LmEfGAPIORTaYCDw" name="AT2" label="AT2" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
         <initialValue xmi:id="_sb0SeFLmEfGAPIORTaYCDw" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sb0SeVLmEfGAPIORTaYCDw" name="AT3" label="AT3" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sb0SeVLmEfGAPIORTaYCDw" name="AT3" label="AT3" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_sb0SelLmEfGAPIORTaYCDw" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_sb0Se1LmEfGAPIORTaYCDw" name="AT4" label="AT4" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">

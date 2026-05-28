@@ -3,7 +3,7 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_rxFCYFiDEfGAPIORTaYCDw" name="legacy_meter1" dataPackage="_rxFCYViDEfGAPIORTaYCDw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_meter1.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_rxFCYViDEfGAPIORTaYCDw" name="default" dataManager="_rxFCYFiDEfGAPIORTaYCDw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_rxFCYliDEfGAPIORTaYCDw" id="_jXeTIFiDEfGAPIORTaYCDw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rxFCY1iDEfGAPIORTaYCDw" name="Meter_ID" label="Meter_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rxFCY1iDEfGAPIORTaYCDw" name="Meter_ID" label="Meter_ID" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_rxFCZFiDEfGAPIORTaYCDw" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rxFCZViDEfGAPIORTaYCDw" name="Unused_Field_AT1" label="Unused_Field_AT1" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
@@ -12,7 +12,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rxFCZ1iDEfGAPIORTaYCDw" name="Status_Code" label="Status_Code" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
         <initialValue xmi:id="_rxFCaFiDEfGAPIORTaYCDw" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rxFCaViDEfGAPIORTaYCDw" name="Installation_ID" label="Installation_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rxFCaViDEfGAPIORTaYCDw" name="Installation_ID" label="Installation_ID" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_rxFCaliDEfGAPIORTaYCDw" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rxFCa1iDEfGAPIORTaYCDw" name="Effective_Date" label="Effective_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">

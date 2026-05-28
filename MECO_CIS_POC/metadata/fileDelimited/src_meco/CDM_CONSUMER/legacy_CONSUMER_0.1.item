@@ -3,13 +3,13 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_1I6GMFJpEfGdn9L_G-9eWg" name="legacy_CONSUMER" id="_1I5fIFJpEfGdn9L_G-9eWg" dataPackage="_1I6GMVJpEfGdn9L_G-9eWg" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_consumer.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_1I6GMVJpEfGdn9L_G-9eWg" name="default" dataManager="_1I6GMFJpEfGdn9L_G-9eWg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_1I6GMlJpEfGdn9L_G-9eWg" id="_v3srQFJpEfGdn9L_G-9eWg" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1I6GM1JpEfGdn9L_G-9eWg" name="Consumer_ID" label="Consumer_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1I6GM1JpEfGdn9L_G-9eWg" name="Consumer_ID" label="Consumer_ID" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_1I6GNFJpEfGdn9L_G-9eWg" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1I6GNVJpEfGdn9L_G-9eWg" name="Account_ID" label="Account_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
         <initialValue xmi:id="_1I6GNlJpEfGdn9L_G-9eWg" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1I6GN1JpEfGdn9L_G-9eWg" name="Installation_ID" label="Installation_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1I6GN1JpEfGdn9L_G-9eWg" name="Installation_ID" label="Installation_ID" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_1I6GOFJpEfGdn9L_G-9eWg" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_1I6GOVJpEfGdn9L_G-9eWg" name="Status_Code" label="Status_Code" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">

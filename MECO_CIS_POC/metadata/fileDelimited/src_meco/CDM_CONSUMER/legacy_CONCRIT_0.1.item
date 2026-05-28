@@ -3,7 +3,7 @@
   <TalendMetadata:DelimitedFileConnection xmi:id="_7AEt4FJpEfGdn9L_G-9eWg" name="legacy_CONCRIT" id="_7AEG0FJpEfGdn9L_G-9eWg" dataPackage="_7AEt4VJpEfGdn9L_G-9eWg" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Desktop/Meralco Files/sources/meco_concrit.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" EscapeType="CSV" CsvOption="true" FieldSeparatorType="Comma"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_7AEt4VJpEfGdn9L_G-9eWg" name="default" dataManager="_7AEt4FJpEfGdn9L_G-9eWg">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7AEt4lJpEfGdn9L_G-9eWg" id="_1nxMcFJpEfGdn9L_G-9eWg" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7AEt41JpEfGdn9L_G-9eWg" name="Consumer_ID" label="Consumer_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7AEt41JpEfGdn9L_G-9eWg" name="Consumer_ID" label="Consumer_ID" length="-1" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_7AEt5FJpEfGdn9L_G-9eWg" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7AEt5VJpEfGdn9L_G-9eWg" name="Critical_Condition_1" label="Critical_Condition_1" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
