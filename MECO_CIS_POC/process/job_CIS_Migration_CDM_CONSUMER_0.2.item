@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="LOCAL" jobType="Standard">
   <context confirmationNeeded="false" hide="false" name="LOCAL">
-    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_consumer.*csv&#xD;&#xA;legacy_concrit.*csv&#xD;&#xA;legacy_concontract.*csv" internalId="_VbvK8FqaEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_consumer*.csv&#xD;&#xA;legacy_concrit*.csv&#xD;&#xA;legacy_concontract*.csv" internalId="_VbvK8FqaEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_VbvK8VqaEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/archive&quot;" internalId="_VbvK8lqaEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis&quot;" internalId="_VbvK81qaEfGo8ccnbOKY3g"/>
@@ -30,7 +30,7 @@
     <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_VbvLClqaEfGo8ccnbOKY3g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DEV">
-    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_consumer.*csv&#xD;&#xA;legacy_concrit.*csv&#xD;&#xA;legacy_concontract.*csv" internalId="_VbvLC1qaEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_consumer*.csv&#xD;&#xA;legacy_concrit*.csv&#xD;&#xA;legacy_concontract*.csv" internalId="_VbvLC1qaEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_VbvLDFqaEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/archive" internalId="_VbvLDVqaEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="/data/talend/cis_pos/DEV" internalId="_VbvLDlqaEfGo8ccnbOKY3g"/>
@@ -59,7 +59,7 @@
     <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_VbvLJVqaEfGo8ccnbOKY3g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="UAT">
-    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_consumer.*csv&#xD;&#xA;legacy_concrit.*csv&#xD;&#xA;legacy_concontract.*csv" internalId="_VbvLJlqaEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_consumer*.csv&#xD;&#xA;legacy_concrit*.csv&#xD;&#xA;legacy_concontract*.csv" internalId="_VbvLJlqaEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_VbvLJ1qaEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/archive&quot;" internalId="_VbvLKFqaEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT&quot;" internalId="_VbvLKVqaEfGo8ccnbOKY3g"/>

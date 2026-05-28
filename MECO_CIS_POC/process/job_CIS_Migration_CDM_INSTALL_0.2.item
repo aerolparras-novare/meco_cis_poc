@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="LOCAL" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="LOCAL" jobType="Standard" framework="">
   <context confirmationNeeded="false" hide="false" name="LOCAL">
-    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_install.*csv&#xD;&#xA;legacy_install2loc.*csv" internalId="_JE_bQFqbEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_install*.csv&#xD;&#xA;legacy_install2loc*.csv" internalId="_JE_bQFqbEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_JE_bQVqbEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/archive&quot;" internalId="_JE_bQlqbEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis&quot;" internalId="_JE_bQ1qbEfGo8ccnbOKY3g"/>
@@ -30,7 +30,7 @@
     <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_JE_bWlqbEfGo8ccnbOKY3g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="DEV">
-    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_install.*csv&#xD;&#xA;legacy_install2loc.*csv" internalId="_JE_bW1qbEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_install*.csv&#xD;&#xA;legacy_install2loc*.csv" internalId="_JE_bW1qbEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_JE_bXFqbEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="/data/talend/cis_pos/DEV/data/archive" internalId="_JE_bXVqbEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="/data/talend/cis_pos/DEV" internalId="_JE_bXlqbEfGo8ccnbOKY3g"/>
@@ -59,7 +59,7 @@
     <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_JE_bdVqbEfGo8ccnbOKY3g"/>
   </context>
   <context confirmationNeeded="false" hide="false" name="UAT">
-    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_install.*csv&#xD;&#xA;legacy_install2loc.*csv" internalId="_JE_bdlqbEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_install*.csv&#xD;&#xA;legacy_install2loc*.csv" internalId="_JE_bdlqbEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_JE_bd1qbEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT/data/archive&quot;" internalId="_JE_beFqbEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/Administrator/Documents/cis_pos/UAT&quot;" internalId="_JE_beVqbEfGo8ccnbOKY3g"/>
@@ -868,7 +868,7 @@
         <mapperTableEntries name="I8" expression="StringHandling.TRIM(install.Utility_Type)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I9" expression="StringHandling.TRIM(install.Installation_Category)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I10" expression="StringHandling.TRIM(install.End_Use_Code)" type="id_String" nullable="true"/>
-        <mapperTableEntries name="I11" expression="StringHandling.LPAD(StringHandling.TRIM(install.District_Area_Code), 2, &quot;0&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="I11" expression="/*StringHandling.LPAD(StringHandling.TRIM(install.District_Area_Code), 2, &quot;0&quot;)*/&#xD;&#xA;install.District_Area_Code " type="id_String" nullable="true"/>
         <mapperTableEntries name="I12" expression="StringHandling.TRIM(install.Transmission_Point)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I13" expression="StringHandling.TRIM(install.Building_Type)" type="id_String" nullable="true"/>
         <mapperTableEntries name="I14" expression="Relational.ISNULL(install.Connection_Date) ? null : install.Connection_Date" type="id_Date" nullable="true"/>
@@ -1819,12 +1819,12 @@
       <column comment="" defaultValue="" key="false" length="20" name="STEWARD_STATUS" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="240" sizeX="121" sizeY="40">
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="55" posY="240" sizeX="128" sizeY="41">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="postJob"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="304" posY="240" sizeX="121" sizeY="40">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="300" posY="240" sizeX="128" sizeY="41">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.dt_ops_job_end_time = TalendDate.getCurrentDate();&#xD;&#xA;&#xD;&#xA;long durationMs = TalendDate.diffDate(context.dt_ops_job_end_time, context.dt_ops_job_start_time, &quot;SSS&quot;);&#xD;&#xA;System.out.println(&quot;[TALEND CORE] Job terminated gracefully. Total execution duration: &quot; + durationMs + &quot; ms.&quot;);"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -1832,7 +1832,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="310" posY="80" sizeX="120" sizeY="40">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="300" posY="80" sizeX="127" sizeY="41">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="//Capture exact system startup millisecond&#xD;&#xA;context.dt_ops_job_start_time = TalendDate.getCurrentDate();&#xD;&#xA;context.job_ops_pid = pid;&#xD;&#xA;context.job_ops_name = jobName;&#xD;&#xA;&#xD;&#xA;//Dynamically log execution status to the console log trace&#xD;&#xA;System.out.println(&quot;[TALEND CORE] Job initialized: &quot; + jobName + &#xD;&#xA;            &quot; | PID: &quot; + pid + &#xD;&#xA;            &quot; | Start Time: &quot; + TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, context.dt_ops_job_start_time));"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -1840,12 +1840,12 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="80" sizeX="121" sizeY="40">
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="55" posY="80" sizeX="128" sizeY="41">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="preJob"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="80">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="580" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_4" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;Prejob Completed&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="0"/>
@@ -1854,7 +1854,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_4"/>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="240">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="820" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_2" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;PostJob Completed&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="0"/>
@@ -1961,7 +1961,7 @@
       <column comment="" defaultValue="" key="false" length="19" name="QCONCONTRACT21" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="19" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="680">
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="142" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_1" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;CDM_INSTALL migration FAIL&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="1"/>
@@ -2052,7 +2052,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="joblet_monitorLog" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="80" sizeX="121" sizeY="40">
+  <node componentName="joblet_monitorLog" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1240" posY="80" sizeX="121" sizeY="41">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="joblet_monitorLog_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
@@ -2090,7 +2090,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_5"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="240" sizeX="121" sizeY="40">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="540" posY="240" sizeX="128" sizeY="41">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -2177,7 +2177,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_3"/>
   </node>
-  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="520">
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="142" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_2" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;CDM_INSTALL stage input files FAIL&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="1"/>
@@ -2196,7 +2196,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_1"/>
   </node>
-  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="1000">
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="142" posY="1000">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDie_4" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;CDM_INSTALL stage input files FAIL&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="1"/>
