@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
   <talendfile:ContextType xmi:id="_q8EacFjaEfGtN5BJmGG-8w" confirmationNeeded="false" hide="false" name="LOCAL">
-    <contextParameter xmi:id="_PTRdAFjbEfGtN5BJmGG-8w" comment="" name="dir_reject_ouputPath" prompt="dir_reject_ouputPath?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/reject&quot;"/>
+    <contextParameter xmi:id="_PTRdAFjbEfGtN5BJmGG-8w" comment="" name="dir_reject_ouputPath" prompt="dir_reject_ouputPath?" promptNeeded="false" repositoryContextId="built-in" type="id_Directory" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis/data/reject&quot;"/>
     <contextParameter xmi:id="_PTRdAVjbEfGtN5BJmGG-8w" comment="" name="file_reject_baseName" prompt="file_reject_baseName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;rejects&quot;"/>
     <contextParameter xmi:id="_PTRdAljbEfGtN5BJmGG-8w" comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;,&quot;"/>
   </talendfile:ContextType>

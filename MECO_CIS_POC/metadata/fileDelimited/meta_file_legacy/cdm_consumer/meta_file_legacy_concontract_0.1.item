@@ -6,7 +6,7 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WQiq41JpEfGdn9L_G-9eWg" name="Account_ID" label="Account_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
         <initialValue xmi:id="_WQiq5FJpEfGdn9L_G-9eWg" body=""/>
       </feature>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WQiq5VJpEfGdn9L_G-9eWg" name="Contract_ID" label="Contract_ID" length="19" precision="-1" sourceType="" talendType="id_Double" originalLength="19">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WQiq5VJpEfGdn9L_G-9eWg" name="Contract_ID" label="Contract_ID" length="19" sourceType="" talendType="id_BigDecimal" originalLength="19">
         <initialValue xmi:id="_WQiq5lJpEfGdn9L_G-9eWg" body=""/>
       </feature>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WQiq51JpEfGdn9L_G-9eWg" name="Unused_Field_Contract_1" label="Unused_Field_Contract_1" length="-1" precision="-1" sourceType="" talendType="id_String" originalLength="-1">
