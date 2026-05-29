@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_zYfgEFs-EfGBOtw9qsBZCw" name="meta_file_target_cdm_bulkmeter" dataPackage="_zYfgEVs-EfGBOtw9qsBZCw" Server="Localhost 127.0.0.1" FilePath="C:/Users/angelo.baloy/Documents/meco_cis/data/output/cdm_bulkmeter.csv" Format="WINDOWS" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_zYfgEVs-EfGBOtw9qsBZCw" name="default" dataManager="_zYfgEFs-EfGBOtw9qsBZCw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_zYfgEls-EfGBOtw9qsBZCw" id="_mrbXkFs-EfGBOtw9qsBZCw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zYfgE1s-EfGBOtw9qsBZCw" name="Service_ID" label="Service_ID" length="19" precision="-1" sourceType="" talendType="id_String" originalLength="30">
+        <initialValue xmi:id="_zYfgFFs-EfGBOtw9qsBZCw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zYfgFVs-EfGBOtw9qsBZCw" name="Meter_Serial_Number" label="Meter_Serial_Number" length="50" precision="-1" sourceType="" talendType="id_String" originalLength="50">
+        <initialValue xmi:id="_zYfgFls-EfGBOtw9qsBZCw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zYfgF1s-EfGBOtw9qsBZCw" name="Stream_Reference_Number" label="Stream_Reference_Number" length="100" precision="-1" sourceType="" talendType="id_String" originalLength="100">
+        <initialValue xmi:id="_zYfgGFs-EfGBOtw9qsBZCw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_zYfgGVs-EfGBOtw9qsBZCw" name="Meter_Effective_Date" label="Meter_Effective_Date" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;dd/MM/yyyy&quot;" originalLength="10">
+        <initialValue xmi:id="_zYfgGls-EfGBOtw9qsBZCw" body=""/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

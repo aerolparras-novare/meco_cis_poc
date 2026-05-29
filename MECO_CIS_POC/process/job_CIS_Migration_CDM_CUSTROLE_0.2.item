@@ -7,14 +7,14 @@
     <contextParameter comment="" name="map_componentLabel" prompt="map_componentLabel?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tFileInputDelimited_1: legacy_account_master&#xD;&#xA;tFileInputDelimited_3: legacy_contact_pref&#xD;&#xA;tFileInputDelimited_6: legacy_cust_acc_xref&#xD;&#xA;tFileOutputDelimited_1: cdm_custrole&#xD;&#xA;tFileOutputDelimited_2: reject_legacy_cust_acc_xref&#xD;&#xA;tFileOutputDelimited_3: reject_legacy_account_master&#xD;&#xA;tFileOutputDelimited_4: reject_legacy_contact_pref" internalId="_3VHE0FkIEfGtN5BJmGG-8w"/>
     <contextParameter comment="" name="file_stg_source_mask_list" prompt="file_stg_source_mask_list?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="legacy_account_master*.csv&#xD;&#xA;legacy_contact_pref*.csv&#xD;&#xA;legacy_cust_acc_xref*.csv" internalId="_hLCM0FpcEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="bl_ops_die_on_error" prompt="bl_ops_die_on_error?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Boolean" value="false" internalId="_hLDa8FpcEfGo8ccnbOKY3g"/>
-    <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/archive&quot;" internalId="_hLDa8VpcEfGo8ccnbOKY3g"/>
-    <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis&quot;" internalId="_hLDa8lpcEfGo8ccnbOKY3g"/>
-    <contextParameter comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/input&quot;" internalId="_hLDa81pcEfGo8ccnbOKY3g"/>
-    <contextParameter comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/logs&quot;" internalId="_hLDa9FpcEfGo8ccnbOKY3g"/>
-    <contextParameter comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/output&quot;" internalId="_hLDa9VpcEfGo8ccnbOKY3g"/>
-    <contextParameter comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/processing&quot;" internalId="_hLDa9lpcEfGo8ccnbOKY3g"/>
-    <contextParameter comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/reject&quot;" internalId="_hLDa91pcEfGo8ccnbOKY3g"/>
-    <contextParameter comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/tmp&quot;" internalId="_hLDa-FpcEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="dir_ops_archive" prompt="dir_ops_archive?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis/data/archive&quot;" internalId="_hLDa8VpcEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="dir_ops_base" prompt="dir_ops_base?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis&quot;" internalId="_hLDa8lpcEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="dir_ops_input" prompt="dir_ops_input?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis/data/input&quot;" internalId="_hLDa81pcEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="dir_ops_logs" prompt="dir_ops_logs?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis/logs&quot;" internalId="_hLDa9FpcEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="dir_ops_output" prompt="dir_ops_output?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis/data/output&quot;" internalId="_hLDa9VpcEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="dir_ops_processing" prompt="dir_ops_processing?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis/data/processing&quot;" internalId="_hLDa9lpcEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="dir_ops_reject" prompt="dir_ops_reject?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis/data/reject&quot;" internalId="_hLDa91pcEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="dir_ops_tmp" prompt="dir_ops_tmp?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis/tmp&quot;" internalId="_hLDa-FpcEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dt_ops_job_end_time" prompt="dt_ops_job_end_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_hLDa-VpcEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="dt_ops_job_start_time" prompt="dt_ops_job_start_time?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_Date" value="" internalId="_hLDa-lpcEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="job_ops_name" prompt="job_ops_name?" promptNeeded="false" repositoryContextId="_0ynE8FjeEfGtN5BJmGG-8w" type="id_String" value="" internalId="_hLDa-1pcEfGo8ccnbOKY3g"/>
@@ -29,7 +29,7 @@
     <contextParameter comment="" name="file_mon_flowName" prompt="file_mon_flowName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tflowmetercatcher" internalId="_hLECAlpcEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="file_mon_logName" prompt="file_mon_logName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tlogcatcher" internalId="_hLECA1pcEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="file_mon_statName" prompt="file_mon_statName?" promptNeeded="false" repositoryContextId="_GKWpgFkDEfGtN5BJmGG-8w" type="id_String" value="tstatcatcher" internalId="_hLECBFpcEfGo8ccnbOKY3g"/>
-    <contextParameter comment="" name="dir_reject_ouputPath" prompt="dir_reject_ouputPath?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/aerol.parras/Documents/meco_cis/data/reject&quot;" internalId="_hLECBVpcEfGo8ccnbOKY3g"/>
+    <contextParameter comment="" name="dir_reject_ouputPath" prompt="dir_reject_ouputPath?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_Directory" value="&quot;C:/Users/angelo.baloy/Documents/meco_cis/data/reject&quot;" internalId="_hLECBVpcEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="file_reject_baseName" prompt="file_reject_baseName?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;rejects&quot;" internalId="_hLECBlpcEfGo8ccnbOKY3g"/>
     <contextParameter comment="" name="file_reject_fieldSeparator" prompt="file_reject_fieldSeparator?" promptNeeded="false" repositoryContextId="_q7pjsFjaEfGtN5BJmGG-8w" type="id_String" value="&quot;,&quot;" internalId="_hLECB1pcEfGo8ccnbOKY3g"/>
   </context>
@@ -316,7 +316,7 @@
       <column comment="" key="false" length="50" name="CUSTROLE14" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="v_relationshipType" expression="Custom.regexDecode(context.map_relationshipType, xref.RELATIONSHIP_TYPE) " type="id_String"/>
         <mapperTableEntries name="v_contactRules" expression="Custom.regexDecode(context.map_contactRules, pref.PREF_CONTEXT_1) " type="id_String"/>
@@ -1147,13 +1147,13 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
