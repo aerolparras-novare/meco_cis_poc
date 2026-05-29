@@ -854,7 +854,7 @@
       <column comment="" key="false" length="19" name="INSTCONT16" nullable="true" pattern="&quot;dd/MM/yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="19" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="cdm_install">
         <mapperTableEntries name="I0" expression="install.Installation_ID " type="id_BigDecimal" nullable="true"/>
